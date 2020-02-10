@@ -1,2 +1,23 @@
-# addiction-ontology
-Repository for the addiction ontology being developed by the SSA
+# Overview
+
+The Addiction Ontology (AddictO) is an ontology for representing entities relevant to all aspects of addiction research 
+and clinical practice. 
+
+The project is being developed using the [BFO](http://basic-formal-ontology.org/) upper level ontology
+and following best practices as set out by the [OBO Foundry](http://www.obofoundry.org/). 
+ 
+It is funded by the [Society for the Study of Addiction](https://www.addiction-ssa.org/) and is expected to underpin a new tool for semantically annotating research reports that are submitted to the journal Addiction, the Addiction Paper Authoring Tool.   
+
+A downloadable version of the ontology will soon be available at http://purl.obolibrary.org/obo/ADDICTO.owl. 
+
+# Persons involved
+
+Contributors to the Addiction Ontology (current and past) include: Robert West, Simon Christmas, Janna Hastings, Ildiko Tombor, Susan Michie, Sharon Cox, Caitlin Notley, ...
+
+# Publications
+
+Robert West, John Marsden and Janna Hastings (2019) [Addiction Theories and Constructs: a new series](https://onlinelibrary.wiley.com/doi/full/10.1111/add.14554). Editorial in _Addiction_, 14 January 2019.
+
+# Related Projects
+
+The Addiction Ontology project relies on ontologies developed in the context of the [Human Behaviour-Change Project](https://www.humanbehaviourchange.org/) such as the the Behaviour Change Intervention Ontology (BCIO). It furthermore harnesses content from the Mental Functioning ([MF](https://github.com/jannahastings/mental-functioning-ontology/)) and Emotion ([EM](https://github.com/jannahastings/emotion-ontology/tree/master/ontology)) ontologies. 
