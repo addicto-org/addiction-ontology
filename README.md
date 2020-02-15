@@ -1,18 +1,18 @@
 # Overview
 
 The Addiction Ontology (AddictO) is an ontology for representing entities relevant to all aspects of addiction research 
-and clinical practice. 
+and clinical practice. It includes the E-Cigarette Ontology (E-CigO) which covers all substantive entities that may be referred to in research reports and commentaries relating to e-cigarettes.
 
 The project is being developed using the [BFO](http://basic-formal-ontology.org/) upper level ontology
 and following best practices as set out by the [OBO Foundry](http://www.obofoundry.org/). 
  
-It is funded by the [Society for the Study of Addiction](https://www.addiction-ssa.org/) and is expected to underpin a new tool for semantically annotating research reports that are submitted to the journal Addiction, the Addiction Paper Authoring Tool.   
+It is funded by the [Society for the Study of Addiction](https://www.addiction-ssa.org/) with the E-Cigarette Ontology supported by Cancer Research UK and is expected to underpin a new tool for semantically annotating research reports that are submitted to the journal Addiction, the Addiction Paper Authoring Tool.   
 
 A downloadable version of the ontology will soon be available at http://purl.obolibrary.org/obo/ADDICTO.owl. 
 
 # Persons involved
 
-Contributors to the Addiction Ontology (current and past) include: Robert West, Simon Christmas, Janna Hastings, Ildiko Tombor, Susan Michie, Sharon Cox, Caitlin Notley, ...
+Contributors to the Addiction Ontology (current and past) include: Robert West, Simon Christmas, Janna Hastings, Ildiko Tombor, Susan Michie, Sharon Cox, Caitlin Notley, Michael Lynskey, Paul Toner.
 
 # Publications
 
