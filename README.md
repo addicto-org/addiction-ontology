@@ -6,7 +6,7 @@ and clinical practice. It includes the E-Cigarette Ontology (E-CigO) which cover
 The project is being developed using the [BFO](http://basic-formal-ontology.org/) upper level ontology
 and following best practices as set out by the [OBO Foundry](http://www.obofoundry.org/). 
  
-It is funded by the [Society for the Study of Addiction](https://www.addiction-ssa.org/) with the E-Cigarette Ontology supported by Cancer Research UK and is expected to underpin a new tool for semantically annotating research reports that are submitted to the journal Addiction, the Addiction Paper Authoring Tool.   
+It is funded by the [Society for the Study of Addiction](https://www.addiction-ssa.org/) with the E-Cigarette Ontology supported by [Cancer Research UK](https://www.cancerresearchuk.org/) and is expected to underpin a new tool for semantically annotating research reports that are submitted to the journal Addiction, the Addiction Paper Authoring Tool.   
 
 A downloadable version of the ontology will soon be available at http://purl.obolibrary.org/obo/ADDICTO.owl. 
 
