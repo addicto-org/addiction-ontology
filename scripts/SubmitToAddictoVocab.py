@@ -62,8 +62,12 @@ def getURIForID(id, prefix_dict):
             print(f"Cannot determine prefix in {id}, just returning id")
             return(id)
         prefix=id_split[0]
-        uri_prefix = prefix_dict[prefix]
-        return (uri_prefix + "_" +id_split[1])
+        if prefix in prefix_dict:
+            uri_prefix = prefix_dict[prefix]
+            return (uri_prefix + "_" +id_split[1])
+        else:
+            print("Prefix ",prefix,"not in dict")
+            return (id)
 
 
 def getIdForLabel(value):
