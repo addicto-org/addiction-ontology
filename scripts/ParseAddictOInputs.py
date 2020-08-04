@@ -198,7 +198,7 @@ if False:
 
 
 # Do this when external entities change
-if False:
+if True:
 
     # External parents/targets of relations:
     # We need to load the information for these from their source ontologies, where they are not included as rows in the spreadsheets.
@@ -213,6 +213,9 @@ if False:
                                             ontologyName = 'ADDICTO')
     robotWrapper.addAdditionalParents(importsParentsFileName = 'imports/External_Imports_New_Parents.csv',                                         importsOWLURI='http://addictovocab.org/addicto_external.owl',importsOWLFileName = 'addicto_external.owl')
 
+    robotWrapper.removeProblemMetadata(importsOWLURI='http://addictovocab.org/addicto_external.owl',importsOWLFileName = 'addicto_external.owl', metadataURIFile = "problem-metadata.txt")
+
+    robotWrapper.createOBOFile(importsOWLURI='http://addictovocab.org/addicto_external.owl',importsOWLFileName = 'addicto_external.owl')
 
 
 
@@ -294,16 +297,15 @@ for id in entries:
             p = m.group(1)
             print ("Found match:", m, "=>", p)
         if re.fullmatch("[A-Za-z]*:(\d)*",p):
-            print("Got ID-form parent: ",p)
-            p = getURIForID(p,prefix_dict)
+            print("Got ID-form parent: ",p, "replacing with label", getLabelForID(p))
+            p = getLabelForID(p)
             parents.append(p)
         else:
             id = getIdForLabel(p)
             if id == p:
-                continue
+                continue # Not found
             else:
-                id = getURIForID(id,prefix_dict)
-                parents.append(id)
+                parents.append(getCorrectFormForLabel(p)) # it has an id, but, we want the label
     if len(parents)>0:
         parent = ";".join(parents)
     else:
