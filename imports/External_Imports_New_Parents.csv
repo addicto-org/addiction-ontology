@@ -8,3 +8,4 @@ http://purl.obolibrary.org/obo/CHEBI_24431,http://purl.obolibrary.org/obo/BFO_00
 http://purl.obolibrary.org/obo/PO_0025131,http://purl.obolibrary.org/obo/BFO_0000030,plant anatomical entity is a object
 http://purl.obolibrary.org/obo/OGMS_0000045,http://purl.obolibrary.org/obo/BFO_0000040,A disorder is a material entity
 http://purl.obolibrary.org/obo/UBERON_0000000,http://purl.obolibrary.org/obo/BFO_0000003,A processual entity is an occurrent
+http://purl.obolibrary.org/obo/CHEBI_50906,http://purl.obolibrary.org/obo/BFO_0000017,chebi role is a realizable

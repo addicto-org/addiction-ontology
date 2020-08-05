@@ -155,7 +155,7 @@ if False:
     # # # -----------------------------
     # # # Only needed if IDs were added
     # Write newly generated IDs back to original files ID columns
-    for file in addicto_files:
+    for file in ['inputs/AddictO_Human_population_Defs.xlsx']: #addicto_files:
 
         try:
             wb = openpyxl.load_workbook(file)
@@ -198,7 +198,7 @@ if False:
 
 
 # Do this when external entities change
-if True:
+if False:
 
     # External parents/targets of relations:
     # We need to load the information for these from their source ontologies, where they are not included as rows in the spreadsheets.
@@ -211,7 +211,9 @@ if True:
                                             importsOWLURI='http://addictovocab.org/addicto_external.owl',
                                             importsOWLFileName = 'addicto_external.owl',
                                             ontologyName = 'ADDICTO')
-    robotWrapper.addAdditionalParents(importsParentsFileName = 'imports/External_Imports_New_Parents.csv',                                         importsOWLURI='http://addictovocab.org/addicto_external.owl',importsOWLFileName = 'addicto_external.owl')
+    robotWrapper.addAdditionalContent(extraContentTemplate = 'imports/External_Imports_New_Parents.csv',                                         importsOWLURI='http://addictovocab.org/addicto_external.owl',importsOWLFileName = 'addicto_external.owl')
+
+    robotWrapper.addAdditionalContent(extraContentTemplate = 'imports/External_Imports_New_Labels.csv',                                         importsOWLURI='http://addictovocab.org/addicto_external.owl',importsOWLFileName = 'addicto_external.owl')
 
     robotWrapper.removeProblemMetadata(importsOWLURI='http://addictovocab.org/addicto_external.owl',importsOWLFileName = 'addicto_external.owl', metadataURIFile = "problem-metadata.txt")
 
