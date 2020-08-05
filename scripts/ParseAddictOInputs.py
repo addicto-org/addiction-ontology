@@ -363,8 +363,8 @@ dependency='addicto_external.owl'
 
 robotWrapper.createOntologyFromTemplateFile(csvFileName, dependency, IRI_PREFIX, ID_PREFIX, ONTOLOGY_IRI,owlFileName)
 
-
-
+robotWrapper = RobotImportsWrapper(robotcmd='~/Work/Onto/robot/robot',cleanup=False)
+robotWrapper.createOBOFile(importsOWLURI='http://addictovocab.org/addicto.owl',importsOWLFileName = 'addicto.owl')
 
 
 
