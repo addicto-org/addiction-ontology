@@ -1,0 +1,11 @@
+﻿ID,NEW PARENT ID,Comment
+ID,SC %,
+http://purl.obolibrary.org/obo/CHEBI_24432,http://purl.obolibrary.org/obo/BFO_0000017,biological role is a realizable
+http://purl.obolibrary.org/obo/CHEBI_52217,http://purl.obolibrary.org/obo/BFO_0000017,pharmaceutical is a realizable
+http://purl.obolibrary.org/obo/UBERON_0001062,http://purl.obolibrary.org/obo/BFO_0000030,anatomical entity is a object
+http://purl.obolibrary.org/obo/DOID_4,http://purl.obolibrary.org/obo/BFO_0000016,disease is a disposition
+http://purl.obolibrary.org/obo/CHEBI_24431,http://purl.obolibrary.org/obo/BFO_0000040,chemical entity is a material entity
+http://purl.obolibrary.org/obo/PO_0025131,http://purl.obolibrary.org/obo/BFO_0000030,plant anatomical entity is a object
+http://purl.obolibrary.org/obo/OGMS_0000045,http://purl.obolibrary.org/obo/BFO_0000040,A disorder is a material entity
+http://purl.obolibrary.org/obo/UBERON_0000000,http://purl.obolibrary.org/obo/BFO_0000003,A processual entity is an occurrent
+http://purl.obolibrary.org/obo/CHEBI_50906,http://purl.obolibrary.org/obo/BFO_0000017,chebi role is a realizable
