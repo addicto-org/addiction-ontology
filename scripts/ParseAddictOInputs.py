@@ -7,6 +7,39 @@ import pronto
 
 os.chdir("/Users/hastingj/Work/Onto/addiction-ontology/")
 
+
+def getIdForLabel(value):
+    if value in label_id_map.keys():
+        return ( label_id_map[value] )
+    if value.lower() in label_id_map.keys():
+        return ( label_id_map[value.lower()] )
+    if value.strip() in label_id_map.keys():
+        return ( label_id_map[value.strip()] )
+    if value.lower().strip() in label_id_map.keys():
+        return ( label_id_map[value.lower().strip()] )
+
+    return (value)
+
+def getLabelForID(value):
+    if value in label_id_map.values():
+        keys = [k for k,v in label_id_map.items() if v == value]
+        return keys[0]
+    else:
+        return value
+
+def getCorrectFormForLabel(value):
+    if value in label_id_map.keys():
+        return ( value )
+    if value.lower() in label_id_map.keys():
+        return ( value.lower() )
+    if value.strip() in label_id_map.keys():
+        return ( value.strip() )
+    if value.lower().strip() in label_id_map.keys():
+        return ( value.lower().strip() )
+
+    return (value)
+
+
 in_path = 'inputs'
 out_path = 'outputs'
 os.makedirs(out_path,exist_ok=True)   # shouldn't exist, just for testing
@@ -155,7 +188,7 @@ if False:
     # # # -----------------------------
     # # # Only needed if IDs were added
     # Write newly generated IDs back to original files ID columns
-    for file in ['inputs/AddictO_Human_population_Defs.xlsx']: #addicto_files:
+    for file in ['inputs/AddictO_Product_Defs.xlsx']: #addicto_files:
 
         try:
             wb = openpyxl.load_workbook(file)
@@ -363,6 +396,7 @@ dependency='addicto_external.owl'
 
 robotWrapper.createOntologyFromTemplateFile(csvFileName, dependency, IRI_PREFIX, ID_PREFIX, ONTOLOGY_IRI,owlFileName)
 
+from ontoutils.robot_wrapper import RobotImportsWrapper
 robotWrapper = RobotImportsWrapper(robotcmd='~/Work/Onto/robot/robot',cleanup=False)
 robotWrapper.createOBOFile(importsOWLURI='http://addictovocab.org/addicto.owl',importsOWLFileName = 'addicto.owl')
 

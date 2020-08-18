@@ -70,37 +70,6 @@ def getURIForID(id, prefix_dict):
             return (id)
 
 
-def getIdForLabel(value):
-    if value in label_id_map.keys():
-        return ( label_id_map[value] )
-    if value.lower() in label_id_map.keys():
-        return ( label_id_map[value.lower()] )
-    if value.strip() in label_id_map.keys():
-        return ( label_id_map[value.strip()] )
-    if value.lower().strip() in label_id_map.keys():
-        return ( label_id_map[value.lower().strip()] )
-
-    return (value)
-
-def getLabelForID(value):
-    if value in label_id_map.values():
-        keys = [k for k,v in label_id_map.items() if v == value]
-        return keys[0]
-    else:
-        return value
-
-def getCorrectFormForLabel(value):
-    if value in label_id_map.keys():
-        return ( value )
-    if value.lower() in label_id_map.keys():
-        return ( value.lower() )
-    if value.strip() in label_id_map.keys():
-        return ( value.strip() )
-    if value.lower().strip() in label_id_map.keys():
-        return ( value.lower().strip() )
-
-    return (value)
-
 # By default, don't create links the first time we create terms.
 # Call a second time (after all data created) to create links.
 # Can be done in one step if the linked entities do exist.
