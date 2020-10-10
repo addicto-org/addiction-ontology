@@ -8,6 +8,7 @@ import pydot_ng as pydot
 os.chdir("/Users/hastingj/Work/Onto/addiction-ontology/")
 
 from pygosemsim import graph
+from pygosemsim import similarity
 SimG = graph.from_resource("/Users/hastingj/Work/Onto/addiction-ontology/addicto")
 similarity.precalc_lower_bounds(SimG)
 
