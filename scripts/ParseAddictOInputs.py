@@ -188,8 +188,9 @@ if False:
     # # # -----------------------------
     # # # Only needed if IDs were added
     # Write newly generated IDs back to original files ID columns
-    for file in ['inputs/AddictO_Product_Defs.xlsx']: #addicto_files:
+    for file in addicto_files:
 
+        CHANGED = False
         try:
             wb = openpyxl.load_workbook(file)
         except Exception as e:
@@ -208,8 +209,10 @@ if False:
             if label in label_id_map:
                 if not row[0].value or len(row[0].value)==0:
                     row[0].value = label_id_map[label]
+                    CHANGED = True
 
-        wb.save(file)
+        if CHANGED:
+            wb.save(file)
 
 
 
@@ -378,6 +381,9 @@ for i, line in enumerate(all_row_data):
         sheet.cell(row=i+2, column=k+1).value = val
 wb.save(inputFileName)
 
+
+#from importlib import reload
+#reload(ontoutils)
 
 from ontoutils.robot_wrapper import RobotTemplateWrapper
 robotWrapper = RobotTemplateWrapper(robotcmd='~/Work/Onto/robot/robot')
