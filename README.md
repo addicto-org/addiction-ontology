@@ -8,7 +8,7 @@ and following best practices as set out by the [OBO Foundry](http://www.obofound
  
 It is funded by the [Society for the Study of Addiction](https://www.addiction-ssa.org/) with the E-Cigarette Ontology supported by [Cancer Research UK](https://www.cancerresearchuk.org/) and is expected to underpin a new tool for semantically annotating research reports that are submitted to the journal Addiction, the Addiction Paper Authoring Tool.   
 
-A downloadable version of the ontology will soon be available at http://purl.obolibrary.org/obo/ADDICTO.owl. 
+A downloadable version of the ontology is available at http://addictovocab.org/addicto.owl. 
 
 # Persons involved
 
