@@ -12,13 +12,15 @@ The ontology content can be browsed at http://addictovocab.org, and a downloadab
 
 # Persons involved
 
-Contributors to the Addiction Ontology (current and past) include: Robert West, Simon Christmas, Janna Hastings, Ildiko Tombor, Susan Michie, Sharon Cox, Caitlin Notley, Michael Lynskey, Paul Toner.
+Contributors to the Addiction Ontology (current and past) include: Robert West, Simon Christmas, Janna Hastings, Ildiko Tombor, Susan Michie, Sharon Cox, Caitlin Notley, Michael Lynskey, Paul Toner, Kirstie Soar.
 
 # Publications
 
 Robert West, John Marsden and Janna Hastings (2019) [Addiction Theories and Constructs: a new series](https://onlinelibrary.wiley.com/doi/full/10.1111/add.14554). Editorial in _Addiction_, 14 January 2019.
 
 Sharon Cox, Janna Hastings, Robert West and Caitlin Notley (2020) The case for development of an E-cigarette Ontology (E-CigO) to improve quality, efficiency and clarity in the conduct and interpretation of research. Qeios. https://www.qeios.com/read/5YYRPJ
+
+Janna Hastings, Sharon Cox, Robert West and Caitlin Notley (2020) Addiction Ontology: Applying Basic Formal Ontology in the Addiction Domain. Qeios. https://www.qeios.com/read/HZHJIP 
 
 # Related Projects
 
