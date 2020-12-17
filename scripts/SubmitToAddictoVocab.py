@@ -75,44 +75,44 @@ def getURIForID(id, prefix_dict):
 # Can be done in one step if the linked entities do exist.
 def createTermInAddictOVocab(header,rowdata, prefix_dict, create=True,links=False):
     data = {}
-    for (value, header) in zip(rowdata,header):
+    for (value, headerval) in zip(rowdata,header):
         if value:
-            if header == "ID":
+            if headerval == "ID":
                 data['id'] = value
                 data['uri'] = getURIForID(value, prefix_dict)
-            elif header == "Label":
+            elif headerval == "Label":
                 data['label'] = value
-            elif header == "Definition":
+            elif headerval == "Definition":
                 data['definition'] = value
-            elif header == "Definition source":
+            elif headerval == "Definition source":
                 data['definitionSource'] = value
-            elif header == "AO sub-ontology":
+            elif headerval == "AO sub-ontology":
                 data['addictoSubOntology'] = value
-            elif header == "Curator note":
+            elif headerval == "Curator note":
                 data['curatorNote'] = value
-            elif header == "Synonyms":
+            elif headerval == "Synonyms":
                 vals = value.split(";")
                 data['synonyms'] = vals
-            elif header == "Comment":
+            elif headerval == "Comment":
                 data['comment'] = value
-            elif header == "Examples of usage":
+            elif headerval == "Examples of usage":
                 data['examples'] = value
-            elif header == "Fuzzy set":
+            elif headerval == "Fuzzy set":
                 data['fuzzySet'] = bool(value)
-            elif header == "E-CigO":
+            elif headerval == "E-CigO":
                 data['eCigO'] = bool(value)
-            elif header == "	Proposer":
+            elif headerval == "	Proposer":
                 pass
-            elif header == "	Curation status":
-                pass
-            elif header == "Why fuzzy":
+            elif headerval == "Curation status":
+                data['curationStatus'] = value
+            elif headerval == "Why fuzzy":
                 data['fuzzyExplanation'] = value
-            elif header == "Cross reference":
+            elif headerval == "Cross reference":
                 vals = value.split(";")
                 data['crossReference'] = vals
-            elif header == "BFO entity":
+            elif headerval == "BFO entity":
                 pass
-            elif links and header == "Parent":
+            elif links and headerval == "Parent":
                 vals = value.split(";")
                 if len(vals)==1:
                     value=getIdForLabel(value)
@@ -123,8 +123,8 @@ def createTermInAddictOVocab(header,rowdata, prefix_dict, create=True,links=Fals
                         value = getIdForLabel(value)
                         vals_to_add.append(f"/terms/{v}")
                     data['parentTerm'] = vals_to_add
-            elif links and re.match("REL '(.*)'",header):
-                rel_name = re.match("REL '(.*)'",header).group(1)
+            elif links and re.match("REL '(.*)'",headerval):
+                rel_name = re.match("REL '(.*)'",headerval).group(1)
                 vals = value.split(";")
                 vals_to_add = []
                 for v in vals:
@@ -132,7 +132,7 @@ def createTermInAddictOVocab(header,rowdata, prefix_dict, create=True,links=Fals
                     vals_to_add.append(v)
                 data[rel_name] = vals_to_add
             else:
-                print(f"Unknown/ignored header: '{header}'")
+                print(f"Unknown/ignored header: '{headerval}'")
 
     if create:
         headers = {"accept": "application/ld+json",
@@ -175,7 +175,8 @@ def getDefinitionForProntoTerm(term):
             if a.property == 'IAO:0000600':  # Elucidation
                 return (a.literal)
     if term.comment:
-        return term.comment
+        return (term.comment)
+    return ("None")
 
 # ---------- Main method execution below here ----------------
 

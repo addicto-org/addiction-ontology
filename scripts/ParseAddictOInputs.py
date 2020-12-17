@@ -40,11 +40,15 @@ def getCorrectFormForLabel(value):
     return (value)
 
 
+# Run the main processing:
+
+
 in_path = 'inputs'
 out_path = 'outputs'
 os.makedirs(out_path,exist_ok=True)   # shouldn't exist, just for testing
 pattern = 'AddictO(.*).xlsx'
 addicto_files = []
+CONVERT_TO_LOWERCASE = False
 
 for root, dirs_list, files_list in os.walk(in_path):
     for file_name in files_list:
@@ -203,9 +207,16 @@ if False:
         header = [i.value for i in next(data)]
 
         label_column = [i for (i,j) in zip(range(len(header)),header) if j=='Label'][0]
+        parent_column = [i for (i,j) in zip(range(len(header)),header) if j=='Parent'][0]
 
         for row in data:
             label = row[label_column].value
+            if CONVERT_TO_LOWERCASE and label:
+                row[label_column].value = label[0].lower() + label[1:]
+                CHANGED = True
+            parent = row[parent_column].value
+            if CONVERT_TO_LOWERCASE and parent:
+                row[parent_column].value = parent[0].lower() + parent[1:]
             if label in label_id_map:
                 if not row[0].value or len(row[0].value)==0:
                     row[0].value = label_id_map[label]
@@ -233,7 +244,7 @@ if False:
 #            print(label, ' [', id, ']', sep='', end=';')
 
 
-# Do this when external entities change
+# Do this only when external entities change
 if False:
 
     # External parents/targets of relations:
@@ -259,7 +270,7 @@ if False:
 
 # load the dictionary for prefix to URI mapping
 
-dict_file = 'inputs/prefix_to_uri_dictionary.csv'
+dict_file = 'scripts/prefix_to_uri_dictionary.csv'
 prefix_dict = {}
 reader = csv.DictReader(open(dict_file, 'r'))
 for line in reader:
@@ -383,7 +394,7 @@ wb.save(inputFileName)
 
 
 #from importlib import reload
-#reload(ontoutils)
+#reload(ontoutils.robot_wrapper)
 
 from ontoutils.robot_wrapper import RobotTemplateWrapper
 robotWrapper = RobotTemplateWrapper(robotcmd='~/Work/Onto/robot/robot')
