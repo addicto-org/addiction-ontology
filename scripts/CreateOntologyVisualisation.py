@@ -59,15 +59,17 @@ def colourForSimilarity(pdot, onto, similarityFrom, outFileName):
 onto = pronto.Ontology("addicto.obo")
 
 
-termId = "ADDICTO:0000279" # root -- product
+termId = "ADDICTO:0000279" # product
 
 pdot = createImageSubTree(termId,'addicto_products.png')
 
-colourForSimilarity(pdot , onto, "ADDICTO:0000240", 'addicto_products_coloured.png' )
+#colourForSimilarity(pdot , onto, "ADDICTO:0000240", 'addicto_products_coloured.png' )
 
 
 
+termId = "ADDICTO:0000513" # psychoactive substance user
 
+pdot = createImageSubTree(termId,'addicto_psubuser.png')
 
 
 

@@ -73,7 +73,7 @@ def getURIForID(id, prefix_dict):
 # By default, don't create links the first time we create terms.
 # Call a second time (after all data created) to create links.
 # Can be done in one step if the linked entities do exist.
-def createTermInAddictOVocab(header,rowdata, prefix_dict, create=True,links=False):
+def createTermInAddictOVocab(header,rowdata, prefix_dict, create=True,links=False,revision_msg="Minor update"):
     data = {}
     for (value, headerval) in zip(rowdata,header):
         if value:
@@ -86,6 +86,10 @@ def createTermInAddictOVocab(header,rowdata, prefix_dict, create=True,links=Fals
                 data['definition'] = value
             elif headerval == "Definition source":
                 data['definitionSource'] = value
+            elif headerval == "Logical definition":
+                data['logicalDefinition'] = value
+            elif headerval == "Informal definition":
+                data['informalDefinition'] = value
             elif headerval == "AO sub-ontology":
                 data['addictoSubOntology'] = value
             elif headerval == "Curator note":
@@ -98,10 +102,16 @@ def createTermInAddictOVocab(header,rowdata, prefix_dict, create=True,links=Fals
             elif headerval == "Examples of usage":
                 data['examples'] = value
             elif headerval == "Fuzzy set":
-                data['fuzzySet'] = bool(value)
+                if value:
+                    data['fuzzySet'] = bool(int(value))
+                else:
+                    data['fuzzySet'] = False
             elif headerval == "E-CigO":
-                data['eCigO'] = bool(value)
-            elif headerval == "	Proposer":
+                if value:
+                    data['eCigO'] = bool(int(value))
+                else:
+                    data['eCigO'] = False
+            elif headerval == "Curator":
                 pass
             elif headerval == "Curation status":
                 data['curationStatus'] = value
@@ -116,13 +126,17 @@ def createTermInAddictOVocab(header,rowdata, prefix_dict, create=True,links=Fals
                 vals = value.split(";")
                 if len(vals)==1:
                     value=getIdForLabel(value)
-                    data['parentTerm'] = f"/terms/{value}"
+                    data['parentTerm'] = f"/terms/{value}" #requests.utils.quote(f"/terms/{value}")
                 else:
-                    vals_to_add = []
-                    for v in vals:
-                        value = getIdForLabel(value)
-                        vals_to_add.append(f"/terms/{v}")
-                    data['parentTerm'] = vals_to_add
+                    # Just use the first one as multiple are not supported
+                    value = vals[0]
+                    value = getIdForLabel(value)
+                    data['parentTerm'] = f"/terms/{value}" #requests.utils.quote(f"/terms/{value}")
+                    #vals_to_add = []
+                    #for v in vals:
+                    #    value = getIdForLabel(value)
+                    #    vals_to_add.append(f"/terms/{v}")
+                    #data['parentTerm'] = vals_to_add
             elif links and re.match("REL '(.*)'",headerval):
                 rel_name = re.match("REL '(.*)'",headerval).group(1)
                 vals = value.split(";")
@@ -140,20 +154,27 @@ def createTermInAddictOVocab(header,rowdata, prefix_dict, create=True,links=Fals
     else:
         headers = {"accept": "application/ld+json",
                "Content-Type": "application/merge-patch+json"}
+        if data['curationStatus'] == 'Published':  # Revision msg needed
+            data['revisionMessage'] = revision_msg
+
+    #print(data)
 
     try:
         if create:
             urlstring = AOVOCAB_API + POST_TERMS
             r = requests.post(urlstring, json = data, headers=headers)
+            status = r.status_code
         else:
             urlstring = AOVOCAB_API + PATCH_TERMS.format(data['id'])
             r = requests.patch(urlstring, json = data, headers=headers)
-        #print(f"Create returned {r.status_code}, {r.reason}")
+            status = r.status_code
+        print(f"Create returned {r.status_code}, {r.reason}")
         #if r.status_code in ['500',500,'400',400,'404',404]:
             #print(f"Problematic JSON: {json.dumps(data)}")
     except Exception as e:
         traceback.print_exc()
-    return ( ( int(r.status_code), json.dumps(data) ) )
+        status = None
+    return ( ( status, json.dumps(data) ) )
 
 
 def deleteTermFromAddictOVocab(id):
@@ -184,7 +205,7 @@ os.chdir("/Users/hastingj/Work/Onto/addiction-ontology/")
 
 # load the dictionary for prefix to URI mapping
 
-dict_file = 'inputs/prefix_to_uri_dictionary.csv'
+dict_file = 'scripts/prefix_to_uri_dictionary.csv'
 prefix_dict = {}
 reader = csv.DictReader(open(dict_file, 'r'))
 for line in reader:
@@ -221,31 +242,28 @@ for filename in addicto_files:
             entries[id] = (header,rowdata)
 
 
-# Check for which ones we created before and delete them
-#allIds = getAllIDsFromAddictOVocab()  # NOT WORKING
-# And delete them in preparation for the reload
-for id in entries.keys(): #[id for id in allIds if len(id)<=15]:
-    deleteTermFromAddictOVocab(id)
 
-# Now delete additional external entries
-for term in externalonto.terms():
-    id = term.id
-    if id not in entries.keys(): # Were already deleted
-        deleteTermFromAddictOVocab(id)
+### Update entries with new data
+### Try to create if update fails
+
 
 # now create all our entities, first without links
 for (header,test_entity) in entries.values():
-    (status, jsonstr) = createTermInAddictOVocab(header,test_entity,prefix_dict)
-    if status != 201:
-        id = test_entity[0]
-        print (status, ": Problem creating term ",id," with JSON: ",jsonstr)
-        bad_entries.append(id)
+    # Try to patch first and only if failed try to submit with post
+    (status, jsonstr) = createTermInAddictOVocab(header,test_entity,prefix_dict, create=False)
+    if status != 200:
+        # try submit with post
+        (status, jsonstr) = createTermInAddictOVocab(header,test_entity,prefix_dict)
+        if status != 201:
+            id = test_entity[0]
+            print (status, ": Problem creating term ",id," with JSON: ",jsonstr)
+            bad_entries.append(id)
 
 # Now create additional external entries, first without links
 for term in externalonto.terms():
     try:
         id = term.id
-        external_header=["ID","Label","Definition","Parent"]
+        external_header=["ID","Label","Definition","Parent","Curation status"]
         # First round: Create those that are not in
         if id not in entries:
             label = term.name
@@ -256,10 +274,12 @@ for term in externalonto.terms():
             parent = ";".join(parents)
             #print("TERM DATA: ",id,",",label,",",definition,",",parent)
             # Submit to AddictO Vocab
-            (status, jsonstr) = createTermInAddictOVocab(external_header,[id,label,definition,parent],prefix_dict,create=True,links=False)
-            if status != 201:
-                print (status, ": Problem creating term ",id," with JSON: ",jsonstr)
-                bad_entries.append(id)
+            (status, jsonstr) = createTermInAddictOVocab(external_header,[id,label,definition,parent,"Proposed"],prefix_dict,create=False,links=False)
+            if status != 200:
+                (status, jsonstr) = createTermInAddictOVocab(external_header,[id,label,definition,parent,"Proposed"],prefix_dict,create=False,links=False)
+                if status != 201:
+                    print (status, ": Problem creating term ",id," with JSON: ",jsonstr)
+                    bad_entries.append(id)
     except ValueError:
         print("ERROR PROCESSING: ",id)
         continue
@@ -279,9 +299,10 @@ else:
 for term in externalonto.terms():
     try:
         id = term.id
-        external_header=["ID","Label","Parent"]
+        external_header=["ID","Label","Definition","Parent","Curation status"]
         # Second round: Should all be in. Patch with parents
         label = term.name
+        definition = getDefinitionForProntoTerm(term)
         parents = []
         for supercls in term.superclasses(distance=1):
             if supercls.id != id:
@@ -291,7 +312,7 @@ for term in externalonto.terms():
         print("TERM DATA: ",id,",",label,",",parent)
 
         # Patch it:
-        (status,jsonstr) = createTermInAddictOVocab(external_header, [id,label,parent], prefix_dict, create=False, links=True)
+        (status,jsonstr) = createTermInAddictOVocab(external_header, [id,label,definition,parent,"Proposed"], prefix_dict, create=False, links=True)
         if status != 200:
             print(status, ": Problem patching term ",id,"with JSON: ",jsonstr)
             bad_entries.append(id)
@@ -302,11 +323,24 @@ for term in externalonto.terms():
 
 
 
+### SUBMIT JUST ONE CHANGE TO AN ENTRY WITH A SPECIFIED ID:
 
-# Find the ones that are not in?
-#for (header,test_entity) in entries.values():
-#    if test_entity[0] not in allIds:
-#        print(test_entity[0])
+# Find an entry with a given ID
+# Patch it (in full) with a revision message
+
+idtochange = 'ADDICTO:0000308' # FDA tobacco product.
+
+(header,rowdata) = entries[idtochange]
+# Patch it:
+(status,jsonstr) = createTermInAddictOVocab(header, rowdata, prefix_dict, create=False, links=True, revision_msg="Update FDA tobacco product")
+if status != 200:
+    print(status, ": Problem patching term ",id,"with JSON: ",jsonstr)
+
+
+
+
+
+
 
 
 
