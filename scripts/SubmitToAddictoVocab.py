@@ -103,12 +103,18 @@ def createTermInAddictOVocab(header,rowdata, prefix_dict, create=True,links=Fals
                 data['examples'] = value
             elif headerval == "Fuzzy set":
                 if value:
-                    data['fuzzySet'] = bool(int(value))
+                    try:
+                        data['fuzzySet'] = bool(int(value))
+                    except ValueError:
+                        data['fuzzySet'] = bool(value)
                 else:
                     data['fuzzySet'] = False
             elif headerval == "E-CigO":
                 if value:
-                    data['eCigO'] = bool(int(value))
+                    try:
+                        data['eCigO'] = bool(int(value))
+                    except ValueError:
+                        data['eCigO'] = bool(value)
                 else:
                     data['eCigO'] = False
             elif headerval == "Curator":
@@ -125,26 +131,40 @@ def createTermInAddictOVocab(header,rowdata, prefix_dict, create=True,links=Fals
             elif links and headerval == "Parent":
                 vals = value.split(";")
                 if len(vals)==1:
-                    value=getIdForLabel(value)
-                    data['parentTerm'] = f"/terms/{value}" #requests.utils.quote(f"/terms/{value}")
+                    try:
+                        value=getIdForLabel(value)
+                        data['parentTerm'] = f"/terms/{value}"
+                    except ValueError:
+                        print(f"No ID found for label {value}, skipping")
+                        continue
                 else:
-                    # Just use the first one as multiple are not supported
-                    value = vals[0]
-                    value = getIdForLabel(value)
-                    data['parentTerm'] = f"/terms/{value}" #requests.utils.quote(f"/terms/{value}")
-                    #vals_to_add = []
-                    #for v in vals:
-                    #    value = getIdForLabel(value)
-                    #    vals_to_add.append(f"/terms/{v}")
-                    #data['parentTerm'] = vals_to_add
+                    for val in vals:
+                        value = vals[0]
+                        try:
+                            value = getIdForLabel(value)
+                            data['parentTerm'] = f"/terms/{value}"
+                            break
+                        except ValueError:
+                            print(f"No ID found for value {value}, skipping...")
+                            continue
+                    if 'parentTerm' not in data:
+                        print(f"No usable parent found for {value}.")
+                        continue
             elif links and re.match("REL '(.*)'",headerval):
                 rel_name = re.match("REL '(.*)'",headerval).group(1)
                 vals = value.split(";")
                 vals_to_add = []
                 for v in vals:
-                    v = getIdForLabel(v)
-                    vals_to_add.append(v)
-                data[rel_name] = vals_to_add
+                    try:
+                        v = '/terms/'+getIdForLabel(v)
+                        vals_to_add.append(v)
+                    except ValueError:
+                        print(f"No ID found for linked value {v}, skipping.")
+                if len(vals_to_add)>0:
+                    if 'termLinks' not in data:
+                        data['termLinks'] = []
+                    data['termLinks'].append({'type':rel_name,
+                                          'linkedTerms':vals_to_add})
             else:
                 print(f"Unknown/ignored header: '{headerval}'")
 
@@ -330,11 +350,14 @@ for term in externalonto.terms():
 
 idtochange = 'ADDICTO:0000308' # FDA tobacco product.
 
-(header,rowdata) = entries[idtochange]
-# Patch it:
-(status,jsonstr) = createTermInAddictOVocab(header, rowdata, prefix_dict, create=False, links=True, revision_msg="Update FDA tobacco product")
-if status != 200:
-    print(status, ": Problem patching term ",id,"with JSON: ",jsonstr)
+idstochange = ['ADDICTO:0000308','ADDICTO:0000200','ADDICTO:0000201','ADDICTO:0000207','ADDICTO:0000295','ADDICTO:0000279','ADDICTO:0000292','ADDICTO:0000303','ADDICTO:0000305','ADDICTO:0000311']
+
+for idtochange in idstochange:
+    (header,rowdata) = entries[idtochange]
+    # Patch it:
+    (status,jsonstr) = createTermInAddictOVocab(header, rowdata, prefix_dict, create=False, links=True, revision_msg="Final checks completed")
+    if status != 200:
+        print(status, ": Problem patching term ",id,"with JSON: ",jsonstr)
 
 
 

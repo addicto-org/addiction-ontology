@@ -11,14 +11,15 @@ os.chdir("/Users/hastingj/Work/Onto/addiction-ontology/")
 def getIdForLabel(value):
     if value in label_id_map.keys():
         return ( label_id_map[value] )
+    if value in label_id_map.values():
+        return value  # already an ID
     if value.lower() in label_id_map.keys():
         return ( label_id_map[value.lower()] )
     if value.strip() in label_id_map.keys():
         return ( label_id_map[value.strip()] )
     if value.lower().strip() in label_id_map.keys():
         return ( label_id_map[value.lower().strip()] )
-
-    return (value)
+    raise ValueError (f"No ID found for {value}.")
 
 def getLabelForID(value):
     if value in label_id_map.values():
@@ -126,8 +127,12 @@ for file in addicto_files:
         rowdata = [i.value for i in row]
 
         label = rowdata[label_column]
+        if label:
+            label = label.strip()
         defn = rowdata[def_column]
         parent = rowdata[parent_column]
+        if parent:
+            parent = parent.strip()
 
         if label and defn and parent:
             if len(label)>0 and len(defn)>0 and len(parent)>0:
@@ -346,12 +351,14 @@ for id in entries:
             p = m.group(1)
             print ("Found match:", m, "=>", p)
         if re.fullmatch("[A-Za-z]*:(\d)*",p):
-            print("Got ID-form parent: ",p, "replacing with label", getLabelForID(p))
+            #print("Got ID-form parent: ",p, "replacing with label", getLabelForID(p))
             p = getLabelForID(p)
             parents.append(p)
         else:
-            id = getIdForLabel(p)
-            if id == p:
+            try:
+                id = getIdForLabel(p)
+            except ValueError:
+                print("No ID found for ")
                 continue # Not found
             else:
                 parents.append(getCorrectFormForLabel(p)) # it has an id, but, we want the label
