@@ -1311,7 +1311,7 @@
     <!-- http://addictovocab.org/ADDICTO_0000245 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000245">
-        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000311"/>
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000304"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001019"/>
@@ -1327,9 +1327,11 @@
     <!-- http://addictovocab.org/ADDICTO_0000246 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000246">
-        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000535"/>
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000311"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A heated tobacco-containing product part that has been processed to make it suitable for use in a heated tobacco product.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobacco stick</rdfs:label>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> heat not burn stick</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Heet</obo:IAO_0000118>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">heated tobacco stick</rdfs:label>
     </owl:Class>
     
 
@@ -1337,7 +1339,7 @@
     <!-- http://addictovocab.org/ADDICTO_0000247 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000247">
-        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000232"/>
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000826"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An e-liquid that has a high concentration of nicotine.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">high nicotine concentration e-liquid</rdfs:label>
     </owl:Class>
@@ -1477,7 +1479,7 @@
     <!-- http://addictovocab.org/ADDICTO_0000267 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000267">
-        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000232"/>
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000301"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
@@ -1746,7 +1748,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An e-liquid that contains THC.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">THC e-liquid</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">THC containing e-liquid</rdfs:label>
     </owl:Class>
     
 
@@ -1815,7 +1817,7 @@
     <!-- http://addictovocab.org/ADDICTO_0000308 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000308">
-        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000279"/>
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000304"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
@@ -1834,7 +1836,7 @@
     <!-- http://addictovocab.org/ADDICTO_0000311 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000311">
-        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000279"/>
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000304"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
@@ -1923,7 +1925,7 @@
     <!-- http://addictovocab.org/ADDICTO_0000317 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000317">
-        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000279"/>
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000827"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A part of a vaping device.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vaping device part</rdfs:label>
     </owl:Class>
@@ -2477,6 +2479,17 @@
     
 
 
+    <!-- http://addictovocab.org/ADDICTO_0000392 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000392">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000398"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Self-appraisal of tobacco smoker identity that construes it as good.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Positive smoker identity</obo:IAO_0000118>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">positive self-appraisal of tobacco smoker identity</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://addictovocab.org/ADDICTO_0000393 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000393">
@@ -2719,6 +2732,16 @@
     
 
 
+    <!-- http://addictovocab.org/ADDICTO_0000416 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000416">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000417"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cannabis retailer that has a physical outlet.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cannabis retail outlet</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://addictovocab.org/ADDICTO_0000417 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000417">
@@ -2758,6 +2781,8 @@
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A e-cigarette company that predominantly sells e-cigarettes, e-cigarette components  or e-liquid to consumers.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> E-Cig merchant</obo:IAO_0000118>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> E-cig Industry</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> vape retailer</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> vape shop</obo:IAO_0000118>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E-Cig shop</obo:IAO_0000118>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">e-cigarette retailer</rdfs:label>
     </owl:Class>
@@ -3489,7 +3514,7 @@
     <!-- http://addictovocab.org/ADDICTO_0000535 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000535">
-        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000279"/>
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000827"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A part of a heated tobacco-containing product.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">heated tobacco-containing product part</rdfs:label>
     </owl:Class>
@@ -4102,7 +4127,7 @@
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A liquid product that contains alcohol.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alcoholic drink</obo:IAO_0000118>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Define the level of alcohol content and type of beverage.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alcoholic beverage</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alcohol containing beverage</rdfs:label>
     </owl:Class>
     
 
@@ -4112,7 +4137,7 @@
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000736">
         <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000536"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A type of liquid product that is consumed.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">beverage type</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">beverage</rdfs:label>
     </owl:Class>
     
 
@@ -4120,10 +4145,10 @@
     <!-- http://addictovocab.org/ADDICTO_0000737 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000737">
-        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000200"/>
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000311"/>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10.1093/ntr/ntw182</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cigar which has been emptied of its tobacco and replaced with cannabis.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blunts</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blunt</rdfs:label>
     </owl:Class>
     
 
@@ -4160,6 +4185,16 @@
         <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000200"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A small narrrow cigar.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cigarillo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0000744 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000744">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000736"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A beverage that has been prepared from coffee beans.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">coffee</rdfs:label>
     </owl:Class>
     
 
@@ -4486,6 +4521,7 @@
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A former tobacco smoker who has smoked within the past 12 months.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> past regular smoker</obo:IAO_0000118>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ex-smoker</obo:IAO_0000118>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This is a fuzzy because the time frame is not universally agreed and if this term is used the reference to recent must be defined.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">recent former regular smoker</rdfs:label>
     </owl:Class>
     
@@ -4501,6 +4537,28 @@
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Current smoker</obo:IAO_0000118>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The time period of recent must be defined.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">recent smoker</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0000790 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000790">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000794"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A carcinogen where there is sufficent evidence, with an established casual relationship, to suggest it is carcinogenic to humans.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IARC</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">group 1 carcinogen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0000791 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000791">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000794"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A carcinogen where there is limited evidence in humans, but sufficient evidence in animals to suggest it is  probably carcinogenic to humans.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IARC</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">group 2 carcinogen</rdfs:label>
     </owl:Class>
     
 
@@ -4673,6 +4731,18 @@
     
 
 
+    <!-- http://addictovocab.org/ADDICTO_0000808 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000808">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000772"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ex-smoker who has been quit for approximately one-year or more.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ex-smoker</obo:IAO_0000118>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This is fuzzy set because the time frame is approximate and needs to be defined in published work.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">long-term ex smoker</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://addictovocab.org/ADDICTO_0000809 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000809">
@@ -4745,6 +4815,17 @@
         <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000824"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A toxicant that has interferes with homeostasis, normal growth, differentiation or behaviour within the developmental process.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">developmental toxicant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0000817 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000817">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000746"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A dry herb vaporiser that consists of an internal battery, a chamber for the THC and a mouthpiece.  It is small, simple to operate and is portable.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">weed vape pens</obo:IAO_0000118>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dry herb vaporiser pen</rdfs:label>
     </owl:Class>
     
 
@@ -4823,6 +4904,55 @@
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An e-cigarette user who has been using e-cigarettes for one-year or more</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">experienced e-cigarette user</obo:IAO_0000118>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">long-term e-cigarette user</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0000826 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000826">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000232"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An e-liquid that contains nicotine.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nicotine e-liquid</obo:IAO_0000118>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The strength of the e-liquid should always be defined.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nicotine containing e-liquid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0000827 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000827">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000279"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A part of a product.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">product part</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0000828 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000828">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000713"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ex-smoker who has been quit for approximately less than one-year.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> recent quitter</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">past smoker</obo:IAO_0000118>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This is a fuzzy because the time frame is not universally agreed and if this term is used the reference to recent must be defined.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">recent ex-smoker</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0000829 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000829">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000421"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An e-cigarette retailer that has no commercial or financial association with a tobacco company.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Independent vape shop</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> independent vape retailer</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> vape retailer</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Independent e-cig shop</obo:IAO_0000118>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">independent e-cigarette retailer</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
