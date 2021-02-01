@@ -2688,6 +2688,18 @@
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000411">
         <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000428"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://addictovocab.org/ADDICTO_0000429"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://addictovocab.org/ADDICTO_0000434"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An aggregate of organizations that manufacture or market alcoholic beverages.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">see http://purl.obolibrary.org/obo/OMIT_0028826</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alcohol industy</rdfs:label>
@@ -2699,7 +2711,13 @@
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000412">
         <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000431"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A foundation based in the US with the company number xxxx.</obo:IAO_0000115>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://addictovocab.org/ADDICTO_0000871"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A philanthropy organisation that is based in New York.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bloomberg Philanthropies</rdfs:label>
     </owl:Class>
     
@@ -2709,6 +2727,18 @@
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000413">
         <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000435"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://addictovocab.org/ADDICTO_0000429"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://addictovocab.org/ADDICTO_0000434"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A tobacco company based in London with the company number 03407696.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BAT</obo:IAO_0000118>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.bat.com/group/sites/uk__9d9kcy.nsf/vwPagesWebLive/DO89KHEK</obo:IAO_0000119>
@@ -2721,6 +2751,18 @@
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000414">
         <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000415"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://addictovocab.org/ADDICTO_0000429"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://addictovocab.org/ADDICTO_0000434"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cannabis industry that is engaged in the growth, manufacture, preparation for sale, shipment, advertisement, or distribution of cannabis products.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cannabis company</rdfs:label>
     </owl:Class>
@@ -2731,6 +2773,18 @@
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000415">
         <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000428"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://addictovocab.org/ADDICTO_0000429"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://addictovocab.org/ADDICTO_0000434"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An industry in which the product is cannabis.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cannabis industry</rdfs:label>
     </owl:Class>
@@ -2741,6 +2795,12 @@
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000416">
         <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000417"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://addictovocab.org/ADDICTO_0000434"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cannabis retailer that has a physical outlet.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cannabis retail outlet</rdfs:label>
     </owl:Class>
@@ -2751,6 +2811,12 @@
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000417">
         <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000414"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://addictovocab.org/ADDICTO_0000434"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cannabis company that predominantly sells cannabis products and related merchandise.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cannabis retailer</rdfs:label>
     </owl:Class>
@@ -2761,6 +2827,18 @@
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000419">
         <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000420"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://addictovocab.org/ADDICTO_0000429"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://addictovocab.org/ADDICTO_0000434"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An e-cigarette organisation that is engaged in the manufacture, preparation for sale, marketing or distribution of electronic cigarettes, components that are used primarily in electronic cigarettes, and e-liquid.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">e-cigarette company</rdfs:label>
     </owl:Class>
@@ -2771,6 +2849,18 @@
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000420">
         <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000428"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://addictovocab.org/ADDICTO_0000429"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://addictovocab.org/ADDICTO_0000434"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An industry in which the product is electronic cigarettes or e-liquid.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E-Cig industry</obo:IAO_0000118>
         <obo:IAO_0000232 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">I have added here promotion of - this sets industry apart from manufactureres of but also includes these types of company.</obo:IAO_0000232>
@@ -2783,6 +2873,18 @@
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000421">
         <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000419"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://addictovocab.org/ADDICTO_0000433"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://addictovocab.org/ADDICTO_0000434"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A e-cigarette company that predominantly sells e-cigarettes, e-cigarette components  or e-liquid to consumers.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> E-Cig merchant</obo:IAO_0000118>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> E-cig Industry</obo:IAO_0000118>
@@ -2798,6 +2900,12 @@
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000422">
         <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000421"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://addictovocab.org/ADDICTO_0000433"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An e-cigarette shop is an e-cigarette retailer that has a physical outlet.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">e-cigarette shop</rdfs:label>
     </owl:Class>
@@ -2829,7 +2937,22 @@
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000426">
         <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000419"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://addictovocab.org/ADDICTO_0000429"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://addictovocab.org/ADDICTO_0000434"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An e-cigarette company that has no commercial or financial association with a tobacco company.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Independent vape business</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> vape company</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Independent vape company</obo:IAO_0000118>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">independent e-cigarette company</rdfs:label>
     </owl:Class>
     
@@ -2839,7 +2962,21 @@
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000427">
         <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000420"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://addictovocab.org/ADDICTO_0000429"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://addictovocab.org/ADDICTO_0000434"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An e-cigarette industry that has only independent e-cigarette companies as a part.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> independent vape industry</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vape industry</obo:IAO_0000118>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">independent e-cigarette industry</rdfs:label>
     </owl:Class>
     
@@ -2892,6 +3029,18 @@
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000432">
         <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000435"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://addictovocab.org/ADDICTO_0000429"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://addictovocab.org/ADDICTO_0000434"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A tobacco company based in Switzerland with the business identification number CHE-105.950.151.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMI</obo:IAO_0000118>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.pmi.com/company-information</obo:IAO_0000119>
@@ -2924,6 +3073,18 @@
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000435">
         <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000436"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://addictovocab.org/ADDICTO_0000429"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://addictovocab.org/ADDICTO_0000434"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A tobacco industry that is engaged in the growth, manufacture, preparation for sale, shipment, advertisement, or distribution of tobacco and products that include tobacco.</obo:IAO_0000115>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This excludes law firms acting for the TI. It also excludes NRT manufacturers and e-cig manufacturers even though nicotine is derived from tobacco.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobacco company</rdfs:label>
@@ -2945,6 +3106,12 @@
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000437">
         <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000438"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://addictovocab.org/ADDICTO_0000433"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A tobacco retailer that has a physical outlet.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobacco retail outlet</rdfs:label>
     </owl:Class>
@@ -2955,6 +3122,12 @@
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000438">
         <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000435"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://addictovocab.org/ADDICTO_0000433"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A tobacco company that predominantly sells tobacco products.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobacco retailer</rdfs:label>
     </owl:Class>
@@ -2965,6 +3138,12 @@
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000439">
         <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000438"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://addictovocab.org/ADDICTO_0000433"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A tobacco retailer that has a physical outlet.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobacconist</rdfs:label>
     </owl:Class>
@@ -4952,6 +5131,12 @@
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000829">
         <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000421"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://addictovocab.org/ADDICTO_0000433"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An e-cigarette retailer that has no commercial or financial association with a tobacco company.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Independent vape shop</obo:IAO_0000118>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> independent vape retailer</obo:IAO_0000118>
@@ -5281,6 +5466,119 @@
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> person with HIV</obo:IAO_0000118>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HIV positive</obo:IAO_0000118>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">person living with HIV</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0000864 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000864">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000869"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://addictovocab.org/ADDICTO_0000871"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A charity that is focused on cancer research within the UK with a company number 4355631.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CRUK</obo:IAO_0000118>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cancer Research UK</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0000865 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000865">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000869"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://addictovocab.org/ADDICTO_0000871"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A charity that is focused on cancer research and care in Ireland with a the charity number CHY5863.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Irish Cancer Society</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0000866 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000866">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000872"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A medical and health care service that is publicly funded to provide care for people in the UK.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NHS</obo:IAO_0000118>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">National Health Service</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0000867 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000867">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000868"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A British alcohol charity and campaign group that was founded in 1984 whose aim is to reduce the harm caused by alcohol.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alcohol change UK</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0000868 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000868">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000870"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://addictovocab.org/ADDICTO_0000871"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A charity which specifically raises income for the purpose of the prevention and treatment of alcohol related problems.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alcohol harm prevention organisation</obo:IAO_0000118>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alcohol charity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0000869 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000869">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000870"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A charity which specifically raises income for the purpose of the prevention and treatment of cancer.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cancer prevention organisation</obo:IAO_0000118>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cancer charity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0000870 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000870">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000431"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organisation that is established for charitable for purpose.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">charity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0000871 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000871">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000431"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A role by an organisation or individual who participates in processes through which research is funded.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">funder</obo:IAO_0000118>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">funder of research</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0000872 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000872">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000431"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organisation which is involved in the prevention, diagnosis, treatment and care of people.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medical and health care service</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
