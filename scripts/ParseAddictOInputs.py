@@ -3,7 +3,8 @@ import re
 import openpyxl
 import csv
 import pronto
-
+import distutils
+import distutils.util
 
 os.chdir("/Users/hastingj/Work/Onto/addiction-ontology/")
 
@@ -57,6 +58,8 @@ for root, dirs_list, files_list in os.walk(in_path):
             full_file_name = os.path.join(root, file_name)
             addicto_files.append(full_file_name)
 
+addicto_files.remove('inputs/AddictO_Upper level.xlsx')
+
 next_id = 100
 digit_count = 7
 total_good = 0
@@ -79,14 +82,24 @@ for file in addicto_files:
     data = sheet.rows
 
     header = [i.value for i in next(data)]
-    eCigOCol = header.index('E-CigO')
+    if 'E-CigO' in header:
+        eCigOCol = header.index('E-CigO')
+        skip_ecig = False
+    else:
+        skip_ecig = True
 
     for row in data:
         rowdata = [i.value for i in row]
         num_entities = num_entities + 1
-        ecigo = rowdata[eCigOCol]
-        if ecigo and int(ecigo) == 1:
-            num_ecigo = num_ecigo + 1
+        if not skip_ecig:
+            ecigo = rowdata[eCigOCol]
+            if ecigo:
+                try:
+                    ecigo = int(ecigo)
+                except:
+                    ecigo = distutils.util.strtobool(ecigo)
+                if ecigo and int(ecigo) == 1:
+                    num_ecigo = num_ecigo + 1
 
         if rowdata[0] and "ADDICTO:" in rowdata[0]:
             idStr = rowdata[0]
@@ -113,7 +126,11 @@ for file in addicto_files:
     rel_columns = {}
 
     header = [i.value for i in next(data)]
-    eCigOCol = header.index('E-CigO')
+    if 'E-CigO' in header:
+        eCigOCol = header.index('E-CigO')
+        skip_ecig = False
+    else:
+        skip_ecig = True
 
     label_column = [i for (i,j) in zip(range(len(header)),header) if j=='Label'][0]
     def_column = [i for (i,j) in zip(range(len(header)),header) if j=='Definition'][0]
@@ -139,9 +156,17 @@ for file in addicto_files:
                 if label in good_entities.keys():
                     print(f"Appears to be a duplicate label: {label} in {file}")
                 good_entities[label] = rowdata
-                ecigo = rowdata[eCigOCol]
-                if ecigo and int(ecigo) == 1:
-                    num_good_ecigo = num_good_ecigo + 1
+
+                if not skip_ecig:
+                    ecigo = rowdata[eCigOCol]
+                    if ecigo:
+                        try:
+                            ecigo = int(ecigo)
+                        except:
+                            ecigo = distutils.util.strtobool(ecigo)
+                        if ecigo and int(ecigo) == 1:
+                            num_good_ecigo = num_good_ecigo + 1
+
     # Not validating the parents strictly for now.
     print(f"In file {file}, {len(good_entities)} GOOD.")
     total_good = total_good + len(good_entities)
@@ -193,7 +218,8 @@ print(f"Finished extracting {total_good} good entities, "
       f"{next_id-101} internal.")
 
 
-if False:
+
+if True:
     # # # -----------------------------
     # # # Only needed if IDs were added
     # Write newly generated IDs back to original files ID columns
@@ -424,5 +450,6 @@ from ontoutils.robot_wrapper import RobotImportsWrapper
 robotWrapper = RobotImportsWrapper(robotcmd='~/Work/Onto/robot/robot',cleanup=False)
 robotWrapper.createOBOFile(importsOWLURI='http://addictovocab.org/addicto.owl',importsOWLFileName = 'addicto.owl')
 
-
+# Annotate with version information
+# robot annotate --input addicto.owl --annotation rdfs:comment "The Addiction Ontology (AddictO) is an ontology being developed all aspects of addiction research." --annotation owl:versionInfo "2021-03-05" --ontology-iri "http://addictovocab.org/addicto.owl" --version-iri "http://addictovocab.org/addicto.owl/2021-03-05" --output addicto.owl
 
