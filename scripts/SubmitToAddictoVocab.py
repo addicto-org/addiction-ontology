@@ -6,10 +6,13 @@ import re
 import requests
 import traceback
 import pronto
+import distutils
+import distutils.util
 
 
 AOVOCAB_API = "https://api.addictovocab.org/"
-GET_TERMS = "terms?label={}&page={}&itemsPerPage={}"
+GET_TERMS_BY_LABEL = "terms?label={}&page={}&itemsPerPage={}"
+GET_TERMS = "terms/{}"
 POST_TERMS = "terms"
 DELETE_TERMS = "terms/{}"
 PATCH_TERMS = "terms/{}"
@@ -41,14 +44,20 @@ def getAllIDsFromAddictOVocab():
     return(allIds)
 
 
-
-def getFromAddictOVocab(label,pageNo=1,totPerPage=30):
-    urlstring = AOVOCAB_API + GET_TERMS.format(label,pageNo,totPerPage)
+def getFromAddictOVocabByLabel(label,pageNo=1,totPerPage=30):
+    urlstring = AOVOCAB_API + GET_TERMS_BY_LABEL.format(label,pageNo,totPerPage)
     print(urlstring)
 
     r = requests.get(urlstring)
     print(f"Get returned {r.status_code}")
     return ( r.json() )
+
+def getFromAddictOVocab(id):
+    urlstring = AOVOCAB_API + GET_TERMS.format(id)
+    print(urlstring)
+    r = requests.get(urlstring)
+    print(f"Get returned {r.status_code}")
+    return (r.status_code, r.json())
 
 def getURIForID(id, prefix_dict):
     if "ADDICTO" in id:
@@ -106,7 +115,7 @@ def createTermInAddictOVocab(header,rowdata, prefix_dict, create=True,links=Fals
                     try:
                         data['fuzzySet'] = bool(int(value))
                     except ValueError:
-                        data['fuzzySet'] = bool(value)
+                        data['fuzzySet'] = bool(distutils.util.strtobool(value))
                 else:
                     data['fuzzySet'] = False
             elif headerval == "E-CigO":
@@ -114,7 +123,7 @@ def createTermInAddictOVocab(header,rowdata, prefix_dict, create=True,links=Fals
                     try:
                         data['eCigO'] = bool(int(value))
                     except ValueError:
-                        data['eCigO'] = bool(value)
+                        data['eCigO'] = bool(distutils.util.strtobool(value))
                 else:
                     data['eCigO'] = False
             elif headerval == "Curator":
@@ -167,6 +176,11 @@ def createTermInAddictOVocab(header,rowdata, prefix_dict, create=True,links=Fals
                                           'linkedTerms':vals_to_add})
             else:
                 print(f"Unknown/ignored header: '{headerval}'")
+
+    if 'eCigO' not in data:
+        data['eCigO'] = False
+    if 'fuzzySet' not in data:
+        data['fuzzySet'] = False
 
     if create:
         headers = {"accept": "application/ld+json",
@@ -267,23 +281,65 @@ for filename in addicto_files:
 ### Try to create if update fails
 
 
-# now create all our entities, first without links
+# Patch if exists or else create first without links
 for (header,test_entity) in entries.values():
-    # Try to patch first and only if failed try to submit with post
-    (status, jsonstr) = createTermInAddictOVocab(header,test_entity,prefix_dict, create=False)
-    if status != 200:
-        # try submit with post
+    id = test_entity[0]
+    # get it first
+    (status,entry) = getFromAddictOVocab(test_entity[0])
+    if status == 200:
+        print("Found existing entry: ",id)
+        # Now check if existing status is 'published'. if yes don't patch without message... manually.
+        existing_status = entry['curationStatus']
+        if existing_status == 'published':
+            print("Not patching ",id," as already published.")
+        else:
+            # Now patch.
+            (status, jsonstr) = createTermInAddictOVocab(header,test_entity,prefix_dict, create=False, links=True)
+            if status != 200:
+                print("Error patching existing entry. Investigate: ",id, status, jsonstr)
+
+    else:
+        # Not found by ID. Try submit with post
         (status, jsonstr) = createTermInAddictOVocab(header,test_entity,prefix_dict)
         if status != 201:
             id = test_entity[0]
             print (status, ": Problem creating term ",id," with JSON: ",jsonstr)
             bad_entries.append(id)
 
+
+# Try again after fixing problems
+#for entry_id in bad_entries:
+#    (header,test_entity) = entries[entry_id]
+#    id = test
+#    # get it first
+#    (entry,status) = getFromAddictOVocab(test_entity[0])
+#    if status == 200:
+#        print("Found existing entry: ",id)
+#        # Now check if existing status is 'published'. if yes don't patch without message... manually.
+#        existing_status = entry['curationStatus']
+#        if existing_status == 'published':
+#            print("Not patching ",id," as already published.")
+#        else:
+#            # Now patch.
+#            (status, jsonstr) = createTermInAddictOVocab(header,test_entity,prefix_dict, create=False, links=True)
+#            if status != 200:
+#                print("Error patching existing entry. Investigate: ",id, status, jsonstr)#
+#
+#    else:
+#        # Not found by ID. Try submit with post
+#        (status, jsonstr) = createTermInAddictOVocab(header,test_entity,prefix_dict)
+#        if status != 201:
+#            id = test_entity[0]
+#            print (status, ": Problem creating term ",id," with JSON: ",jsonstr)
+#            bad_entries.append(id)
+
+
 # Now create additional external entries, first without links
 for term in externalonto.terms():
     try:
         id = term.id
         external_header=["ID","Label","Definition","Parent","Curation status"]
+
         # First round: Create those that are not in
         if id not in entries:
             label = term.name
@@ -294,9 +350,9 @@ for term in externalonto.terms():
             parent = ";".join(parents)
             #print("TERM DATA: ",id,",",label,",",definition,",",parent)
             # Submit to AddictO Vocab
-            (status, jsonstr) = createTermInAddictOVocab(external_header,[id,label,definition,parent,"Proposed"],prefix_dict,create=False,links=False)
+            (status, jsonstr) = createTermInAddictOVocab(external_header,[id,label,definition,parent,"External"],prefix_dict,create=False,links=False)
             if status != 200:
-                (status, jsonstr) = createTermInAddictOVocab(external_header,[id,label,definition,parent,"Proposed"],prefix_dict,create=False,links=False)
+                (status, jsonstr) = createTermInAddictOVocab(external_header,[id,label,definition,parent,"External"],prefix_dict,create=True,links=False)
                 if status != 201:
                     print (status, ": Problem creating term ",id," with JSON: ",jsonstr)
                     bad_entries.append(id)
@@ -304,16 +360,19 @@ for term in externalonto.terms():
         print("ERROR PROCESSING: ",id)
         continue
 
+
 # Then add links (own entries)
 for id in entries:
     (header,rowdata) = entries[id]
-    # Patch it:
-    (status,jsonstr) = createTermInAddictOVocab(header, rowdata, prefix_dict, create=False, links=True)
-    if status != 200:
-        print(status, ": Problem patching term ",id,"with JSON: ",jsonstr)
-        bad_entries.append(id)
-else:
-    print("ID not found in entries: ",id)
+    # Check if need to patch it:
+    (status, entry) = getFromAddictOVocab(id)
+    if status == 200:
+        if entry['curationStatus']!= 'published':
+            (status,jsonstr) = createTermInAddictOVocab(header, rowdata, prefix_dict, create=False, links=True)
+            if status != 200:
+                print(status, ": Problem patching term ",id,"with JSON: ",jsonstr)
+                bad_entries.append(id)
+
 
 # Then add links (external entries)
 for term in externalonto.terms():
@@ -332,7 +391,7 @@ for term in externalonto.terms():
         print("TERM DATA: ",id,",",label,",",parent)
 
         # Patch it:
-        (status,jsonstr) = createTermInAddictOVocab(external_header, [id,label,definition,parent,"Proposed"], prefix_dict, create=False, links=True)
+        (status,jsonstr) = createTermInAddictOVocab(external_header, [id,label,definition,parent,"External"], prefix_dict, create=False, links=True)
         if status != 200:
             print(status, ": Problem patching term ",id,"with JSON: ",jsonstr)
             bad_entries.append(id)
@@ -355,14 +414,15 @@ idstochange = ['ADDICTO:0000308','ADDICTO:0000200','ADDICTO:0000201','ADDICTO:00
 for idtochange in idstochange:
     (header,rowdata) = entries[idtochange]
     # Patch it:
-    (status,jsonstr) = createTermInAddictOVocab(header, rowdata, prefix_dict, create=False, links=True, revision_msg="Final checks completed")
+    (status,jsonstr) = createTermInAddictOVocab(header, rowdata, prefix_dict, create=False, links=True, revision_msg="Minor revision")
     if status != 200:
         print(status, ": Problem patching term ",id,"with JSON: ",jsonstr)
 
 
 
 
-
+## id to remove
+idstoremove = "ADDICTO:0000746"
 
 
 
