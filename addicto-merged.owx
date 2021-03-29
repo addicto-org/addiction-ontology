@@ -36466,12 +36466,12 @@ Request that IAO either clarify these or change definitions not to use them</Lit
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000111"/>
         <IRI>http://purl.obolibrary.org/obo/IAO_0000115</IRI>
-        <Literal xml:lang="en">definition</Literal>
+        <Literal>definition</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000111"/>
         <IRI>http://purl.obolibrary.org/obo/IAO_0000115</IRI>
-        <Literal>definition</Literal>
+        <Literal xml:lang="en">definition</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000111"/>
@@ -36549,12 +36549,12 @@ We also have the outstanding issue of how to aim different definitions to differ
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/IAO_0000115</IRI>
-        <Literal xml:lang="en">definition</Literal>
+        <Literal>definition</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/IAO_0000115</IRI>
-        <Literal>definition</Literal>
+        <Literal xml:lang="en">definition</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -36764,12 +36764,12 @@ We also have the outstanding issue of how to aim different definitions to differ
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
         <IRI>http://purl.obolibrary.org/obo/IAO_0000119</IRI>
-        <Literal xml:lang="en">Discussion on obo-discuss mailing-list, see http://bit.ly/hgm99w</Literal>
+        <Literal>Discussion on obo-discuss mailing-list, see http://bit.ly/hgm99w</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
         <IRI>http://purl.obolibrary.org/obo/IAO_0000119</IRI>
-        <Literal>Discussion on obo-discuss mailing-list, see http://bit.ly/hgm99w</Literal>
+        <Literal xml:lang="en">Discussion on obo-discuss mailing-list, see http://bit.ly/hgm99w</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
@@ -37460,12 +37460,12 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000111"/>
         <IRI>http://purl.obolibrary.org/obo/OBI_0000011</IRI>
-        <Literal xml:lang="en">planned process</Literal>
+        <Literal>planned process</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000111"/>
         <IRI>http://purl.obolibrary.org/obo/OBI_0000011</IRI>
-        <Literal>planned process</Literal>
+        <Literal xml:lang="en">planned process</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
@@ -37536,12 +37536,12 @@ objectives is a planned process.</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/OBI_0000011</IRI>
-        <Literal xml:lang="en">planned process</Literal>
+        <Literal>planned process</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/OBI_0000011</IRI>
-        <Literal>planned process</Literal>
+        <Literal xml:lang="en">planned process</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000111"/>
