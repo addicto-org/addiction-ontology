@@ -13,7 +13,10 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:apollo_sv="http://purl.obolibrary.org/obo/apollo_sv.owl/">
     <owl:Ontology rdf:about="http://addictovocab.org/addicto.owl">
+        <owl:versionIRI rdf:resource="http://addictovocab.org/addicto.owl/2021-03-05"/>
         <owl:imports rdf:resource="http://addictovocab.org/addicto_external.owl"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Addiction Ontology (AddictO) is an ontology being developed all aspects of addiction research.</rdfs:comment>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-03-05</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -2744,6 +2747,16 @@
     
 
 
+    <!-- http://addictovocab.org/ADDICTO_0000409 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000409">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000399"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An identity that in which a person represents themselves as a vaper.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vaper identity</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://addictovocab.org/ADDICTO_0000410 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000410">
@@ -4287,12 +4300,33 @@
     
 
 
+    <!-- http://addictovocab.org/ADDICTO_0000716 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000716">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000399"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A previous identity that is no longer current</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lost identity</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://addictovocab.org/ADDICTO_0000717 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000717">
         <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000381"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A self identity in which a person represents themselves as a non-tobacco smoker and has a negative appraisal of ever having been a tobacco smoker.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non-smoker identity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0000718 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000718">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000399"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A stigmatised identity representation</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CN</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spoiled identity</rdfs:label>
     </owl:Class>
     
 
