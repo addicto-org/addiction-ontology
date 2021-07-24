@@ -48,6 +48,7 @@ class OntologyContentSchema(SchemaClass):
     label = TEXT(stored=True)
     definition = TEXT(stored=True)
     parent = KEYWORD(stored=True)
+    tobereviewedby = TEXT(stored=True)
 
 
 
@@ -172,6 +173,13 @@ def reIndexBCIO():
 #### Main function execution below here
 
 def main():
+
+# Add a field in the index:
+#writer.add_field("tobereviewedby", whoosh.fields.TEXT(stored=True))
+#writer.commit()
+#writer = ix.writer()
+
+
 #    os.chdir("/Users/hastingj/Work/Onto/addiction-ontology/")
 #    in_path = 'inputs'
 #    pattern = 'AddictO(.*).xlsx'

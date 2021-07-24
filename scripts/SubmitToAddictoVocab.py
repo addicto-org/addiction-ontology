@@ -49,15 +49,18 @@ def getFromAddictOVocabByLabel(label,pageNo=1,totPerPage=30):
     print(urlstring)
 
     r = requests.get(urlstring)
-    print(f"Get returned {r.status_code}")
+    #print(f"Get returned {r.status_code}")
     return ( r.json() )
 
 def getFromAddictOVocab(id):
     urlstring = AOVOCAB_API + GET_TERMS.format(id)
-    print(urlstring)
+    #print(urlstring)
     r = requests.get(urlstring)
-    print(f"Get returned {r.status_code}")
-    return (r.status_code, r.json())
+    #print(f"Get returned {r.status_code}")
+    if r.status_code == 404:
+        return (r.status_code, None)
+    else:
+        return (r.status_code, r.json())
 
 def getURIForID(id, prefix_dict):
     if "ADDICTO" in id:
@@ -202,7 +205,7 @@ def createTermInAddictOVocab(header,rowdata, prefix_dict, create=True,links=Fals
             urlstring = AOVOCAB_API + PATCH_TERMS.format(data['id'])
             r = requests.patch(urlstring, json = data, headers=headers)
             status = r.status_code
-        print(f"Create returned {r.status_code}, {r.reason}")
+        #print(f"Create returned {r.status_code}, {r.reason}")
         #if r.status_code in ['500',500,'400',400,'404',404]:
             #print(f"Problematic JSON: {json.dumps(data)}")
     except Exception as e:
@@ -287,7 +290,7 @@ for (header,test_entity) in entries.values():
     # get it first
     (status,entry) = getFromAddictOVocab(test_entity[0])
     if status == 200:
-        print("Found existing entry: ",id)
+        #print("Found existing entry: ",id)
         # Now check if existing status is 'published'. if yes don't patch without message... manually.
         existing_status = entry['curationStatus']
         if existing_status == 'published':

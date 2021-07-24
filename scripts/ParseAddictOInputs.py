@@ -97,7 +97,11 @@ for file in addicto_files:
                 try:
                     ecigo = int(ecigo)
                 except:
-                    ecigo = distutils.util.strtobool(ecigo)
+                    try:
+                        ecigo = distutils.util.strtobool(ecigo)
+                    except:
+                        print("Problem parsing value ",ecigo,"in sheet",sheet)
+                        ecigo = True
                 if ecigo and int(ecigo) == 1:
                     num_ecigo = num_ecigo + 1
 
@@ -163,7 +167,11 @@ for file in addicto_files:
                         try:
                             ecigo = int(ecigo)
                         except:
-                            ecigo = distutils.util.strtobool(ecigo)
+                            try:
+                                ecigo = distutils.util.strtobool(ecigo)
+                            except:
+                                print("Problem parsing value ",ecigo,"in sheet",sheet)
+                                ecigo = True
                         if ecigo and int(ecigo) == 1:
                             num_good_ecigo = num_good_ecigo + 1
 
@@ -171,17 +179,17 @@ for file in addicto_files:
     print(f"In file {file}, {len(good_entities)} GOOD.")
     total_good = total_good + len(good_entities)
 
-    # Assign them IDs
-    for (label,rowdata) in good_entities.items():
-        if not rowdata[0] or len(rowdata[0])==0:
-            rowdata[0] = "ADDICTO:"+str(next_id).zfill(digit_count)
-            next_id = next_id + 1
-        elif "ADDICTO:" in rowdata[0]:
-            print(f"Found existing internal id {rowdata[0]}")
-        else:
-            print(f"Found external id {rowdata[0]}")
-            external_entities[rowdata[0]] = rowdata
-        label_id_map[label] = rowdata[0]
+    # Assign them IDs DO THIS IN APP NOW
+#    for (label,rowdata) in good_entities.items():
+#        if not rowdata[0] or len(rowdata[0])==0:
+#            rowdata[0] = "ADDICTO:"+str(next_id).zfill(digit_count)
+#            next_id = next_id + 1
+#        elif "ADDICTO:" in rowdata[0]:
+#            print(f"Found existing internal id {rowdata[0]}")
+#        else:
+#            print(f"Found external id {rowdata[0]}")
+#            external_entities[rowdata[0]] = rowdata
+#        label_id_map[label] = rowdata[0]
 
     # If the parent is good too, replace its label with its ID
     for (label,rowdata) in good_entities.items():
@@ -452,4 +460,7 @@ robotWrapper.createOBOFile(importsOWLURI='http://addictovocab.org/addicto.owl',i
 
 # Annotate with version information
 # robot annotate --input addicto.owl --annotation rdfs:comment "The Addiction Ontology (AddictO) is an ontology being developed all aspects of addiction research." --annotation owl:versionInfo "2021-03-05" --ontology-iri "http://addictovocab.org/addicto.owl" --version-iri "http://addictovocab.org/addicto.owl/2021-03-05" --output addicto.owl
+#
+# Build the merged file for onto-edit
+# robot merge --input addicto.owl convert --output addicto-merged.owx
 
