@@ -72,7 +72,7 @@ if __name__ == '__main__':
     id_list = []
     label_list = []
     # path = "/home/tom/Documents/PROGRAMMING/Python/addiction-ontology/inputs" #test
-    files = getListOfFiles(path) 
+    files = getListOfFiles(path+"inputs")
     # print("files are: ", files)
     
 
@@ -102,7 +102,7 @@ if __name__ == '__main__':
     label_list = []
     for f in files:
         inputFileName = f
-        # print(inputFileName)
+        print(inputFileName)
         #error checking:
         fileName, file_extension = os.path.splitext(inputFileName)
         if file_extension == ".xlsx":

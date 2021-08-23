@@ -151,6 +151,18 @@ bar.finish()
 with open('detectedOntologyTerms.pkl', 'wb') as f:
     pickle.dump(detectedOntologyTerms, f)
 
+countryCounts = {}
+
+for PMID in allAuthorAffils:
+    authorAffils = allAuthorAffils[PMID]
+    for country in authorAffils:
+        if country in countryCounts:
+            countryCounts[country] = countryCounts[country]+1
+        else:
+            countryCounts[country] = 1
+
+
+
 ###
 ### Just from here for further analysis of existing detections
 ###
@@ -234,7 +246,23 @@ plt.title('Top 50 Ontology Term Occurrence Counts')
 
 plt.show()
 
+# THE COUNTRIES
 
+keys = countryCounts.keys()
+values = countryCounts.values()
+
+labels_sorted = [x for _,x in sorted(zip(values,keys),reverse=True)]
+counts_sorted = sorted(values,reverse=True)
+
+y_pos = np.arange(50)
+
+plt.bar(y_pos, counts_sorted[:50], align='center', alpha=0.5)
+plt.subplots_adjust(left=0.1, bottom=0.4, right=0.9, top=0.9)
+plt.xticks(y_pos, labels_sorted[:50], rotation='vertical',fontsize=8)
+plt.ylabel('Counts')
+plt.title('Top 50 Country Occurrence Counts')
+
+plt.show()
 
 # Just the tobacco and vaping related products counts?
 

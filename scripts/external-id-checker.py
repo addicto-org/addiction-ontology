@@ -23,8 +23,7 @@ if __name__ == '__main__':
     external_list = []
     id_list = []
     label_list = []
-    path = "/home/tom/Documents/PROGRAMMING/Python/addiction-ontology" #todo: add to args?
-
+    #path = "/home/tom/Documents/PROGRAMMING/Python/addiction-ontology" #todo: add to args?
 
     inputFileName = path + "/imports/" + "External_Imports.xlsx"
     wb = openpyxl.load_workbook(inputFileName) 
@@ -46,23 +45,24 @@ if __name__ == '__main__':
 
     allInfo = []
     for f in files:
-        inputFileName = path + "/inputs/" + f
-        wb = openpyxl.load_workbook(inputFileName) 
-        sheet = wb.active
-        data = sheet.rows
-        rows = []
-        header = [i.value for i in next(data)]
+        if f.endswith("xlsx"):
+            inputFileName = path + "/inputs/" + f
+            wb = openpyxl.load_workbook(inputFileName)
+            sheet = wb.active
+            data = sheet.rows
+            rows = []
+            header = [i.value for i in next(data)]
 
-        for row in sheet[2:sheet.max_row]:
-            values = {}
-            values["Sheet"] = f
-            for key, cell in zip(header, row):
-                if key == "ID" and cell.value != None:
-                    id_list.append(cell.value)
-                    values[key] = cell.value
-                if key == "Label" and cell.value != None:
-                    values[key] = cell.value
-            allInfo.append(values)
+            for row in sheet[2:sheet.max_row]:
+                values = {}
+                values["Sheet"] = f
+                for key, cell in zip(header, row):
+                    if key == "ID" and cell.value != None:
+                        id_list.append(cell.value)
+                        values[key] = cell.value
+                    if key == "Label" and cell.value != None:
+                        values[key] = cell.value
+                allInfo.append(values)
 
     # compare external_list to id_list and return duplicates:
     returnList = []

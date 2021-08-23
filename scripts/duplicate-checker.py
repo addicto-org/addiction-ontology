@@ -27,24 +27,27 @@ if __name__ == '__main__':
 
     allInfo = []
     for f in files:
-        print("checking: ", f, "...")
         inputFileName = path + "/inputs/" + f
-        wb = openpyxl.load_workbook(inputFileName) 
-        sheet = wb.active
-        data = sheet.rows
-        rows = []
-        header = [i.value for i in next(data)]
+        print("checking: '", inputFileName, "'...")
+        try:
+            wb = openpyxl.load_workbook(inputFileName)
+            sheet = wb.active
+            data = sheet.rows
+            rows = []
+            header = [i.value for i in next(data)]
 
-        for row in sheet[2:sheet.max_row]:
-            values = {}
-            values["Sheet"] = f
-            for key, cell in zip(header, row):
-                if key == "ID" and cell.value != None:
-                    id_list.append(cell.value) # just the ID's
-                    values[key] = cell.value
-                if key == "Label" and cell.value != None:
-                    values[key] = cell.value
-            allInfo.append(values) # all Sheet, ID, Label
+            for row in sheet[2:sheet.max_row]:
+                values = {}
+                values["Sheet"] = f
+                for key, cell in zip(header, row):
+                    if key == "ID" and cell.value != None:
+                        id_list.append(cell.value) # just the ID's
+                        values[key] = cell.value
+                    if key == "Label" and cell.value != None:
+                        values[key] = cell.value
+                allInfo.append(values) # all Sheet, ID, Label
+        except Exception as e:
+            print("Got an error ",e)
 
 
     #check from https://codefather.tech/blog/python-check-for-duplicates-in-list/
