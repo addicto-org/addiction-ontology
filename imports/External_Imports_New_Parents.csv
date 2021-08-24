@@ -9,3 +9,6 @@ http://purl.obolibrary.org/obo/PO_0025131,http://purl.obolibrary.org/obo/BFO_000
 http://purl.obolibrary.org/obo/OGMS_0000045,http://purl.obolibrary.org/obo/BFO_0000040,A disorder is a material entity
 http://purl.obolibrary.org/obo/UBERON_0000000,http://purl.obolibrary.org/obo/BFO_0000003,A processual entity is an occurrent
 http://purl.obolibrary.org/obo/CHEBI_50906,http://purl.obolibrary.org/obo/BFO_0000017,chebi role is a realizable
+http://purl.obolibrary.org/obo/OAE_0001000,http://purl.obolibrary.org/obo/BFO_0000016,Adverse effect is a disposition
+http://purl.obolibrary.org/obo/OAE_0000001,http://purl.obolibrary.org/obo/BFO_0000015,Adverse event is a process
+http://semanticscience.org/resource/SIO_000614,http://purl.obolibrary.org/obo/BFO_0000020,Attribute (from GSSO) is a specifically dependent continuant
