@@ -7464,10 +7464,6 @@
         <Class IRI="http://purl.obolibrary.org/obo/BFO_0000001"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000002"/>
-        <Class abbreviatedIRI="owl:Thing"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/BFO_0000003"/>
         <Class IRI="http://purl.obolibrary.org/obo/BFO_0000001"/>
     </SubClassOf>
