@@ -180,15 +180,16 @@ for file in addicto_files:
     total_good = total_good + len(good_entities)
 
     # Assign them IDs DO THIS IN APP NOW
-#    for (label,rowdata) in good_entities.items():
-#        if not rowdata[0] or len(rowdata[0])==0:
-#            rowdata[0] = "ADDICTO:"+str(next_id).zfill(digit_count)
-#            next_id = next_id + 1
-#        elif "ADDICTO:" in rowdata[0]:
-#            print(f"Found existing internal id {rowdata[0]}")
-#        else:
-#            print(f"Found external id {rowdata[0]}")
-#            external_entities[rowdata[0]] = rowdata
+    for (label,rowdata) in good_entities.items():
+        if not rowdata[0] or len(rowdata[0])==0:
+            rowdata[0] = "ADDICTO:"+str(next_id).zfill(digit_count)
+            next_id = next_id + 1
+        elif "ADDICTO:" in rowdata[0]:
+            pass
+            #print(f"Found existing internal id {rowdata[0]}")
+        else:
+            #print(f"Found external id {rowdata[0]}")
+            external_entities[rowdata[0]] = rowdata
 #        label_id_map[label] = rowdata[0]
 
     # If the parent is good too, replace its label with its ID
@@ -227,7 +228,7 @@ print(f"Finished extracting {total_good} good entities, "
 
 
 
-if True:
+if False:
     # # # -----------------------------
     # # # Only needed if IDs were added
     # Write newly generated IDs back to original files ID columns
@@ -268,22 +269,26 @@ if True:
 
 
 
+# Do this only when external entities change
 
 # Get the external entities from the file and display in the right format for the imports
+if False:
+    file = 'imports/external-entities.csv'
+    with open (file, 'r') as csvfile:
+        csvreader = csv.reader(csvfile)
+        idslabels = {}
 
-#file = 'imports/external-entities.csv'
-#with open (file, 'r') as csvfile:
-#    csvreader = csv.reader(csvfile)
+        for row in csvreader:
+            rowdata = row
+            id = rowdata[0]
+            label = rowdata[1]
+            idslabels[id] = label
 
-#    for row in csvreader:
-#        rowdata = row
-#        id = rowdata[0]
-#        label = rowdata[1]
-#        if "CHEBI" in id:
-#            print(label, ' [', id, ']', sep='', end=';')
+        for (id,label) in sorted(idslabels.items()):
+            #if "CHEBI" in id:
+            print(label, ' [', id, ']', sep='', end=';')
 
 
-# Do this only when external entities change
 if False:
 
     # External parents/targets of relations:
@@ -317,6 +322,9 @@ for line in reader:
 
 path = 'outputs'
 
+
+# Load the output files
+
 addicto_files = []
 
 for root, dirs_list, files_list in os.walk(path):
@@ -347,8 +355,6 @@ for filename in addicto_files:
             entries[id] = (header,rowdata)
 
 
-
-
 # Merge into a single spreadsheet for creating an input file for ROBOT to create an OWL file (entries built in submit to addicto vocab file)
 # First get merger of used headers
 all_headers = []
@@ -377,6 +383,7 @@ for id in entries:
 
     # exclude entities with nonexistent parents
     parentStr = rowdata[header.index('Parent')]
+    #print("Got parentstr: ",parentStr)
     parentVals = parentStr.split(";")
     parents = []
     for p in parentVals:
@@ -392,14 +399,14 @@ for id in entries:
             try:
                 id = getIdForLabel(p)
             except ValueError:
-                print("No ID found for ")
+                print("No ID found for ",p)
                 continue # Not found
             else:
                 parents.append(getCorrectFormForLabel(p)) # it has an id, but, we want the label
     if len(parents)>0:
         parent = ";".join(parents)
     else:
-        print ("No usable parents in",parentStr)
+        #print ("No usable parents in",parentStr)
         continue # SKIP THIS ENTRY
 
     for h in all_headers:
