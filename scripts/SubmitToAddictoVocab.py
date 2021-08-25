@@ -132,6 +132,8 @@ def createTermInAddictOVocab(header,rowdata, prefix_dict, create=True,links=Fals
             elif headerval == "Curator":
                 pass
             elif headerval == "Curation status":
+                if value in ['To Be Discussed','In Discussion']:
+                    value = "Proposed"
                 data['curationStatus'] = value
             elif headerval == "Why fuzzy":
                 data['fuzzyExplanation'] = value
@@ -310,15 +312,21 @@ for (header,test_entity) in entries.values():
             bad_entries.append(id)
 
 
+
 # Try again after fixing problems
-#for entry_id in bad_entries:
+
+#bad_entries_first = bad_entries
+#bad_entries = []
+
+
+#for entry_id in bad_entries_first:
 #    (header,test_entity) = entries[entry_id]
-#    id = test
-#    # get it first
+    #id = test
+    # get it first
 #    (entry,status) = getFromAddictOVocab(test_entity[0])
 #    if status == 200:
 #        print("Found existing entry: ",id)
-#        # Now check if existing status is 'published'. if yes don't patch without message... manually.
+        # Now check if existing status is 'published'. if yes don't patch without message... manually.
 #        existing_status = entry['curationStatus']
 #        if existing_status == 'published':
 #            print("Not patching ",id," as already published.")
@@ -403,6 +411,18 @@ for term in externalonto.terms():
         continue
 
 
+### ERRORS FROM LAST RUN
+
+
+# Status rejected
+#to_redo_422 = ["ADDICTO:0000714","ADDICTO:0000770", "ADDICTO:0000716", "ADDICTO:0000717", "ADDICTO:0000718", "ADDICTO:0000202", "ADDICTO:0000860", "ADDICTO:0000640" , "ADDICTO:0000146", "ADDICTO:0000883", "ADDICTO:0000884", "ADDICTO:0000149", "ADDICTO:0000456","ADDICTO:0000405", "ADDICTO:0000149","ADDICTO:0000479"]
+
+# Missing parent -- should have been fixed on the next iteration?
+#to_redo_400 = ["ADDICTO:0000847","ADDICTO:0000342","ADDICTO:0000351","ADDICTO:0000523","ADDICTO:0000352","ADDICTO:0000835", "ADDICTO:0000374", "ADDICTO:0000375", "ADDICTO:0000713", "ADDICTO:0000776", "ADDICTO:0000781", "ADDICTO:0000780", "ADDICTO:0000389", "ADDICTO:0000842", "ADDICTO:0000391", "ADDICTO:0000513", "ADDICTO:0000846", "ADDICTO:0000405", "ADDICTO:0000849", "ADDICTO:0000938" , "ADDICTO:0000941", "ADDICTO:0000410", "ADDICTO:0000870", "ADDICTO:0000872", "ADDICTO:0000873", "ADDICTO:0000191", "ADDICTO:0000892", "ADDICTO:0000919", "ADDICTO:0000195", "ADDICTO:0000532", "ADDICTO:0000534", "ADDICTO:0000748" , "ADDICTO:0000906", "ADDICTO:0000820", "ADDICTO:0000754", "ADDICTO:0000258", "ADDICTO:0000259", "ADDICTO:0000260", "ADDICTO:0000261", "ADDICTO:0000755", "ADDICTO:0000759" , "ADDICTO:0000630", "ADDICTO:0000631", "ADDICTO:0000108", "ADDICTO:0000112", "ADDICTO:0000113", "ADDICTO:0000649", "ADDICTO:0000634", "ADDICTO:0000644", "ADDICTO:0000637", "ADDICTO:0000638", "ADDICTO:0000635", "ADDICTO:0000636" , "ADDICTO:0000648", "ADDICTO:0000633", "ADDICTO:0000665", "ADDICTO:0000679", "ADDICTO:0000700", "ADDICTO:0000655", "ADDICTO:0000656", "ADDICTO:0000658", "ADDICTO:0000666", "ADDICTO:0000672", "ADDICTO:0000669", "ADDICTO:0000670", "ADDICTO:0000667", "ADDICTO:0000668", "ADDICTO:0000675", "ADDICTO:0000722", "ADDICTO:0000680", "ADDICTO:0000686", "ADDICTO:0000683", "ADDICTO:0000684", "ADDICTO:0000681", "ADDICTO:0000682", "ADDICTO:0000688", "ADDICTO:0000651", "ADDICTO:0000689", "ADDICTO:0000710", "ADDICTO:0000729", "ADDICTO:0000701", "ADDICTO:0000707", "ADDICTO:0000704", "ADDICTO:0000705", "ADDICTO:0000702", "ADDICTO:0000703", "ADDICTO:0000709", "IAO:0000310", "ADDICTO:0000170", "ADDICTO:0000152", "ADDICTO:0000171", "ADDICTO:0000477", "ADDICTO:0000479"]
+
+# Need revision message
+#published_status = ["ADDICTO:0000367", "ADDICTO:0000715", "ADDICTO:0000381", "ADDICTO:0000399", "ADDICTO:0000406", "ADDICTO:0000308", "ADDICTO:0000893", "ADDICTO:0000737" , "ADDICTO:0000794", "ADDICTO:0000198", "ADDICTO:0000199", "ADDICTO:0000200", "ADDICTO:0000201", "ADDICTO:0000743",  "ADDICTO:0000207", "ADDICTO:0000209", "ADDICTO:0000531", "ADDICTO:0000212", "ADDICTO:0000923", "ADDICTO:0000232", "ADDICTO:0000231", "ADDICTO:0000897", "ADDICTO:0000246", "ADDICTO:0000245", "ADDICTO:0000535", "ADDICTO:0000249", "ADDICTO:0000254", "ADDICTO:0000294", "ADDICTO:0000257", "ADDICTO:0000295", "ADDICTO:0000271", "ADDICTO:0000279" , "ADDICTO:0000292", "ADDICTO:0000907", "ADDICTO:0000303", "ADDICTO:0000305", "ADDICTO:0000311", "ADDICTO:0000316"]
+
 
 
 ### SUBMIT JUST ONE CHANGE TO AN ENTRY WITH A SPECIFIED ID:
@@ -410,14 +430,16 @@ for term in externalonto.terms():
 # Find an entry with a given ID
 # Patch it (in full) with a revision message
 
-idtochange = 'ADDICTO:0000308' # FDA tobacco product.
+# idtochange = 'ADDICTO:0000308' # FDA tobacco product.
+# idstochange = ['ADDICTO:0000308','ADDICTO:0000200','ADDICTO:0000201','ADDICTO:0000207','ADDICTO:0000295','ADDICTO:0000279','ADDICTO:0000292','ADDICTO:0000303','ADDICTO:0000305','ADDICTO:0000311']
 
-idstochange = ['ADDICTO:0000308','ADDICTO:0000200','ADDICTO:0000201','ADDICTO:0000207','ADDICTO:0000295','ADDICTO:0000279','ADDICTO:0000292','ADDICTO:0000303','ADDICTO:0000305','ADDICTO:0000311']
+idstochange = published_status
+revisionmsg="August ADDICTO release"
 
 for idtochange in idstochange:
     (header,rowdata) = entries[idtochange]
     # Patch it:
-    (status,jsonstr) = createTermInAddictOVocab(header, rowdata, prefix_dict, create=False, links=True, revision_msg="Minor revision")
+    (status,jsonstr) = createTermInAddictOVocab(header, rowdata, prefix_dict, create=False, links=True, revision_msg=revisionmsg)
     if status != 200:
         print(status, ": Problem patching term ",id,"with JSON: ",jsonstr)
 
