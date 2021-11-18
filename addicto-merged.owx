@@ -6,7 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://addictovocab.org/addicto.owl"
-     versionIRI="http://addictovocab.org/addicto.owl/2021-08-24">
+     versionIRI="http://addictovocab.org/addicto.owl/2021-11-18">
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -18,7 +18,7 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
-        <Literal>2021-08-24</Literal>
+        <Literal>2021-11-18</Literal>
     </Annotation>
     <Declaration>
         <Class IRI="http://addictovocab.org/ADDICTO_0000101"/>
@@ -88,9 +88,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://addictovocab.org/ADDICTO_0000124"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://addictovocab.org/ADDICTO_0000126"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://addictovocab.org/ADDICTO_0000127"/>
@@ -582,15 +579,6 @@
         <Class IRI="http://addictovocab.org/ADDICTO_0000317"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://addictovocab.org/ADDICTO_0000319"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://addictovocab.org/ADDICTO_0000320"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://addictovocab.org/ADDICTO_0000321"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://addictovocab.org/ADDICTO_0000322"/>
     </Declaration>
     <Declaration>
@@ -795,9 +783,6 @@
         <Class IRI="http://addictovocab.org/ADDICTO_0000408"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://addictovocab.org/ADDICTO_0000409"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://addictovocab.org/ADDICTO_0000410"/>
     </Declaration>
     <Declaration>
@@ -883,6 +868,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://addictovocab.org/ADDICTO_0000440"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://addictovocab.org/ADDICTO_0000441"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://addictovocab.org/ADDICTO_0000442"/>
@@ -1323,9 +1311,6 @@
         <Class IRI="http://addictovocab.org/ADDICTO_0000712"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://addictovocab.org/ADDICTO_0000713"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://addictovocab.org/ADDICTO_0000714"/>
     </Declaration>
     <Declaration>
@@ -1539,9 +1524,6 @@
         <Class IRI="http://addictovocab.org/ADDICTO_0000794"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://addictovocab.org/ADDICTO_0000795"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://addictovocab.org/ADDICTO_0000796"/>
     </Declaration>
     <Declaration>
@@ -1636,9 +1618,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://addictovocab.org/ADDICTO_0000827"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://addictovocab.org/ADDICTO_0000828"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://addictovocab.org/ADDICTO_0000829"/>
@@ -2386,6 +2365,24 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://addictovocab.org/ADDICTO_0001139"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://addictovocab.org/ADDICTO_0001140"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://addictovocab.org/ADDICTO_0001141"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://addictovocab.org/ADDICTO_0001142"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://addictovocab.org/ADDICTO_0001143"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://addictovocab.org/ADDICTO_0001144"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://addictovocab.org/ADDICTO_0001145"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://humanbehaviourchange.org/ontology/BCIO_003000"/>
@@ -3788,10 +3785,6 @@
         <Class IRI="http://purl.obolibrary.org/obo/BFO_0000035"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://addictovocab.org/ADDICTO_0000126"/>
-        <Class IRI="http://addictovocab.org/ADDICTO_0000319"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="http://addictovocab.org/ADDICTO_0000127"/>
         <Class IRI="http://humanbehaviourchange.org/ontology/BCIO_042000"/>
     </SubClassOf>
@@ -4017,7 +4010,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://addictovocab.org/ADDICTO_0000194"/>
-        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000030"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://addictovocab.org/ADDICTO_0000195"/>
@@ -4605,18 +4598,6 @@
         <Class IRI="http://addictovocab.org/ADDICTO_0000827"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://addictovocab.org/ADDICTO_0000319"/>
-        <Class IRI="http://addictovocab.org/ADDICTO_0000127"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://addictovocab.org/ADDICTO_0000320"/>
-        <Class IRI="http://humanbehaviourchange.org/ontology/BCIO_037000"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://addictovocab.org/ADDICTO_0000321"/>
-        <Class IRI="http://purl.obolibrary.org/obo/OBI_0000011"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="http://addictovocab.org/ADDICTO_0000322"/>
         <Class IRI="http://addictovocab.org/ADDICTO_0000324"/>
     </SubClassOf>
@@ -4887,10 +4868,6 @@
     <SubClassOf>
         <Class IRI="http://addictovocab.org/ADDICTO_0000408"/>
         <Class IRI="http://addictovocab.org/ADDICTO_0000407"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://addictovocab.org/ADDICTO_0000409"/>
-        <Class IRI="http://addictovocab.org/ADDICTO_0000399"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://addictovocab.org/ADDICTO_0000410"/>
@@ -5212,6 +5189,10 @@
         <Class IRI="http://purl.obolibrary.org/obo/ENVO_00002221"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="http://addictovocab.org/ADDICTO_0000441"/>
+        <Class IRI="http://purl.obolibrary.org/obo/OMRSE_00000114"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="http://addictovocab.org/ADDICTO_0000442"/>
         <Class IRI="http://addictovocab.org/ADDICTO_0000515"/>
     </SubClassOf>
@@ -5253,7 +5234,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://addictovocab.org/ADDICTO_0000456"/>
-        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000104"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000007"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://addictovocab.org/ADDICTO_0000457"/>
@@ -5369,7 +5350,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://addictovocab.org/ADDICTO_0000514"/>
-        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000017"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000020"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://addictovocab.org/ADDICTO_0000515"/>
@@ -5803,10 +5784,6 @@
         <Class IRI="http://addictovocab.org/ADDICTO_0000721"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://addictovocab.org/ADDICTO_0000713"/>
-        <Class IRI="http://semanticscience.org/resource/SIO_000498"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="http://addictovocab.org/ADDICTO_0000714"/>
         <Class IRI="http://addictovocab.org/ADDICTO_0000399"/>
     </SubClassOf>
@@ -6140,10 +6117,6 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://addictovocab.org/ADDICTO_0000795"/>
-        <Class IRI="http://addictovocab.org/ADDICTO_0000713"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="http://addictovocab.org/ADDICTO_0000796"/>
         <Class IRI="http://addictovocab.org/ADDICTO_0000353"/>
     </SubClassOf>
@@ -6284,10 +6257,6 @@
     <SubClassOf>
         <Class IRI="http://addictovocab.org/ADDICTO_0000827"/>
         <Class IRI="http://purl.obolibrary.org/obo/BFO_0000040"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://addictovocab.org/ADDICTO_0000828"/>
-        <Class IRI="http://addictovocab.org/ADDICTO_0000713"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://addictovocab.org/ADDICTO_0000829"/>
@@ -7272,7 +7241,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://addictovocab.org/ADDICTO_0001107"/>
-        <Class IRI="http://addictovocab.org/ADDICTO_0001109"/>
+        <Class IRI="http://addictovocab.org/ADDICTO_0001142"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://addictovocab.org/ADDICTO_0001109"/>
@@ -7410,6 +7379,30 @@
     <SubClassOf>
         <Class IRI="http://addictovocab.org/ADDICTO_0001139"/>
         <Class IRI="http://addictovocab.org/ADDICTO_0000257"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://addictovocab.org/ADDICTO_0001140"/>
+        <Class IRI="http://purl.obolibrary.org/obo/MF_0000032"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://addictovocab.org/ADDICTO_0001141"/>
+        <Class IRI="http://addictovocab.org/ADDICTO_0000399"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://addictovocab.org/ADDICTO_0001142"/>
+        <Class IRI="http://addictovocab.org/ADDICTO_0000456"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://addictovocab.org/ADDICTO_0001143"/>
+        <Class IRI="http://addictovocab.org/ADDICTO_0001144"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://addictovocab.org/ADDICTO_0001144"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://addictovocab.org/ADDICTO_0001145"/>
+        <Class IRI="http://addictovocab.org/ADDICTO_0000514"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://humanbehaviourchange.org/ontology/BCIO_003000"/>
@@ -9567,16 +9560,6 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>http://addictovocab.org/ADDICTO_0000126</IRI>
-        <Literal>A drug use behaviour in which the drug is codeine.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://addictovocab.org/ADDICTO_0000126</IRI>
-        <Literal>codeine use</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://addictovocab.org/ADDICTO_0000127</IRI>
         <Literal>Behaviour in which a person consumes, ingests or takes an entity into themselves.</Literal>
     </AnnotationAssertion>
@@ -10398,7 +10381,7 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://addictovocab.org/ADDICTO_0000194</IRI>
-        <Literal>A product label that is used by a person or organisation to denote and promote the product.</Literal>
+        <Literal>An information content entity that is used by a person or organisation to denote and promote a product.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
@@ -10913,7 +10896,7 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://addictovocab.org/ADDICTO_0000216</IRI>
-        <Literal>A product that is a component of an e-cigarette and consists of an e-cigarette atomiser surrounded by a liquid-soaked poly-foam that acts as an e-liquid holder.</Literal>
+        <Literal>A product that is a part of an e-cigarette and consists of an e-cigarette atomiser surrounded by a liquid-soaked poly-foam that acts as an e-liquid holder.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -12342,36 +12325,6 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>http://addictovocab.org/ADDICTO_0000319</IRI>
-        <Literal>A consumption behaviour in which the substance ingested includes a psychoactive drug.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://addictovocab.org/ADDICTO_0000319</IRI>
-        <Literal>drug use behaviour</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>http://addictovocab.org/ADDICTO_0000320</IRI>
-        <Literal>An intervention that realises a government policy.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://addictovocab.org/ADDICTO_0000320</IRI>
-        <Literal>public policy intervention</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>http://addictovocab.org/ADDICTO_0000321</IRI>
-        <Literal>A planned process in which a service provider performs a task  for a service consumer.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://addictovocab.org/ADDICTO_0000321</IRI>
-        <Literal>service</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://addictovocab.org/ADDICTO_0000322</IRI>
         <Literal>Mortality in a population in which the deaths in question are at least partly caused by the consumption of alcohol by people in that population.</Literal>
     </AnnotationAssertion>
@@ -12548,7 +12501,7 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://addictovocab.org/ADDICTO_0000349</IRI>
-        <Literal>A psychological disposition towards repeated episodes of abnormally high levels of motivation to engage in a behaviour, acquired as a result of engaging in the behaviour, where the behaviour results in risk or occurrence of serious net harm.</Literal>
+        <Literal>A mental disposition towards repeated episodes of abnormally high levels of motivation to engage in a behaviour, acquired as a result of engaging in the behaviour, where the behaviour results in risk or occurrence of serious net harm.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
@@ -12813,7 +12766,7 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://addictovocab.org/ADDICTO_0000367</IRI>
-        <Literal>A self identity that is enduring and is appraised as important by the person who has the identity.</Literal>
+        <Literal>A self-identity that is enduring and is appraised as important by the person who has the identity.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -13009,6 +12962,11 @@
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://addictovocab.org/ADDICTO_0000387</IRI>
         <Literal>An ever-tobacco smoker who has participated in tobacco smoking within the past 30 days.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>http://addictovocab.org/ADDICTO_0000387</IRI>
+        <Literal>past-20 day smoker</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -13213,7 +13171,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://addictovocab.org/ADDICTO_0000399</IRI>
-        <Literal>self identity</Literal>
+        <Literal>self-identity</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -13288,6 +13246,16 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
         <IRI>http://addictovocab.org/ADDICTO_0000405</IRI>
+        <Literal>current smoker</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>http://addictovocab.org/ADDICTO_0000405</IRI>
+        <Literal>current tobacco smoker</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>http://addictovocab.org/ADDICTO_0000405</IRI>
         <Literal>smoker</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -13303,7 +13271,7 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://addictovocab.org/ADDICTO_0000406</IRI>
-        <Literal>A self identity in which a person represents themselves as a tobacco smoker.</Literal>
+        <Literal>A self-identity in which a person represents themselves as a tobacco smoker.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -13329,16 +13297,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://addictovocab.org/ADDICTO_0000408</IRI>
         <Literal>urge to smoke</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>http://addictovocab.org/ADDICTO_0000409</IRI>
-        <Literal>An identity in which a person represents themselves as a vaper.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://addictovocab.org/ADDICTO_0000409</IRI>
-        <Literal>vaper identity</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -13757,6 +13715,21 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://addictovocab.org/ADDICTO_0000441</IRI>
+        <Literal>An emergency department facility that is part of a university hospital.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000232"/>
+        <IRI>http://addictovocab.org/ADDICTO_0000441</IRI>
+        <Literal>No appropriate definition found. Definition based on usage.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://addictovocab.org/ADDICTO_0000441</IRI>
+        <Literal>academic emergency department facility</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://addictovocab.org/ADDICTO_0000442</IRI>
         <Literal>A personal role that is the extent to which a person can acquire a product.</Literal>
     </AnnotationAssertion>
@@ -13883,7 +13856,7 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://addictovocab.org/ADDICTO_0000456</IRI>
-        <Literal>An action specification that an organisation produces that includes rules and regulations concerning activities of agents under the organisation&apos;s jurisdiction.</Literal>
+        <Literal>An action specification sets rules and regulations concerning activities of agents under a person&apos;s or organisation&apos;s jurisdiction.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -14243,17 +14216,17 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://addictovocab.org/ADDICTO_0000514</IRI>
-        <Literal>A specifically dependent continuant that inheres in a person</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>http://addictovocab.org/ADDICTO_0000514</IRI>
-        <Literal>Defined in NCIT as &quot;The distinguishing qualities or prominent aspects of an individual person.&quot;</Literal>
+        <Literal>A specifically dependent continuant that inheres in a person.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000232"/>
         <IRI>http://addictovocab.org/ADDICTO_0000514</IRI>
         <Literal>The BCIO population ontology individuals branch defines many personal attributes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://addictovocab.org/ADDICTO_0000514</IRI>
+        <Literal>Includes everything that can be said about a person: the most general class under which all other qualities, dispositions, roles etc belong.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -15567,28 +15540,8 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>http://addictovocab.org/ADDICTO_0000713</IRI>
-        <Literal>A person who has, in the past, been a tobacco smoker.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
-        <IRI>http://addictovocab.org/ADDICTO_0000713</IRI>
-        <Literal>former smoker</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>http://addictovocab.org/ADDICTO_0000713</IRI>
-        <Literal>CN</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://addictovocab.org/ADDICTO_0000713</IRI>
-        <Literal>ex-smoker</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://addictovocab.org/ADDICTO_0000714</IRI>
-        <Literal>A self identity in which a person represents themselves as having previously smoked but currently being a non-smoker.</Literal>
+        <Literal>A self-identity in which a person represents themselves as having previously been a smoker but currently not being a smoker.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
@@ -15618,17 +15571,17 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://addictovocab.org/ADDICTO_0000716</IRI>
-        <Literal>A previous self identity that is not represented as current.</Literal>
+        <Literal>A self-identity in which a person has a representation that they positively appraise of themselves in the past.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://addictovocab.org/ADDICTO_0000716</IRI>
-        <Literal>lost identity</Literal>
+        <Literal>lost self-identity</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://addictovocab.org/ADDICTO_0000717</IRI>
-        <Literal>A self identity in which a person represents themselves as a non-smoker.</Literal>
+        <Literal>A self-identity in which a person represents themselves as a non-smoker.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -15638,7 +15591,7 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://addictovocab.org/ADDICTO_0000718</IRI>
-        <Literal>A stigmatised identity representation.</Literal>
+        <Literal>A self-identity that was previously positively appraised and is now negatively appraised.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
@@ -15648,7 +15601,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://addictovocab.org/ADDICTO_0000718</IRI>
-        <Literal>spoiled identity</Literal>
+        <Literal>spoiled self-identity</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -16526,14 +16479,29 @@
         <Literal>non-psychoactive substance user</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>http://addictovocab.org/ADDICTO_0000782</IRI>
+        <Literal>An example using this definition: https://onlinelibrary.wiley.com/doi/full/10.1111/add.15295</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://addictovocab.org/ADDICTO_0000782</IRI>
         <Literal>An ever-tobacco smoker who has participated in tobacco smoking within the past year.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
         <IRI>http://addictovocab.org/ADDICTO_0000782</IRI>
         <Literal>past-year smoker</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://addictovocab.org/ADDICTO_0000782</IRI>
+        <Literal>This definition is commonly used in outputs from the Smoking Toolkit Study. It refers to those who affirm smoking any tobacco products within the past 12 months. For more info see: www.smokinginengland.info</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://addictovocab.org/ADDICTO_0000782</IRI>
+        <Literal>past-year tobacco smoker</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -16724,26 +16692,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://addictovocab.org/ADDICTO_0000794</IRI>
         <Literal>carcinogen</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>http://addictovocab.org/ADDICTO_0000795</IRI>
-        <Literal>An ex-smoker who reports being at risk of relapse to smoking.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
-        <IRI>http://addictovocab.org/ADDICTO_0000795</IRI>
-        <Literal>risk-relapse</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://addictovocab.org/ADDICTO_0000795</IRI>
-        <Literal>If possible how risk of relapse is being defined should be stated.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://addictovocab.org/ADDICTO_0000795</IRI>
-        <Literal>adult at risk of relapse to smoking</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -17264,36 +17212,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://addictovocab.org/ADDICTO_0000827</IRI>
         <Literal>product part</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>http://addictovocab.org/ADDICTO_0000828</IRI>
-        <Literal>An ex-smoker who has quit less than a year ago.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
-        <IRI>http://addictovocab.org/ADDICTO_0000828</IRI>
-        <Literal> former smoker</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
-        <IRI>http://addictovocab.org/ADDICTO_0000828</IRI>
-        <Literal> recent quitter</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
-        <IRI>http://addictovocab.org/ADDICTO_0000828</IRI>
-        <Literal>past smoker</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://addictovocab.org/ADDICTO_0000828</IRI>
-        <Literal>This is a fuzzy because the time frame is not universally agreed and if this term is used the reference to recent must be defined.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://addictovocab.org/ADDICTO_0000828</IRI>
-        <Literal>recent ex-smoker</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -20036,7 +19954,7 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://addictovocab.org/ADDICTO_0001015</IRI>
-        <Literal>A smokeless tobacco-containing product that is designed for oral use, in which boiled and dried tobacco leaves are mixed with lime, spices and vegetable dyes  to make a flaky product. Zarda is commercially manufactured, and it may be chewed by itself, or with chopped areca nuts and spices, or added as an ingredient in betel quid.</Literal>
+        <Literal>A smokeless tobacco-containing product that is designed for oral use, in which boiled and dried tobacco leaves are mixed with lime, spices and vegetable dyes  to make a flaky product.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
@@ -20730,7 +20648,7 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://addictovocab.org/ADDICTO_0001072</IRI>
-        <Literal>An addiction that is to a substance containing nicotine.</Literal>
+        <Literal>Addiction to use of a nicotine-containing product.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -21130,7 +21048,7 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://addictovocab.org/ADDICTO_0001107</IRI>
-        <Literal>A public policy whose aim is to reduce the harm to a population from continued use of a psychoactive substance by members of that population.</Literal>
+        <Literal>A social policy whose aim is to reduce the harm to a population from continued use of a psychoactive substance by members of that population.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
@@ -21240,7 +21158,7 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://addictovocab.org/ADDICTO_0001117</IRI>
-        <Literal>A product that is designed to be part of a cigarette located at the end that the user puts to the lips and to block some smoke particles from entering the mouth during use.</Literal>
+        <Literal>A product that is designed to be part of a cigarette, located at the end that the user puts to the lips, which blocks some smoke particles from entering the mouth during use.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -21486,6 +21404,91 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://addictovocab.org/ADDICTO_0001139</IRI>
         <Literal>nicotine replacement therapy product</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://addictovocab.org/ADDICTO_0001140</IRI>
+        <Literal>A bodily disposition which is realised as impaired functioning following reduction or termination of use of a psychoactive substance.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://addictovocab.org/ADDICTO_0001140</IRI>
+        <Literal>substance dependence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://addictovocab.org/ADDICTO_0001141</IRI>
+        <Literal>A self-identity in which a person represents themselves as an e-cigarette user.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>http://addictovocab.org/ADDICTO_0001141</IRI>
+        <Literal>vaper identity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://addictovocab.org/ADDICTO_0001141</IRI>
+        <Literal>e-cigarette user identity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://addictovocab.org/ADDICTO_0001142</IRI>
+        <Literal>A plan detailing guidelines, principles, legislation and activities that affect the living conditions conducive to human welfare, such as a person&apos;s quality of life.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://addictovocab.org/ADDICTO_0001142</IRI>
+        <Literal>https://www.ebi.ac.uk/ols/ontologies/gsso/terms?iri=http://purl.obolibrary.org/obo/GSSO_008961andviewMode=Allandsiblings=false</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000232"/>
+        <IRI>http://addictovocab.org/ADDICTO_0001142</IRI>
+        <Literal>This is drawn from the GSSO but with wording and parentage corrected.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://addictovocab.org/ADDICTO_0001142</IRI>
+        <Literal>social policy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://addictovocab.org/ADDICTO_0001143</IRI>
+        <Literal>A personal disposition to experience motives in the performance of a professional role that are not aligned with the responsibilities of that role.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000232"/>
+        <IRI>http://addictovocab.org/ADDICTO_0001143</IRI>
+        <Literal>Curator note: The definition was adapted from the PLOS definition. https://journals.plos.org/plosbiology/s/competing-interests</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://addictovocab.org/ADDICTO_0001143</IRI>
+        <Literal>competing interest</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://addictovocab.org/ADDICTO_0001144</IRI>
+        <Literal>A disposition that inheres in a person.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://addictovocab.org/ADDICTO_0001144</IRI>
+        <Literal>personal disposition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://addictovocab.org/ADDICTO_0001145</IRI>
+        <Literal>A personal attribute that could lead to a competing interest.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://addictovocab.org/ADDICTO_0001145</IRI>
+        <Literal>Potential competing interests must be distinguished from competing interests. They should always be declared so that stakeholders can form a judgement about whether bias is likely to be present. However, it would be wrong to assume that they necessarily lead to bias.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://addictovocab.org/ADDICTO_0001145</IRI>
+        <Literal>potential competing interest</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
