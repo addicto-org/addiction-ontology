@@ -152,8 +152,8 @@ def createTermInAddictOVocab(header,rowdata, prefix_dict, create=True,links=Fals
                         print(f"No ID found for label {value}, skipping")
                         continue
                 else:
-                    for val in vals:
-                        value = vals[0]
+                    for value in vals:
+                        #value = vals[0]
                         try:
                             value = getIdForLabel(value)
                             data['parentTerm'] = f"/terms/{value}"
@@ -261,6 +261,7 @@ for root, dirs_list, files_list in os.walk(path):
 
 entries = {}
 bad_entries = []
+revisionmsg="November ADDICTO release"
 
 # All the external content + hierarchy is in the file addicto_external.obo
 # Must be parsed and sent to AOVocab.
@@ -296,7 +297,32 @@ for (header,test_entity) in entries.values():
         # Now check if existing status is 'published'. if yes don't patch without message... manually.
         existing_status = entry['curationStatus']
         if existing_status == 'published':
-            print("Not patching ",id," as already published.")
+            #print("Not patching ",id," as already published.")
+            # Only patch if changed. Get the latest revision:
+            termRevision = entry['termRevisions'][0]
+            for t in entry['termRevisions']:
+                if 'modifiedAt' in t and  t['modifiedAt']>=termRevision['modifiedAt']:
+                    termRevision=t
+            print("Got latest revision mod. at",termRevision['modifiedAt'])
+            termLabel = termRevision['label']
+            termDef = termRevision['definition']
+            if 'parentTerm' in termRevision:
+                termParent = termRevision['parentTerm']
+            else:
+                termParent = ""
+
+            newLabel = test_entity[header.index("Label")]
+            newDef = test_entity[header.index("Definition")]
+            newParent =getIdForLabel(test_entity[header.index('Parent')])
+            newParent = f"/terms/{newParent}"
+            CHANGED = False
+            if termLabel != newLabel or termDef != newDef or termParent != newParent:
+                print("PUBLISHED TERM CHANGED: ",id,"ORIG",termLabel,termDef,termParent,"CH TO",newLabel,newDef,newParent,"Patching...")
+                # Patch it:
+                (status,jsonstr) = createTermInAddictOVocab(header, test_entity, prefix_dict, create=False, links=True, revision_msg=revisionmsg)
+                if status != 200:
+                    print(status, ": Problem patching term ",id,"with JSON: ",jsonstr)
+
         else:
             # Now patch.
             (status, jsonstr) = createTermInAddictOVocab(header,test_entity,prefix_dict, create=False, links=True)
@@ -411,6 +437,27 @@ for term in externalonto.terms():
         continue
 
 
+
+### Add parents for published entries i!!!
+
+for id in entries:
+    (header,rowdata) = entries[id]
+    # Check if need to patch it:
+    (status, entry) = getFromAddictOVocab(id)
+    if status == 200:
+        if entry['curationStatus'] == 'published':
+            if 'parentTerm' not in entry['termRevisions'][0].keys():
+                #print("Parent of ",id,"is",entry['termRevisions'][0]['parentTerm'])
+                print("Term",id,"appears to have no parent. Patching...")
+                (header,rowdata) = entries[id]
+                # Patch it:
+                (status,jsonstr) = createTermInAddictOVocab(header, rowdata, prefix_dict, create=False, links=True, revision_msg=revisionmsg)
+                if status != 200:
+                    print(status, ": Problem patching term ",id,"with JSON: ",jsonstr)
+
+
+
+
 ### ERRORS FROM LAST RUN
 
 
@@ -434,7 +481,7 @@ for term in externalonto.terms():
 # idstochange = ['ADDICTO:0000308','ADDICTO:0000200','ADDICTO:0000201','ADDICTO:0000207','ADDICTO:0000295','ADDICTO:0000279','ADDICTO:0000292','ADDICTO:0000303','ADDICTO:0000305','ADDICTO:0000311']
 
 idstochange = published_status
-revisionmsg="August ADDICTO release"
+revisionmsg="November ADDICTO release"
 
 for idtochange in idstochange:
     (header,rowdata) = entries[idtochange]
