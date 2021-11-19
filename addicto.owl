@@ -1811,6 +1811,16 @@
     
 
 
+    <!-- http://addictovocab.org/ADDICTO_0000270 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000270">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000262"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A nicotine replacement therapy product that can be sold to a person without the need for a prescription.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">over the counter nicotine replacement therapy</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://addictovocab.org/ADDICTO_0000271 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000271">
@@ -1866,6 +1876,17 @@
         <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000752"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A medicine that can only be provided to a patient in a jurisdiction if authorised by a prescription.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prescription-only medicine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0000277 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000277">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000262"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A nicotine replacement therapy that is prescribed to a person by a medical practitioner.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Prescription NRT</obo:IAO_0000118>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prescription nicotine replacement therapy</rdfs:label>
     </owl:Class>
     
 
@@ -3034,6 +3055,16 @@
         <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000407"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An urge in which the behaviour that is the target of the feeling is smoking.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urge to smoke</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0000409 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000409">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000399"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An identity in which a person represents themselves as a vaper.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vaper identity</rdfs:label>
     </owl:Class>
     
 
@@ -5074,6 +5105,20 @@
     
 
 
+    <!-- http://addictovocab.org/ADDICTO_0000713 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000713">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000713"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A person who has tobacco smoking cessation as part of their history and who has ex-tobacco smoker as part of their identity.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> ex-smoker</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">former smoker</obo:IAO_0000118>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CN</obo:IAO_0000119>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This definition combines the behaviour of not longer smoking and the identity of being as ex-smoker in order to ensure that it excludes people who currently do not smoke because of external constraints such as unavailability of cigarettes. Because cessation is part of the definition it is essential to specify how long since the behaviour pattern of tobacco smoking stopped. It specifies tobacco smoking as the behaviour pattern and so includes all forms of tobacco smoking.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ex-tobacco smoker</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://addictovocab.org/ADDICTO_0000714 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000714">
@@ -5915,6 +5960,18 @@
     
 
 
+    <!-- http://addictovocab.org/ADDICTO_0000795 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000795">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000713"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ex-smoker who reports being at risk of relapse to smoking.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">risk-relapse</obo:IAO_0000118>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">If possible how risk of relapse is being defined should be stated.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">adult at risk of relapse to smoking</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://addictovocab.org/ADDICTO_0000796 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000796">
@@ -6283,6 +6340,20 @@
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A material entity that is a component of another product.</obo:IAO_0000115>
         <obo:IAO_0000232 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">We use the term &apos;proper part&apos; to ensure clarity in that in formal theories, everything is a part of itself.</obo:IAO_0000232>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">product part</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0000828 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000828">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000713"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ex-smoker who has quit less than a year ago.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> former smoker</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> recent quitter</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">past smoker</obo:IAO_0000118>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This is a fuzzy because the time frame is not universally agreed and if this term is used the reference to recent must be defined.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">recent ex-smoker</rdfs:label>
     </owl:Class>
     
 
@@ -8938,6 +9009,17 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> it can include whole commodities such as tobacco.</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This entity is defined in terms of the aims of a policy rather than its effect. It is distinguished from harm reduction behaviour. It includes attempting to get people to reduce their use of the substance, change their pattern of use, change the type or formulation of the substance they consume. Note that the substance does not just include the psychoactive drug</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">harm reduction policy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001108 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001108">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000721"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Substance use that involves continuing to use a substance while changing the type of substance, formulation of the substance or the amount or manner of use of the substance with the aim of reducing the harm caused.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">harm minimisation behaviour</obo:IAO_0000118>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">harm reduction behaviour</rdfs:label>
     </owl:Class>
     
 
