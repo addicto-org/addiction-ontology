@@ -230,7 +230,7 @@ print(f"Finished extracting {total_good} good entities, "
 
 
 
-if True:
+if False:
     # # # -----------------------------
     # # # Only needed if IDs were added
     # Write newly generated IDs back to original files ID columns
@@ -502,7 +502,7 @@ robotWrapper = RobotImportsWrapper(robotcmd='~/Work/Onto/robot/robot',cleanup=Fa
 robotWrapper.createOBOFile(importsOWLURI='http://addictovocab.org/addicto.owl',importsOWLFileName = 'addicto.owl')
 
 # Annotate with version information
-# robot annotate --input addicto.owl --annotation rdfs:comment "The Addiction Ontology (AddictO) is an ontology being developed all aspects of addiction research." --annotation owl:versionInfo "2021-11-18" --ontology-iri "http://addictovocab.org/addicto.owl" --version-iri "http://addictovocab.org/addicto.owl/2021-11-18" --output addicto.owl
+# robot annotate --input addicto.owl --annotation rdfs:comment "The Addiction Ontology (AddictO) is an ontology being developed all aspects of addiction research." --annotation owl:versionInfo "2021-12-18" --ontology-iri "http://addictovocab.org/addicto.owl" --version-iri "http://addictovocab.org/addicto.owl/2021-12-18" --output addicto.owl
 #
 # Build the merged file for onto-edit
 # robot merge --input addicto.owl convert --output addicto-merged.owx

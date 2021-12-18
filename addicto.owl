@@ -9,19 +9,17 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:wiki="https://www.wikidata.org/wiki/"
      xmlns:chebi="http://purl.obolibrary.org/obo/chebi/"
-     xmlns:terms="http://purl.org/dc/terms/"
      xmlns:schema="https://schema.org/"
      xmlns:Property="https://www.wikidata.org/wiki/Property:"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:apollo_sv="http://purl.obolibrary.org/obo/apollo_sv.owl/"
      xmlns:owlready_ontology="http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#">
     <owl:Ontology rdf:about="http://addictovocab.org/addicto.owl">
-        <owl:versionIRI rdf:resource="http://addictovocab.org/addicto.owl/2021-11-18"/>
+        <owl:versionIRI rdf:resource="http://addictovocab.org/addicto.owl/2021-12-18"/>
         <owl:imports rdf:resource="http://addictovocab.org/addicto_external.owl"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Addiction Ontology (AddictO) is an ontology being developed all aspects of addiction research.</rdfs:comment>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-11-18</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-12-18</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -750,22 +748,10 @@
     
 
 
-    <!-- http://addictovocab.org/ADDICTO_0000176 -->
-
-    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000176">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An attribute of a person that could be a competing interest.</obo:IAO_0000115>
-        <obo:IAO_0000232 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The definition was adapted from the PLOS definition.</obo:IAO_0000232>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">They should be fully disclosed by people in any research, clinical, professional or policy-making role to enable stakeholders to make an informed judgement about the potential for bias. They include: 1) financial potential competing interests, as well as 2) potentially being personally affected by, 3) having close friends, colleagues or relations who may be affected by, 4) having strong values relating to, 5) acting as an advisor to an organisation that may be affected by, and 6) being a member of a lobby group or pressure group relating to, the conduct of the professional role.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">potential competing interest</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://addictovocab.org/ADDICTO_0000177 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000177">
-        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000176"/>
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001145"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A potential competing interest that involves the possibility of personal financial gain or loss resulting from enactment of the professional role.</obo:IAO_0000115>
         <obo:IAO_0000232 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The definition was adapted from the PLOS definition.</obo:IAO_0000232>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This includes: 1) ownership of stocks or shares, 2) employment in an organisation, 3) providing paid consultancy to an organisation, 4) being a director of a company, 5) receiving any kind of funding or tangible benefit  from an organisation, 6) ownership of, or pending application for, a patent, and 7) seeking funding from an organisation, that may be affected by the enactment of the professional role. It also includes all of the above that relate to an intimate partner. Organisation includes commercial organisation, government agency, and charity.</rdfs:comment>
@@ -2408,7 +2394,7 @@
     <!-- http://addictovocab.org/ADDICTO_0000342 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000342">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000498"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000016"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A person who is exhibiting the attribute of abstinence from engagement in a behaviour.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">abstainer</rdfs:label>
     </owl:Class>
@@ -2503,7 +2489,7 @@
     <!-- http://addictovocab.org/ADDICTO_0000351 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000351">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000498"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000016"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A mental disorder that results in repeated episodes of abnormally high levels of motivation to engage in a behaviour, acquired as a result of engaging in the behaviour, where the behaviour results in risk or occurrence of serious net harm.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dependence disorder</obo:IAO_0000118>
         <obo:IAO_0000232 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This is separated fropm &apos;addiction&apos; to provide a parent term for the range of &apos;disorders&apos; relating to substance use that are defined as such and about which, therefore, there cannot be legitimate dispute.</obo:IAO_0000232>
@@ -2515,7 +2501,7 @@
     <!-- http://addictovocab.org/ADDICTO_0000352 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000352">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000498"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000016"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A person who has reached maturity.</obo:IAO_0000115>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">For use in research contexts the minimum age needs to be specified.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">adult</rdfs:label>
@@ -2676,7 +2662,7 @@
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000367">
         <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000399"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A self-identity that is enduring and is appraised as important by the person who has the identity.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A self-identity that is enduring and is appraised as being important by the person who has the identity.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">core identity</rdfs:label>
     </owl:Class>
     
@@ -2730,7 +2716,7 @@
     <!-- http://addictovocab.org/ADDICTO_0000374 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000374">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000498"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000016"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A person that participates in use of both e-cigarettes and tobacco cigarettes.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> e-ciagarette user</obo:IAO_0000118>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> occassional e-cigarette user</obo:IAO_0000118>
@@ -2744,7 +2730,7 @@
     <!-- http://addictovocab.org/ADDICTO_0000375 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000375">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000498"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000016"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A person who participates in e-cigarette use.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">e-cigarette user</rdfs:label>
     </owl:Class>
@@ -2843,7 +2829,7 @@
     <!-- http://addictovocab.org/ADDICTO_0000389 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000389">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000498"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000016"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A person who does not suffer from opioid use disorder but who, by virtue of his or her personal qualities or environment, has an elevated probability of developing opioid use disorder in the future.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">person at risk of opioid use disorder</rdfs:label>
     </owl:Class>
@@ -2863,7 +2849,7 @@
     <!-- http://addictovocab.org/ADDICTO_0000391 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000391">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000498"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000016"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A person who participates in policy making.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">policy maker</rdfs:label>
     </owl:Class>
@@ -2873,10 +2859,10 @@
     <!-- http://addictovocab.org/ADDICTO_0000392 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000392">
-        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000398"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Self-appraisal of tobacco smoker identity that construes it as good.</obo:IAO_0000115>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Positive smoker identity</obo:IAO_0000118>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">positive self-appraisal of tobacco smoker identity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000406"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tobacco smoker identity is appraised as good.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">positive smoker identity</obo:IAO_0000118>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">positive tobacco smoker identity</rdfs:label>
     </owl:Class>
     
 
@@ -2943,9 +2929,9 @@
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000398">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000005"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Appraisal in which the object of the appraisal is a part of one&apos;s own identity.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An appraisal in which the object of the appraisal is a part of a person&apos;s or a group&apos;s own identity.</obo:IAO_0000115>
         <obo:IAO_0000232 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Needs the &apos;is about&apos; relationship with self-identity</obo:IAO_0000232>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">self-appraisal of identity</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">self-appraisal</rdfs:label>
     </owl:Class>
     
 
@@ -3018,7 +3004,7 @@
     <!-- http://addictovocab.org/ADDICTO_0000405 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000405">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000498"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000016"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A person who engages in tobacco smoking.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">current smoker</obo:IAO_0000118>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">current tobacco smoker</obo:IAO_0000118>
@@ -3072,7 +3058,7 @@
     <!-- http://addictovocab.org/ADDICTO_0000410 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000410">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000498"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000016"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A person who is close in age to the transition between childhood and adulthood.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> young adult</obo:IAO_0000118>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Youth</obo:IAO_0000118>
@@ -3552,7 +3538,7 @@
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000440">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002221"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A shop that sells vaping devices or vaping device components or material to be vaped.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A shop that sells products related to vaping.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vape shop</rdfs:label>
     </owl:Class>
     
@@ -3563,18 +3549,7 @@
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000441">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000114"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An emergency department facility that is part of a university hospital.</obo:IAO_0000115>
-        <obo:IAO_0000232 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">No appropriate definition found. Definition based on usage.</obo:IAO_0000232>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">academic emergency department facility</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://addictovocab.org/ADDICTO_0000442 -->
-
-    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000442">
-        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000515"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A personal role that is the extent to which a person can acquire a product.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">access to a product</rdfs:label>
     </owl:Class>
     
 
@@ -3582,7 +3557,7 @@
     <!-- http://addictovocab.org/ADDICTO_0000443 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000443">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000452"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An environmental disposition that is the extent to which an environment enables people in that environment to acquire a product.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">accessibility of a product</rdfs:label>
     </owl:Class>
@@ -3592,7 +3567,7 @@
     <!-- http://addictovocab.org/ADDICTO_0000444 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000444">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000452"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An environmental disposition that is the extent to which an environment enables people in that environment to receive a service.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">accessibility of a service</rdfs:label>
     </owl:Class>
@@ -3602,8 +3577,8 @@
     <!-- http://addictovocab.org/ADDICTO_0000445 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000445">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An environmental disposition that is the extent to which an environment enables people in that environment to acquire heroin.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000443"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Accessibility of a product where the product is heroin.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">accessibility of heroin</rdfs:label>
     </owl:Class>
     
@@ -3612,8 +3587,8 @@
     <!-- http://addictovocab.org/ADDICTO_0000446 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000446">
-        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000344"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An environmental disposition that is is the extent to which an environment enables people in that environment to receive opioid agonist therapy</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001153"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Accessibility of a service where the service is opioid agonist therapy</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">accessibility of opioid agonist therapy</rdfs:label>
     </owl:Class>
     
@@ -3623,7 +3598,7 @@
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000447">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000102"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A health care facility that a dedicated facility within a hospital that acts as the focus for acute medical care for patients that have presented as medical emergencies to hospitals or who have developed an acute medical illness while in hospital.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A health care facility within a hospital that provides acute medical care for patients that have presented as medical emergencies to a hospital or who have developed an acute medical illness while in hospital.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">acute medical ward</obo:IAO_0000118>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.rcpmedicalcare.org.uk/designing-services/specialties/acute-internal-medicine/services-delivered/acute-medical-unit/</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">acute medical unit</rdfs:label>
@@ -3631,35 +3606,24 @@
     
 
 
+    <!-- http://addictovocab.org/ADDICTO_0000448 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000448">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000443"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Accessibility of a product where the product is an alcoholic beverage</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alcohol availability</obo:IAO_0000118>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">accessibility of alcohol</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://addictovocab.org/ADDICTO_0000449 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000449">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A process by which the economic well-being andquality of lifeof a nation, region or local community are improved.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An information content entity that is about amount and quality of human and physical resources available to the inhabitants of a geospatial region.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Economic_development</obo:IAO_0000119>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">economic development</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://addictovocab.org/ADDICTO_0000450 -->
-
-    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000450">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002577"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A system which has the disposition to environ one or more material entities.</obo:IAO_0000115>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">environment</obo:IAO_0000118>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">environmental system</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://addictovocab.org/ADDICTO_0000451 -->
-
-    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000451">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A role that an environment has by virtue of environing a material entity or a process.</obo:IAO_0000115>
-        <obo:IAO_0000232 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This should align with setting in BCIO</obo:IAO_0000232>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">setting</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">level of economic development</rdfs:label>
     </owl:Class>
     
 
@@ -3968,7 +3932,7 @@
     <!-- http://addictovocab.org/ADDICTO_0000513 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000513">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000498"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000016"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A person who uses psychoactive substances.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> User of substances</obo:IAO_0000118>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> user of drugs</obo:IAO_0000118>
@@ -4043,7 +4007,7 @@
     <!-- http://addictovocab.org/ADDICTO_0000523 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000523">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000498"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000016"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A person who is undergoing the developmental stage of transition from childhood to adulthood.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">adolescent</rdfs:label>
     </owl:Class>
@@ -5108,7 +5072,7 @@
     <!-- http://addictovocab.org/ADDICTO_0000713 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000713">
-        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000713"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000016"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A person who has tobacco smoking cessation as part of their history and who has ex-tobacco smoker as part of their identity.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> ex-smoker</obo:IAO_0000118>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">former smoker</obo:IAO_0000118>
@@ -5125,7 +5089,7 @@
         <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000399"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A self-identity in which a person represents themselves as having previously been a smoker but currently not being a smoker.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CN</obo:IAO_0000119>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">former smoker identity</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ex-smoker identity</rdfs:label>
     </owl:Class>
     
 
@@ -5756,7 +5720,7 @@
     <!-- http://addictovocab.org/ADDICTO_0000776 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000776">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000498"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000016"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A person who has used a psychoactive substance in the past but does not do so currently.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Former substance user</obo:IAO_0000118>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">former psychoactive substance user</rdfs:label>
@@ -5800,7 +5764,7 @@
     <!-- http://addictovocab.org/ADDICTO_0000780 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000780">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000498"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000016"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A person who does not currently report smoking tobacco.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> non-smoker</obo:IAO_0000118>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ex-smoker</obo:IAO_0000118>
@@ -5813,7 +5777,7 @@
     <!-- http://addictovocab.org/ADDICTO_0000781 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000781">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000498"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000016"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A person who does not use or has never used psychoactive substances.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> never-user</obo:IAO_0000118>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Non-user</obo:IAO_0000118>
@@ -6492,7 +6456,7 @@
     <!-- http://addictovocab.org/ADDICTO_0000842 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000842">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000498"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000016"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A person with a clinical status that indicates the person is living with COPD.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">person with COPD</rdfs:label>
     </owl:Class>
@@ -6539,7 +6503,7 @@
     <!-- http://addictovocab.org/ADDICTO_0000846 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000846">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000498"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000016"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A person that reports using snus.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">snus user</rdfs:label>
     </owl:Class>
@@ -6549,7 +6513,7 @@
     <!-- http://addictovocab.org/ADDICTO_0000847 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000847">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000498"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000016"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A person living with tuberculosis.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TB patient</rdfs:label>
     </owl:Class>
@@ -6569,7 +6533,7 @@
     <!-- http://addictovocab.org/ADDICTO_0000849 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000849">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000498"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000016"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A person who uses tobacco-containing products.</obo:IAO_0000115>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The type of product that is being used must be defined.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobacco-containing product user</rdfs:label>
@@ -7258,7 +7222,7 @@ It is commercially prepared and is consumed by holding in the mouth for 30 minut
     <!-- http://addictovocab.org/ADDICTO_0000938 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000938">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000498"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000016"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A person without a paid job but is available for work.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unemployed</rdfs:label>
     </owl:Class>
@@ -7268,7 +7232,7 @@ It is commercially prepared and is consumed by holding in the mouth for 30 minut
     <!-- http://addictovocab.org/ADDICTO_0000939 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000939">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GSSO_000369"/>
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001186"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A woman who self identifies as using psychoactive substances.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">woman who uses psychoactive drugs</rdfs:label>
     </owl:Class>
@@ -7278,7 +7242,7 @@ It is commercially prepared and is consumed by holding in the mouth for 30 minut
     <!-- http://addictovocab.org/ADDICTO_0000940 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000940">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GSSO_000369"/>
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001186"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A woman who has convictions for driving under the influence.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">woman with MDUI convictions</rdfs:label>
     </owl:Class>
@@ -7288,7 +7252,7 @@ It is commercially prepared and is consumed by holding in the mouth for 30 minut
     <!-- http://addictovocab.org/ADDICTO_0000941 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000941">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000498"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000016"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A person who is in their late teenage years, or early twenties.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">young person</obo:IAO_0000118>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Age range should be specified.</rdfs:comment>
@@ -8335,7 +8299,7 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
     <!-- http://addictovocab.org/ADDICTO_0001035 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001035">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000498"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000016"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein coding gene in humans.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GABBR1</rdfs:label>
     </owl:Class>
@@ -8462,7 +8426,7 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
     <!-- http://addictovocab.org/ADDICTO_0001050 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001050">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000498"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000016"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A person who is between the ages of  13 and 19.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">teenager</rdfs:label>
     </owl:Class>
@@ -8607,19 +8571,8 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001065">
         <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000784"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A person who has an opioid use disorder who is currently  imprisoned.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A person who has an opioid use disorder who is in prison.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">incarcerated persons with opioid use disorder</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://addictovocab.org/ADDICTO_0001066 -->
-
-    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001066">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25457"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The condition of not being equal.</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/GSSO_009381</obo:IAO_0000119>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inequality</rdfs:label>
     </owl:Class>
     
 
@@ -8677,8 +8630,8 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
     <!-- http://addictovocab.org/ADDICTO_0001074 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001074">
-        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000351"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An addictive disorder in which the behaviour that is the subject of the addiction is the use of tobacco,</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000401"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An addictive disorder that involves addiction to tobacco use.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobacco use disorder</rdfs:label>
     </owl:Class>
     
@@ -8697,7 +8650,7 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
     <!-- http://addictovocab.org/ADDICTO_0001076 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001076">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000498"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000016"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A person who is lacking stable and appropriate accommodation.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> homeless</obo:IAO_0000118>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> rough sleeper</obo:IAO_0000118>
@@ -8733,7 +8686,7 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
     <!-- http://addictovocab.org/ADDICTO_0001079 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001079">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000498"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000016"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A person living with HIV.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> person with HIV</obo:IAO_0000118>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HIV positive</obo:IAO_0000118>
@@ -8785,7 +8738,7 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
     <!-- http://addictovocab.org/ADDICTO_0001085 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001085">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000498"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000016"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A person who is incarcerated in a prison.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prisoner</rdfs:label>
     </owl:Class>
@@ -8795,7 +8748,7 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
     <!-- http://addictovocab.org/ADDICTO_0001086 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001086">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000498"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000016"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A person who receives money or goods in exchange for sexual services.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> sex industry worker</obo:IAO_0000118>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prostitute</obo:IAO_0000118>
@@ -9047,7 +9000,7 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
     <!-- http://addictovocab.org/ADDICTO_0001111 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001111">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000498"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000016"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A person who is registered  for or receiving medical attention, care or treatment from a medical profession or institution.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">patient</rdfs:label>
     </owl:Class>
@@ -9402,6 +9355,416 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A personal attribute that could lead to a competing interest.</obo:IAO_0000115>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Potential competing interests must be distinguished from competing interests. They should always be declared so that stakeholders can form a judgement about whether bias is likely to be present. However, it would be wrong to assume that they necessarily lead to bias.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">potential competing interest</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001147 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001147">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000102"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A healthcare facility that provides harm reduction services to substance users.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">harm reduction facility</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001148 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001148">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000102"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A healthcare facility that treats and manages addictive disorders.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">addiction clinic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001149 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001149">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000062"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A facility where some alcoholic beverage can be purchased.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alcohol outlet</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001150 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001150">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An information content entity that is about the number of alcohol outlets per unit area within a geographical location.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alcohol outlet density</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001151 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001151">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000102"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A healthcare facility that provides services to people who are pregnant and their partners.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">antenatal clinic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001152 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001152">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000062"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A facility that provides housing, health care and social care.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">health and social care facility</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001153 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001153">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000444"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Accessibility of a service in which the service is addiction treatment.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">accessibility of addiction treatment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001154 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001154">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001159"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A country in which English is an official language.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">English-speaking country</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001155 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001155">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000102"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A healthcare facility that bears a function to provide low intensity healthcare services to patients on a short-term basis, with patients leaving on the same date as arriving</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">outpatient clinic</obo:IAO_0000118>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">outpatient facility</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001156 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001156">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000062"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A facility whose purpose is undertaking experiments  or taking measurements under controlled conditions.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory facility</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001157 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001157">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000062"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A facility that provides accommodation for people.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">housing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001158 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001158">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001157"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Housing that is provided for people on low incomes or with particular needs by government agencies or non-profit organizations.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://languages.oup.com/google-dictionary-en/</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">social housing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001159 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001159">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001160"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A geopolitical region that delimits a government with effective internal and external sovereignty over the region and its population, and which is not dependent on or subject to any other power or Geopolitical Entity.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ontologyrepository.com/CommonCoreOntologies/Country</obo:IAO_0000119>
+        <obo:IAO_0000232 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Definition taken from the VIDO ontology but this does not have appropriate codes so we have created a separate entity.</obo:IAO_0000232>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">country</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001160 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001160">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001161"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A geospatial region that delimits the authority of a formally constituted government to exercise its control within the bounded area.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">geopolitical region</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001161 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001161">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A site at or near the surface of the Earth.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">geospatial region</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001162 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001162">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000045"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A disorder that involves mental processes.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MF defines mental disease as a disposition to pathological *mental* processes which is not quite right. Needs work</obo:IAO_0000119>
+        <obo:IAO_0000232 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Should be primarily defined in MF</obo:IAO_0000232>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mental health disorder</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001163 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001163">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000398"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An appraisal that represents an evaluation by a person or group of a part of their identity as being good or desirable.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">positive self-appraisal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001164 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001164">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000398"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An appraisal that represents an evaluation by a person or group of a part of their identity as being bad or undesirable.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">negative self-appraisal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001165 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001165">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000399"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A self-identity in which a person represents themselves as being an addict.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">addict identity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001166 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001166">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000399"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A self-identity in which a person represents themselves as having been addicted to something but no longer addicted to that thing.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ex-addict identity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001167 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001167">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000399"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A self-identity in which a person represents themselves as being in recovery from addiction but still vulnerable to relapse.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">recovering addict identity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001168 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001168">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000399"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A self-identity in which the person consider themselves to smoke predominantly or exclusively in the presence of others who are smoking.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This is not a subclass of tobacco smoker identity because not all social smokers may consider themselves to be smokers as they do not smoke sufficiently often.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">social smoker identity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001170 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001170">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000367"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A core identity as a non-smoker that is positively appraised.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">positive core non-smoker identity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001174 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001174">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001176"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gender inequality is the state of unequal ease of access to resources and opportunities based on, or otherwise related to, gender, including economic participation and decision-making.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/GSSO_002961</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gender inequality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001175 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001175">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001176"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inequality based upon health care quality, access, and treatment.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/GSSO_009381</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">health inequality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001176 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001176">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The condition of not being equal.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/GSSO_002956</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inequality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001177 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001177">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000016"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A person whose identity is male, based on societal and cultural conceptualizations of being male, usually  reflected by specific anatomical variations, chromosome combinations, and/or sex hormones.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> boy</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> men</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">male</obo:IAO_0000118>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/GSSO_000370</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">man</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001178 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001178">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001177"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male persons who engage in sexual activity with members of the same sex, regardless of how they identify themselves.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/GSSO_000376</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">man who has sex with men</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001179 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001179">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001177"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male persons who engage in sexual activity with women, regardless of how they identify themselves.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/GSSO_001596</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">man who has sex with women</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001180 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001180">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001177"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male persons who engage in sexual activity with men and women, regardless of how they identify themselves.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/GSSO_001802</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">man who has sex with women and men.</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001181 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001181">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000016"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> a person having a gender identity which is outside of the gender binary .</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A person whose gender identity is not exclusively male or female</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/GSSO_000395</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non binary person</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001182 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001182">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001176"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inequality based upon race.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/GSSO_002962</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">race inequality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001184 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001184">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001176"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inequality which occurs when resources in a given society are distributed unevenly, typically through norms of allocation, that engender specific patterns along lines of socially defined categories of persons.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/GSSO_002957</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">social inequality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001185 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001185">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000016"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A person whose gender identity does not match their gender assigned at birth or a person who otherwise identifies as transgender</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trans</obo:IAO_0000118>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/GSSO_000130</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">transgender person</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001186 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001186">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000016"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A person whose identity is female, based on societal and cultural conceptualizations of being female, usually  reflected by specific anatomical variations, chromosome combinations, and/or sex hormones.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> girl</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> women</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">female</obo:IAO_0000118>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/GSSO_000369</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">woman</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001187 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001187">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001186"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Women who engage in sexual activity with men, regardless of how they identify themselves.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/GSSO_001595</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">woman who has sex with men</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001188 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001188">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001186"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female persons who engage in sexual activity with men and women, regardless of how they identify themselves.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/GSSO_004516</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">woman who has sex with men and women</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001189 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001189">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001186"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Women who engage in sexual activities with other women, whether or not they identify themselves as lesbian, bisexual, heterosexual, or dispense with sexual identification altogether.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/GSSO_000379</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">woman who has sex with women</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
