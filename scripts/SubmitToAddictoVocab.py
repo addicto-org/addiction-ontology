@@ -17,6 +17,10 @@ POST_TERMS = "terms"
 DELETE_TERMS = "terms/{}"
 PATCH_TERMS = "terms/{}"
 
+AUTH_STR = "X-AUTH-TOKEN"
+AUTH_KEY = os.environ["ADDICTO_AUTH"]
+
+
 def getAllIDsFromAddictOVocab():
     pageNo = 1
     totPerPage = 50
@@ -48,7 +52,7 @@ def getFromAddictOVocabByLabel(label,pageNo=1,totPerPage=30):
     urlstring = AOVOCAB_API + GET_TERMS_BY_LABEL.format(label,pageNo,totPerPage)
     print(urlstring)
 
-    r = requests.get(urlstring)
+    r = requests.get(urlstring, headers={AUTH_STR:AUTH_KEY})
     #print(f"Get returned {r.status_code}")
     return ( r.json() )
 
@@ -188,11 +192,13 @@ def createTermInAddictOVocab(header,rowdata, prefix_dict, create=True,links=Fals
         data['fuzzySet'] = False
 
     if create:
-        headers = {"accept": "application/ld+json",
+        headers = { AUTH_STR : AUTH_KEY,
+               "accept": "application/ld+json",
                "Content-Type": "application/ld+json"}
     else:
-        headers = {"accept": "application/ld+json",
-               "Content-Type": "application/merge-patch+json"}
+        headers = { AUTH_STR : AUTH_KEY,
+                "accept": "application/ld+json",
+                "Content-Type": "application/merge-patch+json"}
         if data['curationStatus'] == 'Published':  # Revision msg needed
             data['revisionMessage'] = revision_msg
 
@@ -219,7 +225,7 @@ def createTermInAddictOVocab(header,rowdata, prefix_dict, create=True,links=Fals
 def deleteTermFromAddictOVocab(id):
     urlstring = AOVOCAB_API + DELETE_TERMS.format(id)
 
-    r = requests.delete(urlstring)
+    r = requests.delete(urlstring, headers = {AUTH_STR : AUTH_KEY})
 
     print(f"Delete {id}: returned {r.status_code}")
 

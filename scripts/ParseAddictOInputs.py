@@ -225,12 +225,11 @@ with open('imports/external-entities.csv','w') as file:
     for rowdata in external_entities.values():
         writer.writerow(rowdata)
 
-print(f"Finished extracting {total_good} good entities, "
-      f"{next_id-101} internal.")
+print(f"Finished extracting {total_good} good entities.")
 
 
 
-if False:
+if True:
     # # # -----------------------------
     # # # Only needed if IDs were added
     # Write newly generated IDs back to original files ID columns
