@@ -1283,6 +1283,12 @@
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000219">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_59999"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://addictovocab.org/ADDICTO_0000232"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A chemical substance that is designed to be part of an e-liquid to impart a flavour to the vapour produced when the e-liquid is used in an e-cigarette.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">e-liquid flavouring</rdfs:label>
     </owl:Class>
@@ -1438,6 +1444,12 @@
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000234">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000033"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="http://addictovocab.org/ADDICTO_0000232"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The concentration of nicotine in a portion of e-liquid.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> e-liquid strength</obo:IAO_0000118>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> nicotine strength</obo:IAO_0000118>
@@ -3028,7 +3040,7 @@
     <!-- http://addictovocab.org/ADDICTO_0000403 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000403">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_4"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000031"/>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Use of combustible tobacco is a leading cause of tobacco-related disease.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A disease in which tobacco use has played a causal role.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobacco-caused disease</rdfs:label>
@@ -3039,7 +3051,7 @@
     <!-- http://addictovocab.org/ADDICTO_0000404 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000404">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_4"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000031"/>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Use of combustible tobacco increases the users risk of developing tobacco-related disease.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A disease in which tobacco use is a significant risk factor.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobacco-related disease</rdfs:label>
@@ -8358,7 +8370,7 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
     <!-- http://addictovocab.org/ADDICTO_0001038 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001038">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_4"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000031"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A disease involving the cardiovascular system.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cardiovascular disease</rdfs:label>
     </owl:Class>
@@ -8516,7 +8528,7 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
     <!-- http://addictovocab.org/ADDICTO_0001055 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001055">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_4"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000031"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A disease which affects any, or all parts of the digestive system.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease of the digestive system</rdfs:label>
     </owl:Class>
@@ -8568,7 +8580,7 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
     <!-- http://addictovocab.org/ADDICTO_0001060 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001060">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_4"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000031"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A disease which  affects any, or all parts of the respiratory system.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease of the respiratory system</rdfs:label>
     </owl:Class>
@@ -9642,6 +9654,16 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
     
 
 
+    <!-- http://addictovocab.org/ADDICTO_0001169 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001169">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000716"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A lost identity of oneself as a tobacco smoker</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lost tobacco smoker identity</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://addictovocab.org/ADDICTO_0001170 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001170">
@@ -9913,6 +9935,12 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001196">
         <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001197"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="http://addictovocab.org/ADDICTO_0000213"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An e-cigarette atomiser quality that is the opposition of its circuit to the flow of current in that circuit.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">e-cigarette atomiser resistance</rdfs:label>
     </owl:Class>

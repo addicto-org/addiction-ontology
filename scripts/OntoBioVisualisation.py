@@ -23,15 +23,37 @@ psyusers = False
 cannabis = False
 
 if products:
-    products_in_json = ont.traverse_nodes(["OBO:ADDICTO_0000279",
-                                       "OBO:ADDICTO_0000302",
-                                       "OBO:ADDICTO_0000817",
-                                       "OBO:ADDICTO_0000813"], up=False, down=True) # product
-    removeids = ["OBO:ADDICTO_0000818", "OBO:ADDICTO_0000269", "OBO:ADDICTO_0000733",
-                 "OBO:ADDICTO_0000736",
-                 "OBO:ADDICTO_0000744"]  # energy drinks, over the counter medication,
-    for remid in removeids:
+    parent_classes = ["OBO:ADDICTO_0000279","OBO:ADDICTO_0001018","OBO:ADDICTO_0001200"]
+    products_in_json = ont.traverse_nodes(parent_classes, up=False, down=True) # product
+    remove_children_of = ["OBO:ADDICTO_0000292","OBO:ADDICTO_0000752","OBO:ADDICTO_0000733",
+                          "OBO:ADDICTO_0000736","OBO:ADDICTO_0000818","OBO:ADDICTO_0000854",
+                          "OBO:ADDICTO_0000301","OBO:ADDICTO_0000232","OBO:ADDICTO_0000251",
+                          "OBO:ADDICTO_0001139","OBO:ADDICTO_0001120","OBO:ADDICTO_0000919",
+                          "OBO:ADDICTO_0000851","OBO:ADDICTO_0000753","OBO:ADDICTO_0000865",
+                          "OBO:ADDICTO_0000302","OBO:ADDICTO_0000213"]
+
+    remove_children = ont.traverse_nodes(remove_children_of, up=False, down=True)
+    remove_children.add("OBO:ADDICTO_0000269")
+    for remid in remove_children:
         products_in_json.remove(remid)
+    products_in_json.add("OBO:ADDICTO_0000292")
+    products_in_json.add("OBO:ADDICTO_0000232")
+    products_in_json.add("OBO:ADDICTO_0000212")
+    products_in_json.add("OBO:ADDICTO_0000268")
+    products_in_json.add("OBO:ADDICTO_0000205")
+    products_in_json.add("OBO:ADDICTO_0000294")
+    products_in_json.add("OBO:ADDICTO_0000295")
+    products_in_json.add("OBO:ADDICTO_0001203")
+    products_in_json.add("OBO:ADDICTO_0000198")
+    products_in_json.add("OBO:ADDICTO_0000224")
+    products_in_json.add("OBO:ADDICTO_0001199")
+    products_in_json.add("OBO:ADDICTO_0000213")
+    products_in_json.add("OBO:ADDICTO_0000234")
+    products_in_json.add("OBO:ADDICTO_0000219")
+    products_in_json.add("OBO:ADDICTO_0001198")
+    products_in_json.add("OBO:ADDICTO_0001196")
+    products_in_json.add("OBO:CHEBI_18723")
+
     subont = ont.subontology(products_in_json)
 
     ojgr = OboJsonGraphRenderer()
@@ -142,6 +164,16 @@ image_props_json = '''
             "arrowhead": "open",
             "color": "darkgrey",
             "label": "is about"
+        },
+        "RO:0000091": {
+            "arrowhead": "open",
+            "color": "darkgrey",
+            "label": "has disposition"
+        },
+        "RO:0000052": {
+            "arrowhead": "open",
+            "color": "darkgrey",
+            "label": "inheres in"
         }
     }, "conditionalProperties": 
 '''

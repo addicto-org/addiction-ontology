@@ -267,7 +267,7 @@ for root, dirs_list, files_list in os.walk(path):
 
 entries = {}
 bad_entries = []
-revisionmsg="November ADDICTO release"
+revisionmsg="February 2022 ADDICTO release"
 
 # All the external content + hierarchy is in the file addicto_external.obo
 # Must be parsed and sent to AOVocab.
