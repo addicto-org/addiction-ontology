@@ -686,10 +686,6 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
-    <!-- http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#python_name -->
-
-    <owl:AnnotationProperty rdf:about="http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#python_name"/>
-    
 
 
     <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
@@ -763,14 +759,6 @@ We also have the outstanding issue of how to aim different definitions to differ
     </owl:AnnotationProperty>
     
 
-
-    <!-- https://www.wikidata.org/wiki/Property:P5191 -->
-
-    <owl:AnnotationProperty rdf:about="https://www.wikidata.org/wiki/Property:P5191">
-        <owlready_ontology:python_name xml:lang="en">derived_from</owlready_ontology:python_name>
-        <rdfs:label xml:lang="en">derived from</rdfs:label>
-    </owl:AnnotationProperty>
-    
 
 
     <!-- 
