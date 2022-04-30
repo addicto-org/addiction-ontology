@@ -13,8 +13,7 @@
      xmlns:schema="https://schema.org/"
      xmlns:Property="https://www.wikidata.org/wiki/Property:"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
-     xmlns:apollo_sv="http://purl.obolibrary.org/obo/apollo_sv.owl/"
-     xmlns:owlready_ontology="http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#">
+     xmlns:apollo_sv="http://purl.obolibrary.org/obo/apollo_sv.owl/">
     <owl:Ontology rdf:about="http://addictovocab.org/addicto.owl">
         <owl:versionIRI rdf:resource="http://addictovocab.org/addicto.owl/2022-02-16"/>
         <owl:imports rdf:resource="http://addictovocab.org/addicto_external.owl"/>
