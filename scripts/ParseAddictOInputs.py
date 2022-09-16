@@ -489,7 +489,7 @@ csvFileName = robotWrapper.processClassInfoFromExcel(inputFileName)
 
 owlFileName = "addicto.owl"
 IRI_PREFIX = 'http://addictovocab.org/'
-ID_PREFIX = '\"ADDICTO: '+IRI_PREFIX+'ADDICTO_\"'
+ID_PREFIX = ['\"ADDICTO: '+IRI_PREFIX+'ADDICTO_\"']
 ONTOLOGY_IRI = IRI_PREFIX+owlFileName
 dependency='addicto_external.owl'
 
