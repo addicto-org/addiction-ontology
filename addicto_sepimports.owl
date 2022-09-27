@@ -2702,8 +2702,9 @@
     <!-- http://addictovocab.org/ADDICTO_0000367 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000367">
-        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000399"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A self-identity in which what is represented is appraised as important.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001227"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A strong identity in which what is represented is appraised as enduring.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The parent class is &apos;strong identity&apos; which captures the idea that the identity is appraised as important. Core identity adds the characteristic &apos;enduring&apos;. Therefore core identities are appraised as both important and enduring.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">core identity</rdfs:label>
     </owl:Class>
     
@@ -5116,7 +5117,7 @@
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000717">
         <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000399"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A self-identity in which a person represents themselves as a not being a tobacco smoker.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non-tobacco smoker identity</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non tobacco smoker identity</rdfs:label>
     </owl:Class>
     
 
@@ -5125,8 +5126,7 @@
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000718">
         <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000399"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A self-identity representing something as having been positively appraised in the past but is currently negatively appraised.</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CN</obo:IAO_0000119>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A self-identity representing something as having been positively appraised in the past but as currently negatively appraised.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spoiled self-identity</rdfs:label>
     </owl:Class>
     
@@ -9530,7 +9530,7 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001169">
         <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000716"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A lost identity in which the positively appraised past characteristic is that of being a tobacco smoker</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A lost self-identity in which the positively appraised past characteristic is that of being a tobacco smoker</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lost tobacco smoker identity</rdfs:label>
     </owl:Class>
     
@@ -9548,7 +9548,7 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000367"/>
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000717"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A non tobacco smoker identity that is a core identity and a positive identity.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">positive core non tobacco smoker identity</rdfs:label>
     </owl:Class>
@@ -9558,8 +9558,16 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
     <!-- http://addictovocab.org/ADDICTO_0001171 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001171">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://addictovocab.org/ADDICTO_0000406"/>
+                    <rdf:Description rdf:about="http://addictovocab.org/ADDICTO_0000718"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000718"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A spoiled identity of oneself as a tobacco smoker.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A tobacco smoker that is also a spoiled identity.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spoiled tobacco smoker identity</rdfs:label>
     </owl:Class>
     
@@ -10167,6 +10175,17 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0000011</obo:IAO_0000119>
         <obo:IAO_0000232 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A slight wording change from &apos;A time quality inhering in a bearer by virtue of how long the bearer has existed.&apos; This captures more precisely that the amount is &apos;time&apos; rather than using the word &apos;long&apos; and that it relates to give time point and that existence is defined as time of birth.</obo:IAO_0000232>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">human age</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001227 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001227">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000399"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A self-identity in which what is represented is appraised as important.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">If the characteristic represented is appraised as both important and enduring the appropriate class is &apos;core identity&apos;.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">strong identity</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 

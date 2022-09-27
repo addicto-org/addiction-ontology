@@ -500,9 +500,8 @@ from ontoutils.robot_wrapper import RobotImportsWrapper
 robotWrapper = RobotImportsWrapper(robotcmd='~/Work/Onto/robot/robot',cleanup=False)
 robotWrapper.createOBOFile(importsOWLURI='http://addictovocab.org/addicto.owl',importsOWLFileName = 'addicto.owl')
 
-# Annotate with version information
-# robot annotate --input addicto.owl --annotation rdfs:comment "The Addiction Ontology (AddictO) is an ontology being developed all aspects of addiction research." --annotation owl:versionInfo "2022-02-16" --ontology-iri "http://addictovocab.org/addicto.owl" --version-iri "http://addictovocab.org/addicto.owl/2022-02-16" --output addicto.owl
-#
-# Build the merged file for onto-edit
-# robot merge --input addicto.owl convert --output addicto-merged.owx
+# Release a single merged file, and annotate with version information
+# cp addicto.owl addicto_sepimports.owl
+
+# robot merge --input addicto.owl annotate --annotation rdfs:comment "The Addiction Ontology (AddictO) is an ontology being developed all aspects of addiction research." --annotation owl:versionInfo "2022-09-16" --ontology-iri "http://addictovocab.org/addicto.owl" --version-iri "http://addictovocab.org/addicto.owl/2022-09-16" --output addicto.owl
 

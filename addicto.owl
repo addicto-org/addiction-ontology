@@ -16,9 +16,9 @@
      xmlns:apollo_sv="http://purl.obolibrary.org/obo/apollo_sv.owl/"
      xmlns:owlready_ontology="http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#">
     <owl:Ontology rdf:about="http://addictovocab.org/addicto.owl">
-        <owl:versionIRI rdf:resource="http://addictovocab.org/addicto.owl/2022-09-16"/>
+        <owl:versionIRI rdf:resource="http://addictovocab.org/addicto.owl/2022-09-27"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Addiction Ontology (AddictO) is an ontology being developed all aspects of addiction research.</rdfs:comment>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-09-16</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-09-27</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -3763,8 +3763,9 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     <!-- http://addictovocab.org/ADDICTO_0000367 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000367">
-        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000399"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A self-identity in which what is represented is appraised as important.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001227"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A strong identity in which what is represented is appraised as enduring.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The parent class is &apos;strong identity&apos; which captures the idea that the identity is appraised as important. Core identity adds the characteristic &apos;enduring&apos;. Therefore core identities are appraised as both important and enduring.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">core identity</rdfs:label>
     </owl:Class>
     
@@ -6177,7 +6178,7 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000717">
         <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000399"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A self-identity in which a person represents themselves as a not being a tobacco smoker.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non-tobacco smoker identity</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non tobacco smoker identity</rdfs:label>
     </owl:Class>
     
 
@@ -6186,8 +6187,7 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000718">
         <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000399"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A self-identity representing something as having been positively appraised in the past but is currently negatively appraised.</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CN</obo:IAO_0000119>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A self-identity representing something as having been positively appraised in the past but as currently negatively appraised.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spoiled self-identity</rdfs:label>
     </owl:Class>
     
@@ -10591,7 +10591,7 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001169">
         <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000716"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A lost identity in which the positively appraised past characteristic is that of being a tobacco smoker</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A lost self-identity in which the positively appraised past characteristic is that of being a tobacco smoker</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lost tobacco smoker identity</rdfs:label>
     </owl:Class>
     
@@ -10609,7 +10609,7 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000367"/>
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000717"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A non tobacco smoker identity that is a core identity and a positive identity.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">positive core non tobacco smoker identity</rdfs:label>
     </owl:Class>
@@ -10619,8 +10619,16 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
     <!-- http://addictovocab.org/ADDICTO_0001171 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001171">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://addictovocab.org/ADDICTO_0000406"/>
+                    <rdf:Description rdf:about="http://addictovocab.org/ADDICTO_0000718"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000718"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A spoiled identity of oneself as a tobacco smoker.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A tobacco smoker that is also a spoiled identity.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spoiled tobacco smoker identity</rdfs:label>
     </owl:Class>
     
@@ -11228,6 +11236,17 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0000011</obo:IAO_0000119>
         <obo:IAO_0000232 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A slight wording change from &apos;A time quality inhering in a bearer by virtue of how long the bearer has existed.&apos; This captures more precisely that the amount is &apos;time&apos; rather than using the word &apos;long&apos; and that it relates to give time point and that existence is defined as time of birth.</obo:IAO_0000232>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">human age</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001227 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001227">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000399"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A self-identity in which what is represented is appraised as important.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">If the characteristic represented is appraised as both important and enduring the appropriate class is &apos;core identity&apos;.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">strong identity</rdfs:label>
     </owl:Class>
     
 
@@ -19081,6 +19100,18 @@ The constant rate may be zero.  The period of an epidemic may be defined using s
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35473"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tranquillising agent</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35473"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tranquillizing agents</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35473"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ataractics</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -19094,18 +19125,6 @@ The constant rate may be zero.  The period of an epidemic may be defined using s
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35473"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tranquilizing drugs</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35473"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tranquillising agent</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35473"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tranquillizing agents</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -19128,6 +19147,12 @@ The constant rate may be zero.  The period of an epidemic may be defined using s
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">anxiolytic drug</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35474"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">anti-anxiety agents</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI</oboInOwl:hasDbXref>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35474"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
@@ -19162,12 +19187,6 @@ The constant rate may be zero.  The period of an epidemic may be defined using s
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35474"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">minor tranquilizing agents</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35474"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">anti-anxiety agents</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI</oboInOwl:hasDbXref>
     </owl:Axiom>
     
