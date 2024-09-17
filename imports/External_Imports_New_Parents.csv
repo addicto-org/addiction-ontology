@@ -12,3 +12,4 @@ http://purl.obolibrary.org/obo/CHEBI_50906,http://purl.obolibrary.org/obo/BFO_00
 http://purl.obolibrary.org/obo/OAE_0001000,http://purl.obolibrary.org/obo/BFO_0000016,Adverse effect is a disposition
 http://purl.obolibrary.org/obo/OAE_0000001,http://purl.obolibrary.org/obo/BFO_0000015,Adverse event is a process
 http://semanticscience.org/resource/SIO_000614,http://purl.obolibrary.org/obo/BFO_0000020,Attribute (from GSSO) is a specifically dependent continuant
+SEPIO:0000004,http://purl.obolibrary.org/obo/OBI_0000011,"Remove confusion about planned process (https://github.com/HumanBehaviourChangeProject/ontologies/issues/847)"
