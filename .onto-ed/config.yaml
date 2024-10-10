@@ -1,5 +1,5 @@
 short_name: AddictO
-full_name: b-gehrke/addiction-ontology
+full_name: addicto-org/addiction-ontology
 release_file: addicto.owl
 release_script_path: addicto.release.json
 id_digits: 7
