@@ -1,7 +1,7 @@
 short_name: AddictO
 full_name: addicto-org/addiction-ontology
 release_file: addicto.owl
-release_script_path: addicto.release.json
+release_script_path: .onto-ed/release_script.json
 id_digits: 7
 indexed_files:
 - inputs/.*\.xlsx
