@@ -22671,6 +22671,26 @@ The constant rate may be zero.  The period of an epidemic may be defined using s
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ENVO_00000070 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000070">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000813"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001813"/>
+        <obo:IAO_0000115>A construction that has been assembled by deliberate human effort.</obo:IAO_0000115>
+        <obo:IAO_0000116>&quot;constructed&quot; should probably be made something like a quality and this class obsoleted or filled only by inference</obo:IAO_0000116>
+        <oboInOwl:hasExactSynonym>constructed feature</oboInOwl:hasExactSynonym>
+        <rdfs:label>human construction</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000070"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A construction that has been assembled by deliberate human effort.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>MA:ma</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ENVO_00010483 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00010483">
@@ -22762,6 +22782,22 @@ The constant rate may be zero.  The period of an epidemic may be defined using s
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000813 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000813">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000115>A material part of an astronomical body.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">Also note that some astronomical body parts (ABPs) may have fiat boundaries: if there&apos;s strong debate about where an ABP begins or ends (over and above fuzzy boundaries), with different official classifications setting different thresholds or limits, axiomatise the class with fiat boundaries of the appropriate dimension.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Note that material entities may have immaterial entities (e.g. sites) as parts.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">This class includes material parts of astronomical bodies. Immaterial parts, such as magnetospheres, are represented as sites under the influence of magnetic fields.Please post countercases in the ENVO tracker for revision of this hierarchy if needed.</obo:IAO_0000116>
+        <oboInOwl:inSubset>envoAstro</oboInOwl:inSubset>
+        <oboInOwl:inSubset>envoPolar</oboInOwl:inSubset>
+        <rdfs:comment xml:lang="en">Material parts of astronomical bodies generally have boundaries formed by discontinuities in qualities, composition, or other physical characterisitcs. These boundaries are sometimes sharp, and sometimes diffuse, with different classification systems and communities declaring varying thresholds (e.g. for where a shoreline, forest, or other entity begins and ends). However, some boundaries are declared by fiat - that is, by arbitrary human convention or decree - particularly by regulatory or other authorities and communities of practice. The classes in this hierarchy attempt to offer generalisable definitions that allow multiple classfiication systems to map to and interoperate through. If desired, we can create classes that declare thresholds used by a given authority or community under the more generic ones, annotated with source information.</rdfs:comment>
+        <rdfs:label xml:lang="en">astronomical body part</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ENVO_01000838 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000838">
@@ -22816,6 +22852,18 @@ The constant rate may be zero.  The period of an epidemic may be defined using s
         <dc:creator rdf:resource="https://orcid.org/0000-0002-4366-3088"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-06-24T13:43:29Z</dc:date>
         <rdfs:label xml:lang="en">aerosol formation process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01001813 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001813">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000115>A material entity which has been assembled through the intentional, instinctual, or deliberately programmed efforts of an organism or machine.</obo:IAO_0000115>
+        <dc:creator rdf:resource="https://orcid.org/0000-0002-4366-3088"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-10-29T14:50:34Z</dc:date>
+        <rdfs:label xml:lang="en">construction</rdfs:label>
     </owl:Class>
     
 

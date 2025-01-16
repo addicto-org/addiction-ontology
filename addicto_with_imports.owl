@@ -9830,6 +9830,31 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
     
 
 
+    <!-- http://addictovocab.org/ADDICTO_0001378 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001378">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>A disposition to undergo pathological processes characterized by physiological or psychological dysfunction that exists in an organism because of homeostatic disruption resulting from the cessation or reduction of repeated drug exposure.</obo:IAO_0000115>
+        <rdfs:comment>This class refers to &apos;syndrome&apos; as a disposition and is technically a &apos;disease&apos; as defined by OGMS rather than a collection of signs and symptoms. The parent is disposition rather than &apos;personal disposition&apos; because its bearer can be a non-human organism. &apos;Disease&apos; is not mentioned in the definition because the term carries other meanings for people than the one strictly applied from OGMS.</rdfs:comment>
+        <rdfs:label>drug withdrawal syndrome</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001379 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001379">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001378"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>A drug withdrawal syndrome that results from cessation or reduction of nicotine consumption.</obo:IAO_0000115>
+        <obo:IAO_0000118>Cigarette withdrawal</obo:IAO_0000118>
+        <rdfs:comment>Typical features of the nicotine withdrawal syndrome are increased appetite, irritability, depressed mood, increased anxiety, restlessness and difficult concentrating and craving for the habitual nicotine delivery system. These typically last for up to 4 weeks but increased appetite lasts longer. Craving is sometimes considered as separate.</rdfs:comment>
+        <rdfs:label>nicotine withdrawal syndrome</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://humanbehaviourchange.org/ontology/BCIO_006016 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006016">
