@@ -20,7 +20,7 @@
      xmlns:apollo_sv="http://purl.obolibrary.org/obo/apollo_sv.owl/"
      xmlns:owlready_ontology="http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#">
     <owl:Ontology rdf:about="http://addictovocab.org/addicto.owl">
-        <owl:versionIRI rdf:resource="http://addictovocab.org/addicto.owl/2024-09-20"/>
+        <owl:versionIRI rdf:resource="http://addictovocab.org/addicto.owl/2025-01-16"/>
         <rdfs:comment>The Addiction Ontology (AddictO) is an ontology being developed all aspects of addiction research.</rdfs:comment>
     </owl:Ontology>
     
@@ -1980,7 +1980,7 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     <!-- http://addictovocab.org/ADDICTO_0000164 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000164">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
         <obo:IAO_0000114>Proposed</obo:IAO_0000114>
         <obo:IAO_0000115>A sample is a substance role played by a biological substance as an input substance to a protocol.</obo:IAO_0000115>
         <obo:IAO_0000232>The definition and link to role is coherent with BFO but the ontology itself is probably not suitable to be imported.</obo:IAO_0000232>
@@ -2096,7 +2096,7 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     <!-- http://addictovocab.org/ADDICTO_0000179 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000179">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
         <obo:IAO_0000112>Dr Smith has a personal stake in the outcome of the clinical trial of the drug, varenicline, because he has shares in the company that produces the drug.</obo:IAO_0000112>
         <obo:IAO_0000114>Proposed</obo:IAO_0000114>
         <obo:IAO_0000115>A personal attribute that involves an outcome of value to that person arising from a process.</obo:IAO_0000115>
@@ -2985,7 +2985,7 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     <!-- http://addictovocab.org/ADDICTO_0000278 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000278">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
         <obo:IAO_0000114>Proposed</obo:IAO_0000114>
         <obo:IAO_0000115>A role performed by an organisation or individual who participates in processes that bring the product into existence or purpose it as a product.</obo:IAO_0000115>
         <rdfs:label>producer of product</rdfs:label>
@@ -3079,7 +3079,7 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     <!-- http://addictovocab.org/ADDICTO_0000293 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000293">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
         <obo:IAO_0000114>Proposed</obo:IAO_0000114>
         <obo:IAO_0000115>A product that is used by a person for the purpose of quitting smoking.</obo:IAO_0000115>
         <obo:IAO_0000118>NRT product</obo:IAO_0000118>
@@ -4169,7 +4169,7 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     <!-- http://addictovocab.org/ADDICTO_0000440 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000440">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002221"/>
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001376"/>
         <obo:IAO_0000114>Discussed</obo:IAO_0000114>
         <obo:IAO_0000115>A shop that primarily sells products related to vaping devices.</obo:IAO_0000115>
         <rdfs:label>vape shop</rdfs:label>
@@ -4589,7 +4589,7 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     <!-- http://addictovocab.org/ADDICTO_0000524 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000524">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
         <obo:IAO_0000114>Proposed</obo:IAO_0000114>
         <obo:IAO_0000115>A rule recognised by the legal system of a country or community</obo:IAO_0000115>
         <rdfs:label>law</rdfs:label>
@@ -5453,7 +5453,7 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     <!-- http://addictovocab.org/ADDICTO_0000760 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000760">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
         <obo:IAO_0000114>Proposed</obo:IAO_0000114>
         <obo:IAO_0000115>A role preformed by an individual who participates in administering a substance orally.</obo:IAO_0000115>
         <rdfs:label>orally administered</rdfs:label>
@@ -6718,7 +6718,7 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     <!-- http://addictovocab.org/ADDICTO_0000904 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000904">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
         <obo:IAO_0000114>Discussed</obo:IAO_0000114>
         <obo:IAO_0000115>A role that inheres in money by virtue of it being acquired by an economic agent for providing a good or service or as a levy.</obo:IAO_0000115>
         <rdfs:label>revenue role</rdfs:label>
@@ -8573,7 +8573,7 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
     <!-- http://addictovocab.org/ADDICTO_0001113 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001113">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A role that inheres in some material entity and is realized in some act of appraisal.</obo:IAO_0000115>
         <rdfs:label>economic good role</rdfs:label>
@@ -10988,9 +10988,10 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
     <!-- http://addictovocab.org/ADDICTO_0001365 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001365">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001355"/>
         <obo:IAO_0000114>Proposed</obo:IAO_0000114>
-        <obo:IAO_0000115>A population attribute that consists of shared patterns of beliefs, evaluations, prescriptions and proscriptions that are maintained and propagated through social learning processes.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population attribute that consists of shared patterns of beliefs, evaluations, feelings, rules and behaviours that are maintained and spread among members of the population through social learning processes.</obo:IAO_0000115>
+        <rdfs:comment>Population refers to any collection of two or more people, whether in organised social groups such as teams or families or not.</rdfs:comment>
         <rdfs:label>culture</rdfs:label>
     </owl:Class>
     
@@ -11067,6 +11068,74 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
     
 
 
+    <!-- http://addictovocab.org/ADDICTO_0001372 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001372">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001373"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>A research facility in which systems of manufactured products control internal conditions and in which scientific or technological research, experiments, and measurement may be performed.</obo:IAO_0000115>
+        <obo:IAO_0000232>A new class has been defined because the ENOVO class has  incompatible parentage.</obo:IAO_0000232>
+        <rdfs:label>laboratory facility</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001373 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001373">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000062"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>A facility where scientific research or measurements can be undertaken.</obo:IAO_0000115>
+        <obo:IAO_0000232>This class refers to research facilities that are architectural structures and not ones that are mobile. This is because it comes under OMRSE&apos;s class &apos;facility&apos;. ENVO has a broader class.</obo:IAO_0000232>
+        <rdfs:label>research facility</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001374 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001374">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000061"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>An architectural structure with walls and a roof.</obo:IAO_0000115>
+        <rdfs:label>building</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001375 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001375">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001374"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>A building which is primarily used to facilitate the buying or selling of goods or services.</obo:IAO_0000115>
+        <rdfs:label>commercial building</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001376 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001376">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001375"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>A commercial building in which a business presents a selection of goods and offers to trade or sell them to customers for money or other goods.</obo:IAO_0000115>
+        <rdfs:label>shop</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001377 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001377">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000399"/>
+        <obo:IAO_0000114>Discussed</obo:IAO_0000114>
+        <obo:IAO_0000115>A self identity that includes a negative self-appraisal.</obo:IAO_0000115>
+        <rdfs:label>negative self-identity</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://humanbehaviourchange.org/ontology/BCIO_006016 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006016">
@@ -11085,6 +11154,7 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006081">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;role&gt; that inheres in a human being by virtue of their social and institutional circumstances.</obo:IAO_0000115>
@@ -11488,7 +11558,9 @@ This class is intended to include behaviours that can usefully be characterised 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_043000">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000144"/>
+        <obo:IAO_0000112>This is intended to provide a user-friendly way of representing the way in which processes are manifest. This is somewhat similar to, but not the same as, the class &apos;specifically dependent continuant&apos; in Basic Formal Ontology which provides a way of representing features of material entities such as age and size. It is formally equivalent to process profile in Basic Formal Ontology.</obo:IAO_0000112>
         <obo:IAO_0000114>External</obo:IAO_0000114>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A process profile that is an attribute of a process.</obo:IAO_0000115>
         <rdfs:label>process attribute</rdfs:label>
     </owl:Class>
@@ -32298,81 +32370,11 @@ The constant rate may be zero.  The period of an epidemic may be defined using s
     <!-- http://purl.obolibrary.org/obo/ENVO_00000070 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000070">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000813"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001813"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>A construction that has been assembled by deliberate human effort.</obo:IAO_0000115>
-        <obo:IAO_0000116>&quot;constructed&quot; should probably be made something like a quality and this class obsoleted or filled only by inference</obo:IAO_0000116>
-        <oboInOwl:hasExactSynonym>constructed feature</oboInOwl:hasExactSynonym>
         <rdfs:label>human construction</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000070"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A construction that has been assembled by deliberate human effort.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>MA:ma</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ENVO_00000073 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000073">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000070"/>
-        <obo:IAO_0000114>External</obo:IAO_0000114>
-        <obo:IAO_0000115>A permanent walled and roofed construction.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref>FTT:42</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>Geonames:S.BLDG</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>LTER:76</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>TGN:51011</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Building</oboInOwl:hasDbXref>
-        <rdfs:label>building</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000073"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A permanent walled and roofed construction.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>USGS:SDTS</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ENVO_00000469 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000469">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000070"/>
-        <obo:IAO_0000115>A facility, permanent or temporary, on land, in air, space or water, where scientific research or measurements can be undertaken.</obo:IAO_0000115>
-        <rdfs:label>research facility</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000469"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A facility, permanent or temporary, on land, in air, space or water, where scientific research or measurements can be undertaken.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>MA:ma</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ENVO_00002221 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00002221">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001222"/>
-        <obo:IAO_0000114>External</obo:IAO_0000114>
-        <obo:IAO_0000115>A building in which a business presents a selection of goods and offers to trade or sell them to customers for money or other goods.</obo:IAO_0000115>
-        <obo:IAO_0000115>A commercial building in which a business presents a selection of goods and offers to trade or sell them to customers for money or other goods.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Shopping</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym>retail shop</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>retail store</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>retailer</oboInOwl:hasExactSynonym>
-        <rdfs:label>shop</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002221"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A building in which a business presents a selection of goods and offers to trade or sell them to customers for money or other goods.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Shopping</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -32482,22 +32484,6 @@ The constant rate may be zero.  The period of an epidemic may be defined using s
     
 
 
-    <!-- http://purl.obolibrary.org/obo/ENVO_01000813 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000813">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <obo:IAO_0000115>A material part of an astronomical body.</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">Also note that some astronomical body parts (ABPs) may have fiat boundaries: if there&apos;s strong debate about where an ABP begins or ends (over and above fuzzy boundaries), with different official classifications setting different thresholds or limits, axiomatise the class with fiat boundaries of the appropriate dimension.</obo:IAO_0000116>
-        <obo:IAO_0000116 xml:lang="en">Note that material entities may have immaterial entities (e.g. sites) as parts.</obo:IAO_0000116>
-        <obo:IAO_0000116 xml:lang="en">This class includes material parts of astronomical bodies. Immaterial parts, such as magnetospheres, are represented as sites under the influence of magnetic fields.Please post countercases in the ENVO tracker for revision of this hierarchy if needed.</obo:IAO_0000116>
-        <oboInOwl:inSubset>envoAstro</oboInOwl:inSubset>
-        <oboInOwl:inSubset>envoPolar</oboInOwl:inSubset>
-        <rdfs:comment xml:lang="en">Material parts of astronomical bodies generally have boundaries formed by discontinuities in qualities, composition, or other physical characterisitcs. These boundaries are sometimes sharp, and sometimes diffuse, with different classification systems and communities declaring varying thresholds (e.g. for where a shoreline, forest, or other entity begins and ends). However, some boundaries are declared by fiat - that is, by arbitrary human convention or decree - particularly by regulatory or other authorities and communities of practice. The classes in this hierarchy attempt to offer generalisable definitions that allow multiple classfiication systems to map to and interoperate through. If desired, we can create classes that declare thresholds used by a given authority or community under the more generic ones, annotated with source information.</rdfs:comment>
-        <rdfs:label xml:lang="en">astronomical body part</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/ENVO_01000838 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000838">
@@ -32548,52 +32534,6 @@ The constant rate may be zero.  The period of an epidemic may be defined using s
     
 
 
-    <!-- http://purl.obolibrary.org/obo/ENVO_01001222 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001222">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000073"/>
-        <obo:IAO_0000114>External</obo:IAO_0000114>
-        <obo:IAO_0000115>A building which is primarily used to facilitate the buying or selling of goods or services.</obo:IAO_0000115>
-        <rdfs:comment>&quot;Commerce includes legal, economic, political, social, cultural and technological systems that are in operation in any country or internationally.&quot;</rdfs:comment>
-        <rdfs:label>commercial building</rdfs:label>
-        <rdfs:label xml:lang="en">commercial building</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001222"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A building which is primarily used to facilitate the buying or selling of goods or services.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Commercial_building</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001222"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
-        <owl:annotatedTarget>&quot;Commerce includes legal, economic, political, social, cultural and technological systems that are in operation in any country or internationally.&quot;</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Commerce</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ENVO_01001406 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001406">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000469"/>
-        <obo:IAO_0000114>External</obo:IAO_0000114>
-        <obo:IAO_0000115>A research facility in which systems of manufactured products control internal conditions and in which scientific or technological research, experiments, and measurement may be performed.</obo:IAO_0000115>
-        <oboInOwl:created_by rdf:resource="https://orcid.org/0000-0002-4366-3088"/>
-        <oboInOwl:created_by rdf:resource="https://orcid.org/0000-0002-9578-0788"/>
-        <oboInOwl:hasExactSynonym xml:lang="en">research laboratory</oboInOwl:hasExactSynonym>
-        <rdfs:label>laboratory facility</rdfs:label>
-        <rdfs:label xml:lang="en">laboratory facility</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001406"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A research facility in which systems of manufactured products control internal conditions and in which scientific or technological research, experiments, and measurement may be performed.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Laboratory</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/ENVO_01001654 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001654">
@@ -32618,10 +32558,7 @@ The constant rate may be zero.  The period of an epidemic may be defined using s
         </rdfs:subClassOf>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>A material entity which has been assembled through the intentional, instinctual, or deliberately programmed efforts of an organism or machine.</obo:IAO_0000115>
-        <dc:creator rdf:resource="https://orcid.org/0000-0002-4366-3088"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-10-29T14:50:34Z</dc:date>
         <rdfs:label>construction</rdfs:label>
-        <rdfs:label xml:lang="en">construction</rdfs:label>
     </owl:Class>
     
 
@@ -33243,6 +33180,7 @@ objectives is a planned process.</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000093">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
         <obo:IAO_0000111>patient role</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">a hospitalized person; a person with controlled diabetes; the patient&apos;s role http://www.fertilityjourney.com/testingAndDiagnosis/theRightDoctor/thePatientsRole/index.asp?C=55245395146924652778</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -33527,12 +33465,15 @@ edited date: 30 SEPT 2015</obo:IAO_0000232>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000061">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115 xml:lang="en">A material entity that is a human made strcuture with firm connection between its foundation and the ground.</obo:IAO_0000115>
+        <obo:IAO_0000115>A material entity that is a human made structure with firm connection between its foundation and the ground.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">http://de.wikipedia.org/wiki/Bauwerk</obo:IAO_0000119>
         <rdfs:comment xml:lang="en">&quot;Building&quot; is a subclass of this. </rdfs:comment>
         <rdfs:comment xml:lang="en">This type of entity is referred to as &quot;Bauwerk&quot; or &quot;Bauliche Anlage&quot;.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/omrse.owl"/>
+        <rdfs:label>architectural structure</rdfs:label>
         <rdfs:label xml:lang="en">architectural structure</rdfs:label>
     </owl:Class>
     
