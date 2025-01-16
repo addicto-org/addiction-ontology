@@ -674,7 +674,7 @@
     <!-- http://addictovocab.org/ADDICTO_0000164 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000164">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
         <obo:IAO_0000114>Proposed</obo:IAO_0000114>
         <obo:IAO_0000115>A sample is a substance role played by a biological substance as an input substance to a protocol.</obo:IAO_0000115>
         <obo:IAO_0000232>The definition and link to role is coherent with BFO but the ontology itself is probably not suitable to be imported.</obo:IAO_0000232>
@@ -790,7 +790,7 @@
     <!-- http://addictovocab.org/ADDICTO_0000179 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000179">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
         <obo:IAO_0000112>Dr Smith has a personal stake in the outcome of the clinical trial of the drug, varenicline, because he has shares in the company that produces the drug.</obo:IAO_0000112>
         <obo:IAO_0000114>Proposed</obo:IAO_0000114>
         <obo:IAO_0000115>A personal attribute that involves an outcome of value to that person arising from a process.</obo:IAO_0000115>
@@ -1679,7 +1679,7 @@
     <!-- http://addictovocab.org/ADDICTO_0000278 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000278">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
         <obo:IAO_0000114>Proposed</obo:IAO_0000114>
         <obo:IAO_0000115>A role performed by an organisation or individual who participates in processes that bring the product into existence or purpose it as a product.</obo:IAO_0000115>
         <rdfs:label>producer of product</rdfs:label>
@@ -1773,7 +1773,7 @@
     <!-- http://addictovocab.org/ADDICTO_0000293 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000293">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
         <obo:IAO_0000114>Proposed</obo:IAO_0000114>
         <obo:IAO_0000115>A product that is used by a person for the purpose of quitting smoking.</obo:IAO_0000115>
         <obo:IAO_0000118>NRT product</obo:IAO_0000118>
@@ -2863,7 +2863,7 @@
     <!-- http://addictovocab.org/ADDICTO_0000440 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000440">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002221"/>
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001376"/>
         <obo:IAO_0000114>Discussed</obo:IAO_0000114>
         <obo:IAO_0000115>A shop that primarily sells products related to vaping devices.</obo:IAO_0000115>
         <rdfs:label>vape shop</rdfs:label>
@@ -3283,7 +3283,7 @@
     <!-- http://addictovocab.org/ADDICTO_0000524 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000524">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
         <obo:IAO_0000114>Proposed</obo:IAO_0000114>
         <obo:IAO_0000115>A rule recognised by the legal system of a country or community</obo:IAO_0000115>
         <rdfs:label>law</rdfs:label>
@@ -4147,7 +4147,7 @@
     <!-- http://addictovocab.org/ADDICTO_0000760 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000760">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
         <obo:IAO_0000114>Proposed</obo:IAO_0000114>
         <obo:IAO_0000115>A role preformed by an individual who participates in administering a substance orally.</obo:IAO_0000115>
         <rdfs:label>orally administered</rdfs:label>
@@ -5412,7 +5412,7 @@
     <!-- http://addictovocab.org/ADDICTO_0000904 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000904">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
         <obo:IAO_0000114>Discussed</obo:IAO_0000114>
         <obo:IAO_0000115>A role that inheres in money by virtue of it being acquired by an economic agent for providing a good or service or as a levy.</obo:IAO_0000115>
         <rdfs:label>revenue role</rdfs:label>
@@ -7267,7 +7267,7 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
     <!-- http://addictovocab.org/ADDICTO_0001113 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001113">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A role that inheres in some material entity and is realized in some act of appraisal.</obo:IAO_0000115>
         <rdfs:label>economic good role</rdfs:label>
@@ -9682,9 +9682,10 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
     <!-- http://addictovocab.org/ADDICTO_0001365 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001365">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001355"/>
         <obo:IAO_0000114>Proposed</obo:IAO_0000114>
-        <obo:IAO_0000115>A population attribute that consists of shared patterns of beliefs, evaluations, prescriptions and proscriptions that are maintained and propagated through social learning processes.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population attribute that consists of shared patterns of beliefs, evaluations, feelings, rules and behaviours that are maintained and spread among members of the population through social learning processes.</obo:IAO_0000115>
+        <rdfs:comment>Population refers to any collection of two or more people, whether in organised social groups such as teams or families or not.</rdfs:comment>
         <rdfs:label>culture</rdfs:label>
     </owl:Class>
     
@@ -9761,6 +9762,74 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
     
 
 
+    <!-- http://addictovocab.org/ADDICTO_0001372 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001372">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001373"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>A research facility in which systems of manufactured products control internal conditions and in which scientific or technological research, experiments, and measurement may be performed.</obo:IAO_0000115>
+        <obo:IAO_0000232>A new class has been defined because the ENOVO class has  incompatible parentage.</obo:IAO_0000232>
+        <rdfs:label>laboratory facility</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001373 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001373">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000062"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>A facility where scientific research or measurements can be undertaken.</obo:IAO_0000115>
+        <obo:IAO_0000232>This class refers to research facilities that are architectural structures and not ones that are mobile. This is because it comes under OMRSE&apos;s class &apos;facility&apos;. ENVO has a broader class.</obo:IAO_0000232>
+        <rdfs:label>research facility</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001374 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001374">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000061"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>An architectural structure with walls and a roof.</obo:IAO_0000115>
+        <rdfs:label>building</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001375 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001375">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001374"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>A building which is primarily used to facilitate the buying or selling of goods or services.</obo:IAO_0000115>
+        <rdfs:label>commercial building</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001376 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001376">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001375"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>A commercial building in which a business presents a selection of goods and offers to trade or sell them to customers for money or other goods.</obo:IAO_0000115>
+        <rdfs:label>shop</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001377 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001377">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000399"/>
+        <obo:IAO_0000114>Discussed</obo:IAO_0000114>
+        <obo:IAO_0000115>A self identity that includes a negative self-appraisal.</obo:IAO_0000115>
+        <rdfs:label>negative self-identity</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://humanbehaviourchange.org/ontology/BCIO_006016 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006016">
@@ -9775,7 +9844,7 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
     <!-- http://humanbehaviourchange.org/ontology/BCIO_006081 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006081">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>A role that inheres in a person</obo:IAO_0000115>
         <rdfs:label>personal role</rdfs:label>
@@ -10241,12 +10310,6 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BFO_0000023 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000023"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/BFO_0000024 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000024">
@@ -10675,6 +10738,7 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
     <!-- http://purl.obolibrary.org/obo/CHEBI_3216 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_3216">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25418"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>A morphinane alkaloid that is 7,8-dihydromorphine 6-O-methyl ether in which positions 6 and 14 are joined by a -CH2CH2- bridge, one of the hydrogens of the N-methyl group is substituted by cyclopropyl, and a hydrogen at position 7 is substituted by a 2-hydroxy-3,3-dimethylbutan-2-yl group. [RW: &apos;Morphine alkaloid ...?]</obo:IAO_0000115>
         <obo:IAO_0000119>CHEBI:3216</obo:IAO_0000119>
@@ -11042,6 +11106,12 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_50906 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_50906"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHEBI_50995 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_50995"/>
@@ -11290,6 +11360,7 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
     <!-- http://purl.obolibrary.org/obo/CHEBI_7465 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_7465">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_38164"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>An organic heteropentacyclic compound that is naloxone substituted in which the allyl group attached to the nitrogen is replaced by a cyclopropylmethyl group.</obo:IAO_0000115>
         <obo:IAO_0000119>CHEBI:7465</obo:IAO_0000119>
@@ -11586,34 +11657,6 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
     
 
 
-    <!-- http://purl.obolibrary.org/obo/ENVO_00000073 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000073">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000070"/>
-        <obo:IAO_0000114>External</obo:IAO_0000114>
-        <obo:IAO_0000115>A permanent walled and roofed construction.</obo:IAO_0000115>
-        <rdfs:label>building</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ENVO_00000469 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000469"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ENVO_00002221 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00002221">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001222"/>
-        <obo:IAO_0000114>External</obo:IAO_0000114>
-        <obo:IAO_0000115>A commercial building in which a business presents a selection of goods and offers to trade or sell them to customers for money or other goods.</obo:IAO_0000115>
-        <rdfs:label>shop</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/ENVO_00010483 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00010483">
@@ -11692,28 +11735,6 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
     <!-- http://purl.obolibrary.org/obo/ENVO_01000839 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000839"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ENVO_01001222 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001222">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000073"/>
-        <obo:IAO_0000114>External</obo:IAO_0000114>
-        <obo:IAO_0000115>A building which is primarily used to facilitate the buying or selling of goods or services.</obo:IAO_0000115>
-        <rdfs:label>commercial building</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ENVO_01001406 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001406">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000469"/>
-        <obo:IAO_0000114>External</obo:IAO_0000114>
-        <obo:IAO_0000115>A research facility in which systems of manufactured products control internal conditions and in which scientific or technological research, experiments, and measurement may be performed.</obo:IAO_0000115>
-        <rdfs:label>laboratory facility</rdfs:label>
-    </owl:Class>
     
 
 
@@ -11992,7 +12013,7 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
     <!-- http://purl.obolibrary.org/obo/OBI_0000093 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000093">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>a role which inheres in a person and is realized by being under the care of a physician or health care provider</obo:IAO_0000115>
         <rdfs:label>patient role</rdfs:label>
@@ -12111,7 +12132,12 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
 
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000061 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000061"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000061">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
+        <obo:IAO_0000115>A material entity that is a human made structure with firm connection between its foundation and the ground.</obo:IAO_0000115>
+        <rdfs:label>architectural structure</rdfs:label>
+    </owl:Class>
     
 
 
