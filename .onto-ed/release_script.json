@@ -1,7 +1,7 @@
 {
   "iri_prefix": "http://addictovocab.org/ADDICTO_",
   "short_repository_name": "AddictO",
-  "full_repository_name": "b-gehrke/addiction-ontology",
+  "full_repository_name": "addicto-org/addiction-ontology",
   "external": {
     "sources": [
       {
@@ -12,7 +12,8 @@
     "target": {
       "file": "addicto_external.owl",
       "iri": "http://addictovocab.org/addicto_external.owl",
-      "ontology_annotations": {}
+      "ontology_annotations": {},
+      "publish": true
     },
     "needs": [],
     "renameTermFile": "imports/External_Imports_New_Labels.csv",
@@ -76,7 +77,8 @@
         "iri": "http://addictovocab.org/addicto.owl",
         "ontology_annotations": {
           "rdfs:comment": "The Addiction Ontology (AddictO) is an ontology being developed all aspects of addiction research."
-        }
+        },
+        "publish": true
       },
       "needs": [],
       "renameTermFile": null,
@@ -107,6 +109,12 @@
     {
       "name": "HUMAN_VERIFICATION",
       "args": {}
+    },
+    {
+      "name": "ADDICTO_VOCAB",
+      "args": {
+        "included_files": "addicto_final"
+      }
     },
     {
       "name": "GITHUB_PUBLISH",
