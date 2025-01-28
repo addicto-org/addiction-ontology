@@ -415,7 +415,7 @@
     <!-- http://addictovocab.org/ADDICTO_0000139 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000139">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050303"/>
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001388"/>
         <obo:IAO_0000114>Proposed</obo:IAO_0000114>
         <obo:IAO_0000115>A personal quality that involves not smoking tobacco having previously done so.</obo:IAO_0000115>
         <obo:IAO_0000118>tobacco abstinence.</obo:IAO_0000118>
@@ -9910,6 +9910,39 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
     
 
 
+    <!-- http://addictovocab.org/ADDICTO_0001386 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001386">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>A disposition that inheres in a person.</obo:IAO_0000115>
+        <rdfs:label>personal disposition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001387 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001387">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_043000"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>A process attribute that is an attribute of a life process.</obo:IAO_0000115>
+        <rdfs:label>personal life attribute</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001388 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001388">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>A quality that inheres in a person</obo:IAO_0000115>
+        <rdfs:label>personal quality</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://humanbehaviourchange.org/ontology/BCIO_006016 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006016">
@@ -10213,39 +10246,6 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
         <obo:IAO_0000232>The BCIO population ontology individuals branch defines many personal attributes</obo:IAO_0000232>
         <rdfs:comment>Includes everything that can be said about a person: the most general class under which all other qualities, dispositions, roles etc belong.</rdfs:comment>
         <rdfs:label>personal attribute</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050301 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050301">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
-        <obo:IAO_0000114>External</obo:IAO_0000114>
-        <obo:IAO_0000115>A disposition that inheres in a person.</obo:IAO_0000115>
-        <rdfs:label>personal disposition</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050302 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050302">
-        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_043000"/>
-        <obo:IAO_0000114>External</obo:IAO_0000114>
-        <obo:IAO_0000115>A process attribute that is an attribute of a life process.</obo:IAO_0000115>
-        <rdfs:label>personal life attribute</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://humanbehaviourchange.org/ontology/BCIO_050303 -->
-
-    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050303">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
-        <obo:IAO_0000114>External</obo:IAO_0000114>
-        <obo:IAO_0000115>A quality that inheres in a person</obo:IAO_0000115>
-        <rdfs:label>personal quality</rdfs:label>
     </owl:Class>
     
 
