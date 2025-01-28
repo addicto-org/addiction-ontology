@@ -113,7 +113,7 @@
     {
       "name": "ADDICTO_VOCAB",
       "args": {
-        "included_files": ["addicto_final"]
+        "included_files": ["addicto"]
       }
     },
     {
