@@ -17,7 +17,6 @@
      xmlns:schema="https://schema.org/"
      xmlns:Property="https://www.wikidata.org/wiki/Property:"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
-     xmlns:apollo_sv="http://purl.obolibrary.org/obo/apollo_sv.owl/"
      xmlns:owlready_ontology="http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#">
     <owl:Ontology rdf:about="http://addictovocab.org/addicto_with_imports.owl">
         <owl:imports rdf:resource="http://addictovocab.org/addicto_external.owl"/>
@@ -2046,7 +2045,7 @@
     <!-- http://addictovocab.org/ADDICTO_0000323 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000323">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000298"/>
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001380"/>
         <obo:IAO_0000114>Proposed</obo:IAO_0000114>
         <obo:IAO_0000115>Epidemic of HIV infection.</obo:IAO_0000115>
         <obo:IAO_0000232>No definition found in Ontobee</obo:IAO_0000232>
@@ -9833,10 +9832,10 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
     <!-- http://addictovocab.org/ADDICTO_0001378 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001378">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000032"/>
         <obo:IAO_0000114>Proposed</obo:IAO_0000114>
-        <obo:IAO_0000115>A disposition to undergo pathological processes characterized by physiological or psychological dysfunction that exists in an organism because of homeostatic disruption resulting from the cessation or reduction of repeated drug exposure.</obo:IAO_0000115>
-        <rdfs:comment>This class refers to &apos;syndrome&apos; as a disposition and is technically a &apos;disease&apos; as defined by OGMS rather than a collection of signs and symptoms. The parent is disposition rather than &apos;personal disposition&apos; because its bearer can be a non-human organism. &apos;Disease&apos; is not mentioned in the definition because the term carries other meanings for people than the one strictly applied from OGMS.</rdfs:comment>
+        <obo:IAO_0000115>A bodily disposition to undergo pathological processes characterized by physiological or psychological dysfunction that exists in an organism because of homeostatic disruption resulting from the cessation or reduction of repeated drug exposure.</obo:IAO_0000115>
+        <rdfs:comment>This class refers to &apos;syndrome&apos; as a disposition and is technically a &apos;disease&apos; as defined by OGMS rather than a collection of signs and symptoms. &apos;Disease&apos; is not mentioned in the definition because the term carries other meanings for people than the one strictly applied from OGMS.</rdfs:comment>
         <rdfs:label>drug withdrawal syndrome</rdfs:label>
     </owl:Class>
     
@@ -9851,6 +9850,62 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
         <obo:IAO_0000118>Cigarette withdrawal</obo:IAO_0000118>
         <rdfs:comment>Typical features of the nicotine withdrawal syndrome are increased appetite, irritability, depressed mood, increased anxiety, restlessness and difficult concentrating and craving for the habitual nicotine delivery system. These typically last for up to 4 weeks but increased appetite lasts longer. Craving is sometimes considered as separate.</rdfs:comment>
         <rdfs:label>nicotine withdrawal syndrome</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001380 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001380">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>A process involving widespread occurrence of a disease or disorder in a population.</obo:IAO_0000115>
+        <rdfs:comment>This class is intended to be used broadly. Classes whose definitions are used by WHO or other legal entities would be subclasses.</rdfs:comment>
+        <rdfs:label>epidemic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001381 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001381">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001380"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>Epidemic of opioid use disorder</obo:IAO_0000115>
+        <rdfs:label>opioid use disorder epidemic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001383 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001383">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001378"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>A drug withdrawal syndrome that results from cessation or reduction of alcohol consumption.</obo:IAO_0000115>
+        <rdfs:label>alcohol withdrawal syndrome</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001384 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001384">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001378"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>A drug withdrawal syndrome that results from cessation or reduction of cannabis consumption.</obo:IAO_0000115>
+        <rdfs:label>cannabis withdrawal syndrome</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001385 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001385">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001378"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>A drug withdrawal syndrome that results from cessation or reduction of consumption of an opioid drug.</obo:IAO_0000115>
+        <rdfs:label>opioid withdrawal symptom</rdfs:label>
     </owl:Class>
     
 
@@ -10256,24 +10311,6 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
     <!-- http://humanbehaviourchange.org/ontology/BCIO_050439 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050439"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000298 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000298">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000306"/>
-        <obo:IAO_0000114>External</obo:IAO_0000114>
-        <obo:IAO_0000115>A process whose beginning is demarcated by accelerating infection acquisition by one or more host species of a particular pathogen in a particular location and whose end is demarcated by the time when the rate of infection acquisition becomes constant.</obo:IAO_0000115>
-        <obo:IAO_0000232>An ointology of epidemiology was built but it has been deprecated https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3926306/</obo:IAO_0000232>
-        <rdfs:label>epidemic</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000306 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000306"/>
     
 
 
