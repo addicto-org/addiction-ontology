@@ -19,7 +19,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:owlready_ontology="http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#">
     <owl:Ontology rdf:about="http://addictovocab.org/addicto.owl">
-        <owl:versionIRI rdf:resource="http://addictovocab.org/addicto.owl/2025-01-28"/>
+        <owl:versionIRI rdf:resource="http://addictovocab.org/addicto.owl/2025-02-01"/>
         <rdfs:comment>The Addiction Ontology (AddictO) is an ontology being developed all aspects of addiction research.</rdfs:comment>
     </owl:Ontology>
     
@@ -2132,7 +2132,7 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     <!-- http://addictovocab.org/ADDICTO_0000188 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000188">
-        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000958"/>
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000832"/>
         <obo:IAO_0000114>Discussed</obo:IAO_0000114>
         <obo:IAO_0000115>A psychoactive substance disposition that is its propensity to lead people who use the substance to develop a harmful pattern of consumption.</obo:IAO_0000115>
         <obo:IAO_0000118>abuse liability of a substance</obo:IAO_0000118>
@@ -2184,14 +2184,8 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
         <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001106"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_67194"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35471"/>
+                <owl:someValuesFrom rdf:resource="http://addictovocab.org/ADDICTO_0001019"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
@@ -2206,12 +2200,6 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000196">
         <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000195"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_67194"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000114>Discussed</obo:IAO_0000114>
         <obo:IAO_0000115>A cannabis extract that has been processed to contain a high concentration of cannabinoids.</obo:IAO_0000115>
         <obo:IAO_0000118>concentrates</obo:IAO_0000118>
@@ -2617,18 +2605,6 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
         <obo:IAO_0000115>A flavoured e-liquid in which the e-liquid flavouring is designed to have a fruit flavour.</obo:IAO_0000115>
         <obo:IAO_0000118>fruit flavoured liquid</obo:IAO_0000118>
         <rdfs:label>fruit flavoured e-liquid</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://addictovocab.org/ADDICTO_0000241 -->
-
-    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000241">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
-        <obo:IAO_0000114>Discussed</obo:IAO_0000114>
-        <obo:IAO_0000115>A disposition that is realised as a harm process.</obo:IAO_0000115>
-        <obo:IAO_0000232>Having this as a disposition brings in the fact that harm only occurs in certain contexts or when certain conditions are met.</obo:IAO_0000232>
-        <rdfs:label>harm potential</rdfs:label>
     </owl:Class>
     
 
@@ -4432,8 +4408,8 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000479">
         <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001109"/>
-        <obo:IAO_0000114>To Be Discussed</obo:IAO_0000114>
-        <obo:IAO_0000115>A public policy that regulates e-cigarettes or their use.</obo:IAO_0000115>
+        <obo:IAO_0000114>Discussed</obo:IAO_0000114>
+        <obo:IAO_0000115>A public policy that regulates e-cigarettes, their marketing or their use.</obo:IAO_0000115>
         <rdfs:comment>Includes public policies concerning the manufacture, marketing, and sales of e-cigarettes.</rdfs:comment>
         <rdfs:label>e-cigarette policy</rdfs:label>
     </owl:Class>
@@ -4601,9 +4577,9 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     <!-- http://addictovocab.org/ADDICTO_0000528 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000528">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35471"/>
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001019"/>
         <obo:IAO_0000114>Discussed</obo:IAO_0000114>
-        <obo:IAO_0000115>A psychoactive drug that is used to reduce depression.</obo:IAO_0000115>
+        <obo:IAO_0000115>A psychoactive substance that is used to reduce depression.</obo:IAO_0000115>
         <obo:IAO_0000232>Parent in CheBI is psychotropic drug</obo:IAO_0000232>
         <rdfs:label>antidepressant drug</rdfs:label>
     </owl:Class>
@@ -4613,9 +4589,9 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     <!-- http://addictovocab.org/ADDICTO_0000529 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000529">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35471"/>
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001019"/>
         <obo:IAO_0000114>Discussed</obo:IAO_0000114>
-        <obo:IAO_0000115>A psychoactive drug that is used to treat mania.</obo:IAO_0000115>
+        <obo:IAO_0000115>A psychoactive substance that is used to treat mania.</obo:IAO_0000115>
         <rdfs:label>antimanic drug</rdfs:label>
     </owl:Class>
     
@@ -4624,9 +4600,9 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     <!-- http://addictovocab.org/ADDICTO_0000530 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000530">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35471"/>
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001019"/>
         <obo:IAO_0000114>Discussed</obo:IAO_0000114>
-        <obo:IAO_0000115>A psychoactive drug that is used to reduce anxiety.</obo:IAO_0000115>
+        <obo:IAO_0000115>A psychoactive substance that is used to reduce anxiety.</obo:IAO_0000115>
         <rdfs:comment>Note - these drugs are used to reduce anxiety even when there is no anxiety disorder, e.g. associated with worrying events</rdfs:comment>
         <rdfs:label>anxiolytic drug</rdfs:label>
     </owl:Class>
@@ -5453,9 +5429,9 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     <!-- http://addictovocab.org/ADDICTO_0000762 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000762">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35471"/>
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001019"/>
         <obo:IAO_0000114>Proposed</obo:IAO_0000114>
-        <obo:IAO_0000115>A psychoactive drug that stimulates the central nervous system.</obo:IAO_0000115>
+        <obo:IAO_0000115>A psychoactive substance that stimulates the central nervous system.</obo:IAO_0000115>
         <obo:IAO_0000118>stimulants</obo:IAO_0000118>
         <rdfs:label>psychostimulant</rdfs:label>
     </owl:Class>
@@ -6997,17 +6973,6 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
     
 
 
-    <!-- http://addictovocab.org/ADDICTO_0000958 -->
-
-    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000958">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
-        <obo:IAO_0000114>Discussed</obo:IAO_0000114>
-        <obo:IAO_0000115>A disposition of a psychoactive substance.</obo:IAO_0000115>
-        <rdfs:label>psychoactive substance disposition</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://addictovocab.org/ADDICTO_0000960 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000960">
@@ -7845,7 +7810,7 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
     <!-- http://addictovocab.org/ADDICTO_0001023 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001023">
-        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001116"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23888"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A drug that has a marketing authorisation from a medicines regulatory agency.</obo:IAO_0000115>
         <rdfs:label>licensed drug</rdfs:label>
@@ -7949,17 +7914,6 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
         <obo:IAO_0000114>Proposed</obo:IAO_0000114>
         <obo:IAO_0000115>A disease involving the cardiovascular system.</obo:IAO_0000115>
         <rdfs:label>cardiovascular disease</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://addictovocab.org/ADDICTO_0001039 -->
-
-    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001039">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_2030"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
-        <obo:IAO_0000115>Anxiety disorder that is at least partially caused by substance use.</obo:IAO_0000115>
-        <rdfs:label>substance-induced anxiety disorder</rdfs:label>
     </owl:Class>
     
 
@@ -8598,23 +8552,6 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
         <obo:IAO_0000114>Discussed</obo:IAO_0000114>
         <obo:IAO_0000115>A material entity that is not an object.</obo:IAO_0000115>
         <rdfs:label>substance</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://addictovocab.org/ADDICTO_0001116 -->
-
-    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001116">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_59999"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23888"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A chemical substance that has a drug role.</obo:IAO_0000115>
-        <rdfs:label>drug</rdfs:label>
     </owl:Class>
     
 
@@ -12881,7 +12818,7 @@ This class is intended to include behaviours that can usefully be characterised 
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35471"/>
+                <owl:someValuesFrom rdf:resource="http://addictovocab.org/ADDICTO_0001019"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000114>External</obo:IAO_0000114>
@@ -15680,7 +15617,7 @@ This class is intended to include behaviours that can usefully be characterised 
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35471"/>
+                <owl:someValuesFrom rdf:resource="http://addictovocab.org/ADDICTO_0001019"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000114>External</obo:IAO_0000114>
@@ -16056,7 +15993,7 @@ This class is intended to include behaviours that can usefully be characterised 
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35471"/>
+                <owl:someValuesFrom rdf:resource="http://addictovocab.org/ADDICTO_0001019"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000114>External</obo:IAO_0000114>
@@ -17122,7 +17059,7 @@ This class is intended to include behaviours that can usefully be characterised 
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23888"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000040"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000114>External</obo:IAO_0000114>
@@ -17133,7 +17070,6 @@ This class is intended to include behaviours that can usefully be characterised 
         <oboInOwl:id>CHEBI:23888</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
         <rdfs:label>drug</rdfs:label>
-        <rdfs:label>drug role</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23888"/>
@@ -17245,7 +17181,6 @@ This class is intended to include behaviours that can usefully be characterised 
     <!-- http://purl.obolibrary.org/obo/CHEBI_24432 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_24432">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
         <obo:IAO_0000115>A role played by the molecular entity or part thereof within a biological context.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
@@ -18097,7 +18032,7 @@ This class is intended to include behaviours that can usefully be characterised 
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35471"/>
+                <owl:someValuesFrom rdf:resource="http://addictovocab.org/ADDICTO_0001019"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000114>External</obo:IAO_0000114>
@@ -18511,7 +18446,7 @@ This class is intended to include behaviours that can usefully be characterised 
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35471"/>
+                <owl:someValuesFrom rdf:resource="http://addictovocab.org/ADDICTO_0001019"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000114>External</obo:IAO_0000114>
@@ -19222,7 +19157,7 @@ This class is intended to include behaviours that can usefully be characterised 
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35471"/>
+                <owl:someValuesFrom rdf:resource="http://addictovocab.org/ADDICTO_0001019"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000114>External</obo:IAO_0000114>
@@ -19574,7 +19509,7 @@ This class is intended to include behaviours that can usefully be characterised 
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35471"/>
+                <owl:someValuesFrom rdf:resource="http://addictovocab.org/ADDICTO_0001019"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000114>External</obo:IAO_0000114>
@@ -19940,18 +19875,6 @@ This class is intended to include behaviours that can usefully be characterised 
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_2972"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>beta-(p-Chlorophenyl)-gamma-aminobutyric acid</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>ChemIDplus</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_2972"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>gamma-Amino-beta-(p-chlorophenyl)butyric acid</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>ChemIDplus</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_2972"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget>Beilstein:2104494</owl:annotatedTarget>
         <oboInOwl:source>Beilstein</oboInOwl:source>
@@ -20075,6 +19998,18 @@ This class is intended to include behaviours that can usefully be characterised 
         <owl:annotatedTarget>beta-(Aminomethyl)-p-chlorohydrocinnamic acid</owl:annotatedTarget>
         <oboInOwl:hasDbXref>ChemIDplus</oboInOwl:hasDbXref>
     </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_2972"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>beta-(p-Chlorophenyl)-gamma-aminobutyric acid</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>ChemIDplus</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_2972"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>gamma-Amino-beta-(p-chlorophenyl)butyric acid</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>ChemIDplus</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
@@ -20103,12 +20038,6 @@ This class is intended to include behaviours that can usefully be characterised 
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30879"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>Alcohol</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>KEGG_COMPOUND</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30879"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>alcohols</owl:annotatedTarget>
         <oboInOwl:hasDbXref>IUPAC</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/chebi#IUPAC_NAME"/>
@@ -20118,6 +20047,12 @@ This class is intended to include behaviours that can usefully be characterised 
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>an alcohol</owl:annotatedTarget>
         <oboInOwl:hasDbXref>UniProt</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30879"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Alcohol</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>KEGG_COMPOUND</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -23228,7 +23163,6 @@ This class is intended to include behaviours that can usefully be characterised 
     <!-- http://purl.obolibrary.org/obo/CHEBI_35470 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_35470">
-        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001116"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23888"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>A class of drugs producing both physiological and psychological effects through a variety of mechanisms involving the central nervous system.</obo:IAO_0000115>
@@ -23276,7 +23210,6 @@ This class is intended to include behaviours that can usefully be characterised 
         <oboInOwl:hasRelatedSynonym>psychotropic drugs</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>CHEBI:35471</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
-        <rdfs:label>psychoactive drug</rdfs:label>
         <rdfs:label>psychotropic drug</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -23314,7 +23247,7 @@ This class is intended to include behaviours that can usefully be characterised 
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35471"/>
+                <owl:someValuesFrom rdf:resource="http://addictovocab.org/ADDICTO_0001019"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000114>External</obo:IAO_0000114>
@@ -23428,10 +23361,10 @@ This class is intended to include behaviours that can usefully be characterised 
     <!-- http://purl.obolibrary.org/obo/CHEBI_35476 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_35476">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35471"/>
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001019"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35473"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
-        <obo:IAO_0000115>A psychoactive drug that is used to treat psychosis.</obo:IAO_0000115>
+        <obo:IAO_0000115>A psychoactive substance that is used to treat psychosis.</obo:IAO_0000115>
         <obo:IAO_0000115>Antipsychotic drugs are agents that control agitated psychotic behaviour, alleviate acute psychotic states, reduce psychotic symptoms, and exert a quieting effect.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>Neuroleptikum</oboInOwl:hasRelatedSynonym>
@@ -26727,13 +26660,11 @@ This class is intended to include behaviours that can usefully be characterised 
     <!-- http://purl.obolibrary.org/obo/CHEBI_50906 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_50906">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <obo:IAO_0000115>A role is particular behaviour which a material entity may exhibit.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>CHEBI:50906</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
-        <rdfs:label>chemical realizable</rdfs:label>
         <rdfs:label>role</rdfs:label>
     </owl:Class>
     
@@ -27035,7 +26966,6 @@ This class is intended to include behaviours that can usefully be characterised 
     <!-- http://purl.obolibrary.org/obo/CHEBI_52217 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_52217">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33232"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>A substance that is introduced into a living organism with therapeutic, diagnostic or hedonic purpose.</obo:IAO_0000115>
@@ -27302,7 +27232,7 @@ This class is intended to include behaviours that can usefully be characterised 
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35471"/>
+                <owl:someValuesFrom rdf:resource="http://addictovocab.org/ADDICTO_0001019"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000114>External</obo:IAO_0000114>
@@ -27734,7 +27664,6 @@ This class is intended to include behaviours that can usefully be characterised 
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
         <rdfs:comment>ChEBI definition does not highlight use for recreational purposes. Sold illicitly. Users seek out for its psychoactive properties. CHEBI: The principal psychoactive constituent of the cannabis plant, it is used for treatment of anorexia associated with AIDS as well as nausea and vomiting associated with cancer chemotherapy.</rdfs:comment>
         <rdfs:label>Delta(9)-tetrahydrocannabinol</rdfs:label>
-        <rdfs:label>THC</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_66964"/>
@@ -27973,12 +27902,6 @@ This class is intended to include behaviours that can usefully be characterised 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_67194">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36963"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_66964"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>A diverse group of pharmacologically active secondary metabolite characteristic to Cannabis plant as well as produced naturally in the body by humans and animals. Cannabinoids contain oxygen as a part of the heterocyclic ring or in the form of various functional groups. They are subdivided on the basis of their origin.</obo:IAO_0000115>
         <obo:IAO_0000119>CHEBI:67194</obo:IAO_0000119>
@@ -28377,7 +28300,7 @@ This class is intended to include behaviours that can usefully be characterised 
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35471"/>
+                <owl:someValuesFrom rdf:resource="http://addictovocab.org/ADDICTO_0001019"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000114>External</obo:IAO_0000114>
@@ -32281,7 +32204,6 @@ This class is intended to include behaviours that can usefully be characterised 
     <!-- http://purl.obolibrary.org/obo/DOID_4 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_4">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
         <obo:IAO_0000115 xml:lang="en">A disease is a disposition (i) to undergo pathological processes that (ii) exists in an organism because of one or more disorders in that organism.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>MESH:D004194</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>NCI:C2991</oboInOwl:hasDbXref>
@@ -33211,6 +33133,28 @@ objectives is a planned process.</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000040">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
+        <obo:IAO_0000111 xml:lang="en">drug role</obo:IAO_0000111>
+        <obo:IAO_0000112>http://www.answers.com/topic/drug
+   1. A substance used in the diagnosis, treatment, or prevention of a disease or as a component of a medication.
+   2. Such a substance as recognized or defined by the U.S. Food, Drug, and Cosmetic Act.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
+        <obo:IAO_0000115>A role borne by a molecular entity and is realized in a process of absorption by an organism alters, or effects (or is assumed to effect) a function(s) which inhere in an organism.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">a role borne by a molecular entity and is realized in a process of absorption by an organism  alters, or effects  (or is assumed to effect) a function(s) which inhere in an organism</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Role Branch</obo:IAO_0000117>
+        <obo:IAO_0000118>drug</obo:IAO_0000118>
+        <obo:IAO_0000119 xml:lang="en">OBI, CDISC</obo:IAO_0000119>
+        <rdfs:label>drug role</rdfs:label>
+        <rdfs:label xml:lang="en">drug role</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000047 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000047">
@@ -33710,7 +33654,6 @@ edited date: 30 SEPT 2015</obo:IAO_0000232>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#relational_slim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#scalar_slim"/>
-        <rdfs:label>concentration</rdfs:label>
         <rdfs:label>concentration of</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -33932,7 +33875,6 @@ edited date: 30 SEPT 2015</obo:IAO_0000232>
     <!-- http://purl.obolibrary.org/obo/PO_0025131 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0025131">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
         <obo:IAO_0000115>An anatomical entity that is or was part of a plant.</obo:IAO_0000115>
         <oboInOwl:created_by>rwalls</oboInOwl:created_by>
         <oboInOwl:creation_date>2010-11-15T11:41:38Z</oboInOwl:creation_date>
@@ -34022,7 +33964,6 @@ Useful because these map to the strength of the evidence each might provide.</ob
     <!-- http://purl.obolibrary.org/obo/UBERON_0000000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000000">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
         <obo:IAO_0000115>An occurrent [span:Occurrent] that exists in time by occurring or happening, has temporal parts and always involves and depends on some entity.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_33090"/>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_33208"/>
@@ -34184,7 +34125,6 @@ Useful because these map to the strength of the evidence each might provide.</ob
         <oboInOwl:hasRelatedSynonym>death</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>UBERON:0000071</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#common_anatomy"/>
-        <rdfs:label>death</rdfs:label>
         <rdfs:label>death stage</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -34723,7 +34663,6 @@ Useful because these map to the strength of the evidence each might provide.</ob
     <!-- http://purl.obolibrary.org/obo/UBERON_0001062 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001062">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
         <obo:IAO_0000115>Biological entity that is either an individual member of a biological species or constitutes the structural organization of an individual member of a biological species.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_33090"/>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_33208"/>
