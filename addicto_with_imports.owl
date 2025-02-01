@@ -836,7 +836,7 @@
     <!-- http://addictovocab.org/ADDICTO_0000188 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000188">
-        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000958"/>
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000832"/>
         <obo:IAO_0000114>Discussed</obo:IAO_0000114>
         <obo:IAO_0000115>A psychoactive substance disposition that is its propensity to lead people who use the substance to develop a harmful pattern of consumption.</obo:IAO_0000115>
         <obo:IAO_0000118>abuse liability of a substance</obo:IAO_0000118>
@@ -888,14 +888,8 @@
         <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001106"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_67194"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35471"/>
+                <owl:someValuesFrom rdf:resource="http://addictovocab.org/ADDICTO_0001019"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
@@ -910,12 +904,6 @@
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000196">
         <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000195"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_67194"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000114>Discussed</obo:IAO_0000114>
         <obo:IAO_0000115>A cannabis extract that has been processed to contain a high concentration of cannabinoids.</obo:IAO_0000115>
         <obo:IAO_0000118>concentrates</obo:IAO_0000118>
@@ -1321,18 +1309,6 @@
         <obo:IAO_0000115>A flavoured e-liquid in which the e-liquid flavouring is designed to have a fruit flavour.</obo:IAO_0000115>
         <obo:IAO_0000118>fruit flavoured liquid</obo:IAO_0000118>
         <rdfs:label>fruit flavoured e-liquid</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://addictovocab.org/ADDICTO_0000241 -->
-
-    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000241">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
-        <obo:IAO_0000114>Discussed</obo:IAO_0000114>
-        <obo:IAO_0000115>A disposition that is realised as a harm process.</obo:IAO_0000115>
-        <obo:IAO_0000232>Having this as a disposition brings in the fact that harm only occurs in certain contexts or when certain conditions are met.</obo:IAO_0000232>
-        <rdfs:label>harm potential</rdfs:label>
     </owl:Class>
     
 
@@ -3136,8 +3112,8 @@
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000479">
         <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001109"/>
-        <obo:IAO_0000114>To Be Discussed</obo:IAO_0000114>
-        <obo:IAO_0000115>A public policy that regulates e-cigarettes or their use.</obo:IAO_0000115>
+        <obo:IAO_0000114>Discussed</obo:IAO_0000114>
+        <obo:IAO_0000115>A public policy that regulates e-cigarettes, their marketing or their use.</obo:IAO_0000115>
         <rdfs:comment>Includes public policies concerning the manufacture, marketing, and sales of e-cigarettes.</rdfs:comment>
         <rdfs:label>e-cigarette policy</rdfs:label>
     </owl:Class>
@@ -3305,9 +3281,9 @@
     <!-- http://addictovocab.org/ADDICTO_0000528 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000528">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35471"/>
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001019"/>
         <obo:IAO_0000114>Discussed</obo:IAO_0000114>
-        <obo:IAO_0000115>A psychoactive drug that is used to reduce depression.</obo:IAO_0000115>
+        <obo:IAO_0000115>A psychoactive substance that is used to reduce depression.</obo:IAO_0000115>
         <obo:IAO_0000232>Parent in CheBI is psychotropic drug</obo:IAO_0000232>
         <rdfs:label>antidepressant drug</rdfs:label>
     </owl:Class>
@@ -3317,9 +3293,9 @@
     <!-- http://addictovocab.org/ADDICTO_0000529 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000529">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35471"/>
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001019"/>
         <obo:IAO_0000114>Discussed</obo:IAO_0000114>
-        <obo:IAO_0000115>A psychoactive drug that is used to treat mania.</obo:IAO_0000115>
+        <obo:IAO_0000115>A psychoactive substance that is used to treat mania.</obo:IAO_0000115>
         <rdfs:label>antimanic drug</rdfs:label>
     </owl:Class>
     
@@ -3328,9 +3304,9 @@
     <!-- http://addictovocab.org/ADDICTO_0000530 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000530">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35471"/>
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001019"/>
         <obo:IAO_0000114>Discussed</obo:IAO_0000114>
-        <obo:IAO_0000115>A psychoactive drug that is used to reduce anxiety.</obo:IAO_0000115>
+        <obo:IAO_0000115>A psychoactive substance that is used to reduce anxiety.</obo:IAO_0000115>
         <rdfs:comment>Note - these drugs are used to reduce anxiety even when there is no anxiety disorder, e.g. associated with worrying events</rdfs:comment>
         <rdfs:label>anxiolytic drug</rdfs:label>
     </owl:Class>
@@ -4157,9 +4133,9 @@
     <!-- http://addictovocab.org/ADDICTO_0000762 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000762">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35471"/>
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001019"/>
         <obo:IAO_0000114>Proposed</obo:IAO_0000114>
-        <obo:IAO_0000115>A psychoactive drug that stimulates the central nervous system.</obo:IAO_0000115>
+        <obo:IAO_0000115>A psychoactive substance that stimulates the central nervous system.</obo:IAO_0000115>
         <obo:IAO_0000118>stimulants</obo:IAO_0000118>
         <rdfs:label>psychostimulant</rdfs:label>
     </owl:Class>
@@ -5701,17 +5677,6 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
     
 
 
-    <!-- http://addictovocab.org/ADDICTO_0000958 -->
-
-    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000958">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
-        <obo:IAO_0000114>Discussed</obo:IAO_0000114>
-        <obo:IAO_0000115>A disposition of a psychoactive substance.</obo:IAO_0000115>
-        <rdfs:label>psychoactive substance disposition</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://addictovocab.org/ADDICTO_0000960 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000960">
@@ -6549,7 +6514,7 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
     <!-- http://addictovocab.org/ADDICTO_0001023 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001023">
-        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001116"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23888"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A drug that has a marketing authorisation from a medicines regulatory agency.</obo:IAO_0000115>
         <rdfs:label>licensed drug</rdfs:label>
@@ -6653,17 +6618,6 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
         <obo:IAO_0000114>Proposed</obo:IAO_0000114>
         <obo:IAO_0000115>A disease involving the cardiovascular system.</obo:IAO_0000115>
         <rdfs:label>cardiovascular disease</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://addictovocab.org/ADDICTO_0001039 -->
-
-    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001039">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_2030"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
-        <obo:IAO_0000115>Anxiety disorder that is at least partially caused by substance use.</obo:IAO_0000115>
-        <rdfs:label>substance-induced anxiety disorder</rdfs:label>
     </owl:Class>
     
 
@@ -7302,23 +7256,6 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
         <obo:IAO_0000114>Discussed</obo:IAO_0000114>
         <obo:IAO_0000115>A material entity that is not an object.</obo:IAO_0000115>
         <rdfs:label>substance</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://addictovocab.org/ADDICTO_0001116 -->
-
-    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001116">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_59999"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23888"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A chemical substance that has a drug role.</obo:IAO_0000115>
-        <rdfs:label>drug</rdfs:label>
     </owl:Class>
     
 
@@ -10443,7 +10380,7 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35471"/>
+                <owl:someValuesFrom rdf:resource="http://addictovocab.org/ADDICTO_0001019"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000114>External</obo:IAO_0000114>
@@ -10560,7 +10497,7 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35471"/>
+                <owl:someValuesFrom rdf:resource="http://addictovocab.org/ADDICTO_0001019"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000114>External</obo:IAO_0000114>
@@ -10577,7 +10514,7 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35471"/>
+                <owl:someValuesFrom rdf:resource="http://addictovocab.org/ADDICTO_0001019"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000114>External</obo:IAO_0000114>
@@ -10640,12 +10577,12 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23888"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000040"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>Any substance which when absorbed into a living organism may modify one or more of its functions. The term is generally accepted for a substance taken for a therapeutic purpose, but is also commonly used for abused substances.</obo:IAO_0000115>
-        <rdfs:label>drug role</rdfs:label>
+        <rdfs:label>drug</rdfs:label>
     </owl:Class>
     
 
@@ -10686,7 +10623,7 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35471"/>
+                <owl:someValuesFrom rdf:resource="http://addictovocab.org/ADDICTO_0001019"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000114>External</obo:IAO_0000114>
@@ -10717,7 +10654,7 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35471"/>
+                <owl:someValuesFrom rdf:resource="http://addictovocab.org/ADDICTO_0001019"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000114>External</obo:IAO_0000114>
@@ -10735,7 +10672,7 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35471"/>
+                <owl:someValuesFrom rdf:resource="http://addictovocab.org/ADDICTO_0001019"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000114>External</obo:IAO_0000114>
@@ -10754,7 +10691,7 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35471"/>
+                <owl:someValuesFrom rdf:resource="http://addictovocab.org/ADDICTO_0001019"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000114>External</obo:IAO_0000114>
@@ -10892,7 +10829,7 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
     <!-- http://purl.obolibrary.org/obo/CHEBI_35470 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_35470">
-        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001116"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23888"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>A class of drugs producing both physiological and psychological effects through a variety of mechanisms involving the central nervous system.</obo:IAO_0000115>
         <rdfs:label>central nervous system drug</rdfs:label>
@@ -10919,7 +10856,7 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35471"/>
+                <owl:someValuesFrom rdf:resource="http://addictovocab.org/ADDICTO_0001019"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000114>External</obo:IAO_0000114>
@@ -10933,9 +10870,9 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
     <!-- http://purl.obolibrary.org/obo/CHEBI_35476 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_35476">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35471"/>
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001019"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
-        <obo:IAO_0000115>A psychoactive drug that is used to treat psychosis.</obo:IAO_0000115>
+        <obo:IAO_0000115>A psychoactive substance that is used to treat psychosis.</obo:IAO_0000115>
         <rdfs:label>antipsychotic agent</rdfs:label>
     </owl:Class>
     
@@ -11241,7 +11178,7 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35471"/>
+                <owl:someValuesFrom rdf:resource="http://addictovocab.org/ADDICTO_0001019"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000114>External</obo:IAO_0000114>
@@ -11313,12 +11250,6 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_67194">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36963"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_66964"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>A diverse group of pharmacologically active secondary metabolite characteristic to Cannabis plant as well as produced naturally in the body by humans and animals. Cannabinoids contain oxygen as a part of the heterocyclic ring or in the form of various functional groups. They are subdivided on the basis of their origin.</obo:IAO_0000115>
         <obo:IAO_0000119>CHEBI:67194</obo:IAO_0000119>
@@ -11364,7 +11295,7 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35471"/>
+                <owl:someValuesFrom rdf:resource="http://addictovocab.org/ADDICTO_0001019"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000114>External</obo:IAO_0000114>
@@ -12060,6 +11991,17 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000040">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
+        <obo:IAO_0000115>A role borne by a molecular entity and is realized in a process of absorption by an organism alters, or effects (or is assumed to effect) a function(s) which inhere in an organism.</obo:IAO_0000115>
+        <rdfs:label>drug role</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000047 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000047"/>
@@ -12276,7 +12218,7 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0002182"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>A quality inhering in a substance by virtue of the amount of the bearer&apos;s there is mixed with another substance.</obo:IAO_0000115>
-        <rdfs:label>concentration</rdfs:label>
+        <rdfs:label>concentration of</rdfs:label>
     </owl:Class>
     
 
@@ -12356,7 +12298,7 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>End of the life of an organism.</obo:IAO_0000115>
-        <rdfs:label>death</rdfs:label>
+        <rdfs:label>death stage</rdfs:label>
     </owl:Class>
     
 
