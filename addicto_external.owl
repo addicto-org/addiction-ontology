@@ -7612,7 +7612,6 @@ This class is intended to include behaviours that can usefully be characterised 
         <oboInOwl:id>CHEBI:23888</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
         <rdfs:label>drug</rdfs:label>
-        <rdfs:label>drug role</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23888"/>
@@ -7702,7 +7701,6 @@ This class is intended to include behaviours that can usefully be characterised 
     <!-- http://purl.obolibrary.org/obo/CHEBI_24431 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_24431">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <obo:IAO_0000115>A chemical entity is a physical entity of interest in chemistry including molecular entities, parts thereof, and chemical substances.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>chemical entity</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
@@ -7722,7 +7720,6 @@ This class is intended to include behaviours that can usefully be characterised 
     <!-- http://purl.obolibrary.org/obo/CHEBI_24432 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_24432">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
         <obo:IAO_0000115>A role played by the molecular entity or part thereof within a biological context.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
@@ -13680,7 +13677,6 @@ This class is intended to include behaviours that can usefully be characterised 
         <oboInOwl:hasRelatedSynonym>psychotropic drugs</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>CHEBI:35471</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
-        <rdfs:label>psychoactive drug</rdfs:label>
         <rdfs:label>psychotropic drug</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -17087,13 +17083,11 @@ This class is intended to include behaviours that can usefully be characterised 
     <!-- http://purl.obolibrary.org/obo/CHEBI_50906 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_50906">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <obo:IAO_0000115>A role is particular behaviour which a material entity may exhibit.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>CHEBI:50906</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
-        <rdfs:label>chemical realizable</rdfs:label>
         <rdfs:label>role</rdfs:label>
     </owl:Class>
     
@@ -17395,7 +17389,6 @@ This class is intended to include behaviours that can usefully be characterised 
     <!-- http://purl.obolibrary.org/obo/CHEBI_52217 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_52217">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33232"/>
         <obo:IAO_0000115>Any substance introduced into a living organism with therapeutic or diagnostic purpose.</obo:IAO_0000115>
         <oboInOwl:hasAlternativeId>CHEBI:33293</oboInOwl:hasAlternativeId>
@@ -18064,7 +18057,6 @@ This class is intended to include behaviours that can usefully be characterised 
         <oboInOwl:id>CHEBI:66964</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
         <rdfs:label>Delta(9)-tetrahydrocannabinol</rdfs:label>
-        <rdfs:label>THC</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_66964"/>
@@ -22511,7 +22503,6 @@ This class is intended to include behaviours that can usefully be characterised 
     <!-- http://purl.obolibrary.org/obo/DOID_4 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_4">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
         <obo:IAO_0000115 xml:lang="en">A disease is a disposition (i) to undergo pathological processes that (ii) exists in an organism because of one or more disorders in that organism.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>MESH:D004194</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>NCI:C2991</oboInOwl:hasDbXref>
@@ -23377,6 +23368,24 @@ objectives is a planned process.</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000040">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <obo:IAO_0000111 xml:lang="en">drug role</obo:IAO_0000111>
+        <obo:IAO_0000112>http://www.answers.com/topic/drug
+   1. A substance used in the diagnosis, treatment, or prevention of a disease or as a component of a medication.
+   2. Such a substance as recognized or defined by the U.S. Food, Drug, and Cosmetic Act.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">a role borne by a molecular entity and is realized in a process of absorption by an organism  alters, or effects  (or is assumed to effect) a function(s) which inhere in an organism</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Role Branch</obo:IAO_0000117>
+        <obo:IAO_0000118>drug</obo:IAO_0000118>
+        <obo:IAO_0000119 xml:lang="en">OBI, CDISC</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">drug role</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000047 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000047">
@@ -23834,7 +23843,6 @@ edited date: 30 SEPT 2015</obo:IAO_0000232>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#relational_slim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#scalar_slim"/>
         <rdfs:label>concentration of</rdfs:label>
-        <rdfs:label>concentration</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000033"/>
@@ -24053,7 +24061,6 @@ edited date: 30 SEPT 2015</obo:IAO_0000232>
     <!-- http://purl.obolibrary.org/obo/PO_0025131 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0025131">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
         <obo:IAO_0000115>An anatomical entity that is or was part of a plant.</obo:IAO_0000115>
         <oboInOwl:created_by>rwalls</oboInOwl:created_by>
         <oboInOwl:creation_date>2010-11-15T11:41:38Z</oboInOwl:creation_date>
@@ -24109,7 +24116,6 @@ edited date: 30 SEPT 2015</obo:IAO_0000232>
     <!-- http://purl.obolibrary.org/obo/SEPIO_0000004 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SEPIO_0000004">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <obo:IAO_0000115>A planned process executed in the performance of scientific research wherein systematic investigations are performed to establish facts and reach new conclusions about phenomena in the world.</obo:IAO_0000115>
         <rdfs:comment>Data generation process are typically experimental studies or observations, but can include any process generating information used to evaluate a claim.  This is an organizational class that groups more specific types of such processes that are most commonly used in generating data used as evidence to support claims. These processes produce informational artifacts such as measured  data values, derived statistical calculations and confidence measures, or statements representing summaries or conclusions drawn from such data.</rdfs:comment>
         <rdfs:label xml:lang="en">research activity</rdfs:label>
@@ -24138,7 +24144,6 @@ Useful because these map to the strength of the evidence each might provide.</ob
     <!-- http://purl.obolibrary.org/obo/UBERON_0000000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000000">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
         <obo:IAO_0000115>An occurrent [span:Occurrent] that exists in time by occurring or happening, has temporal parts and always involves and depends on some entity.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_33090"/>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_33208"/>
@@ -24297,7 +24302,6 @@ Useful because these map to the strength of the evidence each might provide.</ob
         <oboInOwl:id>UBERON:0000071</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#common_anatomy"/>
         <rdfs:label>death stage</rdfs:label>
-        <rdfs:label>death</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000071"/>
@@ -24831,7 +24835,6 @@ Useful because these map to the strength of the evidence each might provide.</ob
     <!-- http://purl.obolibrary.org/obo/UBERON_0001062 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001062">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
         <obo:IAO_0000115>Biological entity that is either an individual member of a biological species or constitutes the structural organization of an individual member of a biological species.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_33090"/>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_33208"/>
