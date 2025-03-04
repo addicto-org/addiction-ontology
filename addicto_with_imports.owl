@@ -11,7 +11,6 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-     xmlns:chebi="http://purl.obolibrary.org/obo/chebi/"
      xmlns:sssom="https://w3id.org/sssom/"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:schema="https://schema.org/"
@@ -9136,9 +9135,9 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
     <!-- http://addictovocab.org/ADDICTO_0001315 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001315">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050300"/>
         <obo:IAO_0000114>Discussed</obo:IAO_0000114>
-        <obo:IAO_0000115>A data item that is about medical conditions that a person has.</obo:IAO_0000115>
+        <obo:IAO_0000115>A personal attribute that is the person&apos;s current or past state of physical or mental wellness.</obo:IAO_0000115>
         <rdfs:label>health status</rdfs:label>
     </owl:Class>
     
@@ -9876,6 +9875,84 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
         <obo:IAO_0000114>Proposed</obo:IAO_0000114>
         <obo:IAO_0000115>A quality that inheres in a person</obo:IAO_0000115>
         <rdfs:label>personal quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001389 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001389">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001324"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>A social grade where the person&apos;s occupation is higher and intermediate professional or managerial.</obo:IAO_0000115>
+        <rdfs:label>social grade AB</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001390 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001390">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001324"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>A social grade where the person&apos;s occupation is supervisory, clerical, or junior managerial or administrative or professional.</obo:IAO_0000115>
+        <rdfs:label>social grade C1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001391 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001391">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001324"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>A social grade where the person&apos;s occupation is as a skilled manual worker.</obo:IAO_0000115>
+        <rdfs:label>social grade C2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001392 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001392">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001324"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>A social grade where the person&apos;s occupation is as a semi-skilled or unskilled manual worker.</obo:IAO_0000115>
+        <rdfs:label>social grade D</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001393 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001393">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001324"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>A social grade where the person&apos;s primary income is from state benefit or they are unemployed or in unstable, low paid, unskilled employment.</obo:IAO_0000115>
+        <rdfs:label>social grade E</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001394 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001394">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001316"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>A mental health status in which the person has suffered from, or currently suffers from, a diagnosable mental health disorder.</obo:IAO_0000115>
+        <rdfs:label>past or current mental health disorder</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001395 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001395">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>A data item that is about the quantity and frequency of alcohol consumption of a person.</obo:IAO_0000115>
+        <rdfs:comment>Involves three question scored from 0 to 4 resulting in a score from 0 to 12, with a score of 5 to 7 meaning &apos;increasing risk&apos;, 8 to 10 meaning &apos;higher risk&apos; and &apos;11 to 12&apos; meaning possible dependence.</rdfs:comment>
+        <rdfs:label>AUDIT-C score</rdfs:label>
     </owl:Class>
     
 
