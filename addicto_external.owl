@@ -1998,6 +1998,28 @@ This class is intended to include behaviours that can usefully be characterised 
     
 
 
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050477 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050477">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050487"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A personal history part that includes previously performing a behaviour.</obo:IAO_0000115>
+        <rdfs:label>having enacted a behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050487 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050487">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A process that is part of a personal history.</obo:IAO_0000115>
+        <rdfs:label>personal history part</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000001">

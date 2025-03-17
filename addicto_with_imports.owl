@@ -2417,7 +2417,7 @@
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000378">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050317"/>
         <obo:IAO_0000114>Discussed</obo:IAO_0000114>
-        <obo:IAO_0000115>a subjective want where the imagined scenario is stopping cigarette smoking indefinitely.</obo:IAO_0000115>
+        <obo:IAO_0000115>A subjective want where the imagined scenario is stopping cigarette smoking indefinitely.</obo:IAO_0000115>
         <rdfs:label>wanting to stop cigarette smoking</rdfs:label>
     </owl:Class>
     
@@ -3797,8 +3797,8 @@
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000724">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <obo:IAO_0000114>Proposed</obo:IAO_0000114>
-        <obo:IAO_0000115>A data item  which indicates the first time a person a used a nicotine-containing product.</obo:IAO_0000115>
-        <rdfs:label>nicotine product first used</rdfs:label>
+        <obo:IAO_0000115>A data item that is about the age at which a nicotine product was first used.</obo:IAO_0000115>
+        <rdfs:label>age of nicotine product first use</rdfs:label>
     </owl:Class>
     
 
@@ -7365,6 +7365,18 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
     
 
 
+    <!-- http://addictovocab.org/ADDICTO_0001125 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001125">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001397"/>
+        <obo:IAO_0000114>Discussed</obo:IAO_0000114>
+        <obo:IAO_0000115>An inhaling consumption behaviour pattern that involves use of an e-cigarette.</obo:IAO_0000115>
+        <obo:IAO_0000118>vaping</obo:IAO_0000118>
+        <rdfs:label>e-cigarette use behaviour pattern</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://addictovocab.org/ADDICTO_0001127 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001127">
@@ -9229,8 +9241,9 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050300"/>
         <obo:IAO_0000114>Proposed</obo:IAO_0000114>
         <obo:IAO_0000115> unemployed and lowest grade occupations.</obo:IAO_0000115>
-        <obo:IAO_0000115>A personal attribute that is a marker of the socio-economic position of someone aged 16-64 based on their occupation. AB: Higher and intermediate managerial, administrative and professional occupations. C1: Supervisory, clerical, and junior managerial, administrative and professional occupations C2: Skilled manual occupations. DE: Semi-skilled and unskilled manual occupations</obo:IAO_0000115>
+        <obo:IAO_0000115>A personal attribute that is a marker of the socio-economic position of someone aged 16 or over based on their occupation. AB: Higher and intermediate managerial, administrative and professional occupations. C1: Supervisory, clerical, and junior managerial, administrative and professional occupations C2: Skilled manual occupations. DE: Semi-skilled and unskilled manual occupations</obo:IAO_0000115>
         <obo:IAO_0000119>https://www.ons.gov.uk/census/aboutcensus/censusproducts/approximatedsocialgradedata</obo:IAO_0000119>
+        <rdfs:comment>The original definition limits social grade to people aged 16 to 64 but the class defined here includes all ages 16 and above.</rdfs:comment>
         <rdfs:label>social grade</rdfs:label>
     </owl:Class>
     
@@ -9271,11 +9284,22 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
     
 
 
+    <!-- http://addictovocab.org/ADDICTO_0001328 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001328">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000033"/>
+        <obo:IAO_0000114>Discussed</obo:IAO_0000114>
+        <obo:IAO_0000115>A mental disposition to experience a subjective want to stop smoking cigarettes.</obo:IAO_0000115>
+        <rdfs:label>disposition to want to stop cigarette smoking</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://addictovocab.org/ADDICTO_0001329 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001329">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006016"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Discussed</obo:IAO_0000114>
         <obo:IAO_0000115>A behavioural intention to stop smoking indefinitely.</obo:IAO_0000115>
         <rdfs:label>intentional disposition to stop cigarette smoking</rdfs:label>
     </owl:Class>
@@ -9374,6 +9398,19 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
     
 
 
+    <!-- http://addictovocab.org/ADDICTO_0001338 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001338">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001396"/>
+        <obo:IAO_0000114>Discussed</obo:IAO_0000114>
+        <obo:IAO_0000115>A nicotine consumption behaviour pattern that involves use of a licensed nicotine containing product.</obo:IAO_0000115>
+        <obo:IAO_0000118>NRT use</obo:IAO_0000118>
+        <rdfs:comment>This class covers use of nicotine transdermal patches, nicotine gum, nicotine nasal spray, nicotine mouth spray, nicotine lozenge and other products that have received marketing approval by a medicines regulatory agency. Strictly, it could at some point include e-cigarettes if they were to get a licence.</rdfs:comment>
+        <rdfs:label>licensed nicotine product-use</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://addictovocab.org/ADDICTO_0001339 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001339">
@@ -9385,11 +9422,33 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
     
 
 
+    <!-- http://addictovocab.org/ADDICTO_0001340 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001340">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050477"/>
+        <obo:IAO_0000114>Discussed</obo:IAO_0000114>
+        <obo:IAO_0000115>Having enacted a behaviour that involves having used varenicline to aid a quit attempt in the past year.</obo:IAO_0000115>
+        <rdfs:label>past-year varenicline use in a cigarette smoking cessation attempt</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001341 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001341">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050477"/>
+        <obo:IAO_0000114>Discussed</obo:IAO_0000114>
+        <obo:IAO_0000115>Having enacted a behaviour that that involves having used behavioural support to aid a quit attempt in the past year.</obo:IAO_0000115>
+        <rdfs:label>past-year use of behavioural support in a cigarette smoking cessation attempt</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://addictovocab.org/ADDICTO_0001342 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001342">
         <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001329"/>
-        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000114>Discussed</obo:IAO_0000114>
         <obo:IAO_0000115>An intentional disposition to stop cigarette smoking in the near future.</obo:IAO_0000115>
         <rdfs:comment>This class is intended to cover intentions to stop smoking within the next few weeks but is deliberately not precise because often the timescale is not precisely specified in the intention.</rdfs:comment>
         <rdfs:label>intentional disposition to stop cigarette smoking soon</rdfs:label>
@@ -9957,6 +10016,28 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
     
 
 
+    <!-- http://addictovocab.org/ADDICTO_0001396 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001396">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050211"/>
+        <obo:IAO_0000114>Discussed</obo:IAO_0000114>
+        <obo:IAO_0000115>A substance use behaviour pattern in which the psychoactive substance is nicotine.</obo:IAO_0000115>
+        <rdfs:label>nicotine consumption behaviour pattern</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001397 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001397">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050210"/>
+        <obo:IAO_0000114>Discussed</obo:IAO_0000114>
+        <obo:IAO_0000115>A consumption behaviour pattern that involves breathing in a material through the nose or mouth.</obo:IAO_0000115>
+        <rdfs:label>inhaling consumption behaviour pattern</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://humanbehaviourchange.org/ontology/BCIO_006016 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006016">
@@ -10325,6 +10406,28 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
     <!-- http://humanbehaviourchange.org/ontology/BCIO_050439 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050439"/>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050477 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050477">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050487"/>
+        <obo:IAO_0000114>Discussed</obo:IAO_0000114>
+        <obo:IAO_0000115>A personal history part that includes previously performing a behaviour.</obo:IAO_0000115>
+        <rdfs:label>having enacted a behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050487 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050487">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
+        <obo:IAO_0000115>A process that is part of a personal history.</obo:IAO_0000115>
+        <rdfs:label>personal history part</rdfs:label>
+    </owl:Class>
     
 
 
@@ -11938,7 +12041,7 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000031"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>A cognitive representation which represents an evaluation of the relevance of some triggering object or event to the organism.</obo:IAO_0000115>
-        <rdfs:label>appraisal</rdfs:label>
+        <rdfs:label>emotional-relevance appraisal</rdfs:label>
     </owl:Class>
     
 
