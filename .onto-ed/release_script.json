@@ -92,7 +92,9 @@
     },
     {
       "name": "IMPORT_EXTERNAL",
-      "args": {}
+      "args": {
+        "use_existing_file": true
+      }
     },
     {
       "name": "VALIDATION",
