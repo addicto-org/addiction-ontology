@@ -149,6 +149,9 @@
         <Class IRI="http://humanbehaviourchange.org/ontology/BCIO_050439"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://humanbehaviourchange.org/ontology/BCIO_050451"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://humanbehaviourchange.org/ontology/BCIO_050477"/>
     </Declaration>
     <Declaration>
@@ -1921,6 +1924,10 @@
     <SubClassOf>
         <Class IRI="http://humanbehaviourchange.org/ontology/BCIO_050439"/>
         <Class IRI="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://humanbehaviourchange.org/ontology/BCIO_050451"/>
+        <Class IRI="http://humanbehaviourchange.org/ontology/BCIO_050300"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://humanbehaviourchange.org/ontology/BCIO_050477"/>
@@ -5496,6 +5503,21 @@ This class is intended to include behaviours that can usefully be characterised 
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://humanbehaviourchange.org/ontology/BCIO_050439</IRI>
         <Literal>material entity-related behaviour</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://humanbehaviourchange.org/ontology/BCIO_050451</IRI>
+        <Literal>Published</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://humanbehaviourchange.org/ontology/BCIO_050451</IRI>
+        <Literal>A personal attribute in which a person does not engage in a behaviour during a time period.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://humanbehaviourchange.org/ontology/BCIO_050451</IRI>
+        <Literal>abstinence from a behaviour</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
