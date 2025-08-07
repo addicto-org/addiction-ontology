@@ -112,6 +112,7 @@
         <obo:IAO_0000117 xml:lang="en">PERSON:Bill Bug</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON:Melanie Courtot</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">OBI_0000281</obo:IAO_0000119>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
         <rdfs:label>has curation status</rdfs:label>
         <rdfs:label xml:lang="en">has curation status</rdfs:label>
     </owl:AnnotationProperty>
@@ -181,7 +182,7 @@ We also have the outstanding issue of how to aim different definitions to differ
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>The official definition.</owl:annotatedTarget>
+        <owl:annotatedTarget>The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:http://purl.obolibrary.org/obo/iao.owl</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
@@ -298,8 +299,12 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://purl.obolibrary.org/obo/IAO_0000233 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000233">
+        <obo:IAO_0000111 xml:lang="en">term tracker item</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">the URI for an OBI Terms ticket at sourceforge, such as https://sourceforge.net/p/obi/obi-terms/772/</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000115 xml:lang="en">An IRI or similar locator for a request or discussion of an ontology term.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg</obo:IAO_0000119>
         <oboInOwl:hasDbXref>IAO:0000233</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
         <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
@@ -730,6 +735,12 @@ WHERE {
         <owl:annotatedTarget>ID of merged class.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:http://www.geneontology.org/formats/oboInOwl#hasAlternativeId</oboInOwl:hasDbXref>
     </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>ID of merged class.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>url:http://www.geneontology.org/formats/oboInOwl#hasAlternativeId</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
@@ -765,6 +776,7 @@ WHERE {
         <obo:IAO_0000115>Exact synonym.</obo:IAO_0000115>
         <obo:IAO_0000115>Fully qualified synonym, contains the string, term type, source, and an optional source code if appropriate. Each subfield is deliniated to facilitate interpretation by software.</obo:IAO_0000115>
         <obo:IAO_0000115>Synonym of the term.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:resource="http://orcid.org/0000-0001-5208-3432"/>
         <obo:IAO_0000233>https://github.com/information-artifact-ontology/ontology-metadata/issues/20</obo:IAO_0000233>
         <oboInOwl:hasExactSynonym>FULL_SYN</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Synonym with Source Data</oboInOwl:hasExactSynonym>
@@ -773,6 +785,12 @@ WHERE {
         <rdfs:label>has_exact_synonym</rdfs:label>
         <rdfs:seeAlso>https://github.com/information-artifact-ontology/ontology-metadata/issues/20</rdfs:seeAlso>
     </owl:AnnotationProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Exact synonym.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>url:http://www.geneontology.org/formats/oboInOwl#hasExactSynonym</oboInOwl:hasDbXref>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -792,6 +810,7 @@ WHERE {
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym">
         <obo:IAO_0000115>An alternative label for a class or property which has a more specific meaning than the preferred name/primary label.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:resource="http://orcid.org/0000-0001-5208-3432"/>
         <obo:IAO_0000233>https://github.com/information-artifact-ontology/ontology-metadata/issues/19</obo:IAO_0000233>
         <rdfs:label xml:lang="en">has narrow synonym</rdfs:label>
         <rdfs:label>has_narrow_synonym</rdfs:label>
@@ -807,6 +826,12 @@ WHERE {
         <rdfs:comment>disease_ontology</rdfs:comment>
         <rdfs:label>has_obo_namespace</rdfs:label>
     </owl:AnnotationProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Name space of the ontology.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>url:http://www.geneontology.org/formats/oboInOwl#hasOBONamespace</oboInOwl:hasDbXref>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -866,6 +891,12 @@ WHERE {
         <owl:annotatedTarget>An identifier is an information content entity that is the outcome of a dubbing process and is used to refer to one instance of entity shared by a group of people to refer to that individual entity.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:http://purl.obolibrary.org/obo/IAO_0020000</oboInOwl:hasDbXref>
     </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>An identifier is an information content entity that is the outcome of a dubbing process and is used to refer to one instance of entity shared by a group of people to refer to that individual entity.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>url:http://purl.obolibrary.org/obo/IAO_0020000</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
@@ -875,6 +906,12 @@ WHERE {
         <obo:IAO_0000115>In subset.</obo:IAO_0000115>
         <rdfs:label>in_subset</rdfs:label>
     </owl:AnnotationProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>In subset.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>url:http://www.geneontology.org/formats/oboInOwl#inSubset</oboInOwl:hasDbXref>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -930,11 +967,17 @@ WHERE {
 
     <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
 
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
+    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
         <obo:IAO_0000115>Comment.</obo:IAO_0000115>
         <rdfs:label>comment</rdfs:label>
         <rdfs:label xml:lang="en">comment</rdfs:label>
-    </owl:AnnotationProperty>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Comment.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>url:http://www.w3.org/2000/01/rdf-schema#comment</oboInOwl:hasDbXref>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -946,10 +989,10 @@ WHERE {
 
     <!-- http://www.w3.org/2000/01/rdf-schema#isDefinedBy -->
 
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">
+    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">
         <obo:IAO_0000589>is defined by</obo:IAO_0000589>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2000/01/rdf-schema.owl"/>
-    </owl:AnnotationProperty>
+    </rdf:Description>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000589"/>
@@ -967,19 +1010,26 @@ WHERE {
 
     <!-- http://www.w3.org/2000/01/rdf-schema#label -->
 
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
         <obo:IAO_0000111>label</obo:IAO_0000111>
         <obo:IAO_0000115>A human readable name for this class.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">A human-readable name for the subject.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2000/01/rdf-schema.owl"/>
         <rdfs:label>label</rdfs:label>
         <rdfs:label xml:lang="en">label</rdfs:label>
-    </owl:AnnotationProperty>
+    </rdf:Description>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A human readable name for this class.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:http://www.w3.org/2000/01/rdf-schema#label</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A human readable name for this class.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>url:http://www.w3.org/2000/01/rdf-schema#label</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>url:https://www.w3.org/TR/owl-guide/</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
@@ -999,7 +1049,7 @@ WHERE {
 
     <!-- http://www.w3.org/2000/01/rdf-schema#seeAlso -->
 
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso">
+    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso">
         <oboInOwl:hasDbXref>http://www.w3.org/2000/01/rdf-schema#seeAlso</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>spatial</oboInOwl:hasOBONamespace>
         <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
@@ -1007,13 +1057,7 @@ WHERE {
         <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
         <oboInOwl:shorthand>seeAlso</oboInOwl:shorthand>
         <rdfs:label>see also</rdfs:label>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://www.w3.org/2002/07/owl#deprecated -->
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#deprecated"/>
+    </rdf:Description>
     
 
 
@@ -1175,6 +1219,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000112 xml:lang="en">this disease course realizes this disease</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">this investigation realizes this investigator role</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">this shattering realizes this fragility</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">Paraphrase of elucidation: a relation between a process and a realizable entity, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process</obo:IAO_0000115>
         <obo:IAO_0000600 xml:lang="en">to say that b realizes c at t is to assert that there is some material entity d &amp; b is a process which has participant d at t &amp; c is a disposition or role of which d is bearer_of at t&amp; the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])</obo:IAO_0000600>
         <rdfs:comment>Paraphrase of elucidation: a relation between a process and a realizable entity, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
@@ -1435,12 +1480,6 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     
 
 
-    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
-
-    <owl:ObjectProperty rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -1456,6 +1495,32 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006016">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000033"/>
+        <obo:IAO_0000112> &quot;Behavioural Intention&quot; in the Technology Acceptance Model</obo:IAO_0000112>
+        <obo:IAO_0000112> &quot;Behavioural intention&quot; in the Ecological Model for Preventing Type 2 Diabetes</obo:IAO_0000112>
+        <obo:IAO_0000112> &quot;Behavioural intention&quot; in the Six-staged model of communication effects</obo:IAO_0000112>
+        <obo:IAO_0000112> &quot;Commitment to a plan of action&quot; in the Health Promotion Model</obo:IAO_0000112>
+        <obo:IAO_0000112> &quot;Commitment&quot; in the Goal Setting Theory</obo:IAO_0000112>
+        <obo:IAO_0000112> &quot;Decisions tier&quot; in the Theory of Triadic Influence</obo:IAO_0000112>
+        <obo:IAO_0000112> &quot;Enactment&quot; in the AIDS Risk Reduction Model&quot;</obo:IAO_0000112>
+        <obo:IAO_0000112> &quot;General behavioural intentions&quot; in the Theory of Interpersonal Behavior</obo:IAO_0000112>
+        <obo:IAO_0000112> &quot;Goal intention&quot; in the Action Theory Model of Consumption</obo:IAO_0000112>
+        <obo:IAO_0000112> &quot;Health intention&quot; in the Systems Model of Behaviour Change</obo:IAO_0000112>
+        <obo:IAO_0000112> &quot;Intending&quot; in the Reflective Impulsive Model</obo:IAO_0000112>
+        <obo:IAO_0000112> &quot;Intention to change&quot; in the Social Ecological Model of Behaviour Change</obo:IAO_0000112>
+        <obo:IAO_0000112> &quot;Intention&quot; in the Health Action Process Approach</obo:IAO_0000112>
+        <obo:IAO_0000112> &quot;Intention&quot; in the Integrative Model of Behavioural Prediction</obo:IAO_0000112>
+        <obo:IAO_0000112> &quot;Intention&quot; in the Needs-Opportunity-Abilities Model</obo:IAO_0000112>
+        <obo:IAO_0000112> &quot;Intention&quot; in the Theory of Planned Behaviour</obo:IAO_0000112>
+        <obo:IAO_0000112> &quot;Intentions&quot; in the Temporal Self-Regulation Theory</obo:IAO_0000112>
+        <obo:IAO_0000112> &quot;Intentions&quot; in the Transcontextual Model of Motivation</obo:IAO_0000112>
+        <obo:IAO_0000112> &quot;Motivation / intention state&quot; in the I-Change Model</obo:IAO_0000112>
+        <obo:IAO_0000112> &quot;Motivational phase&quot; in the Health Action Process Approach</obo:IAO_0000112>
+        <obo:IAO_0000112> &quot;Plans&quot; in the PRIME Theory</obo:IAO_0000112>
+        <obo:IAO_0000112> &quot;Preparation&quot; in the Six-Staged Model of Communication Effects</obo:IAO_0000112>
+        <obo:IAO_0000112> &quot;Specific behavioural intentions&quot; in the Theory of Interpersonal Behaviour</obo:IAO_0000112>
+        <obo:IAO_0000112> &quot;Validation&quot; in the Six-Staged Model of Communication Effects</obo:IAO_0000112>
+        <obo:IAO_0000112> &quot;We-Intentions&quot; in the Social Influence Model</obo:IAO_0000112>
+        <obo:IAO_0000112>&quot;Implementation intentions&quot; in the Action Theory Model of Consumption</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;mental disposition&gt; to commit to enact or not enact a behaviour.</obo:IAO_0000115>
         <rdfs:comment>The term ‘plan’ can sometimes be used to refer to intention and sometimes for instructional plans.</rdfs:comment>
@@ -1468,6 +1533,7 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006081">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;role&gt; that inheres in a human being by virtue of their social and institutional circumstances.</obo:IAO_0000115>
         <obo:IAO_0000115>A role that inheres in a human being by virtue of their social and institutional circumstances.</obo:IAO_0000115>
@@ -1559,10 +1625,43 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     <!-- http://humanbehaviourchange.org/ontology/BCIO_015243 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015243">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015246"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>The aggregate of biological mother in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115>A population statistic about biological mother.</obo:IAO_0000115>
         <rdfs:label>biological mother population statistic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_015246 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015246">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015575"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A population statistic about biological parent.</obo:IAO_0000115>
+        <rdfs:label>biological parent population statistic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_015321 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015321">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050978"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A population statistic about family member.</obo:IAO_0000115>
+        <rdfs:label>family member population statistic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_015575 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_015575">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_015321"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A population statistic about parent.</obo:IAO_0000115>
+        <rdfs:label>parent population statistic</rdfs:label>
     </owl:Class>
     
 
@@ -1661,6 +1760,7 @@ Every behaviour is associated with mental processes, but not every mental proces
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036100">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050267"/>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A uniform process aggregate whose member parts are behaviours of the same type and in the same person.</obo:IAO_0000115>
         <obo:IAO_0000118>behaviour pattern</obo:IAO_0000118>
@@ -1841,6 +1941,7 @@ This class is intended to include behaviours that can usefully be characterised 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050210">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036100"/>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An individual human behaviour pattern that involves consumption behaviour.</obo:IAO_0000115>
         <rdfs:label>consumption behaviour pattern</rdfs:label>
@@ -1852,8 +1953,10 @@ This class is intended to include behaviours that can usefully be characterised 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050211">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050210"/>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A consumption behaviour pattern that involves substance use behaviour.</obo:IAO_0000115>
+        <obo:IAO_0000118>substance use</obo:IAO_0000118>
         <rdfs:label>substance use behaviour pattern</rdfs:label>
     </owl:Class>
     
@@ -1879,9 +1982,12 @@ This class is intended to include behaviours that can usefully be characterised 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050300">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A specifically dependent continuant that inheres in a person.</obo:IAO_0000115>
+        <obo:IAO_0000232>The BCIO population ontology individuals branch defines many personal attributes</obo:IAO_0000232>
         <rdfs:comment>Attributes included under this header are age, immigration, social and economic conditions.</rdfs:comment>
+        <rdfs:comment>Includes everything that can be said about a person: the most general class under which all other qualities, dispositions, roles etc belong.</rdfs:comment>
         <rdfs:label>personal attribute</rdfs:label>
     </owl:Class>
     
@@ -1891,6 +1997,7 @@ This class is intended to include behaviours that can usefully be characterised 
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050317">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000006"/>
+        <obo:IAO_0000112>&quot;Value from worth&quot; in the Regulatory Fit Theory</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;subjective affective feeling&gt; that is an attraction to an imagined scenario involving anticipated pleasure or satisfaction.</obo:IAO_0000115>
         <rdfs:label>subjective want</rdfs:label>
@@ -1981,7 +2088,7 @@ This class is intended to include behaviours that can usefully be characterised 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050437">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>An individual human behaviour that relates to health.</obo:IAO_0000115>
+        <obo:IAO_0000115>An individual human behaviour that relates to health of oneself or others.</obo:IAO_0000115>
         <rdfs:label>health-related behaviour</rdfs:label>
     </owl:Class>
     
@@ -1994,6 +2101,17 @@ This class is intended to include behaviours that can usefully be characterised 
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>An individual human behaviour that relates to a material entity.</obo:IAO_0000115>
         <rdfs:label>material entity-related behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050451 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050451">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050300"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A personal attribute in which a person does not engage in a behaviour during a time period.</obo:IAO_0000115>
+        <rdfs:label>abstinence from a behaviour</rdfs:label>
     </owl:Class>
     
 
@@ -2020,10 +2138,22 @@ This class is intended to include behaviours that can usefully be characterised 
     
 
 
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050978 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050978">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <obo:IAO_0000112>Percentage of highly educated individuals in a population. 
+Mean age in a population.</obo:IAO_0000112>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>A data item that is about the number or extent of something in a population.</obo:IAO_0000115>
+        <rdfs:label>population statistic</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000001">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <obo:BFO_0000179>entity</obo:BFO_0000179>
         <obo:BFO_0000180>Entity</obo:BFO_0000180>
         <obo:IAO_0000111 xml:lang="en">entity</obo:IAO_0000111>
@@ -2087,7 +2217,6 @@ This class is intended to include behaviours that can usefully be characterised 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000002">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <obo:BFO_0000179>continuant</obo:BFO_0000179>
         <obo:BFO_0000180>Continuant</obo:BFO_0000180>
         <obo:IAO_0000111 xml:lang="en">continuant</obo:IAO_0000111>
@@ -2653,6 +2782,24 @@ This class is intended to include behaviours that can usefully be characterised 
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000600"/>
+        <owl:annotatedTarget xml:lang="en">b is a disposition means: b is a realizable entity &amp; b’s bearer is some material entity &amp; b is such that if it ceases to exist, then its bearer is physically changed, &amp; b’s realization occurs when and because this bearer is in some special physical circumstances, &amp; this realization occurs in virtue of the bearer’s physical make-up. (axiom label in BFO2 Reference: [062-002])</owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/062-002"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000600"/>
+        <owl:annotatedTarget xml:lang="en">b is a disposition means: b is a realizable entity &amp; b’s bearer is some material entity &amp; b is such that if it ceases to exist, then its bearer is physically changed, &amp; b’s realization occurs when and because this bearer is in some special physical circumstances, &amp; this realization occurs in virtue of the bearer’s physical make-up. (axiom label in BFO2 Reference: [062-002])</owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/062-002"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000601"/>
+        <owl:annotatedTarget xml:lang="en">If b is a realizable entity then for all t at which b exists, b s-depends_on some material entity at t. (axiom label in BFO2 Reference: [063-002])</owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/063-002"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000601"/>
         <owl:annotatedTarget xml:lang="en">If b is a realizable entity then for all t at which b exists, b s-depends_on some material entity at t. (axiom label in BFO2 Reference: [063-002])</owl:annotatedTarget>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/063-002"/>
@@ -2680,24 +2827,6 @@ This class is intended to include behaviours that can usefully be characterised 
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
         <owl:annotatedTarget>(forall (x) (if (Disposition x) (and (RealizableEntity x) (exists (y) (and (MaterialEntity y) (bearerOfAt x y t)))))) // axiom label in BFO2 CLIF: [062-002] </owl:annotatedTarget>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/062-002"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000600"/>
-        <owl:annotatedTarget xml:lang="en">b is a disposition means: b is a realizable entity &amp; b’s bearer is some material entity &amp; b is such that if it ceases to exist, then its bearer is physically changed, &amp; b’s realization occurs when and because this bearer is in some special physical circumstances, &amp; this realization occurs in virtue of the bearer’s physical make-up. (axiom label in BFO2 Reference: [062-002])</owl:annotatedTarget>
-        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/062-002"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000600"/>
-        <owl:annotatedTarget xml:lang="en">b is a disposition means: b is a realizable entity &amp; b’s bearer is some material entity &amp; b is such that if it ceases to exist, then its bearer is physically changed, &amp; b’s realization occurs when and because this bearer is in some special physical circumstances, &amp; this realization occurs in virtue of the bearer’s physical make-up. (axiom label in BFO2 Reference: [062-002])</owl:annotatedTarget>
-        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/062-002"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000601"/>
-        <owl:annotatedTarget xml:lang="en">If b is a realizable entity then for all t at which b exists, b s-depends_on some material entity at t. (axiom label in BFO2 Reference: [063-002])</owl:annotatedTarget>
-        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/063-002"/>
     </owl:Axiom>
     
 
@@ -2783,7 +2912,6 @@ This class is intended to include behaviours that can usefully be characterised 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000020">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <obo:BFO_0000179>sdc</obo:BFO_0000179>
         <obo:BFO_0000180>SpecificallyDependentContinuant</obo:BFO_0000180>
         <obo:IAO_0000111 xml:lang="en">specifically dependent continuant</obo:IAO_0000111>
@@ -2798,9 +2926,11 @@ This class is intended to include behaviours that can usefully be characterised 
         <obo:IAO_0000112 xml:lang="en">the role of being a doctor</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">the shape of this hole.</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">the smell of this portion of mozzarella</obo:IAO_0000112>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115 xml:lang="en">A continuant that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">b is a relational specifically dependent continuant = Def. b is a specifically dependent continuant and there are n &amp;gt; 1 independent continuants c1, … cn which are not spatial regions are such that for all 1  i &amp;lt; j  n, ci  and cj share no common parts, are such that for each 1  i  n, b s-depends_on ci at every time t during the course of b’s existence (axiom label in BFO2 Reference: [131-004])</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">b is a specifically dependent continuant = Def. b is a continuant &amp; there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])</obo:IAO_0000115>
+        <obo:IAO_0000115>b is a specifically dependent continuant = Def. b is a continuant and there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">Specifically dependent continuant doesn&apos;t have a closure axiom because the subclasses don&apos;t necessarily exhaust all possibilites. We&apos;re not sure what else will develop here, but for example there are questions such as what are promises, obligation, etc.</obo:IAO_0000116>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/dron.owl"/>
@@ -2819,6 +2949,7 @@ This class is intended to include behaviours that can usefully be characterised 
         <rdfs:comment xml:lang="en">A continuant that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <rdfs:label xml:lang="en">characteristic</rdfs:label>
+        <rdfs:label>specifically dependent continuant</rdfs:label>
         <rdfs:label xml:lang="en">specifically dependent continuant</rdfs:label>
         <rdfs:seeAlso>https://github.com/OBOFoundry/COB/issues/65</rdfs:seeAlso>
         <rdfs:seeAlso>https://github.com/oborel/obo-relations/pull/284</rdfs:seeAlso>
@@ -3083,31 +3214,15 @@ This class is intended to include behaviours that can usefully be characterised 
         <obo:IAO_0000112 xml:lang="en">the interior of your refrigerator</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">the lumen of your gut</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">your left nostril (a fiat part – the opening – of your left nasal cavity)</obo:IAO_0000112>
-        <obo:IAO_0000114>External</obo:IAO_0000114>
-        <obo:IAO_0000115>A three-dimensional immaterial entity that is (partially or wholly) bounded by a material entity or it is a three-dimensional immaterial part thereof.</obo:IAO_0000115>
-        <obo:IAO_0000119>Basic Formal Ontology</obo:IAO_0000119>
         <obo:IAO_0000600 xml:lang="en">b is a site means: b is a three-dimensional immaterial entity that is (partially or wholly) bounded by a material entity or it is a three-dimensional immaterial part thereof. (axiom label in BFO2 Reference: [034-002])</obo:IAO_0000600>
         <obo:IAO_0000602>(forall (x) (if (Site x) (ImmaterialEntity x))) // axiom label in BFO2 CLIF: [034-002] </obo:IAO_0000602>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
-        <rdfs:label>site</rdfs:label>
         <rdfs:label xml:lang="en">site</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000600"/>
         <owl:annotatedTarget xml:lang="en">b is a site means: b is a three-dimensional immaterial entity that is (partially or wholly) bounded by a material entity or it is a three-dimensional immaterial part thereof. (axiom label in BFO2 Reference: [034-002])</owl:annotatedTarget>
-        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/034-002"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000600"/>
-        <owl:annotatedTarget xml:lang="en">b is a site means: b is a three-dimensional immaterial entity that is (partially or wholly) bounded by a material entity or it is a three-dimensional immaterial part thereof. (axiom label in BFO2 Reference: [034-002])</owl:annotatedTarget>
-        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/034-002"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
-        <owl:annotatedTarget>(forall (x) (if (Site x) (ImmaterialEntity x))) // axiom label in BFO2 CLIF: [034-002] </owl:annotatedTarget>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/034-002"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -3264,6 +3379,7 @@ This class is intended to include behaviours that can usefully be characterised 
         <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: Material entities (continuants) can preserve their identity even while gaining and losing material parts. Continuants are contrasted with occurrents, which unfold themselves in successive temporal parts or phases [60</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: Object, Fiat Object Part and Object Aggregate are not intended to be exhaustive of Material Entity. Users are invited to propose new subcategories of Material Entity.</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: ‘Matter’ is intended to encompass both mass and energy (we will address the ontological treatment of portions of energy in a later version of BFO). A portion of matter is anything that includes elementary particles among its proper or improper parts: quarks and leptons, including electrons, as the smallest particles thus far discovered; baryons (including protons and neutrons) at a higher level of granularity; atoms and molecules at still higher levels, forming the cells, organs, organisms and other material entities studied by biologists, the portions of rock studied by geologists, the fossils studied by paleontologists, and so on.Material entities are three-dimensional entities (entities extended in three spatial dimensions), as contrasted with the processes in which they participate, which are four-dimensional entities (entities extended also along the dimension of time).According to the FMA, material entities may have immaterial entities as parts – including the entities identified below as sites; for example the interior (or ‘lumen’) of your small intestine is a part of your body. BFO 2.0 embodies a decision to follow the FMA here.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Elucidation: An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time.</obo:IAO_0000116>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
@@ -3542,7 +3658,6 @@ This class is intended to include behaviours that can usefully be characterised 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_16236">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_134179"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_15734"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23982"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50584"/>
         <obo:IAO_0000115>A primary alcohol that is ethane in which one of the hydrogens is substituted by a hydroxy group.</obo:IAO_0000115>
@@ -4023,7 +4138,6 @@ This class is intended to include behaviours that can usefully be characterised 
     <!-- http://purl.obolibrary.org/obo/CHEBI_24432 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_24432">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
         <obo:IAO_0000115>A role played by the molecular entity or part thereof within a biological context.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
@@ -4106,7 +4220,6 @@ This class is intended to include behaviours that can usefully be characterised 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_24913">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_18059"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50860"/>
         <obo:IAO_0000115>Any lipid formally derived from isoprene (2-methylbuta-1,3-diene), the skeleton of which can generally be discerned in repeated occurrence in the molecule. The skeleton of isoprenoids may differ from strict additivity of isoprene units by loss or shift of a fragment, commonly a methyl group. The class includes both hydrocarbons and oxygenated derivatives.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>CHEBI:24913</oboInOwl:id>
@@ -4530,7 +4643,6 @@ This class is intended to include behaviours that can usefully be characterised 
     <!-- http://purl.obolibrary.org/obo/CHEBI_27732 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_27732">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_26385"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27134"/>
         <obo:IAO_0000115>A trimethylxanthine in which the three methyl groups are located at positions 1, 3, and 7. A purine alkaloid that occurs naturally in tea and coffee.</obo:IAO_0000115>
         <oboInOwl:hasAlternativeId>CHEBI:22982</oboInOwl:hasAlternativeId>
@@ -6391,7 +6503,6 @@ This class is intended to include behaviours that can usefully be characterised 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_50047">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35352"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50860"/>
         <obo:IAO_0000115>A compound formally derived from ammonia by replacing one, two or three hydrogen atoms by organyl groups.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>CHEBI:50047</oboInOwl:id>
@@ -6461,7 +6572,6 @@ This class is intended to include behaviours that can usefully be characterised 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_50906">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <obo:IAO_0000115>A role is particular behaviour which a material entity may exhibit.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>CHEBI:50906</oboInOwl:id>
@@ -6657,7 +6767,6 @@ This class is intended to include behaviours that can usefully be characterised 
     <!-- http://purl.obolibrary.org/obo/CHEBI_52217 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_52217">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33232"/>
         <obo:IAO_0000115>Any substance introduced into a living organism with therapeutic or diagnostic purpose.</obo:IAO_0000115>
         <oboInOwl:hasAlternativeId>CHEBI:33293</oboInOwl:hasAlternativeId>
@@ -7554,7 +7663,6 @@ This class is intended to include behaviours that can usefully be characterised 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_104">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_0050117"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_4"/>
         <obo:IAO_0000115 xml:lang="en">A disease by infectious agent that results_in infection, has_material_basis_in Bacteria.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>ICD10CM:A49.9</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>MESH:D001424</oboInOwl:hasDbXref>
@@ -7639,7 +7747,6 @@ This class is intended to include behaviours that can usefully be characterised 
     <!-- http://purl.obolibrary.org/obo/DOID_1287 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_1287">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_4"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_7"/>
         <obo:IAO_0000115 xml:lang="en">A disease of anatomical entity which occurs in the blood, heart, blood vessels or the lymphatic system that passes nutrients (such as amino acids and electrolytes), gases, hormones, blood cells or lymph to and from cells in the body to help fight diseases and help stabilize body temperature and pH to maintain homeostasis.</obo:IAO_0000115>
         <oboInOwl:hasAlternativeId>DOID:73</oboInOwl:hasAlternativeId>
@@ -7914,7 +8021,7 @@ This class is intended to include behaviours that can usefully be characterised 
         <dc:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007638"/>
         <dc:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007643"/>
         <oboInOwl:hasDbXref>url:http://en.wikipedia.org/wiki/cancer</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>url:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&amp;va=cancer</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>url:https://www.merriam-webster.com/dictionary/cancer#medicalDictionary</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -7923,7 +8030,6 @@ This class is intended to include behaviours that can usefully be characterised 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_178">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_1287"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_4"/>
         <obo:IAO_0000115 xml:lang="en">A cardiovascular system disease that primarily affects the blood vessels which includes the arteries, veins and capillaries that carry blood to and from the heart.</obo:IAO_0000115>
         <oboInOwl:hasAlternativeId>DOID:0000405</oboInOwl:hasAlternativeId>
         <oboInOwl:hasAlternativeId>DOID:2403</oboInOwl:hasAlternativeId>
@@ -8157,8 +8263,9 @@ This class is intended to include behaviours that can usefully be characterised 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_526">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_934"/>
-        <obo:IAO_0000115 xml:lang="en">A viral infectious disease that results in destruction of immune system, leading to life-threatening opportunistic infections and cancers, has_material_basis_in Human immunodeficiency virus 1 or has_material_basis_in Human immunodeficiency virus 2, which are transmitted by sexual contact, transmitted by transfer of blood, semen, vaginal fluid, pre-ejaculate, or breast milk, transmitted by congenital method, and transmitted by contaminated needles. The virus infects helper T cells (CD4+ T cells) which are directly or indirectly destroyed, macrophages, and dendritic cells. The infection has symptom diarrhea, has symptom fatigue, has symptom fever, has symptom vaginal yeast infection, has symptom headache, has symptom mouth sores, has symptom muscle aches, has symptom sore throat, and has symptom swollen lymph glands.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A viral infectious disease that results in destruction of immune system, leading to life-threatening opportunistic infections and cancers, has_material_basis_in Human immunodeficiency virus 1 (Lentivirus humimdef1) or Human immunodeficiency virus 2 (Lentivirus humimdef2), which are transmitted by sexual contact, transmitted by transfer of blood, semen, vaginal fluid, pre-ejaculate, or breast milk, transmitted by congenital method, and transmitted by contaminated needles. The virus infects helper T cells (CD4+ T cells) which are directly or indirectly destroyed, macrophages, and dendritic cells. The infection has symptom diarrhea, has symptom fatigue, has symptom fever, has symptom vaginal yeast infection, has symptom headache, has symptom mouth sores, has symptom muscle aches, has symptom sore throat, and has symptom swollen lymph glands.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>ICD10CM:B20</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9CM:042</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>ICD9CM:042-042.99</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>MESH:D015658</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>NCI:C3108</oboInOwl:hasDbXref>
@@ -8175,11 +8282,11 @@ This class is intended to include behaviours that can usefully be characterised 
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/DOID_526"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">A viral infectious disease that results in destruction of immune system, leading to life-threatening opportunistic infections and cancers, has_material_basis_in Human immunodeficiency virus 1 or has_material_basis_in Human immunodeficiency virus 2, which are transmitted by sexual contact, transmitted by transfer of blood, semen, vaginal fluid, pre-ejaculate, or breast milk, transmitted by congenital method, and transmitted by contaminated needles. The virus infects helper T cells (CD4+ T cells) which are directly or indirectly destroyed, macrophages, and dendritic cells. The infection has symptom diarrhea, has symptom fatigue, has symptom fever, has symptom vaginal yeast infection, has symptom headache, has symptom mouth sores, has symptom muscle aches, has symptom sore throat, and has symptom swollen lymph glands.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">A viral infectious disease that results in destruction of immune system, leading to life-threatening opportunistic infections and cancers, has_material_basis_in Human immunodeficiency virus 1 (Lentivirus humimdef1) or Human immunodeficiency virus 2 (Lentivirus humimdef2), which are transmitted by sexual contact, transmitted by transfer of blood, semen, vaginal fluid, pre-ejaculate, or breast milk, transmitted by congenital method, and transmitted by contaminated needles. The virus infects helper T cells (CD4+ T cells) which are directly or indirectly destroyed, macrophages, and dendritic cells. The infection has symptom diarrhea, has symptom fatigue, has symptom fever, has symptom vaginal yeast infection, has symptom headache, has symptom mouth sores, has symptom muscle aches, has symptom sore throat, and has symptom swollen lymph glands.</owl:annotatedTarget>
         <dc:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007638"/>
-        <dc:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007640"/>
         <oboInOwl:hasDbXref>url:http://en.wikipedia.org/wiki/HIV</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>url:http://www.nlm.nih.gov/medlineplus/ency/article/000602.htm</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>url:https://medlineplus.gov/hiv.html</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>url:https://www.cdc.gov/hiv/about/index.html</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -8205,7 +8312,7 @@ This class is intended to include behaviours that can usefully be characterised 
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget xml:lang="en">A disease that manifests in a defined anatomical structure.</owl:annotatedTarget>
         <dc:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007643"/>
-        <oboInOwl:hasDbXref>url:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&amp;va=anatomic</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>url:https://www.merriam-webster.com/medical/anatomic</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -8214,7 +8321,6 @@ This class is intended to include behaviours that can usefully be characterised 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_934">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_0050117"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_4"/>
         <obo:IAO_0000115 xml:lang="en">A disease by infectious agent that results in infection, has_material_basis_in Viruses.</obo:IAO_0000115>
         <oboInOwl:hasAlternativeId>DOID:1329</oboInOwl:hasAlternativeId>
         <oboInOwl:hasDbXref>ICD10CM:A94</oboInOwl:hasDbXref>
@@ -8562,6 +8668,8 @@ JAR: A data item is an approximately justified approximately true approximate be
         <obo:IAO_0000111 xml:lang="en">information content entity</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">Examples of information content entites include journal articles, data, graphical layouts, and graphs.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
+        <obo:IAO_0000115>A generically dependent continuant that is about some thing.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">A generically dependent continuant that is about some thing.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">2014-03-10: The use of &quot;thing&quot; is intended to be general enough to include universals and configurations (see https://groups.google.com/d/msg/information-ontology/GBxvYZCk1oc/-L6B5fSBBTQJ).</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">information_content_entity &apos;is_encoded_in&apos; some digital_entity in obi before split (040907). information_content_entity &apos;is_encoded_in&apos; some physical_document in obi before split (040907).
@@ -8571,6 +8679,8 @@ Previous. An information content entity is a non-realizable information entity t
         <obo:IAO_0000119 xml:lang="en">OBI_0000142</obo:IAO_0000119>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogms.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label>information content entity</rdfs:label>
         <rdfs:label xml:lang="en">information content entity</rdfs:label>
     </owl:Class>
     
@@ -8699,6 +8809,12 @@ Request that IAO either clarify these or change definitions not to use them</rdf
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000001">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000195"/>
+        <obo:IAO_0000112> &quot;Activity-related&quot; in the Health Promotion Model</obo:IAO_0000112>
+        <obo:IAO_0000112> &quot;Affective reactions&quot; in the Affective Events Theory</obo:IAO_0000112>
+        <obo:IAO_0000112> &quot;Context-related&quot; in the Health Promotion Model</obo:IAO_0000112>
+        <obo:IAO_0000112> &quot;Feedback intervention-induced affect&quot; in the Feedback Intervention Theory</obo:IAO_0000112>
+        <obo:IAO_0000112> &quot;Self-related&quot; in the Health Promotion Model</obo:IAO_0000112>
+        <obo:IAO_0000112>&quot;Affective processes&quot; in the Feedback Intervention Theory</obo:IAO_0000112>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>An &lt;affective process&gt; that is a synchronized aggregate of constituent mental processes, including an appraisal process, which is valenced, has an object, and gives rise to an action tendency.</obo:IAO_0000115>
         <obo:IAO_0000115>An affective process that is a synchronized aggregate of constituent mental processes including an appraisal process, which is valenced, has an object, and gives rise to an action tendency.</obo:IAO_0000115>
@@ -8724,7 +8840,7 @@ Valence refers to the &apos;the subjective value of an event, object, person, or
         <obo:IAO_0000115>A cognitive representation of the emotional relevance of an object or event to the organism.</obo:IAO_0000115>
         <rdfs:comment>Appraisals are a part of emotion processes, representing how a triggering stimulus is relevant to the self. Appraisal captures the ‘aboutness’ of an emotion process. For example, a stimulus such as an image of a tiger can produce different emotion processes depending on how the relevance of this stimulus is evaluated. If the image of a tiger was on TV, this would likely not be evaluated as dangerous. However, an image of a tiger two meters away from a person would be relevant to a person in terms of its dangerousness. Therefore, an appraisal of the dangerouness of the tiger would be part of the emotion process &apos;fear&apos;.</rdfs:comment>
         <rdfs:comment>There is no rigid sequence of the entities that are part of the emotion process -- an appraisal does not necessarily precede a physiological process part of the emotion process.</rdfs:comment>
-        <rdfs:label>emotional-relevance appraisal</rdfs:label>
+        <rdfs:label>affective apraisal</rdfs:label>
     </owl:Class>
     
 
@@ -8733,6 +8849,8 @@ Valence refers to the &apos;the subjective value of an event, object, person, or
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000006">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000195"/>
+        <obo:IAO_0000112> &quot;Regulatory fit&quot; in the Regulatory Fit Theory</obo:IAO_0000112>
+        <obo:IAO_0000112>&quot;Wants&quot; in the PRIME theory</obo:IAO_0000112>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>An &lt;affective process&gt; that involves the experience of internal or external sensory stimuli.</obo:IAO_0000115>
         <obo:IAO_0000115>An affective process that involves the experience of internal or external sensory stimuli.</obo:IAO_0000115>
@@ -8766,6 +8884,7 @@ As a subclass of &apos;affective process&apos;, subjective affective feelings ha
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000035">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000001"/>
+        <obo:IAO_0000112>&quot;Pleasantness&quot; in the Feedback Intervention Theory</obo:IAO_0000112>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>A positive emotion which is sought out and is associated with happiness and satisfaction.</obo:IAO_0000115>
         <obo:IAO_0000118>enjoyment</obo:IAO_0000118>
@@ -8773,7 +8892,6 @@ As a subclass of &apos;affective process&apos;, subjective affective feelings ha
         <obo:MFOEM_000010 xml:lang="fr">plaisir</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="de">vergnügen</obo:MFOEM_000010>
         <obo:MFOEM_000165>pleased</obo:MFOEM_000165>
-        <rdfs:label>pleasure</rdfs:label>
         <rdfs:label>pleasure (emotion)</rdfs:label>
     </owl:Class>
     
@@ -8783,6 +8901,9 @@ As a subclass of &apos;affective process&apos;, subjective affective feelings ha
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000195">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000020"/>
+        <obo:IAO_0000112> &quot;Affect&quot; in the Health Promotion Model</obo:IAO_0000112>
+        <obo:IAO_0000112> &quot;Mood / arousal&quot; in the Social Action Theory (Ewart)</obo:IAO_0000112>
+        <obo:IAO_0000112>&quot;Feelings&quot; in the Risk as Feelings</obo:IAO_0000112>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;mental process&gt; that has positive or negative valence.</obo:IAO_0000115>
         <obo:IAO_0000115>A mental process that has positive or negative valence.</obo:IAO_0000115>
@@ -8857,9 +8978,11 @@ The use of the phrase ‘an anatomical structure in the cognitive system’ in t
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000032">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <obo:IAO_0000112>&quot;Internal environment&quot; in the PRIME theory</obo:IAO_0000112>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;disposition&gt; that inheres in some extended organism.</obo:IAO_0000115>
         <obo:IAO_0000115>A bodily disposition is a disposition that inheres in some extended organism. Examples are: my disposition to catch a cold when exposed to a virus, my ability to speak the English language.</obo:IAO_0000115>
+        <obo:IAO_0000115>A disposition that inheres in some extended organism.</obo:IAO_0000115>
         <obo:IAO_0000118>personal disposition</obo:IAO_0000118>
         <rdfs:comment>Bodily disposition includes features that can be used in a specific context, such as a person&apos;s strength, but not a person&apos;s weight. A person has a specific weight independent of the circumstances they are in.</rdfs:comment>
         <rdfs:comment>Extended organism refers to an organism and its microbiome (e.g., the bacteria that live in one&apos;s digestive system)
@@ -8876,8 +8999,11 @@ Bodily disposition would include features, such as a person&apos;s strength (whi
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000033">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000032"/>
+        <obo:IAO_0000112> &quot;Psychological&quot; in the Health Promotion Model</obo:IAO_0000112>
+        <obo:IAO_0000112>&quot;Psychological factors&quot; in the I-Change Model</obo:IAO_0000112>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;bodily disposition&gt; that is realized in a mental process.</obo:IAO_0000115>
+        <obo:IAO_0000115>A bodily disposition that is realized in a mental process.</obo:IAO_0000115>
         <obo:IAO_0000115>A mental disposition is a bodily disposition that is realized in a mental process. </obo:IAO_0000115>
         <rdfs:comment>&apos;Mental disposition&apos; is a subclass of &apos;bodily disposition&apos;, as mental dispositions occur in the body.</rdfs:comment>
         <rdfs:comment>Mental disposition&apos; is a subclass of &apos;bodily disposition&apos;, as mental dispositions occur in the body.</rdfs:comment>
@@ -8928,7 +9054,6 @@ Bodily disposition would include features, such as a person&apos;s strength (whi
     <!-- http://purl.obolibrary.org/obo/OBCS_0000218 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000218">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000233"/>
         <obo:IAO_0000115>A data item that is derived from a statistical data analysis.</obo:IAO_0000115>
         <obo:IAO_0000117>Jie Zheng, Yongqun He, Marcy Harris, Asiyah Yu Lin</obo:IAO_0000117>
@@ -8943,7 +9068,6 @@ Bodily disposition would include features, such as a person&apos;s strength (whi
     <!-- http://purl.obolibrary.org/obo/OBCS_0000220 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000220">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000218"/>
         <obo:IAO_0000115>A data item that is derived from an inferential statistical data analysis.</obo:IAO_0000115>
         <obo:IAO_0000117>Jie Zheng, Yongqun He</obo:IAO_0000117>
@@ -8982,9 +9106,6 @@ objectives is a planned process.</obo:IAO_0000116>
         <obo:IAO_0000232>6/11/9: Edited at workshop. Used to include: is initiated by an agent</obo:IAO_0000232>
         <obo:IAO_0000232 xml:lang="en">This class merges the previously separated objective driven process and planned process, as they the separation proved hard to maintain. (1/22/09, branch call)</obo:IAO_0000232>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-        <oboInOwl:hasAlternativeId>CHMO:0001840</oboInOwl:hasAlternativeId>
-        <oboInOwl:id>OBI:0000011</oboInOwl:id>
-        <rdfs:label>planned process</rdfs:label>
         <rdfs:label xml:lang="en">planned process</rdfs:label>
     </owl:Class>
     
@@ -9062,29 +9183,19 @@ objectives is a planned process.</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000094">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-        <obo:IAO_0000115>A planned process which results in physical changes in a specified input material.</obo:IAO_0000115>
-        <oboInOwl:hasAlternativeId>CHMO:0001131</oboInOwl:hasAlternativeId>
-        <oboInOwl:hasAlternativeId>CHMO:0001267</oboInOwl:hasAlternativeId>
-        <oboInOwl:hasAlternativeId>CHMO:0001461</oboInOwl:hasAlternativeId>
-        <oboInOwl:hasAlternativeId>FIX:0000258</oboInOwl:hasAlternativeId>
-        <oboInOwl:hasExactSynonym>material transformations</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>preparative method</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>sample preparation</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>sample preparation step</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>sample preparative method</oboInOwl:hasExactSynonym>
-        <oboInOwl:id>OBI:0000094</oboInOwl:id>
-        <rdfs:label>material processing</rdfs:label>
+        <obo:IAO_0000111>material processing</obo:IAO_0000111>
+        <obo:IAO_0000112>A cell lysis, production of a cloning vector, creating a buffer.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A planned process which results in physical changes in a specified input material</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON: Frank Gibson</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON: Jennifer Fostel</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON: Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON: Philippe Rocca Serra</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">material transformation</obo:IAO_0000118>
+        <obo:IAO_0000119 xml:lang="en">OBI branch derived</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">material processing</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A planned process which results in physical changes in a specified input material.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>obi:bp</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>obi:fg</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>obi:jf</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>obi:mc</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>obi:prs</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -9303,12 +9414,15 @@ edited date: 30 SEPT 2015</obo:IAO_0000232>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000061">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
+        <obo:IAO_0000115>A material entity that is a human made strcuture with firm connection between its foundation and the ground.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">A material entity that is a human made strcuture with firm connection between its foundation and the ground.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">http://de.wikipedia.org/wiki/Bauwerk</obo:IAO_0000119>
         <rdfs:comment xml:lang="en">&quot;Building&quot; is a subclass of this. </rdfs:comment>
         <rdfs:comment xml:lang="en">This type of entity is referred to as &quot;Bauwerk&quot; or &quot;Bauliche Anlage&quot;.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/omrse.owl"/>
+        <rdfs:label>architectural structure</rdfs:label>
         <rdfs:label xml:lang="en">architectural structure</rdfs:label>
     </owl:Class>
     
@@ -9317,7 +9431,6 @@ edited date: 30 SEPT 2015</obo:IAO_0000232>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000062 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000062">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000061"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>An architectural structure that bears some function.</obo:IAO_0000115>
@@ -9352,13 +9465,14 @@ edited date: 30 SEPT 2015</obo:IAO_0000232>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000102">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000062"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
+        <obo:IAO_0000115 xml:lang="en">A facility bearing the function to provide healthcare and that is administered by a health care organization for the purpose of providing health care to a patient or patient population.</obo:IAO_0000115>
         <obo:IAO_0000115>A facility that’s administered by a health care organisation for the purpose of providing health care to a patient population</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">A facility bearing the function to provide healthcare and that is administered by a health care organization for the purpose of providing health care to a patient or patient population.</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">William Hogan</obo:IAO_0000117>
         <obo:IAO_0000119>Ontology of Medically Related Social Entities</obo:IAO_0000119>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/omrse.owl"/>
+        <rdfs:label>health care facility</rdfs:label>
         <rdfs:label xml:lang="en">health care facility</rdfs:label>
-        <rdfs:label>healthcare facility</rdfs:label>
     </owl:Class>
     
 
@@ -9775,7 +9889,6 @@ edited date: 30 SEPT 2015</obo:IAO_0000232>
     <!-- http://purl.obolibrary.org/obo/RO_0002577 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RO_0002577">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <obo:IAO_0000115>A material entity consisting of multiple components that are causally integrated.</obo:IAO_0000115>
         <obo:IAO_0000116>May be replaced by a BFO class, as discussed in http://www.jbiomedsem.com/content/4/1/43</obo:IAO_0000116>
@@ -9830,7 +9943,9 @@ Useful because these map to the strength of the evidence each might provide.</ob
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#mouse_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#upper_level"/>
+        <rdfs:comment>This term is being aligned with COB</rdfs:comment>
         <rdfs:label>processual entity</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/OBOFoundry/COB/issues/51</rdfs:seeAlso>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000000"/>
@@ -9849,6 +9964,7 @@ Useful because these map to the strength of the evidence each might provide.</ob
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_33090"/>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_33208"/>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4751"/>
+        <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <oboInOwl:hasDbXref>AAO:0010825</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>AEO:0000003</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BILA:0000003</oboInOwl:hasDbXref>
@@ -9874,6 +9990,7 @@ Useful because these map to the strength of the evidence each might provide.</ob
         <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id>UBERON:0000061</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#common_anatomy"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#mouse_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#upper_level"/>
@@ -10013,39 +10130,40 @@ Useful because these map to the strength of the evidence each might provide.</ob
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4751"/>
         <obo:UBPROP_0000012>the WBls class &apos;all stages&apos; belongs here as it is the superclass of other WBls stages</obo:UBPROP_0000012>
         <obo:UBPROP_0000012>we map the ZFS unknown stage here as it is logically equivalent to saying *some* life cycle stage</obo:UBPROP_0000012>
+        <oboInOwl:hasDbXref>AcarDv:0000000</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BILS:0000105</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>BtauDv:0000000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CfamDv:0000000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ChirDv:0000000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CporDv:0000000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>DpseDv:0000000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>DsimDv:0000000</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>EFO:0000399</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EcabDv:0000000</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FBdv:00007012</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FMA:24120</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FcatDv:0000000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GgalDv:0000000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GgorDv:0000000</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>HsapDv:0000000</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>MESH:D008018</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MdomDv:0000000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MmulDv:0000000</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>MmusDv:0000000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>OanaDv:0000000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>OariDv:0000000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>OcunDv:0000000</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PdumDv:0000090</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PpanDv:0000000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PtroDv:0000000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>RnorDv:0000000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SsalDv:0000000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SscrDv:0000000</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>WBls:0000002</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>XAO:1000000</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>ZFS:0000000</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>ZFS:0100000</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>ncithesaurus:Developmental_Stage</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>obo:AcarDv_0000000</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>obo:BtauDv_0000000</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>obo:CfamDv_0000000</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>obo:CporDv_0000000</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>obo:DpseDv_0000000</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>obo:DsimDv_0000000</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>obo:EcabDv_0000000</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>obo:FcatDv_0000000</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>obo:GgalDv_0000000</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>obo:GgorDv_0000000</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>obo:MdomDv_0000000</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>obo:MmulDv_0000000</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>obo:OanaDv_0000000</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>obo:OariDv_0000000</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>obo:OcunDv_0000000</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>obo:PpanDv_0000000</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>obo:PtroDv_0000000</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>obo:RnorDv_0000000</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>obo:SsalDv_0000000</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>obo:SscrDv_0000000</oboInOwl:hasDbXref>
         <oboInOwl:hasNarrowSynonym>developmental stage</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>stage</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
@@ -10066,7 +10184,85 @@ Useful because these map to the strength of the evidence each might provide.</ob
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>AcarDv:0000000</owl:annotatedTarget>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/UnspecifiedMatching"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>BtauDv:0000000</owl:annotatedTarget>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/UnspecifiedMatching"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>CfamDv:0000000</owl:annotatedTarget>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/UnspecifiedMatching"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>ChirDv:0000000</owl:annotatedTarget>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/UnspecifiedMatching"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>CporDv:0000000</owl:annotatedTarget>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/UnspecifiedMatching"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>DpseDv:0000000</owl:annotatedTarget>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/UnspecifiedMatching"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>DsimDv:0000000</owl:annotatedTarget>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/UnspecifiedMatching"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>EcabDv:0000000</owl:annotatedTarget>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/UnspecifiedMatching"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>FcatDv:0000000</owl:annotatedTarget>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/UnspecifiedMatching"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>GgalDv:0000000</owl:annotatedTarget>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/UnspecifiedMatching"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>GgorDv:0000000</owl:annotatedTarget>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/UnspecifiedMatching"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget>HsapDv:0000000</owl:annotatedTarget>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/UnspecifiedMatching"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>MdomDv:0000000</owl:annotatedTarget>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/UnspecifiedMatching"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>MmulDv:0000000</owl:annotatedTarget>
         <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/UnspecifiedMatching"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -10078,121 +10274,49 @@ Useful because these map to the strength of the evidence each might provide.</ob
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>obo:AcarDv_0000000</owl:annotatedTarget>
+        <owl:annotatedTarget>OanaDv:0000000</owl:annotatedTarget>
         <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/UnspecifiedMatching"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>obo:BtauDv_0000000</owl:annotatedTarget>
+        <owl:annotatedTarget>OariDv:0000000</owl:annotatedTarget>
         <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/UnspecifiedMatching"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>obo:CfamDv_0000000</owl:annotatedTarget>
+        <owl:annotatedTarget>OcunDv:0000000</owl:annotatedTarget>
         <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/UnspecifiedMatching"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>obo:CporDv_0000000</owl:annotatedTarget>
+        <owl:annotatedTarget>PpanDv:0000000</owl:annotatedTarget>
         <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/UnspecifiedMatching"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>obo:DpseDv_0000000</owl:annotatedTarget>
+        <owl:annotatedTarget>PtroDv:0000000</owl:annotatedTarget>
         <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/UnspecifiedMatching"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>obo:DsimDv_0000000</owl:annotatedTarget>
+        <owl:annotatedTarget>RnorDv:0000000</owl:annotatedTarget>
         <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/UnspecifiedMatching"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>obo:EcabDv_0000000</owl:annotatedTarget>
+        <owl:annotatedTarget>SsalDv:0000000</owl:annotatedTarget>
         <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/UnspecifiedMatching"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>obo:FcatDv_0000000</owl:annotatedTarget>
-        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/UnspecifiedMatching"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>obo:GgalDv_0000000</owl:annotatedTarget>
-        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/UnspecifiedMatching"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>obo:GgorDv_0000000</owl:annotatedTarget>
-        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/UnspecifiedMatching"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>obo:MdomDv_0000000</owl:annotatedTarget>
-        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/UnspecifiedMatching"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>obo:MmulDv_0000000</owl:annotatedTarget>
-        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/UnspecifiedMatching"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>obo:OanaDv_0000000</owl:annotatedTarget>
-        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/UnspecifiedMatching"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>obo:OariDv_0000000</owl:annotatedTarget>
-        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/UnspecifiedMatching"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>obo:OcunDv_0000000</owl:annotatedTarget>
-        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/UnspecifiedMatching"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>obo:PpanDv_0000000</owl:annotatedTarget>
-        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/UnspecifiedMatching"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>obo:PtroDv_0000000</owl:annotatedTarget>
-        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/UnspecifiedMatching"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>obo:RnorDv_0000000</owl:annotatedTarget>
-        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/UnspecifiedMatching"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>obo:SsalDv_0000000</owl:annotatedTarget>
-        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/UnspecifiedMatching"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>obo:SscrDv_0000000</owl:annotatedTarget>
+        <owl:annotatedTarget>SscrDv:0000000</owl:annotatedTarget>
         <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/UnspecifiedMatching"/>
     </owl:Axiom>
     
@@ -10345,7 +10469,6 @@ Useful because these map to the strength of the evidence each might provide.</ob
     <!-- http://purl.obolibrary.org/obo/UBERON_0000465 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000465">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001062"/>
         <obo:IAO_0000115>Anatomical entity that has mass.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_33090"/>
@@ -10874,39 +10997,11 @@ Useful because these map to the strength of the evidence each might provide.</ob
     
 
 
-    <!-- http://purl.obolibrary.org/obo/UBERON_0004121 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0004121">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000061"/>
-        <obo:IAO_0000115>An anatomical structure that develops (entirely or partially) from the ectoderm.</obo:IAO_0000115>
-        <obo:IAO_0000232>Grouping term for query purposes</obo:IAO_0000232>
-        <oboInOwl:hasExactSynonym>ectodermal deriviative</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>UBERON:0004121</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#grouping_class"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_subset"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#mouse_subset"/>
-        <rdfs:label>ectoderm-derived structure</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004121"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>An anatomical structure that develops (entirely or partially) from the ectoderm.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-6601-2165</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004121"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>ectodermal deriviative</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FBbt:00025990</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/UBERON_0004535 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0004535">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000467"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0010314"/>
         <obo:IAO_0000115>Anatomical system that has as its parts the heart and blood vessels.</obo:IAO_0000115>
         <obo:IAO_0000232>we treat cardiovascular as part of circulatory system, with the latter including other kinds of circulation, including lymph.</obo:IAO_0000232>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
@@ -11149,10 +11244,31 @@ Useful because these map to the strength of the evidence each might provide.</ob
     
 
 
+    <!-- http://purl.obolibrary.org/obo/UBERON_0010314 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0010314">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000061"/>
+        <obo:IAO_0000115>An anatomical structure that has some part that develops from the neural crest.</obo:IAO_0000115>
+        <obo:IAO_0000232>Grouping term for query purposes</obo:IAO_0000232>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>UBERON:0010314</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#grouping_class"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_subset"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#mouse_subset"/>
+        <rdfs:label>structure with developmental contribution from neural crest</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0010314"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>An anatomical structure that has some part that develops from the neural crest.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-6601-2165</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/UBERON_0011215 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0011215">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004121"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005162"/>
         <obo:IAO_0000115>A multi cell part structure that is part of a central nervous system.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>FMA:83143</oboInOwl:hasDbXref>
@@ -11212,5 +11328,5 @@ Useful because these map to the strength of the evidence each might provide.</ob
 
 
 
-<!-- Generated by the OWL API (version 4.5.26) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi -->
 
