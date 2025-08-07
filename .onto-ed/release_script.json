@@ -10,8 +10,8 @@
       }
     ],
     "target": {
-      "file": "addicto_external.owx",
-      "iri": "http://addictovocab.org/addicto_external.owx",
+      "file": "addicto_external.owl",
+      "iri": "http://addictovocab.org/addicto_external.owl",
       "ontology_annotations": {},
       "publish": true
     },
