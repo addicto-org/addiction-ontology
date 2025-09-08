@@ -4,6 +4,7 @@
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:pav="http://purl.org/pav/"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:sdg="http://purl.unep.org/sdg/"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -18,7 +19,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:owlready_ontology="http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#">
     <owl:Ontology rdf:about="http://addictovocab.org/addicto.owl">
-        <owl:versionIRI rdf:resource="http://addictovocab.org/addicto.owl/2025-08-07"/>
+        <owl:versionIRI rdf:resource="http://addictovocab.org/addicto.owl/2025-09-08"/>
         <rdfs:comment>The Addiction Ontology (AddictO) is an ontology being developed all aspects of addiction research.</rdfs:comment>
     </owl:Ontology>
     
@@ -489,7 +490,6 @@ WHERE {
   ?x never_in_taxon: ?taxon .
 }</obo:OMO_0002000>
         <oboInOwl:hasDbXref>RO:0002161</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id>never_in_taxon</oboInOwl:id>
         <oboInOwl:is_class_level rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_class_level>
         <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
@@ -529,7 +529,6 @@ WHERE {
   BIND(CONCAT(STR(?x), &quot; in taxon &quot;, STR(?taxon)) AS ?label)
 }</obo:OMO_0002000>
         <oboInOwl:hasDbXref>RO:0002175</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id>present_in_taxon</oboInOwl:id>
         <oboInOwl:is_class_level rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_class_level>
         <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
@@ -556,7 +555,6 @@ WHERE {
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000001">
         <obo:IAO_0000115>An alternate textual definition for a class taken unmodified from an external source. This definition may have been used to derive a generalized definition for the new class.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>UBPROP:0000001</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id>external_definition</oboInOwl:id>
         <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
         <oboInOwl:shorthand>external_definition</oboInOwl:shorthand>
@@ -577,7 +575,6 @@ WHERE {
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000003">
         <obo:IAO_0000115>Notes on the homology status of this class.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>UBPROP:0000003</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id>homology_notes</oboInOwl:id>
         <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
         <oboInOwl:shorthand>homology_notes</oboInOwl:shorthand>
@@ -598,7 +595,6 @@ WHERE {
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000007">
         <obo:IAO_0000232>Used to connect a class to an adjectival form of its label. For example, a class with label &apos;intestine&apos; may have a relational adjective &apos;intestinal&apos;.</obo:IAO_0000232>
         <oboInOwl:hasDbXref>UBPROP:0000007</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id>has_relational_adjective</oboInOwl:id>
         <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
         <oboInOwl:shorthand>has_relational_adjective</oboInOwl:shorthand>
@@ -613,7 +609,6 @@ WHERE {
         <obo:IAO_0000115>Notes on how similar or equivalent classes are represented in other ontologies.</obo:IAO_0000115>
         <obo:IAO_0000116>This annotation property may be replaced with an annotation property from an external ontology such as IAO</obo:IAO_0000116>
         <oboInOwl:hasDbXref>UBPROP:0000012</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id>external_ontology_notes</oboInOwl:id>
         <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
         <oboInOwl:shorthand>external_ontology_notes</oboInOwl:shorthand>
@@ -650,7 +645,6 @@ WHERE {
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor">
         <oboInOwl:hasDbXref>http://purl.org/dc/terms/contributor</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id>dc-contributor</oboInOwl:id>
         <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
         <oboInOwl:shorthand>dc-contributor</oboInOwl:shorthand>
@@ -662,6 +656,12 @@ WHERE {
     <!-- http://purl.org/dc/terms/source -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
+    
+
+
+    <!-- http://purl.org/pav/authoredBy -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/pav/authoredBy"/>
     
 
 
@@ -1034,7 +1034,6 @@ WHERE {
 
     <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/depiction">
         <oboInOwl:hasDbXref>http://xmlns.com/foaf/0.1/depiction</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id>depiction</oboInOwl:id>
         <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
         <oboInOwl:shorthand>depiction</oboInOwl:shorthand>
@@ -1048,12 +1047,6 @@ WHERE {
     <owl:AnnotationProperty rdf:about="https://schema.org/alternateName">
         <rdfs:label xml:lang="en">alternate name</rdfs:label>
     </owl:AnnotationProperty>
-    
-
-
-    <!-- https://w3id.org/sssom/author_id -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/sssom/author_id"/>
     
 
 
@@ -2086,6 +2079,17 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     
 
 
+    <!-- http://addictovocab.org/ADDICTO_0000177 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000177">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000179"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>A personal stake in which the value to the person involves money or something of monetary value.</obo:IAO_0000115>
+        <rdfs:label>personal financial stake</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://addictovocab.org/ADDICTO_0000178 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000178">
@@ -2101,12 +2105,11 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     <!-- http://addictovocab.org/ADDICTO_0000179 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000179">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050300"/>
         <obo:IAO_0000112>Dr Smith has a personal stake in the outcome of the clinical trial of the drug, varenicline, because he has shares in the company that produces the drug.</obo:IAO_0000112>
         <obo:IAO_0000114>Proposed</obo:IAO_0000114>
-        <obo:IAO_0000115>A personal attribute that involves an outcome of value to that person arising from a process.</obo:IAO_0000115>
-        <obo:IAO_0000232>This is derived from the idea of a stakeholder and is a generalisation of vested interest.</obo:IAO_0000232>
-        <rdfs:comment>Value here can be positive or negative. This definition refers to actual value rather than perceived value. The process that produces the outcome will often be an event such as reporting of the outcome of a clinical trial, or delivery of a verdict in a trial, or enactment of legislation.</rdfs:comment>
+        <obo:IAO_0000115>A personal attribute in relation to an activity such that an outcome of the activity has value for the person.</obo:IAO_0000115>
+        <rdfs:comment>This is a relational attribute that links a person to an activity (not necessarily one that they are engaged in). Value here can be positive or negative. The value need not be recognised by the person involved.</rdfs:comment>
         <rdfs:label>personal stake</rdfs:label>
     </owl:Class>
     
@@ -4074,6 +4077,17 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     
 
 
+    <!-- http://addictovocab.org/ADDICTO_0000419 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000419">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001418"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>A commercial organisation that is engaged in the manufacture, preparation for sale, shipment, advertisement, or distribution of  a vaping device or part of such a product, or is at least partly owned by such an organisation.</obo:IAO_0000115>
+        <rdfs:label>vaping device company</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://addictovocab.org/ADDICTO_0000420 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000420">
@@ -4566,9 +4580,9 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     <!-- http://addictovocab.org/ADDICTO_0000524 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000524">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000055"/>
         <obo:IAO_0000114>Proposed</obo:IAO_0000114>
-        <obo:IAO_0000115>A rule recognised by the legal system of a country or community</obo:IAO_0000115>
+        <obo:IAO_0000115>A rule that is enacted by the legal system of a country or geographic region.</obo:IAO_0000115>
         <rdfs:label>law</rdfs:label>
     </owl:Class>
     
@@ -8421,7 +8435,7 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001101">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
         <obo:IAO_0000114>Proposed</obo:IAO_0000114>
-        <obo:IAO_0000115>An organisation that raises and distributesfunds for charitable purposes.</obo:IAO_0000115>
+        <obo:IAO_0000115>An organisation that raises and distributes funds for charitable purposes.</obo:IAO_0000115>
         <rdfs:label>charity</rdfs:label>
     </owl:Class>
     
@@ -8819,7 +8833,7 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001143">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000033"/>
         <obo:IAO_0000114>Discussed</obo:IAO_0000114>
-        <obo:IAO_0000115>A mental disposition to experience motives in the performance of a professional role that are not aligned with the responsibilities of that role.</obo:IAO_0000115>
+        <obo:IAO_0000115>A mental disposition to experience motives in the performance of an activity that are not aligned with the purported goals of that activity.</obo:IAO_0000115>
         <obo:IAO_0000232>Curator note: The definition was adapted from the PLOS definition. https://journals.plos.org/plosbiology/s/competing-interests</obo:IAO_0000232>
         <rdfs:label>competing interest</rdfs:label>
     </owl:Class>
@@ -8831,8 +8845,8 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001145">
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_050300"/>
         <obo:IAO_0000114>Discussed</obo:IAO_0000114>
-        <obo:IAO_0000115>A personal attribute that could lead to a competing interest.</obo:IAO_0000115>
-        <rdfs:comment>Potential competing interests must be distinguished from competing interests. They should always be declared so that stakeholders can form a judgement about whether bias is likely to be present. However, it would be wrong to assume that they necessarily lead to bias.</rdfs:comment>
+        <obo:IAO_0000115>A personal attribute that is objectively identifiable and could lead to a competing interest.</obo:IAO_0000115>
+        <rdfs:comment>Potential competing interests are distinguished from competing interests. They should always be disclosed so that stakeholders can assess the risk of bias.</rdfs:comment>
         <rdfs:label>potential competing interest</rdfs:label>
     </owl:Class>
     
@@ -8843,9 +8857,9 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001146">
         <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001289"/>
         <obo:IAO_0000114>Discussed</obo:IAO_0000114>
-        <obo:IAO_0000115>A research activity attribute that is the extent to which the data that is output from this process has a systematic inaccuracy.</obo:IAO_0000115>
+        <obo:IAO_0000115>A research activity attribute that is the extent to which the output of research or its communication systematically deviates from a balanced and objective perception of the topic of the research.</obo:IAO_0000115>
         <rdfs:comment>This class refers to actual bias that results in a given research process. This process may be a whole study or some part of a study such as a measurement.</rdfs:comment>
-        <rdfs:label>research activity bias</rdfs:label>
+        <rdfs:label>research bias</rdfs:label>
     </owl:Class>
     
 
@@ -11555,6 +11569,95 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
         <obo:IAO_0000114>Proposed</obo:IAO_0000114>
         <obo:IAO_0000115>A disposition to want to stop smoking that involves wanting to stop smoking at least sometimes.</obo:IAO_0000115>
         <rdfs:label>disposition to want to stop cigarette smoking to some degree</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001416 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001416">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001145"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>A potential competing interest involving a potential financial gain or loss to the person or an organisation or person with which they have a relationship.</obo:IAO_0000115>
+        <rdfs:comment>This includes: 1) ownership of stocks or shares, 2) employment in an organisation, 3) providing paid consultancy to an organisation, 4) being a director of a company, 5) receiving any kind of funding or tangible benefit (e.g. research grant, travel funding, hospitality, gift) from an organisation, 6) ownership of, or pending application for, a patent, and 7) seeking funding from an organisation, that may be affected by the enactment of the professional role. It also includes all of the above that relate to an intimate partner. Organisation includes commercial organisation, government agency, and charity.</rdfs:comment>
+        <rdfs:label>financial potential competing interest</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001417 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001417">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001145"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>A potential competing interest involving gain or loss to the person or an organisation or person with which they have a relationship in terms of reputation, advancement, or support for personal values.</obo:IAO_0000115>
+        <rdfs:label>non-financial potential competing interest</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001418 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001418">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>An organisation whose main goal is making money by selling products or services.</obo:IAO_0000115>
+        <rdfs:label>commercial organisation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001419 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001419">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001418"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>A commercial organisation that is engaged in the manufacture, preparation for sale, shipment, advertisement, or distribution of  a nicotine-containing product or part of such a product, or is at least partly owned by such an organisation.</obo:IAO_0000115>
+        <rdfs:label>Nicotine-product company</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001420 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001420">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001418"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>A commercial organisation that is engaged in the manufacture, preparation for sale, shipment, advertisement, or distribution of  a pharmaceutical product or part of such a product, or is at least partly owned by such an organisation.</obo:IAO_0000115>
+        <rdfs:label>pharmaceutical company</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001421 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001421">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0001418"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>A commercial organisation that is engaged in the manufacture, preparation for sale, shipment, advertisement, or distribution of  an e-cigarette or part of such a product, or is at least partly owned by such an organisation.</obo:IAO_0000115>
+        <rdfs:label>e-cigarette company</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001422 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001422">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>An organisation that has as a function the production, distribution, or provision of goods or services intended to improve health or reduce ill-health.</obo:IAO_0000115>
+        <rdfs:label>health-improvement organisation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0001423 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001423">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>An organisation that has as a function the production, distribution, or provision of goods or services intended for recreational use by consumers.</obo:IAO_0000115>
+        <rdfs:label>recreational organisation</rdfs:label>
     </owl:Class>
     
 
@@ -18403,12 +18506,12 @@ Mean age in a population.</obo:IAO_0000112>
     <!-- http://purl.obolibrary.org/obo/ENVO_00000070 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000070">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000813"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001813"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>A construction that has been assembled by deliberate human effort.</obo:IAO_0000115>
         <obo:IAO_0000116>&quot;constructed&quot; should probably be made something like a quality and this class obsoleted or filled only by inference</obo:IAO_0000116>
         <oboInOwl:hasExactSynonym>constructed feature</oboInOwl:hasExactSynonym>
-        <rdfs:comment xml:lang="en">Some human constructions (such as the extra-planetary probes built for the Voyager missions) exist outside of Earth&apos;s (or any other astrononomical body&apos;s) technosphere, and are thus not astronomical body parts. Assertions regarding whether a construction is part of the technosphere of an astronomical body (e.g. Earth) should be made at the instance level, if needed / useful for the application case.</rdfs:comment>
         <rdfs:label>human construction</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -18451,7 +18554,7 @@ Mean age in a population.</obo:IAO_0000112>
         <obo:IAO_0000115>Airborne solid particles (also called dust or particulate matter (PM)) or liquid droplets.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>EcoLexicon:aerosol</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>SWEETRealm:Aerosol</oboInOwl:hasDbXref>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/envo#envoAtmo"/>
+        <oboInOwl:inSubset>envoAtmo</oboInOwl:inSubset>
         <rdfs:comment>Should connect to PATO as &quot;quality of an aerosol&quot;</rdfs:comment>
         <rdfs:label>aerosol</rdfs:label>
     </owl:Class>
@@ -18523,6 +18626,22 @@ Mean age in a population.</obo:IAO_0000112>
         <oboInOwl:hasDbXref>http://www.eionet.europa.eu/gemet/en/concept/3212</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Fire</oboInOwl:hasDbXref>
     </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000813 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000813">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000115>A material part of an astronomical body.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">Also note that some astronomical body parts (ABPs) may have fiat boundaries: if there&apos;s strong debate about where an ABP begins or ends (over and above fuzzy boundaries), with different official classifications setting different thresholds or limits, axiomatise the class with fiat boundaries of the appropriate dimension.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Note that material entities may have immaterial entities (e.g. sites) as parts.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">This class includes material parts of astronomical bodies. Immaterial parts, such as magnetospheres, are represented as sites under the influence of magnetic fields.Please post countercases in the ENVO tracker for revision of this hierarchy if needed.</obo:IAO_0000116>
+        <oboInOwl:inSubset>envoAstro</oboInOwl:inSubset>
+        <oboInOwl:inSubset>envoPolar</oboInOwl:inSubset>
+        <rdfs:comment xml:lang="en">Material parts of astronomical bodies generally have boundaries formed by discontinuities in qualities, composition, or other physical characterisitcs. These boundaries are sometimes sharp, and sometimes diffuse, with different classification systems and communities declaring varying thresholds (e.g. for where a shoreline, forest, or other entity begins and ends). However, some boundaries are declared by fiat - that is, by arbitrary human convention or decree - particularly by regulatory or other authorities and communities of practice. The classes in this hierarchy attempt to offer generalisable definitions that allow multiple classfiication systems to map to and interoperate through. If desired, we can create classes that declare thresholds used by a given authority or community under the more generic ones, annotated with source information.</rdfs:comment>
+        <rdfs:label xml:lang="en">astronomical body part</rdfs:label>
+    </owl:Class>
     
 
 
@@ -18602,19 +18721,9 @@ Mean age in a population.</obo:IAO_0000112>
         <obo:IAO_0000115>A material entity which has been assembled through the intentional, instinctual, or deliberately programmed efforts of an organism or machine.</obo:IAO_0000115>
         <dc:creator rdf:resource="https://orcid.org/0000-0002-4366-3088"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-10-29T14:50:34Z</dc:date>
-        <oboInOwl:hasBroadSynonym>assembled material entity</oboInOwl:hasBroadSynonym>
-        <rdfs:comment>Constructions differ from manufactured products in that they are the output of individual and tailored projects, rather than repetitive processes.</rdfs:comment>
         <rdfs:label>construction</rdfs:label>
         <rdfs:label xml:lang="en">construction</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001813"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
-        <owl:annotatedTarget>Constructions differ from manufactured products in that they are the output of individual and tailored projects, rather than repetitive processes.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:resource="http://ascpro0.ascweb.org/archives/cd/2009/paper/CERT136002009.pdf"/>
-        <oboInOwl:hasDbXref rdf:resource="https://alsyedconstruction.com/is-construction-a-manufacturing-industry/#comparing-construction-and-manufacturing"/>
-        <oboInOwl:hasDbXref rdf:resource="https://www.autodesk.com/design-make/articles/manufacturing-and-construction"/>
-    </owl:Axiom>
     
 
 
@@ -18637,7 +18746,7 @@ Mean age in a population.</obo:IAO_0000112>
         <obo:IAO_0000116>A different material transformation process class (or similarly named class) pertaining to the conversion of a specific chemical into another belongs in CHEBI and or REX ontologies.</obo:IAO_0000116>
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-4366-3088"/>
         <obo:IAO_0000117>http://orcid.org/0000-0002-3410-4655</obo:IAO_0000117>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/envo#envoPolar"/>
+        <oboInOwl:inSubset>envoPolar</oboInOwl:inSubset>
         <rdfs:comment>Experimental class for structural purposes not recommended for annotation. A material transformation process only refers to ENVO:environmental material classes (e.g. bulk and typically impure substances), rather than transformations converting a specific chemical into another.</rdfs:comment>
         <rdfs:label xml:lang="en">material transformation process</rdfs:label>
     </owl:Class>
@@ -18687,6 +18796,21 @@ Mean age in a population.</obo:IAO_0000112>
         <oboInOwl:hasOBONamespace>GAZ</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GAZ:00000448</oboInOwl:id>
         <rdfs:label>geographic location</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+        <obo:IAO_0000111 xml:lang="en">conditional specification</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">A directive information entity that specifies what should happen if the trigger condition is fulfilled.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PlanAndPlannedProcess Branch</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">OBI branch derived</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">OBI_0000349</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">conditional specification</rdfs:label>
     </owl:Class>
     
 
@@ -18781,6 +18905,27 @@ Previous. An information content entity is a non-realizable information entity t
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
         <rdfs:label>directive information entity</rdfs:label>
         <rdfs:label xml:lang="en">directive information entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000055 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000055">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000001"/>
+        <obo:IAO_0000111 xml:lang="en">rule</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">example to be added</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
+        <obo:IAO_0000115>A conditional specification that guides, defines, restricts actions.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A rule is an executable which guides, defines, restricts actions.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">MSI</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">PRS</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">OBI_0500021</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">PRS</obo:IAO_0000119>
+        <obo:IAO_0000232>The definition has been tweaked to make it consistent with the recommended format.</obo:IAO_0000232>
+        <rdfs:label>rule</rdfs:label>
+        <rdfs:label xml:lang="en">rule</rdfs:label>
     </owl:Class>
     
 
@@ -18931,8 +19076,8 @@ Valence refers to the &apos;the subjective value of an event, object, person, or
         <obo:IAO_0000115>A cognitive representation which represents an evaluation of the relevance of some triggering object or event to the organism.</obo:IAO_0000115>
         <rdfs:comment>Appraisals are a part of emotion processes, representing how a triggering stimulus is relevant to the self. Appraisal captures the ‘aboutness’ of an emotion process. For example, a stimulus such as an image of a tiger can produce different emotion processes depending on how the relevance of this stimulus is evaluated. If the image of a tiger was on TV, this would likely not be evaluated as dangerous. However, an image of a tiger two meters away from a person would be relevant to a person in terms of its dangerousness. Therefore, an appraisal of the dangerouness of the tiger would be part of the emotion process &apos;fear&apos;.</rdfs:comment>
         <rdfs:comment>There is no rigid sequence of the entities that are part of the emotion process -- an appraisal does not necessarily precede a physiological process part of the emotion process.</rdfs:comment>
+        <rdfs:label>affective appraisal</rdfs:label>
         <rdfs:label>affective apraisal</rdfs:label>
-        <rdfs:label>emotional-relevance appraisal</rdfs:label>
     </owl:Class>
     
 
@@ -19351,7 +19496,7 @@ for now.</obo:IAO_0000116>
         <obo:IAO_0000119>GROUP: OBI</obo:IAO_0000119>
         <obo:IAO_0000119>OBI:0000245</obo:IAO_0000119>
         <obo:IAO_0000232>The definition from OBI has been slightly changed to refer to &apos;material entity&apos; rather than &apos;continuant entity&apos;</obo:IAO_0000232>
-        <rdfs:label>organization</rdfs:label>
+        <rdfs:label>organisation</rdfs:label>
         <rdfs:label xml:lang="en">organization</rdfs:label>
     </owl:Class>
     
@@ -20091,7 +20236,6 @@ Useful because these map to the strength of the evidence each might provide.</ob
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_33208"/>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4751"/>
         <oboInOwl:hasDbXref>BFO:0000003</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id>UBERON:0000000</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#common_anatomy"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_subset"/>
@@ -20125,6 +20269,7 @@ Useful because these map to the strength of the evidence each might provide.</ob
         <oboInOwl:hasDbXref>CARO:0000003</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>EHDAA2:0003003</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>EMAPA:0</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FAO:0000001</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FBbt:00007001</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FMA:305751</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FMA:67135</oboInOwl:hasDbXref>
@@ -20141,7 +20286,6 @@ Useful because these map to the strength of the evidence each might provide.</ob
         <oboInOwl:hasDbXref>http://dbpedia.org/ontology/AnatomicalStructure</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>biological structure</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>connected biological structure</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id>UBERON:0000061</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#common_anatomy"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
@@ -20196,7 +20340,6 @@ Useful because these map to the strength of the evidence each might provide.</ob
         <oboInOwl:hasDbXref>UMLS:C0178784</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>WBbt:0003760</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>Wikipedia:Organ_(anatomy)</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>anatomical unit</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>body organ</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>element</oboInOwl:hasRelatedSynonym>
@@ -20252,7 +20395,6 @@ Useful because these map to the strength of the evidence each might provide.</ob
         <obo:UBPROP_0000012>ncit:Death is an outcome</obo:UBPROP_0000012>
         <oboInOwl:hasDbXref>XAO:0000437</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>XtroDO:0000085</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>death</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>UBERON:0000071</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#common_anatomy"/>
@@ -20323,7 +20465,6 @@ Useful because these map to the strength of the evidence each might provide.</ob
         <oboInOwl:hasDbXref>ncithesaurus:Developmental_Stage</oboInOwl:hasDbXref>
         <oboInOwl:hasNarrowSynonym>developmental stage</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>stage</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id>UBERON:0000105</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#common_anatomy"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#efo_slim"/>
@@ -20496,7 +20637,6 @@ Useful because these map to the strength of the evidence each might provide.</ob
         <oboInOwl:hasExactSynonym>neuraxis nucleus</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>neuronal nucleus</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>nucleus of CNS</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>nucleus of neuraxis</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>UBERON:0000125</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#cumbo"/>
@@ -20569,7 +20709,6 @@ Useful because these map to the strength of the evidence each might provide.</ob
         <oboInOwl:hasExactSynonym>organism substance</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>portion of body substance</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>portion of organism substance</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id>UBERON:0000463</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#common_anatomy"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_subset"/>
@@ -20642,7 +20781,6 @@ Useful because these map to the strength of the evidence each might provide.</ob
         <oboInOwl:hasDbXref>TAO:0001836</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>TGMA:0001826</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VHOG:0001721</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id>UBERON:0000465</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#common_anatomy"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_subset"/>
@@ -20708,7 +20846,6 @@ Useful because these map to the strength of the evidence each might provide.</ob
         <oboInOwl:hasExactSynonym>body system</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>connected anatomical system</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>organ system</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>anatomical systems</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>UBERON:0000467</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#common_anatomy"/>
@@ -20743,9 +20880,9 @@ Useful because these map to the strength of the evidence each might provide.</ob
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000467"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget>IDOMAL:0002460</owl:annotatedTarget>
-        <sssom:author_id rdf:resource="https://orcid.org/0000-0003-4423-4370"/>
+        <pav:authoredBy rdf:resource="https://orcid.org/0000-0003-4423-4370"/>
         <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
-        <sssom:mapping_provider>https://github.com/biopragmatics/biomappings</sssom:mapping_provider>
+        <sssom:mapping_provider rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/biopragmatics/biomappings</sssom:mapping_provider>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000467"/>
@@ -20809,7 +20946,6 @@ Useful because these map to the strength of the evidence each might provide.</ob
         <oboInOwl:hasDbXref>ZFA:0000272</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>apparatus respiratorius</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>respiratory system</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>Atmungssystem</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>apparatus respiratorius</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>systema respiratorium</oboInOwl:hasRelatedSynonym>
@@ -20918,7 +21054,6 @@ Useful because these map to the strength of the evidence each might provide.</ob
         <oboInOwl:hasDbXref>ZFA:0000339</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>galen:DigestiveSystem</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>ncithesaurus:Digestive_System</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>alimentary system</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>alimentary tract</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>gastrointestinal system</oboInOwl:hasRelatedSynonym>
@@ -20991,7 +21126,6 @@ Useful because these map to the strength of the evidence each might provide.</ob
         <oboInOwl:hasDbXref>WBbt:0000100</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>XAO:0000000</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>ZFA:0100000</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id>UBERON:0001062</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#common_anatomy"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_subset"/>
@@ -21055,7 +21189,6 @@ Useful because these map to the strength of the evidence each might provide.</ob
         <oboInOwl:hasDbXref>Wikipedia:Caudate_nucleus</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>neuronames:226</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>caudatus</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>Ammon horn fields</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>caudatum</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>nucleus caudatus</oboInOwl:hasRelatedSynonym>
@@ -21130,7 +21263,6 @@ Useful because these map to the strength of the evidence each might provide.</ob
         <oboInOwl:hasDbXref>UMLS:C1706993</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>ZFA:0005575</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>brain nucleus</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>brain nuclei</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>UBERON:0002308</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_subset"/>
@@ -21192,7 +21324,6 @@ Useful because these map to the strength of the evidence each might provide.</ob
         <oboInOwl:hasDbXref>XAO:0000100</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>XAO:0001010</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>ZFA:0000010</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>CV system</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>Herz und Gefaesssystem</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>UBERON:0004535</oboInOwl:id>
@@ -21246,7 +21377,7 @@ Useful because these map to the strength of the evidence each might provide.</ob
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0005162">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000061"/>
-        <obo:IAO_0000115>A structure consisting of multiple cell components but which is not itself a cell and does not have (complete) cells as a part.</obo:IAO_0000115>
+        <obo:IAO_0000115>A structure consisting mainly of cell components, rather than complete cells.</obo:IAO_0000115>
         <obo:UBPROP_0000012>we go with the FMA classification rather than the CARO one. FMA def: &apos;Anatomical cluster which has as direct parts cell parts from two or more cells.&apos;</obo:UBPROP_0000012>
         <oboInOwl:hasDbXref>AAO:0011000</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>CARO:0001000</oboInOwl:hasDbXref>
@@ -21254,18 +21385,18 @@ Useful because these map to the strength of the evidence each might provide.</ob
         <oboInOwl:hasDbXref>FMA:83115</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>multi-cell-component structure</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>multi-cell-part structure</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>cell part cluster</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>UBERON:0005162</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#mouse_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#upper_level"/>
+        <rdfs:comment>Such a structure may contain some complete cells in addition to partial cells (e.g., glia in nervous system regions).</rdfs:comment>
         <rdfs:label>multi cell part structure</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005162"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A structure consisting of multiple cell components but which is not itself a cell and does not have (complete) cells as a part.</owl:annotatedTarget>
+        <owl:annotatedTarget>A structure consisting mainly of cell components, rather than complete cells.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>CARO:0001000</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
@@ -21317,7 +21448,6 @@ Useful because these map to the strength of the evidence each might provide.</ob
         <oboInOwl:hasDbXref>Wikipedia:Body_fluid</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>galen:BodyFluid</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>body fluid</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id>UBERON:0006314</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#mouse_subset"/>
@@ -21353,7 +21483,6 @@ Useful because these map to the strength of the evidence each might provide.</ob
         <obo:IAO_0000115>A nucleus of brain that is part of a telencephalon.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>TAO:0002178</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>ZFA:0001660</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id>UBERON:0009663</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#mouse_subset"/>
@@ -21379,7 +21508,6 @@ Useful because these map to the strength of the evidence each might provide.</ob
         <oboInOwl:hasDbXref>CARO:0010000</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FBbt:00100313</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>multicellular structure</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id>UBERON:0010000</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#common_anatomy"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_subset"/>
@@ -21414,7 +21542,6 @@ Useful because these map to the strength of the evidence each might provide.</ob
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000061"/>
         <obo:IAO_0000115>An anatomical structure that has some part that develops from the neural crest.</obo:IAO_0000115>
         <obo:IAO_0000232>Grouping term for query purposes</obo:IAO_0000232>
-        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id>UBERON:0010314</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#grouping_class"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_subset"/>
@@ -21438,7 +21565,6 @@ Useful because these map to the strength of the evidence each might provide.</ob
         <oboInOwl:hasDbXref>FMA:83143</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>cell part cluster of neuraxis</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>neuraxis layer</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id>UBERON:0011215</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#mouse_subset"/>
@@ -21474,7 +21600,6 @@ Useful because these map to the strength of the evidence each might provide.</ob
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_33090"/>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_33208"/>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4751"/>
-        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id>UBERON:0035943</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#common_anatomy"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_subset"/>
