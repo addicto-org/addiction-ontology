@@ -131,6 +131,7 @@
   ],
   "prefixes": {
     "ADDICTO": "http://addictovocab.org/ADDICTO_",
+    "ADDICTOR": "http://addictovocab.org/ADDICTO_",
     "BCIO": "http://humanbehaviourchange.org/ontology/BCIO_",
     "EFO": "http://www.ebi.ac.uk/efo/EFO_"
   }
