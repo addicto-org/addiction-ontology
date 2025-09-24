@@ -19,7 +19,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:owlready_ontology="http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#">
     <owl:Ontology rdf:about="http://addictovocab.org/addicto.owl">
-        <owl:versionIRI rdf:resource="http://addictovocab.org/addicto.owl/2025-09-08"/>
+        <owl:versionIRI rdf:resource="http://addictovocab.org/addicto.owl/2025-09-24"/>
         <rdfs:comment>The Addiction Ontology (AddictO) is an ontology being developed all aspects of addiction research.</rdfs:comment>
     </owl:Ontology>
     
@@ -1082,6 +1082,161 @@ WHERE {
     
 
 
+    <!-- http://addictovocab.org/ADDICTO_0000001 -->
+
+    <owl:ObjectProperty rdf:about="http://addictovocab.org/ADDICTO_0000001">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/MF_0000016"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
+        <obo:IAO_0000115>Relates a person to an organisation in the case where the person stands to gain or lose something of value resulting from the activities of the organisation or what happens to it.</obo:IAO_0000115>
+        <rdfs:label>has personal stake in organisation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0000002 -->
+
+    <owl:ObjectProperty rdf:about="http://addictovocab.org/ADDICTO_0000002">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/MF_0000016"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
+        <obo:IAO_0000115>Relates a person to an organisation in the case where they have provided expert advice to the organisation for which they or an organisation with which they are affiliated have been paid or received benefit of monetary value.</obo:IAO_0000115>
+        <rdfs:label>has provided paid advice to organisation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0000003 -->
+
+    <owl:ObjectProperty rdf:about="http://addictovocab.org/ADDICTO_0000003">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/MF_0000016"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
+        <obo:IAO_0000115>Relates a legal person to an organisation in the case where the legal person has, or has recently had, a role in the organisation as an employee.</obo:IAO_0000115>
+        <rdfs:label>in recent employment by organisation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0000004 -->
+
+    <owl:ObjectProperty rdf:about="http://addictovocab.org/ADDICTO_0000004">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/MF_0000016"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
+        <obo:IAO_0000115>Relates a person to an organisation in the case where the person has provided expert advice to the organisation without payment or benefit to themselves or an organisation with which they are affiliated.</obo:IAO_0000115>
+        <rdfs:label>has provided unpaid advice to organisation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0000005 -->
+
+    <owl:ObjectProperty rdf:about="http://addictovocab.org/ADDICTO_0000005">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/MF_0000016"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
+        <obo:IAO_0000115>Relates a person to an organisation in the case where the person or an organisation with which they are affiliated has received something of value from the organisation.</obo:IAO_0000115>
+        <rdfs:label>has received benefit from organisation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0000006 -->
+
+    <owl:ObjectProperty rdf:about="http://addictovocab.org/ADDICTO_0000006">
+        <rdfs:subPropertyOf rdf:resource="http://addictovocab.org/ADDICTO_0000005"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/MF_0000016"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
+        <obo:IAO_0000115>Relates a person to an organisation in the case where the person, or an organisation with which they are affiliated, has received money or something that can be exchanged for money from the organisation.</obo:IAO_0000115>
+        <rdfs:label>has received financial benefit from organisation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0000007 -->
+
+    <owl:ObjectProperty rdf:about="http://addictovocab.org/ADDICTO_0000007">
+        <rdfs:subPropertyOf rdf:resource="http://addictovocab.org/ADDICTO_0000006"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/MF_0000016"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
+        <obo:IAO_0000115>Relates a person to an organisation in the case where the person, or an organisation with which they are affiliated, has received money or something that can be exchanged for money from the organisation.</obo:IAO_0000115>
+        <rdfs:label>has received personal financial benefit from organisation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0000008 -->
+
+    <owl:ObjectProperty rdf:about="http://addictovocab.org/ADDICTO_0000008">
+        <rdfs:subPropertyOf rdf:resource="http://addictovocab.org/ADDICTO_0000005"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/MF_0000016"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
+        <obo:IAO_0000115>Relates a person to an organisation in the case where the person or an organisation with which they are affiliated has received something from the organisation that cannot be exchanged for money.</obo:IAO_0000115>
+        <rdfs:label>has received non-financial benefit from organisation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0000009 -->
+
+    <owl:ObjectProperty rdf:about="http://addictovocab.org/ADDICTO_0000009">
+        <rdfs:subPropertyOf rdf:resource="http://addictovocab.org/ADDICTO_0000005"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/MF_0000016"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
+        <obo:IAO_0000115>Relates a person to an organisation in the case where the person or an organisation with which they are affiliated has received goods or services from the organisation to enable or facilitate the conduct of research in which they are involved.</obo:IAO_0000115>
+        <rdfs:label>has received research support from organisation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0000010 -->
+
+    <owl:ObjectProperty rdf:about="http://addictovocab.org/ADDICTO_0000010">
+        <rdfs:subPropertyOf rdf:resource="http://addictovocab.org/ADDICTO_0000011"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/MF_0000016"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
+        <obo:IAO_0000115>is director of organisation without receiving payment.</obo:IAO_0000115>
+        <rdfs:label>is unpaid director of organisation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0000011 -->
+
+    <owl:ObjectProperty rdf:about="http://addictovocab.org/ADDICTO_0000011">
+        <rdfs:subPropertyOf rdf:resource="http://addictovocab.org/ADDICTO_0000001"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/MF_0000016"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
+        <obo:IAO_0000115>has personal stake in organisation that involves being in a director role.</obo:IAO_0000115>
+        <rdfs:label>is director of organisation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIOR_000008 -->
+
+    <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000008">
+        <rdfs:domain rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006000"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <obo:IAO_0000115>A relation that holds between an interventions mechanism of action and an entity x, in which the entity x  participates in or is part of the mechanism of action process and is influenced by a BCI or its context such that there is some change in entity x.</obo:IAO_0000115>
+        <rdfs:label>through</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIOR_000015 -->
+
+    <owl:ObjectProperty rdf:about="http://humanbehaviourchange.org/ontology/BCIOR_000015">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+        <rdfs:domain rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_036000"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000115>Has participant that relates a behaviour to a material entity that the person enacting the behaviour intends to enable or facilitate the behaviour.</obo:IAO_0000115>
+        <rdfs:label>uses</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050">
@@ -1112,6 +1267,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <obo:IAO_0000112 xml:lang="en">my body has part my brain (continuant parthood, two material entities)</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">my stomach has part my stomach cavity (continuant parthood, material entity has part immaterial entity)</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">this year has part this day (occurrent parthood)</obo:IAO_0000112>
+        <obo:IAO_0000115>A core relation that holds between a whole and its part</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">a core relation that holds between a whole and its part</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">Everything has itself as a part. Any part of any part of a thing is itself part of that thing. Two distinct things cannot have each other as a part.</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See http://purl.obolibrary.org/obo/ro/docs/temporal-semantics/</obo:IAO_0000116>
@@ -1120,6 +1276,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
 A continuant cannot have an occurrent as part: use &apos;participates in&apos;. An occurrent cannot have a continuant as part: use &apos;has participant&apos;. An immaterial entity cannot have a material entity as part: use &apos;location of&apos;. An independent continuant cannot have a specifically dependent continuant as part: use &apos;bearer of&apos;. A specifically dependent continuant cannot have an independent continuant as part: use &apos;inheres in&apos;.</obo:IAO_0000116>
         <obo:IAO_0000118 xml:lang="en">has_part</obo:IAO_0000118>
         <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
+        <rdfs:label>has part</rdfs:label>
         <rdfs:label xml:lang="en">has part</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1133,11 +1290,13 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000112 xml:lang="en">this disease is realized in this disease course</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">this fragility is realized in this shattering</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">this investigator role is realized in this investigation</obo:IAO_0000112>
+        <obo:IAO_0000115>Inverse of realizes relation.</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">is realized by</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">realized_in</obo:IAO_0000118>
         <obo:IAO_0000600 xml:lang="en">[copied from inverse property &apos;realizes&apos;] to say that b realizes c at t is to assert that there is some material entity d &amp; b is a process which has participant d at t &amp; c is a disposition or role of which d is bearer_of at t&amp; the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])</obo:IAO_0000600>
         <rdfs:comment>Paraphrase of elucidation: a relation between a realizable entity and a process, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label>realised in</rdfs:label>
         <rdfs:label xml:lang="en">realized in</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1152,10 +1311,23 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000112 xml:lang="en">this investigation realizes this investigator role</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">this shattering realizes this fragility</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">Paraphrase of elucidation: a relation between a process and a realizable entity, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process</obo:IAO_0000115>
+        <obo:IAO_0000115>To say that b realizes c at t is to assert that there is some material entity d and b is a process which has participant d at t and c is a disposition or role of which d is bearer_of at tand the type instantiated by b is correlated with the type instantiated by c.</obo:IAO_0000115>
         <obo:IAO_0000600 xml:lang="en">to say that b realizes c at t is to assert that there is some material entity d &amp; b is a process which has participant d at t &amp; c is a disposition or role of which d is bearer_of at t&amp; the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])</obo:IAO_0000600>
         <rdfs:comment>Paraphrase of elucidation: a relation between a process and a realizable entity, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label>realises</rdfs:label>
         <rdfs:label xml:lang="en">realizes</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000066 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000066">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <obo:IAO_0000115>b occurs_in c =def b is a process and c is a material entity or immaterial entityand there exists a spatiotemporal region r and b occupies_spatiotemporal_region r.and forall(t) if b exists_at t then c exists_at t and there exist spatial regions s and s’ where and b spatially_projects_onto s at tand c is occupies_spatial_region s’ at tand s is a proper_continuant_part_of s’ at t</obo:IAO_0000115>
+        <rdfs:label>occurs in</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1169,6 +1341,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000112>[copied from inverse property &apos;part of occurrent&apos;] Mary’s 5th birthday occurrent_part_of Mary’s life</obo:IAO_0000112>
         <obo:IAO_0000112>[copied from inverse property &apos;part of occurrent&apos;] The process of a footballer’s heart beating once is an occurrent part but not a temporal_part of a game of football.</obo:IAO_0000112>
         <obo:IAO_0000112>[copied from inverse property &apos;part of occurrent&apos;] the first set of the tennis match occurrent_part_of the tennis match.</obo:IAO_0000112>
+        <obo:IAO_0000115>Inverse of occurrent_part_of which is defined as: b occurrent_part_of c =Def. b is a part of c and b and c are occurrents.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">b has_occurrent_part c = Def. c occurrent_part_of b. (axiom label in BFO2 Reference: [007-001])</obo:IAO_0000115>
         <obo:IAO_0000116>[copied from inverse property &apos;part of occurrent&apos;] BFO 2 Reference: a (continuant or occurrent) part of itself. We appreciate that this is counterintuitive for some users, since it implies for example that President Obama is a part of himself. However it brings benefits in simplifying the logical formalism, and it captures an important feature of identity, namely that it is the limit case of mereological inclusion.</obo:IAO_0000116>
         <obo:IAO_0000116>[copied from inverse property &apos;part of occurrent&apos;] BFO2 Reference: occurrent</obo:IAO_0000116>
@@ -1176,6 +1349,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000602>(iff (hasOccurrentPart a b) (occurrentPartOf b a)) // axiom label in BFO2 CLIF: [007-001] </obo:IAO_0000602>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <rdfs:label xml:lang="en">has occurrent part</rdfs:label>
+        <rdfs:label>has process part</rdfs:label>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
@@ -1197,8 +1371,19 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000119">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <obo:BFO_0000179>has-profile</obo:BFO_0000179>
+        <obo:IAO_0000115>Inverse of process_profile_of</obo:IAO_0000115>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label>has process attribute</rdfs:label>
         <rdfs:label xml:lang="en">has profile</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000133 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000133">
+        <obo:IAO_0000115>inverse of has_process_profile</obo:IAO_0000115>
+        <rdfs:label>is process attribute of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1210,6 +1395,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000112 xml:lang="en">This document is about information artifacts and their representations</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000115 xml:lang="en">A (currently) primitive relation that relates an information artifact to an entity.</obo:IAO_0000115>
+        <obo:IAO_0000115>Is about is a (currently) primitive relation that relates an information artifact to an entity.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">7/6/2009 Alan Ruttenberg. Following discussion with Jonathan Rees, and introduction of &quot;mentions&quot; relation. Weaken the is_about relationship to be primitive. 
 
 We will try to build it back up by elaborating the various subproperties that are more precisely defined.
@@ -1217,6 +1403,7 @@ We will try to build it back up by elaborating the various subproperties that ar
 Some currently missing phenomena that should be considered &quot;about&quot; are predications - &quot;The only person who knows the answer is sitting beside me&quot; , Allegory, Satire, and other literary forms that can be topical without explicitly mentioning the topic.</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">person:Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">Smith, Ceusters, Ruttenberg, 2000 years of philosophy</obo:IAO_0000119>
+        <rdfs:label>is about</rdfs:label>
         <rdfs:label xml:lang="en">is about</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1229,11 +1416,13 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
         <obo:IAO_0000111 xml:lang="en">inheres in</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">this fragility is a characteristic of this vase</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">this red color is a characteristic of this apple</obo:IAO_0000112>
+        <obo:IAO_0000115>A relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">a relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence.</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">inheres_in</obo:IAO_0000118>
         <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
         <rdfs:comment>Note that this relation was previously called &quot;inheres in&quot;, but was changed to be called &quot;characteristic of&quot; because BFO2 uses &quot;inheres in&quot; in a more restricted fashion. This relation differs from BFO2:inheres_in in two respects: (1) it does not impose a range constraint, and thus it allows qualities of processes, as well as of information entities, whereas BFO2 restricts inheres_in to only apply to independent continuants (2) it is declared functional, i.e. something can only be a characteristic of one thing.</rdfs:comment>
         <rdfs:label xml:lang="en">characteristic of</rdfs:label>
+        <rdfs:label>is attribute of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1245,11 +1434,13 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
         <obo:IAO_0000111 xml:lang="en">bearer of</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">this apple is bearer of this red color</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">this vase is bearer of this fragility</obo:IAO_0000112>
+        <obo:IAO_0000115>A relation between an independent continuant (the bearer) and a specifically dependent continuant (the dependent), in which the dependent specifically depends on the bearer for its existence</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">Inverse of characteristic_of</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">A bearer can have many dependents, and its dependents can exist for different periods of time, but none of its dependents can exist when the bearer does not exist.</obo:IAO_0000116>
         <obo:IAO_0000118 xml:lang="en">bearer_of</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">is bearer of</obo:IAO_0000118>
         <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
+        <rdfs:label>has attribute</rdfs:label>
         <rdfs:label xml:lang="en">has characteristic</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1263,8 +1454,10 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
         <obo:IAO_0000112 xml:lang="en">this blood clot participates in this blood coagulation</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">this input material (or this output material) participates in this process</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">this investigator participates in this investigation</obo:IAO_0000112>
+        <obo:IAO_0000115>A relation between a continuant and a process, in which the continuant is somehow involved in the process</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">a relation between a continuant and a process, in which the continuant is somehow involved in the process</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">participates_in</obo:IAO_0000118>
+        <rdfs:label>participates in</rdfs:label>
         <rdfs:label xml:lang="en">participates in</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1317,7 +1510,9 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000091">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+        <obo:IAO_0000115>A relation between an independent continuant (the bearer) and a disposition, in which the disposition specifically depends on the bearer for its existence</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">a relation between an independent continuant (the bearer) and a disposition, in which the disposition specifically depends on the bearer for its existence</obo:IAO_0000115>
+        <rdfs:label>has disposition</rdfs:label>
         <rdfs:label xml:lang="en">has disposition</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1357,13 +1552,66 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
         <obo:IAO_0000111 xml:lang="en">located in</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">my brain is located in my head</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">this rat is located in this cage</obo:IAO_0000112>
+        <obo:IAO_0000115>A relation between two independent continuants, the target and the location, in which the target is entirely within the location</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">a relation between two independent continuants, the target and the location, in which the target is entirely within the location</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">Location as a relation between instances: The primitive instance-level relation c located_in r at t reflects the fact that each continuant is at any given time associated with exactly one spatial region, namely its exact location. Following we can use this relation to define a further instance-level location relation - not between a continuant and the region which it exactly occupies, but rather between one continuant and another. c is located in c1, in this sense, whenever the spatial region occupied by c is part_of the spatial region occupied by c1.    Note that this relation comprehends both the relation of exact location between one continuant and another which obtains when r and r1 are identical (for example, when a portion of fluid exactly fills a cavity), as well as those sorts of inexact location relations which obtain, for example, between brain and head or between ovum and uterus</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">Most location relations will only hold at certain times, but this is difficult to specify in OWL. See http://purl.obolibrary.org/obo/ro/docs/temporal-semantics/</obo:IAO_0000116>
         <obo:IAO_0000118 xml:lang="en">located_in</obo:IAO_0000118>
         <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
         <terms:source>http://www.obofoundry.org/ro/#OBO_REL:located_in</terms:source>
+        <rdfs:label>located in</rdfs:label>
         <rdfs:label xml:lang="en">located in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002092 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002092">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <obo:IAO_0000115>X happens_during Y iff: (start(Y) before_or_simultaneous_with start(X)) AND (end(X) before_or_simultaneous_with end(Y))</obo:IAO_0000115>
+        <rdfs:label>happens during</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002222 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002222">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+        <obo:IAO_0000119 rdf:resource="https://en.wikipedia.org/wiki/Allen%27s_interval_algebra"/>
+        <obo:IAO_0000232>Do not use this relation directly. It is ended as a grouping for relations between occurrents involving the relative timing of their starts and ends.</obo:IAO_0000232>
+        <terms:source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://docs.google.com/document/d/1kBv1ep_9g3sTR-SD3jqzFqhuwo9TPNF-l-9fUDbO6rM/edit?pli=1</terms:source>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
+        <rdfs:comment>A relation that holds between two occurrents. This is a grouping relation that collects together all the Allen relations.</rdfs:comment>
+        <rdfs:label xml:lang="en">temporally related to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002223 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002223">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002222"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <obo:IAO_0000115>inverse of starts with</obo:IAO_0000115>
+        <rdfs:label>starts</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002229 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002229">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002222"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <obo:IAO_0000115>inverse of ends with</obo:IAO_0000115>
+        <rdfs:label>ends</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1373,6 +1621,7 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002234">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115>P has output c iff c is a participant in p, c is present at the end of p, and c is not present at the beginning of p.</obo:IAO_0000115>
         <obo:IAO_0000115>p has output c iff c is a participant in p, c is present at the end of p, and c is not present in the same state at the beginning of p.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
         <obo:IAO_0000118>produces</obo:IAO_0000118>
@@ -1380,6 +1629,7 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_ontology"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
+        <rdfs:label>has output</rdfs:label>
         <rdfs:label xml:lang="en">has output</rdfs:label>
         <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://wiki.geneontology.org/Has_output</rdfs:seeAlso>
     </owl:ObjectProperty>
@@ -1403,11 +1653,75 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002353">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002328"/>
+        <obo:IAO_0000115>Inverse of has output relation</obo:IAO_0000115>
         <obo:IAO_0000115>inverse of has output</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/RO_0002259"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
+        <rdfs:label>output of</rdfs:label>
         <rdfs:label xml:lang="en">output of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002410 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002410">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <obo:IAO_0000115>relation that links two events, processes, states, or objects such that one event, process, state, or object (a cause) contributes to the production of another event, process, state, or object (an effect) where the cause is partly or wholly responsible for the effect, and the effect is partly or wholly dependent on the cause.</obo:IAO_0000115>
+        <obo:IAO_0000116>This branch of the ontology deals with causal relations between entities. It is divided into two branches: causal relations between occurrents/processes, and causal relations between material entities. We take an &apos;activity flow-centric approach&apos;, with the former as primary, and define causal relations between material entities in terms of causal relations between occurrents.
+
+To define causal relations in an activity-flow type network, we make use of 3 primitives:
+
+ * Temporal: how do the intervals of the two occurrents relate? 
+ * Is the causal relation regulatory?
+ * Is the influence positive or negative?
+
+The first of these can be formalized in terms of the Allen Interval Algebra. Informally, the 3 bins we care about are &apos;direct&apos;, &apos;indirect&apos; or overlapping. Note that all causal relations should be classified under a RO temporal relation (see the branch under &apos;temporally related to&apos;). Note that all causal relations are temporal, but not all temporal relations are causal. Two occurrents can be related in time without being causally connected. We take causal influence to be primitive, elucidated as being such that has the upstream changed, some qualities of the donwstream would necessarily be modified.
+
+For the second, we consider a relationship to be regulatory if the system in which the activities occur is capable of altering the relationship to achieve some objective. This could include changing the rate of production of a molecule.
+
+For the third, we consider the effect of the upstream process on the output(s) of the downstream process. If the level of output is increased, or the rate of production of the output is increased, then the direction is increased. Direction can be positive, negative or neutral or capable of either direction. Two positives in succession yield a positive, two negatives in succession yield a positive, otherwise the default assumption is that the net effect is canceled and the influence is neutral.
+
+Each of these 3 primitives can be composed to yield a cross-product of different relation types.</obo:IAO_0000116>
+        <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+        <obo:IAO_0000232>Do not use this relation directly. It is intended as a grouping for a diverse set of relations, all involving cause and effect.</obo:IAO_0000232>
+        <rdfs:label xml:lang="en">causally related to</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/RO_0002410"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>relation that links two events, processes, states, or objects such that one event, process, state, or object (a cause) contributes to the production of another event, process, state, or object (an effect) where the cause is partly or wholly responsible for the effect, and the effect is partly or wholly dependent on the cause.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Causality</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002506 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002506">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002410"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <obo:IAO_0000116>The intent is that the process branch of the causal property hierarchy is primary (causal relations hold between occurrents/processes), and that the material branch is defined in terms of the process branch</obo:IAO_0000116>
+        <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+        <obo:IAO_0000119 rdf:resource="http://purl.obolibrary.org/obo/ro/docs/causal-relations"/>
+        <obo:IAO_0000232>Do not use this relation directly. It is intended as a grouping for a diverse set of relations, all involving cause and effect.</obo:IAO_0000232>
+        <rdfs:label>causal relation between entities</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002559 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002559">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002506"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+        <obo:IAO_0000119 rdf:resource="http://purl.obolibrary.org/obo/ro/docs/causal-relations"/>
+        <obo:IAO_0000589>causally influenced by (entity-centric)</obo:IAO_0000589>
+        <rdfs:label>causally influenced by</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1978,7 +2292,7 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     <!-- http://addictovocab.org/ADDICTO_0000164 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000164">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <obo:IAO_0000114>Proposed</obo:IAO_0000114>
         <obo:IAO_0000115>A sample is a substance role played by a biological substance as an input substance to a protocol.</obo:IAO_0000115>
         <obo:IAO_0000232>The definition and link to role is coherent with BFO but the ontology itself is probably not suitable to be imported.</obo:IAO_0000232>
@@ -2970,7 +3284,7 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     <!-- http://addictovocab.org/ADDICTO_0000278 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000278">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <obo:IAO_0000114>Proposed</obo:IAO_0000114>
         <obo:IAO_0000115>A role performed by an organisation or individual who participates in processes that bring the product into existence or purpose it as a product.</obo:IAO_0000115>
         <rdfs:label>producer of product</rdfs:label>
@@ -3064,7 +3378,7 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     <!-- http://addictovocab.org/ADDICTO_0000293 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000293">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <obo:IAO_0000114>Proposed</obo:IAO_0000114>
         <obo:IAO_0000115>A product that is used by a person for the purpose of quitting smoking.</obo:IAO_0000115>
         <obo:IAO_0000118>NRT product</obo:IAO_0000118>
@@ -5443,7 +5757,7 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     <!-- http://addictovocab.org/ADDICTO_0000760 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000760">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <obo:IAO_0000114>Proposed</obo:IAO_0000114>
         <obo:IAO_0000115>A role preformed by an individual who participates in administering a substance orally.</obo:IAO_0000115>
         <rdfs:label>orally administered</rdfs:label>
@@ -6708,7 +7022,7 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     <!-- http://addictovocab.org/ADDICTO_0000904 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000904">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <obo:IAO_0000114>Discussed</obo:IAO_0000114>
         <obo:IAO_0000115>A role that inheres in money by virtue of it being acquired by an economic agent for providing a good or service or as a levy.</obo:IAO_0000115>
         <rdfs:label>revenue role</rdfs:label>
@@ -8544,7 +8858,7 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
     <!-- http://addictovocab.org/ADDICTO_0001113 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001113">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A role that inheres in some material entity and is realized in some act of appraisal.</obo:IAO_0000115>
         <rdfs:label>economic good role</rdfs:label>
@@ -11662,6 +11976,43 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
     
 
 
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_001000 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_001000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A planned process in which a BCI is applied in a given context, including BCI engagement and outcome behaviour.</obo:IAO_0000115>
+        <obo:IAO_0000118>BCI scenario</obo:IAO_0000118>
+        <rdfs:label>behaviour change intervention scenario</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_005000 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_005000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
+        <obo:IAO_0000112>Includes as part BCI population and BCI setting. Use of the word ‘may’ conveys a non-zero probability given available information.</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An aggregate of entities that are not dependent on the intervention but may influence the effect of a BCI on its outcome behaviour.</obo:IAO_0000115>
+        <obo:IAO_0000118>BCI context</obo:IAO_0000118>
+        <rdfs:label>behaviour change intervention context</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_006000 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A process that is causally active in the relationship between a BCI scenario and its outcome behaviour.</obo:IAO_0000115>
+        <obo:IAO_0000118>BCI MOA</obo:IAO_0000118>
+        <rdfs:label>behaviour change intervention mechanism of action</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://humanbehaviourchange.org/ontology/BCIO_006016 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006016">
@@ -11728,6 +12079,31 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
         <obo:IAO_0000115>&lt;Pleasure&gt; that is experienced as a result of engaging in a behaviour.</obo:IAO_0000115>
         <obo:IAO_0000118>Enjoyment of behaviour</obo:IAO_0000118>
         <rdfs:label>pleasure associated with behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_008000 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_008000">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_045000"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An intervention delivery in which the intervention is a behaviour change intervention.</obo:IAO_0000115>
+        <obo:IAO_0000118>BCI delivery</obo:IAO_0000118>
+        <rdfs:label>behaviour change intervention delivery</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_010000 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_010000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
+        <obo:IAO_0000112>This includes individual people, groups of people, and organisations.</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A role played by a person, population or organisation that provides a BCI.</obo:IAO_0000115>
+        <obo:IAO_0000118>BCI source</obo:IAO_0000118>
+        <rdfs:label>behaviour change intervention source</rdfs:label>
     </owl:Class>
     
 
@@ -11872,6 +12248,19 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
         <obo:IAO_0000115>A hospital facility to treat patients without them staying overnight, often after a hospital visit.</obo:IAO_0000115>
         <obo:IAO_0000118>outpatient clinic</obo:IAO_0000118>
         <rdfs:label>hospital outpatient clinic facility</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_030000 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_030000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
+        <obo:IAO_0000112>What counts as substantively is subject to judgement. The level and nature of the contribution can be defined using the CReDiT taxonomy (https://casrai.org/credit/).</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A role played by a person that contributes substantively to production or reporting of a BCI evaluation study.</obo:IAO_0000115>
+        <obo:IAO_0000118>BCI study investigator</obo:IAO_0000118>
+        <rdfs:label>behaviour change intervention study investigator</rdfs:label>
     </owl:Class>
     
 
@@ -12152,6 +12541,17 @@ This class is intended to include behaviours that can usefully be characterised 
     
 
 
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_045000 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_045000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A planned process by which intervention content is delivered.</obo:IAO_0000115>
+        <rdfs:label>intervention delivery</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://humanbehaviourchange.org/ontology/BCIO_050210 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050210">
@@ -12326,6 +12726,17 @@ This class is intended to include behaviours that can usefully be characterised 
     
 
 
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050449 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050449">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A temporal interval during which a person is abstinent from a behaviour.</obo:IAO_0000115>
+        <rdfs:label>abstinence duration</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://humanbehaviourchange.org/ontology/BCIO_050451 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050451">
@@ -12359,6 +12770,17 @@ This class is intended to include behaviours that can usefully be characterised 
         <obo:IAO_0000115>A process that is part of a personal history.</obo:IAO_0000115>
         <obo:IAO_0000115>A process that is part of a personal history.</obo:IAO_0000115>
         <rdfs:label>personal history part</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_050551 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_050551">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_041000"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A population whose behaviour is studied in a research study.</obo:IAO_0000115>
+        <rdfs:label>research study sample</rdfs:label>
     </owl:Class>
     
 
@@ -13261,6 +13683,34 @@ Mean age in a population.</obo:IAO_0000112>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
         <owl:annotatedTarget>(iff (ProcessBoundary a) (exists (p) (and (Process p) (temporalPartOf a p) (not (exists (b) (properTemporalPartOf b a)))))) // axiom label in BFO2 CLIF: [084-001] </owl:annotatedTarget>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/084-001"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000038 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000038">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
+        <obo:BFO_0000179>1d-t-region</obo:BFO_0000179>
+        <obo:BFO_0000180>OneDimensionalTemporalRegion</obo:BFO_0000180>
+        <obo:IAO_0000112 xml:lang="en">the temporal region during which a process occurs.</obo:IAO_0000112>
+        <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: A temporal interval is a special kind of one-dimensional temporal region, namely one that is self-connected (is without gaps or breaks).</obo:IAO_0000116>
+        <obo:IAO_0000600 xml:lang="en">A one-dimensional temporal region is a temporal region that is extended. (axiom label in BFO2 Reference: [103-001])</obo:IAO_0000600>
+        <obo:IAO_0000602>(forall (x) (if (OneDimensionalTemporalRegion x) (TemporalRegion x))) // axiom label in BFO2 CLIF: [103-001] </obo:IAO_0000602>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">one-dimensional temporal region</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000600"/>
+        <owl:annotatedTarget xml:lang="en">A one-dimensional temporal region is a temporal region that is extended. (axiom label in BFO2 Reference: [103-001])</owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/103-001"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
+        <owl:annotatedTarget>(forall (x) (if (OneDimensionalTemporalRegion x) (TemporalRegion x))) // axiom label in BFO2 CLIF: [103-001] </owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/103-001"/>
     </owl:Axiom>
     
 
@@ -19361,7 +19811,6 @@ objectives is a planned process.</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000040">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
         <obo:IAO_0000111 xml:lang="en">drug role</obo:IAO_0000111>
         <obo:IAO_0000112>http://www.answers.com/topic/drug
    1. A substance used in the diagnosis, treatment, or prevention of a disease or as a component of a medication.
@@ -19412,7 +19861,6 @@ objectives is a planned process.</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000093">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
         <obo:IAO_0000111>patient role</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">a hospitalized person; a person with controlled diabetes; the patient&apos;s role http://www.fertilityjourney.com/testingAndDiagnosis/theRightDoctor/thePatientsRole/index.asp?C=55245395146924652778</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
