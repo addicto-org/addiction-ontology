@@ -1,7 +1,7 @@
 {
   "iri_prefix": "http://addictovocab.org/ADDICTO_",
   "short_repository_name": "AddictO",
-  "full_repository_name": "addicto-org/addiction-ontology",
+  "full_repository_name": "ontology-tools/TEST_AddictO",
   "external": {
     "sources": [
       {
@@ -53,6 +53,10 @@
         {
           "file": "inputs/AddictO_Intervention_Defs.xlsx",
           "type": "classes"
+        },
+        {
+          "file": "inputs/AddictO_Rels.xlsx",
+          "type": "relations"
         }
       ],
       "target": {
@@ -115,7 +119,9 @@
     {
       "name": "ADDICTO_VOCAB",
       "args": {
-        "included_files": ["addicto"]
+        "included_files": [
+          "addicto"
+        ]
       }
     },
     {
