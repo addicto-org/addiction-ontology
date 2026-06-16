@@ -20,7 +20,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:owlready_ontology="http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#">
     <owl:Ontology rdf:about="http://addictovocab.org/addicto.owl">
-        <owl:versionIRI rdf:resource="http://addictovocab.org/addicto.owl/2026-05-05"/>
+        <owl:versionIRI rdf:resource="http://addictovocab.org/addicto.owl/2026-06-16"/>
         <rdfs:comment>The Addiction Ontology (AddictO) is an ontology being developed all aspects of addiction research.</rdfs:comment>
     </owl:Ontology>
     
@@ -2345,7 +2345,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <!-- http://addictovocab.org/ADDICTO_0000164 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000164">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <obo:IAO_0000114>Proposed</obo:IAO_0000114>
         <obo:IAO_0000115>A sample is a substance role played by a biological substance as an input substance to a protocol.</obo:IAO_0000115>
         <obo:IAO_0000232>The definition and link to role is coherent with BFO but the ontology itself is probably not suitable to be imported.</obo:IAO_0000232>
@@ -3337,7 +3337,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <!-- http://addictovocab.org/ADDICTO_0000278 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000278">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <obo:IAO_0000114>Proposed</obo:IAO_0000114>
         <obo:IAO_0000115>A role performed by an organisation or individual who participates in processes that bring the product into existence or purpose it as a product.</obo:IAO_0000115>
         <rdfs:label>producer of product</rdfs:label>
@@ -3431,7 +3431,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <!-- http://addictovocab.org/ADDICTO_0000293 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000293">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <obo:IAO_0000114>Proposed</obo:IAO_0000114>
         <obo:IAO_0000115>A product that is used by a person for the purpose of quitting smoking.</obo:IAO_0000115>
         <obo:IAO_0000118>NRT product</obo:IAO_0000118>
@@ -5846,7 +5846,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <!-- http://addictovocab.org/ADDICTO_0000760 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000760">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <obo:IAO_0000114>Proposed</obo:IAO_0000114>
         <obo:IAO_0000115>A role preformed by an individual who participates in administering a substance orally.</obo:IAO_0000115>
         <rdfs:label>orally administered</rdfs:label>
@@ -5939,11 +5939,11 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <!-- http://addictovocab.org/ADDICTO_0000772 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000772">
-        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000405"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000016"/>
         <obo:IAO_0000114>Proposed</obo:IAO_0000114>
-        <obo:IAO_0000115>A tobacco smoker who has ever participated in smoking.</obo:IAO_0000115>
+        <obo:IAO_0000115>A person who has ever participated in smoking a tobacco-containing product.</obo:IAO_0000115>
         <obo:IAO_0000118>Ever smoker</obo:IAO_0000118>
-        <rdfs:comment>Ever should be further defined and frequency of past use should be indicated where possible.</rdfs:comment>
+        <rdfs:comment>This class refers to any past use of a smoked tobacco product, including a single episode of use.</rdfs:comment>
         <rdfs:label>ever tobacco smoker</rdfs:label>
     </owl:Class>
     
@@ -7111,7 +7111,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <!-- http://addictovocab.org/ADDICTO_0000904 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000904">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <obo:IAO_0000114>Discussed</obo:IAO_0000114>
         <obo:IAO_0000115>A role that inheres in money by virtue of it being acquired by an economic agent for providing a good or service or as a levy.</obo:IAO_0000115>
         <rdfs:label>revenue role</rdfs:label>
@@ -8958,7 +8958,7 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
     <!-- http://addictovocab.org/ADDICTO_0001113 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001113">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A role that inheres in some material entity and is realized in some act of appraisal.</obo:IAO_0000115>
         <rdfs:label>economic good role</rdfs:label>
@@ -12173,6 +12173,18 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
     
 
 
+    <!-- http://addictovocab.org/ADDICTO_0001432 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001432">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006055"/>
+        <obo:IAO_0000114>Proposed</obo:IAO_0000114>
+        <obo:IAO_0000115>Knowledge regarding a threat in which the potential harm arises from tobacco smoking.</obo:IAO_0000115>
+        <rdfs:comment>This should be construed as a dimension from highly accurate, comprehensive and detailed to inaccurate, partial and general.</rdfs:comment>
+        <rdfs:label>understanding of harmfulness of tobacco smoking</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://humanbehaviourchange.org/ontology/BCIO_001000 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_001000">
@@ -12290,7 +12302,6 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006081">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;role&gt; that inheres in a human being by virtue of their social and institutional circumstances.</obo:IAO_0000115>
@@ -20111,7 +20122,6 @@ objectives is a planned process.</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000040">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
         <obo:IAO_0000111 xml:lang="en">drug role</obo:IAO_0000111>
         <obo:IAO_0000112>http://www.answers.com/topic/drug
    1. A substance used in the diagnosis, treatment, or prevention of a disease or as a component of a medication.
@@ -20165,7 +20175,6 @@ objectives is a planned process.</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000093">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
         <obo:IAO_0000111>patient role</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">a hospitalized person; a person with controlled diabetes; the patient&apos;s role http://www.fertilityjourney.com/testingAndDiagnosis/theRightDoctor/thePatientsRole/index.asp?C=55245395146924652778</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
