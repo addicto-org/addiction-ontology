@@ -20,7 +20,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:owlready_ontology="http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#">
     <owl:Ontology rdf:about="http://addictovocab.org/addicto.owl">
-        <owl:versionIRI rdf:resource="http://addictovocab.org/addicto.owl/2026-06-16"/>
+        <owl:versionIRI rdf:resource="http://addictovocab.org/addicto.owl/2026-10-08"/>
         <rdfs:comment>The Addiction Ontology (AddictO) is an ontology being developed all aspects of addiction research.</rdfs:comment>
     </owl:Ontology>
     
@@ -2619,6 +2619,18 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     
 
 
+    <!-- http://addictovocab.org/ADDICTO_0000199 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000199">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000212"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An e-cigarette that is designed to resemble a cigarette in shape, size and appearance.</obo:IAO_0000115>
+        <obo:IAO_0000118>disposable e-cigarette</obo:IAO_0000118>
+        <rdfs:label>cigalike e-cigarette</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://addictovocab.org/ADDICTO_0000200 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000200">
@@ -2678,6 +2690,18 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     
 
 
+    <!-- http://addictovocab.org/ADDICTO_0000205 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000205">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000212"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An e-cigarette in which none of the main components is interchangeable.</obo:IAO_0000115>
+        <rdfs:comment>These e-cigarettes are often confusingly referred to cigalikes and they have many similarities but do not need to look like cigarettes. Note that the closed &apos;pod&apos; may contain either e-liquid of a salts based solution.</rdfs:comment>
+        <rdfs:label>e-cigarette closed system</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://addictovocab.org/ADDICTO_0000206 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000206">
@@ -2701,6 +2725,30 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     
 
 
+    <!-- http://addictovocab.org/ADDICTO_0000209 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000209">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000210"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A disposable e-cigarette that resembles a cigarette.</obo:IAO_0000115>
+        <obo:IAO_0000118>disposable</obo:IAO_0000118>
+        <rdfs:label>disposable cigalike e-cigarette</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0000210 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000210">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000205"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An e-cigarette closed system that has a non-rechargeable battery and no replaceable parts.</obo:IAO_0000115>
+        <obo:IAO_0000118>disposable</obo:IAO_0000118>
+        <rdfs:label>disposable e-cigarette</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://addictovocab.org/ADDICTO_0000211 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000211">
@@ -2708,6 +2756,27 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A chemical substance that is metabolite of a drug.</obo:IAO_0000115>
         <rdfs:label>drug metabolite</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0000212 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000212">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000231"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://addictovocab.org/ADDICTO_0000218"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112>&quot;Electronic cigarettes (ECs) are handheld electronic vaping devices which produce an aerosol formed by heating an e‐liquid.&quot; Hartmann-Boyce et al., 2020. Cochrane Review of Electronic cigarettes for smoking cessation.</obo:IAO_0000112>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An electronic vaping device that is hand held and produces for inhalation an aerosol formed by heating an e-liquid using a battery-powered heating coil.</obo:IAO_0000115>
+        <obo:IAO_0000118>NVP</obo:IAO_0000118>
+        <obo:IAO_0000232>The primary label is based on the fact that this is a the most commonly used term and is clear. It has the disadvantage that it carries negative connotations in some quarters but other terminology does not adequately capture this class as defined.</obo:IAO_0000232>
+        <rdfs:comment>The e-liquid contains one or more humectants (propylene glycol, glycerol or glycerine), usually together with flavourings and nicotine. The heating is achieved by means of a battery-powered heating element that is activated by a switch or by suction as the user sucks on the mouthpiece of the device. E-cigarette do not necessarily contain nicotine or any pharmacologically active substance.</rdfs:comment>
+        <rdfs:label>e-cigarette</rdfs:label>
     </owl:Class>
     
 
@@ -2820,6 +2889,23 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <obo:IAO_0000114>Discussed</obo:IAO_0000114>
         <obo:IAO_0000115>A product that is an e-cigarette part and is designed to be placed to the mouth of the user through which to inhale the vapour.</obo:IAO_0000115>
         <rdfs:label>e-cigarette mouthpiece</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0000224 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000224">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000212"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://addictovocab.org/ADDICTO_0000923"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An e-cigarette that has as a part a replaceable e-cigarette pod.</obo:IAO_0000115>
+        <rdfs:label>e-cigarette pod device</rdfs:label>
     </owl:Class>
     
 
@@ -3065,6 +3151,19 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     
 
 
+    <!-- http://addictovocab.org/ADDICTO_0000250 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000250">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000224"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An e-cigarette pod device that is marketed by the JUUL company.</obo:IAO_0000115>
+        <obo:IAO_0000118>pod</obo:IAO_0000118>
+        <obo:IAO_0000119>https://www.juul.co.uk</obo:IAO_0000119>
+        <rdfs:label>JUUL pod device</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://addictovocab.org/ADDICTO_0000251 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000251">
@@ -3244,6 +3343,17 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     
 
 
+    <!-- http://addictovocab.org/ADDICTO_0000268 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000268">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000212"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An e-cigarette in which all of the main components are interchangeable.</obo:IAO_0000115>
+        <rdfs:label>e-cigarette open system</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://addictovocab.org/ADDICTO_0000270 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000270">
@@ -3377,6 +3487,30 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     
 
 
+    <!-- http://addictovocab.org/ADDICTO_0000283 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000283">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000199"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A cigalike e-cigarette that has a rechargeable battery.</obo:IAO_0000115>
+        <obo:IAO_0000118>cigalike.</obo:IAO_0000118>
+        <rdfs:label>rechargeable cigalike e-cigarette</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0000284 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000284">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000212"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An e-cigarette that has as a part a rechargeable battery.</obo:IAO_0000115>
+        <obo:IAO_0000118>non disposable</obo:IAO_0000118>
+        <rdfs:label>rechargeable e-cigarette</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://addictovocab.org/ADDICTO_0000286 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000286">
@@ -3386,6 +3520,19 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <obo:IAO_0000118>roll your own</obo:IAO_0000118>
         <rdfs:comment>Roll your own tobacco also known as loose tobacco and used within pipes.</rdfs:comment>
         <rdfs:label>roll-your-own tobacco</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://addictovocab.org/ADDICTO_0000288 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000288">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000231"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An electronic vaping device that resembles an e-cigarette but is branded as a shisha pen.</obo:IAO_0000115>
+        <obo:IAO_0000118>e-hookah</obo:IAO_0000118>
+        <rdfs:comment>There is no property that always distinguishes a shisha pen from an e-cigarette apart from the branding. They are often long and thin and are often used with nicotine-free e-liquid.</rdfs:comment>
+        <rdfs:label>shisha pen</rdfs:label>
     </owl:Class>
     
 
@@ -3470,7 +3617,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000296">
         <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000279"/>
         <obo:IAO_0000114>Discussed</obo:IAO_0000114>
-        <obo:IAO_0000115>A product that is designed for use as part of an e-cigarette, having an inbuilt reservoir for e-liquid,  that is fed to a dripper by either squeezing or pumping the reservoir.</obo:IAO_0000115>
+        <obo:IAO_0000115>A product that is designed for use as part of an e-cigarette, having an inbuilt reservoir for e-liquid, that is fed to a dripper by either squeezing or pumping the reservoir.</obo:IAO_0000115>
         <rdfs:label>squonker</rdfs:label>
     </owl:Class>
     
@@ -3575,7 +3722,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <obo:IAO_0000115>A product that is classified by the US Food and Drug Administration as a tobacco product.</obo:IAO_0000115>
         <obo:IAO_0000118>tobacco product</obo:IAO_0000118>
         <obo:IAO_0000232>This class is required because it is used by US the Food and Drug Administration&apos;s Center for Tobacco Products to classify products over which it has jurisdiction.</obo:IAO_0000232>
-        <rdfs:comment>An FDA defined tobacco product is any  product that meets the definition of a tobacco product set out in the United States Food, Drug and Cosmetic Act and as interpreted by the courts. It is any product made or derived from tobacco that is intended for human consumption, including any component, part, or accessory of a tobacco product (except for raw materials other than tobacco used in manufacturing a component, part, or accessory of a tobacco product). It does not include an article that is a drug. This class is not coherent and is best avoided in scientific discourse because, despite the label, it includes products that have no tobacco constituents in them (e.g. e-cigarettes whose e-liquid does not contain nicotine) and excludes products that do have the tobacco constituent nicotine (e.g. nicotine gum).</rdfs:comment>
+        <rdfs:comment>An FDA defined tobacco product is any product that meets the definition of a tobacco product set out in the United States Food, Drug and Cosmetic Act and as interpreted by the courts. It is any product made or derived from tobacco that is intended for human consumption, including any component, part, or accessory of a tobacco product (except for raw materials other than tobacco used in manufacturing a component, part, or accessory of a tobacco product). It does not include an article that is a drug. This class is not coherent and is best avoided in scientific discourse because, despite the label, it includes products that have no tobacco constituents in them (e.g. e-cigarettes whose e-liquid does not contain nicotine) and excludes products that do have the tobacco constituent nicotine (e.g. nicotine gum).</rdfs:comment>
         <rdfs:label>FDA-defined tobacco product</rdfs:label>
     </owl:Class>
     
@@ -5113,7 +5260,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <obo:IAO_0000112>13% of e-cigarette users report having tried a sweet flavoured e-liquid, e.g., candy floss.</obo:IAO_0000112>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
         <obo:IAO_0000115>A flavoured e-liquid in which the e-liquid flavouring is designed to have a sweet flavour.</obo:IAO_0000115>
-        <rdfs:comment>Sweet flavours include a broad range of flavour choices but they are distinct from fruit flavours and therefore  need to described.</rdfs:comment>
+        <rdfs:comment>Sweet flavours include a broad range of flavour choices but they are distinct from fruit flavours and therefore need to described.</rdfs:comment>
         <rdfs:label>sweet flavoured e-liquid</rdfs:label>
     </owl:Class>
     
@@ -5598,17 +5745,6 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     
 
 
-    <!-- http://addictovocab.org/ADDICTO_0000735 -->
-
-    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000735">
-        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000433"/>
-        <obo:IAO_0000114>Discussed</obo:IAO_0000114>
-        <obo:IAO_0000115>A retailer that sells alcohol beverages.</obo:IAO_0000115>
-        <rdfs:label>alcohol beverage retailer</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://addictovocab.org/ADDICTO_0000736 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000736">
@@ -5780,7 +5916,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000753">
         <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000201"/>
         <obo:IAO_0000114>Proposed</obo:IAO_0000114>
-        <obo:IAO_0000115>A cigaratte that is  flavoured with the compound menthol.</obo:IAO_0000115>
+        <obo:IAO_0000115>A cigaratte that is flavoured with the compound menthol.</obo:IAO_0000115>
         <rdfs:label>menthol cigarette</rdfs:label>
     </owl:Class>
     
@@ -5826,7 +5962,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000757">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35482"/>
         <obo:IAO_0000114>Proposed</obo:IAO_0000114>
-        <obo:IAO_0000115>An opioid  that is a naturally occuring  psychoactive substance derived from the plant papaver somniferum</obo:IAO_0000115>
+        <obo:IAO_0000115>An opioid that is a naturally occuring psychoactive substance derived from the plant papaver somniferum</obo:IAO_0000115>
         <rdfs:label>opiate</rdfs:label>
     </owl:Class>
     
@@ -6139,7 +6275,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000791">
         <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000794"/>
         <obo:IAO_0000114>Discussed</obo:IAO_0000114>
-        <obo:IAO_0000115>A carcinogen where there is limited evidence in humans, but sufficient evidence in animals to suggest it is  probably carcinogenic to humans.</obo:IAO_0000115>
+        <obo:IAO_0000115>A carcinogen where there is limited evidence in humans, but sufficient evidence in animals to suggest it is probably carcinogenic to humans.</obo:IAO_0000115>
         <obo:IAO_0000119>IARC</obo:IAO_0000119>
         <rdfs:label>group 2 carcinogen</rdfs:label>
     </owl:Class>
@@ -7205,6 +7341,17 @@ It is commercially prepared and is consumed by holding in the mouth for 30 minut
     
 
 
+    <!-- http://addictovocab.org/ADDICTO_0000925 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000925">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000212"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An e-cigarette in which the e-liquid container can be filled by the user.</obo:IAO_0000115>
+        <rdfs:label>tank-type e-cigarette</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://addictovocab.org/ADDICTO_0000926 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0000926">
@@ -7380,7 +7527,7 @@ It is commercially prepared and is consumed by holding in the mouth for 30 minut
         <obo:IAO_0000112>https://katukina.com/products/rape/matses-nunu</obo:IAO_0000112>
         <obo:IAO_0000114>Discussed</obo:IAO_0000114>
         <obo:IAO_0000115>A smokeless tobacco-containing product that is designed for nasal use, in which dark coloured Mapacho tobacco, inner bark of Mocambo tree and cacahuilo tree are mixed to form an extremely fine dust.</obo:IAO_0000115>
-        <rdfs:comment>It is prepared in cottage industries and is  blown or snorted high into the nostrils.</rdfs:comment>
+        <rdfs:comment>It is prepared in cottage industries and is blown or snorted high into the nostrils.</rdfs:comment>
         <rdfs:label>nunu</rdfs:label>
     </owl:Class>
     
@@ -7469,7 +7616,7 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
 
 https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoandpublichealth.pdf</obo:IAO_0000112>
         <obo:IAO_0000114>Discussed</obo:IAO_0000114>
-        <obo:IAO_0000115>A smokeless tobacco-containing product that is designed for oral use,  in which tobacco leaves are crushed and boiled into a sticky, heavy black liquid, which is allowed to mature and seasoned with different ingredients (that vary according to region) to create a tobacco-based paste.</obo:IAO_0000115>
+        <obo:IAO_0000115>A smokeless tobacco-containing product that is designed for oral use, in which tobacco leaves are crushed and boiled into a sticky, heavy black liquid, which is allowed to mature and seasoned with different ingredients (that vary according to region) to create a tobacco-based paste.</obo:IAO_0000115>
         <rdfs:comment>Chimó is produced by small family-operated factories or industrially manufactured, and used by placing a small amount between the lip or cheek and the gum and left there for some time (usually 30 minutes), after which it is spit out.</rdfs:comment>
         <rdfs:label>chimó</rdfs:label>
     </owl:Class>
@@ -7614,7 +7761,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6077969/</obo:IAO_0000112>
         <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000292"/>
         <obo:IAO_0000112>https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoandpublichealth.pdf</obo:IAO_0000112>
         <obo:IAO_0000114>Discussed</obo:IAO_0000114>
-        <obo:IAO_0000115>A smokeless tobacco-containing product that is designed for oral use,  in which the tobacco leaf, stems, and seeds are fermented, air- and/or fire-cured, mixed with different flavourings, augmented with stimulants (caffeine, ginseng), taurine, and vitamins B and C, and processed into moist fine particles (fine cut) or strips (long cut).</obo:IAO_0000115>
+        <obo:IAO_0000115>A smokeless tobacco-containing product that is designed for oral use, in which the tobacco leaf, stems, and seeds are fermented, air- and/or fire-cured, mixed with different flavourings, augmented with stimulants (caffeine, ginseng), taurine, and vitamins B and C, and processed into moist fine particles (fine cut) or strips (long cut).</obo:IAO_0000115>
         <rdfs:comment>Energy-enhanced snuff is premade manufactured, and it is placed between the lip or cheek and the gum for holding and sucking.</rdfs:comment>
         <rdfs:label>energy-enhanced snuff</rdfs:label>
     </owl:Class>
@@ -7629,7 +7776,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6077969/</obo:IAO_0000112>
 
 https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoandpublichealth.pdf</obo:IAO_0000112>
         <obo:IAO_0000114>Proposed</obo:IAO_0000114>
-        <obo:IAO_0000115>A smokeless tobacco-containing product that is designed for oral use,  in which boiled tobacco leaves (minus stalks, stems and veins) are soaked in water, then flavoured with powdered spices (e.g., saffron, cardamom, aniseed) and additives such as musk and then prepared into a thick paste that may also be formed into granules or pellets.</obo:IAO_0000115>
+        <obo:IAO_0000115>A smokeless tobacco-containing product that is designed for oral use, in which boiled tobacco leaves (minus stalks, stems and veins) are soaked in water, then flavoured with powdered spices (e.g., saffron, cardamom, aniseed) and additives such as musk and then prepared into a thick paste that may also be formed into granules or pellets.</obo:IAO_0000115>
         <obo:IAO_0000118>kimam</obo:IAO_0000118>
         <rdfs:comment>Kiwam is commercially manufactured, and it may be chewed alone or inserted into a betel quid.</rdfs:comment>
         <rdfs:label>kiwam</rdfs:label>
@@ -7656,7 +7803,7 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
 
 https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoandpublichealth.pdf</obo:IAO_0000112>
         <obo:IAO_0000114>Discussed</obo:IAO_0000114>
-        <obo:IAO_0000115>A smokeless tobacco-containing product that is designed for oral use,  in which fine leaf tobacco dust is mixed with molasses, red soil, lime, and water to form a tobacco-based paste.</obo:IAO_0000115>
+        <obo:IAO_0000115>A smokeless tobacco-containing product that is designed for oral use, in which fine leaf tobacco dust is mixed with molasses, red soil, lime, and water to form a tobacco-based paste.</obo:IAO_0000115>
         <obo:IAO_0000118>Gudahka</obo:IAO_0000118>
         <rdfs:comment>udakhu is premade manufactured, but can also be made by individuals for personal use, and it is used by rubbing on the teeth and gums with a fingertip for cleaning teeth or leaving in the mouth.</rdfs:comment>
         <rdfs:label>gudakhu</rdfs:label>
@@ -7686,7 +7833,7 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
 
 https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoandpublichealth.pdf</obo:IAO_0000112>
         <obo:IAO_0000114>Discussed</obo:IAO_0000114>
-        <obo:IAO_0000115>A smokeless tobacco-containing product that is designed for oral use,  in which pyrolysed (burned and decomposed) tobacco leaves are mixed with ash of tendu leaves to form a fine powder.</obo:IAO_0000115>
+        <obo:IAO_0000115>A smokeless tobacco-containing product that is designed for oral use, in which pyrolysed (burned and decomposed) tobacco leaves are mixed with ash of tendu leaves to form a fine powder.</obo:IAO_0000115>
         <rdfs:comment> it is applied to teeth and gums, usually for cleaning teeth.</rdfs:comment>
         <rdfs:comment>Gul is commercially manufactured and sold in small tin cans</rdfs:comment>
         <rdfs:label>gul</rdfs:label>
@@ -7702,7 +7849,7 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
 
 https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoandpublichealth.pdf</obo:IAO_0000112>
         <obo:IAO_0000114>Proposed</obo:IAO_0000114>
-        <obo:IAO_0000115>A smokeless tobacco-containing product that is designed for oral use,  which is composed of small pieces of tobacco leaves treated in slaked lime, finely cut betel nut, flavouring agents and sandalwood powder to form a coarse granular mixture.</obo:IAO_0000115>
+        <obo:IAO_0000115>A smokeless tobacco-containing product that is designed for oral use, which is composed of small pieces of tobacco leaves treated in slaked lime, finely cut betel nut, flavouring agents and sandalwood powder to form a coarse granular mixture.</obo:IAO_0000115>
         <obo:IAO_0000118>kapoori</obo:IAO_0000118>
         <rdfs:comment>The product is made in cottage industry and is chewed, held or sucked in the mouth.</rdfs:comment>
         <rdfs:label>mainpuri</rdfs:label>
@@ -7716,7 +7863,7 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
         <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000292"/>
         <obo:IAO_0000112>https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoandpublichealth.pdf</obo:IAO_0000112>
         <obo:IAO_0000114>Proposed</obo:IAO_0000114>
-        <obo:IAO_0000115>A smokeless tobacco-containing product that is designed for oral use,  in which sun-dried tobacco is mixed with ashes from oak, walnut and grapewine and then sprinkled with water to form a moist powder</obo:IAO_0000115>
+        <obo:IAO_0000115>A smokeless tobacco-containing product that is designed for oral use, in which sun-dried tobacco is mixed with ashes from oak, walnut and grapewine and then sprinkled with water to form a moist powder</obo:IAO_0000115>
         <rdfs:comment>The product is custom-made by vendor/individual and is applied between the lower lip and gums for 4-5 minutes.</rdfs:comment>
         <rdfs:label>maras</rdfs:label>
     </owl:Class>
@@ -7813,7 +7960,7 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
         <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000292"/>
         <obo:IAO_0000112>nytimes.com/2010/04/19/business/19smoke.html</obo:IAO_0000112>
         <obo:IAO_0000114>Proposed</obo:IAO_0000114>
-        <obo:IAO_0000115>A smokeless tobacco containing product that is designed for oral use,  in which finely ground tobacco, mint or cinnamon flavouring are mixed to form pellets.</obo:IAO_0000115>
+        <obo:IAO_0000115>A smokeless tobacco containing product that is designed for oral use, in which finely ground tobacco, mint or cinnamon flavouring are mixed to form pellets.</obo:IAO_0000115>
         <rdfs:comment>The product is commercially prepared and is used by placing in the mouth, holding, sucking or dissolving like breath mints.</rdfs:comment>
         <rdfs:label>orbs</rdfs:label>
     </owl:Class>
@@ -7839,7 +7986,7 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
         <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000292"/>
         <obo:IAO_0000112>https://onlinelibrary.wiley.com/doi/pdf/10.1046/j.1440-1843.2003.00507.x</obo:IAO_0000112>
         <obo:IAO_0000114>Proposed</obo:IAO_0000114>
-        <obo:IAO_0000115>A smokeless tobacco containing product that is designed for oral use,  which is composed of sun-dried flaked tobacco mixed with or without lime.</obo:IAO_0000115>
+        <obo:IAO_0000115>A smokeless tobacco containing product that is designed for oral use, which is composed of sun-dried flaked tobacco mixed with or without lime.</obo:IAO_0000115>
         <rdfs:comment>It is prepared commercially and is consumed by chewing</rdfs:comment>
         <rdfs:label>pattiwala</rdfs:label>
     </owl:Class>
@@ -7866,7 +8013,7 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
         <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000292"/>
         <obo:IAO_0000112>https://untobaccocontrol.org/kh/smokeless-tobacco/paan-betel-quid-tobacco/#plug</obo:IAO_0000112>
         <obo:IAO_0000114>Proposed</obo:IAO_0000114>
-        <obo:IAO_0000115>A smokeless tobacco containing product that is designed for oral use,  in which Burley and bright tobacco or cigar tobacco leaves, liquorice, and sugar are mixed to form a moist product.</obo:IAO_0000115>
+        <obo:IAO_0000115>A smokeless tobacco containing product that is designed for oral use, in which Burley and bright tobacco or cigar tobacco leaves, liquorice, and sugar are mixed to form a moist product.</obo:IAO_0000115>
         <obo:IAO_0000118>pressed leaf</obo:IAO_0000118>
         <rdfs:comment>It is commercially packaged and consumed by chewing, sucking or holding between the cheek and gum.</rdfs:comment>
         <rdfs:label>plug</rdfs:label>
@@ -7880,7 +8027,7 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
         <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000292"/>
         <obo:IAO_0000112>https://academic.oup.com/ntr/article/11/10/1175/1011617</obo:IAO_0000112>
         <obo:IAO_0000114>Proposed</obo:IAO_0000114>
-        <obo:IAO_0000115>A smokeless tobacco containing product that is designed for oral use,  which is composed of moist finely ground tobacco that is packaged into small teabag like sachets.</obo:IAO_0000115>
+        <obo:IAO_0000115>A smokeless tobacco containing product that is designed for oral use, which is composed of moist finely ground tobacco that is packaged into small teabag like sachets.</obo:IAO_0000115>
         <rdfs:comment>It is commercially prepared and is consumed by holding in the mouth between the upperlip and gums.</rdfs:comment>
         <rdfs:label>portion snus</rdfs:label>
     </owl:Class>
@@ -7923,7 +8070,7 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
         <obo:IAO_0000114>Discussed</obo:IAO_0000114>
         <obo:IAO_0000115>A smokeless tobacco containing product that is designed for oral use, in which tobacco, slaked lime, ash, black pepper, oil, flavourings, bombosa (sodium carbonate) are mixed to form a wet product.</obo:IAO_0000115>
         <obo:IAO_0000118>yemeni snuff</obo:IAO_0000118>
-        <rdfs:comment>It is custom made by vendor or individual and is consumed by sucking or holding between the gum and lower lip or cheek.  In Algeria, users may wrap shammah in paper before putting it in the mouth. Orally chewed or held in the mouth</rdfs:comment>
+        <rdfs:comment>It is custom made by vendor or individual and is consumed by sucking or holding between the gum and lower lip or cheek. In Algeria, users may wrap shammah in paper before putting it in the mouth. Orally chewed or held in the mouth</rdfs:comment>
         <rdfs:label>black shammah</rdfs:label>
     </owl:Class>
     
@@ -7948,7 +8095,7 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001002">
         <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000292"/>
         <obo:IAO_0000114>Proposed</obo:IAO_0000114>
-        <obo:IAO_0000115>A smokeless tobacco containing product that is designed for oral use,  in which ground tobacco, humectants, preservatives and flavours are compressed into soft pellets.</obo:IAO_0000115>
+        <obo:IAO_0000115>A smokeless tobacco containing product that is designed for oral use, in which ground tobacco, humectants, preservatives and flavours are compressed into soft pellets.</obo:IAO_0000115>
         <obo:IAO_0000118>pellet</obo:IAO_0000118>
         <rdfs:comment>It is commercially prepared and is consumed by sucking, holding or dissolving in the mouth.</rdfs:comment>
         <rdfs:label>soft pellete</rdfs:label>
@@ -7962,7 +8109,7 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
         <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000292"/>
         <obo:IAO_0000112>https://untobaccocontrol.org/kh/smokeless-tobacco/paan-betel-quid-tobacco/#dissovable</obo:IAO_0000112>
         <obo:IAO_0000114>Proposed</obo:IAO_0000114>
-        <obo:IAO_0000115>A smokeless tobacco containing product that is designed for oral use,  in which ground tobacco, humectants, preservatives and flavours are compressed to form sticks.</obo:IAO_0000115>
+        <obo:IAO_0000115>A smokeless tobacco containing product that is designed for oral use, in which ground tobacco, humectants, preservatives and flavours are compressed to form sticks.</obo:IAO_0000115>
         <rdfs:comment>It is commercially prepared and is consumed by sucking, holding or dissolving in the mouth.</rdfs:comment>
         <rdfs:label>sticks</rdfs:label>
     </owl:Class>
@@ -7975,7 +8122,7 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
         <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000292"/>
         <obo:IAO_0000112>https://untobaccocontrol.org/kh/smokeless-tobacco/paan-betel-quid-tobacco/#dissovable</obo:IAO_0000112>
         <obo:IAO_0000114>Proposed</obo:IAO_0000114>
-        <obo:IAO_0000115>A smokeless tobacco containing product  that is designed for oral use, in which ground tobacco, humectants, preservatives and flavours are compressed into strips.</obo:IAO_0000115>
+        <obo:IAO_0000115>A smokeless tobacco containing product that is designed for oral use, in which ground tobacco, humectants, preservatives and flavours are compressed into strips.</obo:IAO_0000115>
         <rdfs:comment>It is commercially prepared and is consumed by sucking, holding or dissolving in the mouth.</rdfs:comment>
         <rdfs:label>strips</rdfs:label>
     </owl:Class>
@@ -7988,7 +8135,7 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
         <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000292"/>
         <obo:IAO_0000112>https://untobaccocontrol.org/kh/smokeless-tobacco/paan-betel-quid-tobacco/#ghana</obo:IAO_0000112>
         <obo:IAO_0000114>Proposed</obo:IAO_0000114>
-        <obo:IAO_0000115>A smokeless tobacco containing product that is designed for either oral or nasal use,  in which dry fermented tobacco is mixed with natron (a mixture of sodium bicarbonate and sodium chloride) and ground into a fine powder. It can be consumed both nasally or orally.</obo:IAO_0000115>
+        <obo:IAO_0000115>A smokeless tobacco containing product that is designed for either oral or nasal use, in which dry fermented tobacco is mixed with natron (a mixture of sodium bicarbonate and sodium chloride) and ground into a fine powder. It can be consumed both nasally or orally.</obo:IAO_0000115>
         <obo:IAO_0000118>Nigerian traditional snuff</obo:IAO_0000118>
         <rdfs:comment>The product is custom made or packaged in cottage industries and is used by holding in the mouth or sniffing nasally.</rdfs:comment>
         <rdfs:label>taaba</rdfs:label>
@@ -8041,7 +8188,7 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001009">
         <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000292"/>
         <obo:IAO_0000114>Proposed</obo:IAO_0000114>
-        <obo:IAO_0000115>A smokeless tobacco-containing product that is designed for oral use,  which is composed of nicotine with flavours like strawberry, peppermint, spearmint, coffee, cinnamon etc and is placed in the mouth like a toothpick.</obo:IAO_0000115>
+        <obo:IAO_0000115>A smokeless tobacco-containing product that is designed for oral use, which is composed of nicotine with flavours like strawberry, peppermint, spearmint, coffee, cinnamon etc and is placed in the mouth like a toothpick.</obo:IAO_0000115>
         <rdfs:comment>It is commercially prepared and is sucked or sometimes chewed to increase the speed of nicotine release.</rdfs:comment>
         <rdfs:label>tobacco coated toothpick</rdfs:label>
     </owl:Class>
@@ -8067,7 +8214,7 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
         <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000292"/>
         <obo:IAO_0000112>https://untobaccocontrol.org/kh/smokeless-tobacco/paan-betel-quid-tobacco/#dissovable</obo:IAO_0000112>
         <obo:IAO_0000114>Proposed</obo:IAO_0000114>
-        <obo:IAO_0000115>A smokeless tobacco containing product that is designed for oral use,  in which ground tobacco, humectants, preservatives and flavours are compressed to form tablets.</obo:IAO_0000115>
+        <obo:IAO_0000115>A smokeless tobacco containing product that is designed for oral use, in which ground tobacco, humectants, preservatives and flavours are compressed to form tablets.</obo:IAO_0000115>
         <obo:IAO_0000118>ariva</obo:IAO_0000118>
         <rdfs:comment>It is commercially prepared and is consumed by sucking, holding or dissolving in the mouth.</rdfs:comment>
         <rdfs:label>tobacco tablets</rdfs:label>
@@ -8140,7 +8287,7 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
         <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000292"/>
         <obo:IAO_0000112>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4117660/#:~:text=Afzal is used by applying,subsequently spit out the rest.</obo:IAO_0000112>
         <obo:IAO_0000114>Discussed</obo:IAO_0000114>
-        <obo:IAO_0000115>A smokeless tobacco-containing product that is designed for oral  use in which dried tobacco is mixed with varied additives to create a moist, ground form.</obo:IAO_0000115>
+        <obo:IAO_0000115>A smokeless tobacco-containing product that is designed for oral use in which dried tobacco is mixed with varied additives to create a moist, ground form.</obo:IAO_0000115>
         <obo:IAO_0000118>Sweekah</obo:IAO_0000118>
         <rdfs:comment>In Afzal, some premade ingredients are mixed to create a custom-made product, which is used by placing a pinch of it between the lips and the gums. Users then suck the juice from Afzal for varying periods of time, often up to 30 min, and spit out the rest.</rdfs:comment>
         <rdfs:label>afzal</rdfs:label>
@@ -8199,7 +8346,7 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
         <obo:IAO_0000114>Proposed</obo:IAO_0000114>
         <obo:IAO_0000115>A smokeless tobacco containing product that is designed for oral use, in which tobacco, slaked lime, ash, black pepper, oil, flavourings, bombosa (sodium carbonate) are mixed to form a dry product.</obo:IAO_0000115>
         <obo:IAO_0000118>yemeni snuff</obo:IAO_0000118>
-        <rdfs:comment>It is custom made by vendor or individual and is consumed by sucking or holding between the gum and lower lip or cheek.  In Algeria, users may wrap shammah in paper before putting it in the mouth. Orally chewed or held in the mouth</rdfs:comment>
+        <rdfs:comment>It is custom made by vendor or individual and is consumed by sucking or holding between the gum and lower lip or cheek. In Algeria, users may wrap shammah in paper before putting it in the mouth. Orally chewed or held in the mouth</rdfs:comment>
         <rdfs:label>white shammah</rdfs:label>
     </owl:Class>
     
@@ -8214,7 +8361,7 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
 https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoandpublichealth.pdf</obo:IAO_0000112>
         <obo:IAO_0000114>Proposed</obo:IAO_0000114>
         <obo:IAO_0000115>A smokeless tobacco-containing product, in which raw tobacco leaf is powdered, flaked or sold in bundles of several long strands.</obo:IAO_0000115>
-        <rdfs:comment>Leaf tobacco is custom-made by vendor/individual, and it may be chewed alone or in a betel quid or other custom-made product.   A regular user consumes one 15cm piece of the strand per day.</rdfs:comment>
+        <rdfs:comment>Leaf tobacco is custom-made by vendor/individual, and it may be chewed alone or in a betel quid or other custom-made product. A regular user consumes one 15cm piece of the strand per day.</rdfs:comment>
         <rdfs:label>oral smokeless tobacco leaf</rdfs:label>
     </owl:Class>
     
@@ -9198,7 +9345,7 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001139">
         <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000257"/>
         <obo:IAO_0000114>To Be Discussed</obo:IAO_0000114>
-        <obo:IAO_0000115>A nicotine-containing product that some country has granted marketing authorisation as a medicine to  replace nicotine from tobacco in an attempt to reduce or stop smoking.</obo:IAO_0000115>
+        <obo:IAO_0000115>A nicotine-containing product that some country has granted marketing authorisation as a medicine to replace nicotine from tobacco in an attempt to reduce or stop smoking.</obo:IAO_0000115>
         <obo:IAO_0000118>NRT</obo:IAO_0000118>
         <rdfs:comment>This class is problematic because as products have evolved distinctions between those receiving a license to be marketed as medicines and those that have not have become blurred. It is better to use the parent class &apos;nicotine-containing product&apos; or the more accurate &apos;licensed nicotine-containing product&apos;.</rdfs:comment>
         <rdfs:label>nicotine replacement therapy product</rdfs:label>
@@ -9803,6 +9950,17 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
     
 
 
+    <!-- http://addictovocab.org/ADDICTO_0001199 -->
+
+    <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001199">
+        <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000212"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>An e-cigarette whose e-liquid contains nicotine.</obo:IAO_0000115>
+        <rdfs:label>nicotine-containing e-cigarette</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://addictovocab.org/ADDICTO_0001200 -->
 
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001200">
@@ -9936,7 +10094,7 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
     <owl:Class rdf:about="http://addictovocab.org/ADDICTO_0001211">
         <rdfs:subClassOf rdf:resource="http://addictovocab.org/ADDICTO_0000257"/>
         <obo:IAO_0000114>Published</obo:IAO_0000114>
-        <obo:IAO_0000115>A  nicotine-containing product that is designed to be held in the mouth or chewed so that nicotine is absorbed through the buccal mucosa.</obo:IAO_0000115>
+        <obo:IAO_0000115>A nicotine-containing product that is designed to be held in the mouth or chewed so that nicotine is absorbed through the buccal mucosa.</obo:IAO_0000115>
         <rdfs:label>oral nicotine-containing product</rdfs:label>
     </owl:Class>
     
@@ -10152,7 +10310,7 @@ https://cancercontrol.cancer.gov/sites/default/files/2020-06/smokelesstobaccoand
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <obo:IAO_0000114>Discussed</obo:IAO_0000114>
         <obo:IAO_0000115>A process in which there is damage to or destruction of something that is valued.</obo:IAO_0000115>
-        <rdfs:comment>This entity involves harm as a  process rather than as a negatively valued state of affairs more generally because that is the usage that appears to be most common in the fields of addiction, behavioural, clinical and public health sciences. The definition includes a subjective component regarding the value of the entity being damaged or destroyed. This is required because not all damage or destruction would be considered harm. It also allows the possibility that harm may occur to achieve a greater benefit as in the case of surgery.</rdfs:comment>
+        <rdfs:comment>This entity involves harm as a process rather than as a negatively valued state of affairs more generally because that is the usage that appears to be most common in the fields of addiction, behavioural, clinical and public health sciences. The definition includes a subjective component regarding the value of the entity being damaged or destroyed. This is required because not all damage or destruction would be considered harm. It also allows the possibility that harm may occur to achieve a greater benefit as in the case of surgery.</rdfs:comment>
         <rdfs:label>harm process</rdfs:label>
     </owl:Class>
     
